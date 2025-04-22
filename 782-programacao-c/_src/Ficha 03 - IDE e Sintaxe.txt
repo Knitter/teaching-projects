@@ -1,0 +1,142 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|======================================================================================
+|Módulo  |0782 - Programação em C/C++ - Estrutura Básica e Conceitos Fundamentais
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |3 - IDE, Sintaxe da Linguagem
+|======================================================================================
+
+1. Code::Blocks - Criar Primeiro Projecto
+-----------------------------------------
+Crie um projecto no IDE Code::Blocks seguindo os passos indicados abaixo.
+ 
+----
+1. Aceda à opção __File > New > Project__
+2. Na janela de novos Projectos altere a opção __Category__ para mostrar apenas projectos do tipo __Console__
+3. Da lista de possíveis tipos de aplicações escolha a primeira opção: __Console application__
+4. Pressione o botão __Go__ e o botão __Next__ que aparece logo de seguida
+5. Escolha a opção __C__ e pressione __Next__
+6. Escreva o nome do projecto como "PrimeiroProjecto" e guarde na sua pasta de trabalho
+7. Pressione o botão __Finish__
+8. Na lista de ficheiros do projecto, altere o nome do ficheiro de código criado de: "main.c" para "conversormonetario.c"
+----
+
+2. Usar o IDE
+-------------
+Copie para o projecto criado anteriormente o seguinte código C.
+
+[source,c]
+----
+/* main.c
+ * Conversor monetário para escudos e euros.
+ *
+ * (c) 2010 Sérgio Lopes
+ */
+#include <stdio.h>
+
+#define TAXA_CONVERSAO 200.482
+
+int main()
+{
+    float valor;
+    char opcao;
+
+    printf("Valor em (E)uros ou E(s)cudos? ");
+    scanf("%c", &opcao);
+
+    printf("\nInsira o valor a converter: ");
+    scanf("%f", &valor);
+
+    if(opcao == 'e' || opcao == 'E')
+    {
+        printf("Conversão para Escudos: %.2f", valor * TAXA_CONVERSAO);
+    }
+    else if(opcao == 's' || opcao == 'S')
+    {
+        printf("Conversão para Euros: %.2f", (valor == 0 ? 0 : valor / TAXA_CONVERSAO));        
+    }
+
+    printf("\n\n");
+
+    return 0;
+}
+----
+
+3. Programar
+------------
+
+Crie os novos projectos necessários para converter os seguintes algoritmos:
+
+a. Calcular o dobro de um número fornecido pelo utilizador
++
+----
+LER NÚMERO
+ESCREVER NÚMERO * 2
+----
++
+b. Calcular a área de um rectângulo
++
+----
+LER LARGURA
+LER ALTURA
+ESCREVER LARGURA * ALTURA
+----
++
+c. Calcular a área de um quadrado
++
+----
+LER LADO
+ESCREVER LADO * LADO
+----
++
+d. Ler a idade de uma pessoa expressa em anos, meses e dias e mostrá-la expressa apenas em dias;
++
+----
+LER ANOS
+LER MESES
+LER DIAS
+ESCREVER ANOS * 365 + MESES * 30 + DIAS
+----
++
+e. Ler as três notas de um aluno e calcular a média aritmética simples  deste aluno;
++
+----
+LER NOTA1
+LER NOTA2
+LER NOTA3
+ESCREVER (NOTA1 + NOTA2 + NOTA3) / 3
+----
+
+4. Erros no Código
+------------------
+
+Indique os erros no seguinte bloco de código:
+[source,c]
+----
+int main(void)
+{
+    x;
+    int z; = 2;
+    {
+        z = x + 4;
+        char beta = 'ß';
+    }
+    
+    printf("%c", beta);
+    
+    return 0;
+----
+
+5. Verdadeiro ou Falso
+----------------------
+
+Indique se as seguintes afirmações são verdadeiras ou falsas:
+
+.. Os comentários só podem ocupar uma linha.
+.. Para se programar em C é obrigatório usar o IDE Code::Blocks.
+.. Todas as expressões precisam terminar com o carácter ";".
+.. O uso de chavetas é obrigatório em situações onde exista mais que uma linha num bloco de código.
+.. A função __main__ tem, obrigatoriamente, de devolver um valor inteiro.
+.. Qualquer programa em C pode ser feito com ou sem o uso da função __main__.
+.. A função __main__ é usada como primeiro ponto de contacto com o sistema operativo.

@@ -1,0 +1,66 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0782 - Programação em C/C++ - Estrutura Básica e Conceitos Fundamentais
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |1 - Algoritmia
+|=================================================================================
+
+1. Corrigir Algoritmo
+---------------------
+
+Faça as alterações que achar necessário ao seguinte algoritmo:
+----
+Retirar o triângulo
+Colocar o triângulo na estrada a uma distância de aproximadamente 30 metros do veículo
+Retirar as ferramentas
+Retirar do veículo o novo pneu
+Desaparafusar ligeiramente as porcas
+Colocar o macaco
+Levantar o carro
+Desaparafusar as porcas e retirá-las
+Colocar o novo pneu
+Aparafusar ligeiramente as porcas
+Baixar o carro
+Retirar o macaco
+Apertar bem as porcas
+Guardar o pneu furado
+Retirar triângulo da estrada
+Guardar o triângulo
+----
+
+2. Desenvolver Algoritmos
+-------------------------
+
+Elabore um algoritmo para as seguintes situações:
+
+.. calcular o dobro de um número fornecido pelo utilizador
+.. calcular a área de um rectângulo
+.. calcular a área de um quadrado
+.. receber dois valores do utilizador e indicar qual o maior
+.. indicar se um número introduzido pelo utilizador é negativo, positivo ou zero
+.. ler um número maior que zero e imprimir a tabuada de multiplicar correspondente. Ex: se o número é 5, devem imprimir 5x1 = 5, 5x2=10, etc.;
+.. receber um número maior que zero e imprimir a soma dos números pares menores que o número recebido. Ex: se o número é 15, a soma é 2+4+6+8+10+12+14=56;
+.. ler a idade de uma pessoa expressa em anos, meses e dias e mostrá-la expressa apenas em dias;
+.. ler a idade de uma pessoa expressa em dias e mostrá-la expressa em anos, meses e dias;
+.. ler as três notas de um aluno e calcular a média aritmética simples  deste aluno;
+.. ler o tempo de duração de um evento numa fábrica expresso em segundos e apresentá-lo expresso em horas, minutos e segundos;
+
+3. Problema 1
+-------------
+Elabore um algoritmo para o seguinte problema:
+
+O custo ao consumidor de um carro novo é a soma do custo de fábrica com a percentagem do distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que a percentagem do distribuidor seja de 28% e os impostos de 45%, escrever um algoritmo que leia o custo de fábrica de um carro e escreva o custo ao consumidor.
+
+4. Problema 2
+-------------
+
+Elabore um algoritmo que dada a idade de um nadador o classifica numa das categorias:
+----
+infantil A = 5 - 7 anos
+infantil B = 8-10 anos
+juvenil A = 11-13 anos
+juvenil B = 14-17 anos
+adulto = maiores de 18 anos
+----

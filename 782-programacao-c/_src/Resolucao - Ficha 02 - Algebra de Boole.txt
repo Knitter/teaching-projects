@@ -1,0 +1,28 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|======================================================================================
+|Módulo    |0782 - Programação em C/C++ - Estrutura Básica e Conceitos Fundamentais
+|Local     |
+|Formador  |
+|Resolução |2 - Álgebra de Boole
+|======================================================================================
+
+Exercício 1
+-----------
+
+. cinema && !comer pipocas
+. ter carro azul && ter carro vermelho
+. !(!ter sono)
+
+Execício 2
+----------
+
+. Falso
+. Falso
+. Verdadeiro
+. Verdadeiro
+. Falso
+. Falso
+. Verdadeiro
+. Verdadeiro
+. Verdadeiro
+. Verdadeiro

@@ -1,0 +1,58 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|======================================================================================
+|Módulo    |0782 - Programação em C/C++ - Estrutura Básica e Conceitos Fundamentais
+|Local     |Monte Redondo
+|Formador  |Sérgio Lopes, knitter.is@gmail.com
+|Resolução |4 - Variáveis e Tipos de Dados Numéricos
+|======================================================================================
+
+Exercício 1
+-----------
+
+----
+a) float
+b) float
+c) char
+d) float para média, int para idades
+e) int
+f) int
+g) long
+----
+
+Exercício 3
+-----------
+
+----
+1 - Errada, primeiro o tipo e depois o nome. Correcto seria **int x**.
+2 - Errada, dois tipos seguidos e sem variáveis. Correcto seria adicionar o nome das variáveis e colocar na mesma declaração ou em linhas separadas, **int x, y;** ou **int x; int y;**.
+3 - Correcta.
+4 - Errada, _floating_ não é um tipo de dados correcto. Deveria ser escrito como **float x;**.
+5 - Errada, falta a vírgula a separar as variáveis. Correcto seria **int x = 9, d = 1;**
+6 - Correcta.
+7 - Correcta.
+8 - Errada, nas declarações não há comparações. Correcto seria remover a comparação, **int z**;
+----
+
+Exercício 4
+-----------
+
+----
+1 - Válido.
+2 - Inválido.
+3 - Válido.
+4 - Inválido, não podem começar com números.
+5 - Inválido, não pode ter o mesmo nome que uma função.
+6 - Válido.
+7 - Válido.
+8 - Válido.
+9 - Inválido, só pode contar letras números e __underscore__ **"_"**.
+----
+
+Exercícios 5
+------------
+
+----
+a) Verdadeiro desde que sejam usadas apenas depois de declaradas.
+b) Verdadeiro.
+c) Verdadeiro, embora os resultados possam não ser os esperados.
+----

@@ -1,0 +1,27 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0782 - Programação em C/C++ - Estrutura Básica e Conceitos Fundamentais
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |2 - Álgebra de Boole
+|=================================================================================
+
+1. Converta para Álgebra de Boole as seguintes expressões
+---------------------------------------------------------
+. "Fui ao cinema e não comi pipocas."
+. "Tenho um carro azul e vermelho"
+. "Não quero não ter sono."
+
+2. Indique o resultado das seguintes expressões
+-----------------------------------------------
+. ~(X /\ Y) \/ Z, com *X* = 1, *Z* = 0 e *Y* = 1
+. X /\ ~(C \/ F) \/ G, com *X* = 1, *C* = 1, *F* = 1 e *G* = 1
+. H \/ (F /\ (S \/ F), com *H* = 0, *F* = 1 e *S* = 0
+. ~K \/ (F \/ A) \/ F), com *K* = 1, *F* = 1 e *A* = 1 
+. F /\ G \/ E \/ G, com *F* = 0, *G* = 1 e *E* = 1
+. K \/ ~W /\ A \/ ~D, com *K* = 1, *W* = 1, *A* = 1 e *D* = 0 
+. K \/ L \/ (Z /\ L), com *K* = 1, *L* = 0 e *Z* = 0
+. ~A \/ (1 /\ F \/ 0), com *A* = 0 e *F* = 1,
+. A /\ (1 \/ 1), com *a* = 1
+. H \/ ~(K /\ Z) \/ X, com *H* = 1, *K* = 1, *Z* = 1 e *X* = 1

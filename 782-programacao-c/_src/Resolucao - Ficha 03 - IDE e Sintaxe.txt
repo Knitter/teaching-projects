@@ -1,0 +1,48 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|======================================================================================
+|Módulo    |0782 - Programação em C/C++ - Estrutura Básica e Conceitos Fundamentais
+|Local     |Monte Redondo
+|Formador  |Sérgio Lopes, knitter.is@gmail.com
+|Resolução |3 - IDE, Sintaxe da Linguagem
+|======================================================================================
+
+Exercício 4
+-----------
+
+[source,c]
+----
+int main(void)
+{
+    //variável sem declaração
+    //correcto seria int x;
+    x;
+    
+    //ponto-e-vírula antes do igual
+    //correcto seria int z = 2;
+    int z; = 2;
+    {
+        z = x + 4;
+        char beta = 'ß';
+    }
+    
+    //tentar usar a variável beta que 
+    //foi declarada dentro de um bloco e que
+    //não está disponível neste local.
+    printf("%c", beta);
+    
+    return 0;
+    
+    //falta chaveta final a terminar
+    //a função main.    
+----
+
+Exercício 5
+-----------
+
+.. Falso, existem comentários de bloco, através de **/\*** e **\*/** que podem ocupar várias linhas.
+.. Falso, o IDE não é um ferramenta obrigatória, além de existirem vários IDEs diferentes.
+.. Verdadeiro.
+.. Verdadeiro
+.. Falso, pode ser declarada como não devolvendo qualquer valor. No entanto é recomendado que devolva sempre um valor inteiro.
+.. Falso, a função **main** é a única função obrigatória.
+.. Verdadeiro.

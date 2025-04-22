@@ -1,0 +1,55 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0782 - Programação em C/C++ - Estrutura Básica e Conceitos Fundamentais
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |Avaliação
+|=================================================================================
+
+1. Implemente o código necessário para completar o projecto
+-----------------------------------------------------------
+O projecto entregue representa parte de um programa desenvolvido com o objectivo de registar a venda de 3 produtos e apresentar um quadro-factura com o resumo da compra e alguns dados adicionais com o IVA, subtotal e total a pagar.
+
+Assim, o programa deve conter as variáveis necessárias para registar o nome (até um máximo de 10 letras), a quantidade, o preço unitário para cada um dos 3 produtos a ler, o subtotal (dado pela soma de: quantidade * preço), IVA (calculado multiplicando o subtotal pelo valor do IVA) e o total (subtotal + IVA). Além desta informação, é necessário também guardar uma data, registando individualmente o dia, o mês e ano.
+
+Cada um dos seguintes pontos corresponde a um local, no ficheiro de código, onde deverá resolver o exercício. No ficheiro o ponto estará identificado com o número correspondente entre parêntesis rectos, ex: ponto 1 é identificado com [ 1 ].
+
+. Deverá declarar as variáveis necessárias para registar todos os dados indicados na descrição;
+. Escreva o scanf necessário para ler uma opção (carácter) do teclado;
+. Escrever um scanf que permite ler uma data no formato dd/mm/aaaa, e que guarde cada uma das componentes numa variável diferente;
+. Escreva o código (printf e scanf) que permita a leitura da informação referente ao produto 1 (nome do produto, quantidade e preço unitário);
+. Escreva o código (printf e scanf) que permita a leitura da informação referente ao produto 2 (nome do produto, quantidade e preço unitário);
+. Escreva o código (printf e scanf) que permita a leitura da informação referente ao produto 3 (nome do produto, quantidade e preço unitário);
+. Escreva o código necessário para efectuar os cálculos do IVA, sub-total e total;
+. Escreva o printf necessário para apresentar a data no formato  aaaa-mm-dd; 
+. Substitua o # pelas variáveis que declarou, de acordo com a posição;
+. Complete os especificadores %f presentes nos 3 printfs de modo a que mostrem valores com duas casas decimais
+
+Notas
+-----
+
+Tabela com formatações do printf
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[cols="1,6"]
+|=======================================================================================================================
+|%-       |Alinha o texto à esquerda
+|%5       |Completa o valor com 5 espaços, se o valor tiver menos de 5 caracteres, se tiver 5 ou mais não faz alterações
+|%.3      |Formata um número decimal com 3 casas
+|%c       |Um carácter (exemplo: 'a')
+|%%d      |Um número inteiro em decimal (exemplo: 1)
+|%f       |Um valor com casas decimais
+|%s       |Uma string
+|=======================================================================================================================
+
+Tabela com formatações do scanf
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[cols="1,6"]
+|=========================================================
+|%c             |Um carácter (exemplo: 'a')
+|%d             |Um número inteiro em decimal (exemplo: 1)
+|%f             |Um float (exemplo: 5.9785)
+|%s             |Uma simples string
+|=========================================================

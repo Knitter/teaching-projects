@@ -1,0 +1,49 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|======================================================================================
+|Módulo  |0782 - Programação em C/C++ - Estrutura Básica e Conceitos Fundamentais
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |5 - Strings e Escrita Formatada
+|======================================================================================
+
+1. Desenhar com Caracteres
+--------------------------
+
+Para cada um dos outputs indicados desenvolva um programa que o permita escrever:
+
+----
+    *    
+   * *
+  * * *
+ * * * *
+* * * * *  
+----
+
+----
+    +    + + + +
+   + +    + + +
+  + + +    + +
+ + + + +    +
+----
+
+----
+(. .)
+  ~
+  |
+|---|
+  |
+_/ \_
+----
+
+2. Formatação
+-------------
+
+Formate os seguintes valores usando todos os formatos disponíveis:
+
+.. 344545433.43
+.. 434343545
+.. 656576763.4
+.. 4545.6677887
+.. "String a mostrar ao utilizador"
+.. "Uma segunda String"

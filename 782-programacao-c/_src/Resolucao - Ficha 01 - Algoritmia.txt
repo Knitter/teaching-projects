@@ -1,0 +1,178 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|======================================================================================
+|Módulo    |0782 - Programação em C/C++ - Estrutura Básica e Conceitos Fundamentais
+|Local     |
+|Formador  |
+|Resolução |1 - Algoritmia
+|======================================================================================
+
+Exercício 1
+-----------
+
+----
+Retirar o triângulo
+Enquanto distância ao carro for menor que 30 metros
+    Avançar
+Colocar o triângulo na estrada
+Retirar as ferramentas
+Retirar do veículo o novo pneu
+Desaparafusar ligeiramente as porcas
+Colocar o macaco
+Enquanto a altura do carro não for suficiente
+    Levantar o carro
+Desaparafusar as porcas e retirá-las
+Colocar o novo pneu
+Aparafusar ligeiramente as porcas
+Enquanto o carro não estiver no chão
+    Baixar o carro
+Retirar o macaco
+Apertar bem as porcas
+Guardar o pneu furado
+Retirar triângulo da estrada
+Guardar o triângulo
+----
+
+Exercício 2
+-----------
+
+.Alínea a)
+
+----
+Pedir número ao utilizador
+Resultado = número * 2
+Mostrar resultado
+----
+
+.Alínea b)
+
+----
+Pedir altura ao utilizador
+Pedir largura ao utilizador
+Resultado = altura * largura
+Mostrar resultado
+----
+
+.Alínea c)
+
+----
+Pedir lado ao utilizador
+Área = lado * lado
+Mostrar área
+----
+
+.Alínea d)
+
+----
+Pedir valor 1
+Pedir valor 2
+Se valor 1 > valor 2
+    Mostrar "valor 1 é o maior"
+Senão
+    Se valor 2 > valor 1
+        Mostrar "valor 2 é o maior"
+    Senão
+        Mostrar "valores iguais"
+----
+
+.Alínea e)
+
+----
+Pedir número ao utilizador
+Se número < 0
+    Mostrar "negativo"
+Senão Se número > 0
+    Mostrar "positivo"
+Senão
+    Mostrar "zero"
+----
+
+.Alínea f)
+
+----
+Pedir número
+Se número > 0
+    contador = 1
+    Enquanto contador < 11 Faz
+        Resultado = contador * numero
+        Mostrar contador x numero = resultado
+----
+
+.Alínea g
+
+----
+Pedir número
+Se número > 0
+    Contador = 1
+    Soma = 0
+    Enquanto contador < número Faz
+        Se contador é par
+            Soma = soma + contador
+    Mostrar soma
+----
+
+.Alínea    8.
+
+----
+Pedir anos
+Pedir meses
+Pedir dias
+Mostrar anos * 365 + meses * 30 + dias
+----
+
+.Alínea    9.
+
+----
+Pedir idade em dias
+Anos = dias / 365
+Resto de anos = dias % 365
+Meses = resto de anos / 30
+Dias = resto de anos % 30
+Mostrar anos, meses, dias
+----
+
+.Alínea   10.
+
+----
+Pedir nota 1
+Pedir nota 2
+Pedir nota 3
+Média = (nota 1 + nota 2 + nota 3) / 3
+Mostrar média
+----
+
+.Alínea   11.
+----
+Pedir duração em segundos
+horas = segundos / 86400
+Resto de horas = segundos % 86400
+Minutos = resto de horas / 60
+Segundos = resto de horas % 60
+Mostrar horas, minutos, segundos
+----
+
+Exercício 3
+-----------
+
+----
+Pedir custo de fábrica
+Custo distribuidor = custo fábrica + (custo fábrica * 0.28)
+Custo com impostos = custo distribuidor + (custo distribuidor * 0.45)
+Mostrar custo com impostos
+----
+
+Exercício 4
+-----------
+
+----
+Pedir idade do nadador
+Se idade >= 5 e idade <= 7
+    Mostrar "infantil A"
+Senão Se idade >= 8 e idade <= 10
+    Mostrar "infantil B"
+Senão Se idade >= 11 e idade <= 13
+    Mostrar "juvenil A"
+Senão Se idade >= 14 e idade <= 17
+    Mostrar "juvenil B"
+Senão Se idade >= 18
+    Mostrar "adulto"
+----

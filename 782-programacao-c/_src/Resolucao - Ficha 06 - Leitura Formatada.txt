@@ -1,0 +1,24 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|======================================================================================
+|Módulo    |0782 - Programação em C/C++ - Estrutura Básica e Conceitos Fundamentais
+|Local     |Monte Redondo
+|Formador  |Sérgio Lopes, knitter.is@gmail.com
+|Resolução |6 - Leitura Formatada
+|======================================================================================
+
+Exercício 1
+-----------
+
+a) Errada, falta o *&* antes da variável *x*. Correcto seria **scanf("%d", &x);**.
+b) Errada, falta a *%* antes do especificador *f* dentro das aspas. Correcto seria **scanf("%f", &z);**.
+c) Errada, existem dois especificadores e só uma variável, o *&* também está a mais dado que não se usa quando lemos texto usando o *%s*. O correcto seria usar apenas um especificador dado que não declarámos mais variáveis para guardar texto, **scanf("%s", c);**.
+d) Errada, dado que estamos a ler apenas um carácter, é necessário o *&* para aceder à posição especifica, a 9ª. Correcto seria **scanf("%c", &c[9]);**.
+e) Correcto
+f) Errado, falta o *%* no especificador de formato. Correcto seria **scanf("%d", &x);**.
+g) Correcto, apesar de estarmos a perder precisão porque estamos a ler números inteiros para dentro de números fraccionários.
+
+Exercício 2
+-----------
+A diferença entre 'A' e "A" prende-se com o facto de que o primeiro é o carácter **A**, para o qual apenas é necessário usar uma variável **char** simples enquanto que o segundo representa o texto com a letra **A**, uma _String_ portanto, e que precisa de uma variável do tipo **char** declarada com vector e que possa conter vários caracteres. Além disso, no segundo caso não é só a letra **A** que está a ser guardada mas também o carácter especial **\0** usado como terminador de _Strings_.
+
+Plicas só se usam quando pretendemos referir-nos a um único carácter e aspas são usadas para nos referirmos a _Strings_.

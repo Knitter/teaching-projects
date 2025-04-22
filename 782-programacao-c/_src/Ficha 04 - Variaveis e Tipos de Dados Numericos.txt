@@ -1,0 +1,63 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|======================================================================================
+|Módulo  |0782 - Programação em C/C++ - Estrutura Básica e Conceitos Fundamentais
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |4 - Variáveis e Tipos de Dados Numéricos
+|======================================================================================
+
+1. Tipos de Dados
+-----------------
+
+Escolha os tipos de dados correctos para as seguintes situações:
+
+.. Guardar os valores pagos numa loja.
+.. Guardar as taxas de IVA do ano corrente.
+.. Guardar a letra pressionada pelo utilizador.
+.. Calcular a média de idades, em anos, de 10 pessoas.
+.. Contar o número de rebuçados dentro de um frasco.
+.. Contar o número de formandos dentro de uma sala.
+.. Contar os grãos de areia de uma praia.
+
+2. Implementar em C
+-------------------
+Crie um programa em C que contenha todas as variáveis indicas no exercício anterior.
+
+3. Declarações Correctas
+------------------------
+
+Indique quais das seguintes declarações estão correctas:
+
+. x int;
+. int , int;
+. char opx;
+. floating x;
+. int x = 9 d = 1;
+. int x = 5000;
+. double ds = 0.5;
+. int z > 89;
+
+4. Nomes Válidos
+----------------
+
+Indique quais os nomes de variáveis válidos na seguinte lista:
+
+. zero
+. %sda
+. _var1
+. 2var
+. main
+. teste
+. v_1_s_1_s_1_s_1
+. natal
+. x-z
+
+5. Verdadeiro ou Falso
+----------------------
+
+Indique se as seguintes afirmações são verdadeiras ou falsas:
+
+.. As variáveis podem ser usadas em qualquer parte do código, independentemente de onde são declaradas.
+.. Uma variável pode conter __underscore__, **"_"**, no início do nome.
+.. Se declarar uma variável com o tipo int posso colocar nela uma letra lida do teclado.
