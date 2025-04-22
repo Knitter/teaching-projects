@@ -1,0 +1,62 @@
+Explorador de Ficheiros
+=======================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================
+|Módulo  |
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |6 - Explorador de ficheiros
+|=============================
+
+O _Explorador do Windows_ é um gestor de ficheiros criado pela Microsoft para o Windows 95 e que existe em todas as versões desde então. Permite o acesso a ficheiros através de uma interface gráfica e oferece muitas das informações e notificações nos sistemas operativos actuais da Microsoft, como notificações de tarefas na barra de tarefas ou no Ambiente de Trabalho (Desktop).
+
+O _Explorador_ é composto por um sistema de associação de ficheiros com base na extensão do ficheiro, pelo menu iniciar, pela barra de ferramentas e pelo Painel de Controlo. É o _Explorador_ que faz a associação e gestão entre um ficheiro e o programa que o deve abrir, tendo como referência a extensão do ficheiro.
+
+Exercícios
+----------
+
+Todos os ficheiros e pastas a criar nestes exercícios deverão ser feitos na raiz do disco, dentro de uma pasta com o seu nome.
+
+.. Crie a seguinte estrutura de ficheiros na raiz do disco:
++
+----
+C:\
+ |
+ |- SILORA
+  |
+  |- DOCS
+   |
+   |- TXT
+   |- BAT
+   |- Misc
+   |
+  |- UTILS
+   |
+   |- DEMO1
+   |- DEMO2
+   |- DEMO3
+    |
+    |- SUBD1
+    |- SUBD2
+    |
+    |- SUBD3
+  |
+----
++
+.. Crie um ficheiro de texto chamado *RESP.TXT* dentro da pasta *C:\DOCS*. Todas as respostas que forem necessário registar devem ser escritas neste ficheiro.
+.. Liste todos os ficheiros presentes na pasta *C:\Windows*. Quantos ficheiros existem no total?
+.. Procure, em todo o disco, ficheiros que comecem pelas letras *DOC*. Quantos ficheiros existem?
+.. Procure, em todo o disco, ficheiros que comecem pelas letras *chan*. Quantos ficheiros existem?
+.. Localize todos os ficheiros que tenham um *A* como terceira letra. Quantos encontrou?
+.. Procure ficheiros com apenas 3 letras no nome com extensão *INI*.
+.. Crie um ficheiro na directoria *C:\SILORA*, como o nome *ESCONDIDO.TXT* e active o atributo para esconder o ficheiro.
+.. Use o sistema de pesquisa para pesquisa todas as imagens do tipo JPG que existem no seu computador.
+.. Retire as permissões de acesso a todos os utilizadores, excepto o seu, para a pasta *C:\SILORA\UTILS\DEMO1*.
+.. Torne a pasta *C:\SILORA\DOCS\Misc* uma pasta partilhada, apenas com permissões de leitura.
+.. Torne a pasta *C:\SILORA\UTILS\DEMO2* uma pasta partilha com permissões de escrita para qualquer utilizador.
+.. Crie um atalho no _Ambiente de Trabalho_ para a pasta *C:\SILORA*.
+.. Altere o programa por omissão que abrem ficheiros TXT para o MS WordPad.
+.. Adicione a pasta *C:\SILORA\DOCS* à pasta virtual _Libraries_ criando uma nova _Library_.

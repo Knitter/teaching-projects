@@ -1,0 +1,38 @@
+Meios Físicos - Cabos de Cobre
+==============================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |06 - Meios físicos: cabos de cobre
+|=============================================
+
+O que é a multiplexação?
+
+''''
+''''
+
+Define TDM e WDM
+
+''''
+''''
+
+Indica um método para detecção de erros de transmissão.
+
+''''
+
+Quais os factores que podem afectar um cabo de cobre na transmissão de informação?
+
+''''
+
+Qual é a diferença entre um cabo UTP e um STP?
+
+''''
+''''
+
+Indica um factor interno de degradação de sinal.
+
+''''

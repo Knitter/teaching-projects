@@ -1,0 +1,49 @@
+Avaliação
+=========
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================
+|Módulo    |
+|Local     |
+|Formador  |
+|Formando  |
+|Nota      |
+|=============================
+
+[frame="topbot"]
+|===============
+|Leia *com atenção todo o enunciado*, iniciando a resolução *apenas após* uma leitura completada e cuidada dos passos a executar. Resolva todos os exercícios usando o computador de formação.
+|===============
+
+. Crie uma conta de utilizador, do tipo administrador, como nome _Avaliacao_ e com a palavra-passe _avs2011_. Utilize essa conta para executar todos os exercícios seguintes.
+. Comece por configurar o sistema de actualizações para executar todos os dias às 16:00.
+. Active todos os programas que estão listados no arranque do sistema de modo a que todos iniciem com o sistema operativo.
+. Crie as tarefas agendadas necessárias para:
+.. Mostrar uma mensagem ao utilizador com o título _Boas Vindas_ e o texto _Bem-vindo ao computador de formação da Silora_. Esta tarefa deve executar sempre que um utilizador entrar no sistema.
+.. Efectuar a limpeza de disco todas as segundas-feiras às 15:30.
+. Reduza o tamanho da reciclagem para 5%.
+. Crie a seguinte estrutura de pastas no _Ambiente de Trabalho_:
++
+image::./Imagens/estrutura.png[]
++
+. Altere o fundo do _Ambiente de Trabalho_ de modo a mostrar a imagem presente no endereço http://www.bestwallpapersite.com/view/22222_228-1024x768.html.
+. Aumente o número de itens recentemente utilizados no _Menu Iniciar_ para 15.
+. Remova do _Menu Iniciar_ os itens:
+.. Painel de Controlo
+.. Programas Predefinidos
+.. Documentos
+.. Ajuda
+. Da _Área de Notificação_ retire a opção para esconder ícones inactivos.
+. Active a barra de ferramentas do Windows Media Player na _Barra de Tarefas_ do Windows.
+. Altere os sons de sistema para o esquema _Festival_.
+. Active a protecção de ecrã para mostrar imagens e iniciar após 15 minutos de inactividade.
+. Remova a barra lateral do Windows onde são mostradas as miniaturas.
+. Aceda à opção de Programas e Funcionalidades e remova a funcionalidade *Jogos* do Windows.
+. Active a opção para mostrar todos os ficheiros e pastas ocultos e active a opção que permite pesquisar dentro de ficheiros zip.
+. Altere o tempo de repetição de teclas do teclado para ser o mais curto possível
+. Mude o tipo de ponteiros do rato para um tema à sua escolha.
+. Active o rasto do ponteiro do rato e a opção que permite localizar o ponteiro do rato usando a tecla _ctrl_.
+. Mude a forma como o Windows avisa sobre questões de segurança para a opção que permite mostra os ícones mas não notificar.
+. Desinstale o programa Adobe Reader e instale o programa _SumatraPDF_, activando todas as opções extra. Faça download do programa no endereço http://kjkpub.s3.amazonaws.com/sumatrapdf/rel/SumatraPDF-1.4-install.exe
+. Abra a pasta _Avaliação_ que criou no _Ambiente de Trabalho_, mude a vista para mostrar ícones grandes. Aplique essa alteração a todas as pastas usando a pasta _Avaliação_ como modelo. Todas as pastas do sistema operativo devem assim ficar a apresentar o seu conteúdo usando ícones grandes.

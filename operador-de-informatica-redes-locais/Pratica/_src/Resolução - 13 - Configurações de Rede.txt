@@ -1,0 +1,42 @@
+Configurações de Rede - Resolução
+=================================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |13 - Configurações de Rede - *Resolução*
+|=============================================
+
+*Grupo 1* +
+Identifique, na imagem acima, os componentes de constituição da rede exemplificada. Marque na imagem o nome dos componentes e uma breve descrição do seu objectivo.
+
+image::./Imagens/exemplo.rede2.png[alig="center",scaledwidth="100%"]
+<<<<
+
+*Grupo 3* +
+Explica o que faz o comando *ipconfig*.
+
+**Permite aceder e configurar os dados de ligação de rede do computador. Dá acesso a toda a informação relacionado com as interfaces de rede que existem no computador**
+
+Explica o que faz o comando *ping*.
+
+**Envia um conjunto de pacotes até um endereço destino e apresenta um resumo da transmissão. Possibilita a detecção de falhas ou problemas de comunicação relacionados com a impossibilidade de atingir um determinado endereço de destino.**
+
+Explica o que faz o comando *tracert*.
+
+**Mostra todos os saltos entre redes que foram feitos para que a transmissão de um computador chegue a outro computador destino.**
+
+Explica o que faz o comando *arp*.
+
+**Permite obter o endereço físico de um equipamento através do endereço de rede (endereço IP).**
+
+Explica porque é que o teu IP começa com o valor *192.168.1*.
+
+**Este é o endereço que foi configurado para a rede onde o computador está inserido e é fornecido pelo sistema de DHCP.**
+
+Qual o tipo de comutação utilizada na rede local da SILORA? Justifique.
+
+**Comutação de pacotes em modo _datagrama_. É o tipo de comutação tradicional numa rede TCP/IP onde não são usados serviços com necessidades especiais que requeiram a implementação de um sistema de comutação de circuitos ou comutação de pacotes em modo virtual.**

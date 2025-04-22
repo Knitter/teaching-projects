@@ -1,0 +1,35 @@
+Criação de Cabos
+================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |14 - Criação de Cabos
+|=============================================
+
+A criação de chicotes de cabos UTP é uma actividade que todos os técnicos de redes devem conhecer, mesmo que os chicotes que usam sejam obtidos através dos habituais fornecedores de material de redes. É comum ser necessário criar um chicote ligeiramente maior ou adequar um chicote existente ao espaço disponível. Seja qual for o motivo, saber criar correctamente um cabo de rede para ser usado como chicote ou como elemento da cablagem horizontal é uma característica importante para quem trabalha com redes no dia a dia.
+
+A actividade a desenvolver pretende que os formandos adquiram alguma prática na criação de cabos Ethernet através da criação de chicotes usando cabo UTP categoria 5e e 6.
+
+Cabos a Criar
+-------------
+
+Usando o cabo de categoria 6 crie um chicote directo, com cerca de 60cm. Use a norma T568B.
+
+Com cabo de categoria 5e crie um chicote directo e um chicote cruzado, ambos com cerca de 60cm. Use a norma T658B para o cabo directo ambas as normas, T568A e T568B, para o cabo cruzado.
+
+Teste todos os cabos que criou ligando o seu computador e o de um colega ao switch fornecido e usando IPs fixos na gama 192.168.1.x. No caso dos cabos cruzados ligue directamente dois computadores usando apenas o cabo e nenhum outro equipamento pelo meio.
+
+Qual o cabo mais simples de criar e porquê?
+
+''''
+''''
+''''
+
+Qual a maior dificuldade sentida na criação dos chicotes?
+
+''''
+''''

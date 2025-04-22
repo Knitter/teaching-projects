@@ -1,0 +1,38 @@
+Interacção com o Utilizador em Sistemas Operativos
+==================================================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================
+|Módulo  |
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |5 - Interacção com o Utilizador em Sistemas Operativos
+|=============================
+
+Trabalho
+--------
+
+Para um utilizador comum a interface gráfica de um sistema operativo actual é um _standard de facto_, muitos não conhecem outro tipo de interfaces que não as oferecidas por sistemas como o Windows XP, Vista ou até Windows 7. No entanto a procura de soluções cada vez melhores para interacção homem-máquina não tem parado e os avanços que se têm feito sentir neste campo prometem interacções cada vez mais intuitivas e naturais.
+
+Para estudar a evolução das interfaces gráficas, pretende-se que seja feita pesquisa na _Internet_ de modo a encontrar informação sobre as interfaces actuais, os estudos e trabalhos que se têm feito na área, e a evolução esperada para o futuro.
+
+Objectivos
+~~~~~~~~~~
+
+Desenvolver um trabalho de pesquisa sobre sistemas de interacção usados pelos sistemas operativos actuais e sobre a evolução destes sistemas de interacção e que interacções são esperadas para o futuro. Como título de trabalho sugere-se o uso de: **Sistemas gráficos: presente e futuro**.
+
+Poderá usar como termos de pesquisa alguns dos pontos seguintes:
+
+- realidade aumentada
+- conceito de ambiente de trabalho / _desktop metaphor_
+- efeitos gráficos em _desktop_
+- evolução de sistemas operativos Microsoft
+
+Naturalmente deverá ter a iniciativa de procurar outros termos e a liberdade criativa de estruturar o texto como considerar adequado.
+
+A Entregar
+~~~~~~~~~~
+
+Deverá ser entregue um documento digital, formato à escolha embora se recomendem formatos livre, contendo o trabalho de investigação feito e quaisquer conclusões tiradas. Novamente, deverá ser tida a liberdade de criação de estrutura e conteúdo que se considerar adequada.

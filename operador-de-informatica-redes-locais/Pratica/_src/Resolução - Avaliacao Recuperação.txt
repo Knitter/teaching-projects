@@ -1,0 +1,77 @@
+Avaliação de Recuperação - Resolução
+====================================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |Avaliação de Recuperação - *Resolução*
+|Formando |
+|=============================================
+
+
+[frame="topbot"]
+|===============
+|**Leia o enunciado com atenção.** Antes de começar a responder, leia com atenção todas as questões de modo a compreender correctamente o seu objectivo. Terá tempo suficiente para resolver toda a ficha de avaliação.
+|===============
+
+Grupo Desenvolvimento
+---------------------
+
+Qual a importância de uma rede de computadores?
+
+**Uma rede de computadores facilita a comunicação entre pessoas, uma rentabilização de recursos de hardware e de software e facilita o trabalho desenvolvido pelas pessoas. Ajuda também na manutenção de informação num estado seguro e na perservação da mesma.**
+
+Explica o funcionamento da comutação de pacotes.
+
+**Na comutação de pacotes os pacotes são enviados para a rede sem que seja estabelecido um caminho dedicado com antecedência. A chega dos pacotes ao destino é controlada pelos mecanismos de verificação de erros não havendo qualquer garantia quanto ao percurso que cada pacote seguirá.**
+
+Indica uma limitação na comutação de circutos.
+
+**A performance da comutação de pacotes sofre com o aumento de carga na rede.**
+
+Diz, resumidamente, qual o efeito da atenuação na propação de um sinal.
+
+**A atenuação provoca a perda de sinal ao longo da transmissão fazendo com que o sinal chegue ao destino com energia inferior à energia com que foi criado. Esta diminuição de energia provoca falhas na transmissão de informação uma vez que os equipamentos no destino podem não ser capazes de reconhecer o sinal enviado dada a sua pouca energia.**
+
+Qual a importância da utilização de sub-endereçamento?
+
+**O sub-endereçamento permite resolver o problema da limitação no número de redes que o endereçamento tradicional tem. Com sub-endereçamento é possível dividir um endereço base de modo a criar mais redes, pequenas e com menos dispositivos, mas possibilitando assim uma melhor utilização dos recursos de IP.**
+
+<<<<
+
+Indica duas camadas do modelo OSI.
+
+**Física e Apresentação**
+
+Explica o funcionamento de uma rede com tipologia de estrela.
+
+**Na tipologoa Estrela todos os nós terminais estão ligados a um nó central. **
+
+Explica o objectivo da camada de _Ligação_ do modelo TCP/IP.
+
+**A camada _Ligação_ do modelo TCP/IP é responsável pela gestão do meio físico, sendo nela que estão registados os protocolos que lidam directamente com os meios de transporte, placas de rede e componentes físicos dos dispositivos que comunicam.**
+
+Explica o objectivo da _Active Directory_.
+
+**A _Active Directory_ é uma base de dados onde são registados todos os recursos geridos pelo _Domain Controller_.**
+
+Quantos _Domain Controllers_ podem existir por domínio?
+
+**Pode existir apenas um _Domain Controller_ activo num domínio.**
+
+Indica as cores pela ordem correcta para a norma T658B
+[]
+|====
+|Pino 1 |Branco/Laranja
+|Pino 2 |Laranja
+|Pino 3 |Branco/Verde
+|Pino 4 |Azul
+|Pino 5 |Branco/Azul
+|Pino 6 |Verde
+|Pino 7 |Branco/Castanho
+|Pino 8 |Castanho
+|====
+

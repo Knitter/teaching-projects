@@ -1,0 +1,53 @@
+Recuperação de Computadores
+===========================
+
+[cols=">1s,3m",frame="topbot"]
+|=============================
+|Módulo  |
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |13 - Recuperação de Computadores
+|=============================
+
+Durante as próximas duas sessões iremos efectuar a reparação completa de um computador através da reinstalação do sistema operativo e de todos os programas necessários ao funcionamento do mesmo. Leia com atenção os passos seguintes e inicie a resolução dos mesmos _apenas_ quando os tiver compreendido correctamente.
+
+Instalação
+----------
+
+. Verifique quais os ficheiros que pretende guardar e coloque esses ficheiros no _Ambiente de Trabalho_. Atenção que nem todos os ficheiros são importante e que o espaço disponível para cópias de segurança poderá não ser suficiente para registar toda a informação.
+. Efectue a cópia de segurança dos dados.
+. Copie para uma folha de papel a chave de activação do Windows Vista que se encontra na parte de baixo do seu portátil.
+. Insira o CD de instalação do Windows Vista no seu portátil e reinicie o computador para começar a instalação do sistema operativo.
+. Siga os passos de instalação, como indicado pelo assistente de instalação e de acordo com o que foi feito ao longo da formação. Deve criar uma conta com o nome _SILORA_ e com a palavra-chave _SILORAF2011_.
+. Após instalado o sistema operativo, prossiga para a instalação do antivírus e do browser fornecidos.
+. Usando o browser que acabou de instalar, ceda à página do fabricante do portátil e encontre os drivers correspondentes ao seu modelo. Faça download dos drivers necessários e, de seguida, proceda à sua instalação. Não comece a instalar drivers sem ter feito download completo de todos os drivers necessários.
+
+Configurações
+-------------
+
+. Efectue as actualizações obrigatórias para o sistema operativo. Veja também as actualizações opcionais e escolha instalar as actualizações que forem importantes.
+. Deixe terminar as actualizações e instale os programas existentes no CD de programas fornecido:
+- _7Zip_ é um programa para abrir ficheiros compactados, *7z.92.exe*;
+- _The GIMP_ é um programa para edição de imagens, *Gimp-2.6.11-i686-setup-1.exe*;
+- _InfraRecorder_ é um programa que permite gravar CDs/DVDs, *InfraRecorder.052.exe*;
+- _OpenOffice.org_ é uma colecção de produtividade, *OpenOffice.org.3.3.0.JRE_pt.exe*;
+- _Paint.NET_ é um programa de edição de imagens, *Paint.NET.3.5.8.Install.exe*;
+- _CuteWriter_ permite a criação de PDFs através da impressão numa impressora virtual, *CuteWriter.exe*;
+. Crie uma conta de utilizador normal com o nome _FORMANDO_ e com a palavra-chave _SFORMANDO2011_. Utilize essa conta nos exercícios seguintes.
+. Altere o fundo do Ambiente de Trabalho de modo a conter uma imagem obtida na _Internet_;
+. Configure a Barra de Tarefas para utilizar ícones pequenos;
+. Personalize o Menu Iniciar para:
+- Nunca apresentar o item de Imagens;
+- Nunca apresentar o item de Jogos;
+- Nunca apresentar o item de Música;
+- Remover a opção de programas predefinidos;
+- Remover a opção de realçar os programas acabados de instalar;
+- Mostrar 12 programas recentes;
+. Configure as opções de Internet:
+- Colocando como página inicial o endereço http://wwww.google.com/ncr;
+- Retirar o aviso de Internet Explorer que informa se o browser está definido por omissão, esta opção está na secção Programas;
+. Configure as opções de pastas retirando a opção que esconde as extensões de tipos de ficheiros conhecidos;
+. Configure os sons do sistema para remover todos os sons;
+. Configure o Windows Update para instalar actualizações automaticamente, todos os dias com iníco às 12 horas;
+. Remova o ícone do Internet Explorer que se encontra na barra de tarefas.

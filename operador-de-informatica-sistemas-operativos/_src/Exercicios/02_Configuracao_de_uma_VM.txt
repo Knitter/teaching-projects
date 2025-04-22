@@ -1,0 +1,87 @@
+Configuração de uma VM
+======================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================
+|Módulo  |
+|Local   |
+|Sessão  |
+|Formador|
+
+|Ficha   |2 - Configuração de uma VM
+|=============================
+
+Processo de Configuração
+------------------------
+
+A configuração de uma VM permite controlar os parâmetros que são usados para simular o hardware e desta forma conseguir melhor performance para o sistema que é instalado.
+
+No seu processo mais simples, é necessário configurar o tipo de sistema operativo a instalar, a quantidade de memória que a VM irá ter e o tamanho do disco disponível  a usar. Com estes passos simples conseguimos instalar um sistema operativo mas não estamos a fazer a correcta configuração e afinação da VM.
+
+O VirtualBox oferece-nos a possibilidade de configurar todos os pormenores de hardware, desde o tipo de processador até à quantidade de memória disponível para a placa gráfica virtual. Além de nos permitir uma configuração exaustiva, possui algumas configurações base para sistemas operativos conhecidos.
+
+Temos assim duas formas de criar uma VM e de a configurar: completamente manual ou usando as configurações optimizadas para sistemas já conhecidos.
+
+VM para FreeDOS
+~~~~~~~~~~~~~~~
+
+Vamos criar as configurações base para podermos instalar o sistema FreeDOS. Como iremos usar um perfil previamente criado pelo VirtualBox, um conjunto de configurações para um sistema conhecido, os passos de criação e configuração da VM centrar-se-ão apenas em definir o nome, o tipo e tamanho de disco e a quantidade de memória a usar.
+
+A partir da interface do VirtualBox escolhemos a opção *New*. Após escolhermos esta opção é-nos apresentada uma janela com texto introdutório sobre as configurações que iremos fazer de seguida. Nesta janela basta carregar no botão para avançar.
+
+image::./Imagens/configurar.vm.01.png[align="center",scaledwidth="75%"]
+
+A segunda janela permite-nos definir o nome que queremos dar à máquina virtual, bem como escolher o tipo de sistema operativo que pretendemos instalar. Nesta janela iremos dar o nome de *FreeDOS* à máquina virtual e escolher o tipo de sistema como *Other*, versão *DOS*. Clicamos no botão para avançar para o próximo passo.
+
+image::./Imagens/configurar.vm.02.png[align="center",scaledwidth="75%"]
+
+A memória a usar pode ser um valor qualquer desde 1MB até ao máximo existente no nosso sistema físico. Naturalmente, se configurarmos a VM para usar toda a memória disponível, a máquina real não terá memória para continuar a funcionar.
+
+Como o FreeDOS pretende ser um sistema igual al MS-DOS, e como estes sistemas não tinham acesso a muita memória, um valor de 32MB é suficiente e deve ser esse o valor escolhido. No caso deste sistema operativo não é importante mais do que 32MB de RAM já que não serão usados e poderão até criar instabilidade no sistema devido à forma como a memória é gerida. Novamente, clicamos no botão para avançar ao próximo passo.
+
+image::./Imagens/configurar.vm.03.png[align="center",scaledwidth="75%"]
+
+Nesta janela podemos criar um disco virtual ou usar um disco real. Para todas as máquinas virtuais que iremos utilizar, escolhemos sempre discos virtuais. Neste caso iremos *criar um novo* disco virtual de *tamanho fixo*.
+
+image::./Imagens/configurar.vm.04.png[align="center",scaledwidth="75%"]
+
+Depois de avançarmos é-nos apresentado o iníco do assistente de criação de discos virtuais. Nesta janela não introduzimos quaisquer valores, e simplesmente avançamos para o passo seguinte.
+
+image::./Imagens/configurar.vm.05.png[align="center",scaledwidth="75%"]
+
+O tipo de disco que iremos usar é um disco de tamanho fixo. O VirtualBox permite-nos criar dois tipos de discos: fixo e expansível. No caso de um disco fixo, o tamanho que definirmos é com que o ficheiro correspondente é criado, se definirmos um disco de 10GB será criado um ficheiro que, mesmo estando vazio, irá ocupar 10GB. Este tipo de disco é mais vantajoso quando pretendemos performance.
+
+Um disco expansível é um disco cujo tamanho irá variar, sendo no mínimo zero e no máximo igual ao valor que definirmos. Se usarmos o mesmo tamanho que no caso anterior, 10GB, o ficheiro será criado com zero bytes e irá crescer, à medida que for necessário, até um máximo de 10GB. Este tipo de disco é bom quando não queremos consumir todo o espaço no disco real e não precisamos de muita performance no acesso a ficheiros dentro da máquina virtual.
+
+No caso do FreeDOS iremos usar um disco do tipo fixo.
+
+image::./Imagens/configurar.vm.06.png[align="center",scaledwidth="75%"]
+
+Depois de definirmos o tipo de disco é altura de indicar onde ficará o ficheiro que representa o nosso disco virtual, bem como o tamanho do mesmo. Nesta caso não iremos mudar o nome só precisamos garantir que o tamanho definido é de 512MB. Para o FreeDOS os 512MB chegam e ainda teremos muito espaço livre, além disso, devido ao formato do sistema de ficheiros, o FreeDOS não consegue trabalhar com discos de tamanho superior a 4GB.
+
+image::./Imagens/configurar.vm.07.png[align="center",scaledwidth="75%"]
+
+A janela seguinte apresenta-nos um sumário das operações que irão ser feitas em relação ao disco.
+
+image::./Imagens/configurar.vm.08.png[align="center",scaledwidth="75%"]
+
+Ao pressionarmos o botão para avançar, o disco que configurámos irá ser criado.
+
+image::./Imagens/configurar.vm.09.png[align="center",scaledwidth="75%"]
+
+No fim de todo o processo é-nos apresentado um sumário da VM criada. Ao pressionarmos para terminar iremos concluir o processo.
+
+image::./Imagens/configurar.vm.10.png[align="center",scaledwidth="75%"]
+
+
+Podemos agora aceder às configurações da VM e verficar que tipo de hardware está disponível para a nossa máquina virtual.
+
+Configuração para Outros SOs
+----------------------------
+
+Os passos indicados acima são os passos base necessários para a configuração de qualquer VM. Na maioria dos casos o sistema operativo convidado que queremos instalar já se encontra na lista de sistemas conhecidos.
+
+As diferenças estarão na necessidade de  mais memória, possibilidade de execução de aplicações que precisem de 3D ou acesso a rede.
+
+Em todos os casos será necessário indicar um novo disco virtual, fixo ou expansível, onde os SO será instalado.

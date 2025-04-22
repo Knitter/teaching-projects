@@ -1,0 +1,55 @@
+Arquitectura de Redes
+=====================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |05 - Arquitectura de Redes
+|=============================================
+
+Quais são os componentes lógicos da arquitectura de uma rede?
+
+''''
+''''
+
+Explica o que é um Serviço e uma Interface.
+
+''''
+''''
+''''
+
+Define o termo PDU.
+
+''''
+
+Quantas camadas possui o modelo OSI? Explica duas dessas camadas.
+
+''''
+''''
+''''
+''''
+''''
+''''
+
+Do modelo OSI, quais são as camadas que pertencem à secção de rede?
+
+''''
+''''
+<<<<
+
+Indica as camadas do modelo TCP/IP?
+
+''''
+''''
+
+Um pacote TCP/IP é dividido em cinco secções, uma dessas secções é a secção correspondente aos dados a enviar, quais são as outras quatro?
+
+''''
+''''
+
+Em que camada é adicionada a secção _IP Header_ a um pacote TCP/IP?
+
+''''

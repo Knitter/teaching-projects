@@ -1,0 +1,63 @@
+Explorador de Ficheiros
+=======================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================
+|Módulo  |
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |7 - Painel de Controlo
+|=============================
+
+O Painel de Controlo, o _Control Panel_ permite a gestão completa do sistema operativo, seja ele um sistema Windows ou um sistema GNU Linux.
+
+É através desta interface comum que conseguimos, de forma simplificada, fazer a gestão de utilizadores, das configurações de hardware, tipos de letra ou actualizações do sistema. Não sendo a única forma de configurar o sistema, é um dos pontos inicias onde podemos procurar opções para efectuar a gestão do computador.
+
+Nem todo os sistemas operativos apresentam um Painel de Controlo igual, mas todos possuem elementos comuns que facilitam a identificação das opções a que pretendemos aceder.
+
+Exercícios Introdutórios
+------------------------
+
+. Explore o Painel de Controlo e descreva o objectivo de cada uma das secções abaixo indicadas, fale com os colegas do lado de modo a chegarem a uma conclusão sobre o objectivo de cada uma das secções que neste exercício pertencem ao Painel de Controlo do Windows 7 Ultimate.
++
+|==============================================================================================
+|Secção                            |Descrição |Secção                            |Descrição
+|Action Center                     |          |Administrative Tools              |
+|AutoPlay                          |          |Backup and Restore                | 
+|BitLocker Drive Encryption        |          |Color Management                  |
+|Credential Manager                |          |Date and Time                     |
+|Default Programs                  |          |Desktop Gadgets                   |
+|Device Manager                    |          |Devices and Printers              |
+|Display                           |          |Ease of Access Center             |
+|Folder Options                    |          |Fonts                             | 
+|Getting Started                   |          |HomeGroup                         |
+|Indexing Options                  |          |Internet Options                  |
+|Keyboard                          |          |Location and Other Sensors        |
+|Mouse                             |          |Network and Sharing Center        |
+|Notification Area Icons           |          |Parental Controls                 |
+|Performance Information and Tools |          |Personalization                   |
+|Phone and Modem                   |          |Power Options                     |
+|Programs and Features             |          |Recovery                          |
+|Region and Language               |          |RemoteApp and Desktop Connections |
+|Sound                             |          |Spech Recognition                 |
+|Sync Center                       |          |System                            |
+|Taskbar and Star Menu             |          |Troubleshooting                   |
+|User Accounts                     |          |Windows CardSpace                 |
+|Windows Defender                  |          |Windows Firewall                  |
+|Windows Mobility Center           |          |Windows Update                    |
+|==============================================================================================
++
+. *Gerir dispositivos*: Aceda à secção _System_, e dentro desta à secção _Device Manager_. Da lista de opções escolha o item _Disk Drives_ e o dispositivo _VBOX HARDDISK_ e aceda às propriedades deste. Tente identificar o _Provider_ do dispositivo.
+. *Opções remotas*: Ainda na secção _System_ aceda à secção _Remote Settings_ e desactive a opção de _Allow Remote Assistance_.
+. *Gerir opções de Internet*: Na secção _Internet Options_ altere o endereço inicial do _Internet Explorer_ para ligar-se ao endereço da Fundação Mozilla, http://www.mozilla.org/.
+. *Configuração de som*: Aceda à secção _Sound_, separador _Sounds_ e escolha como esquema de sons a opção _No sounds_ e remova a selecção da opção _Play Windows Startup sound_.
+. *Gestão de tipos de letra*: Procure na Internet, usando o browser do Windows 7 na máquina virtual, um tipo de letra que lhe agrade, use o site http://www.1001freefonts.com. Descarregue um tipo de letra e instale esse tipo de letra usando as opções disponíveis na secção _Fonts_.
+. *Gestão utilizadores*: Aceda à secção _User Accounts_, escolha a opção _Manage another account_ e adicione um novo utilizador clicando na opção _Create new account_. O utilizador deve ter o nome _Comum_ e ser do tipo _Standard_.
+. *Notificações*: Na secção _Notification Area Icons_ pode escolher as configurações de notificações. Altere as notificações para os seguintes valores:
++
+- Action center: Only Show Notifications
+- Power: Hide Icons and Notifications
+- Volume: Hide Icons and Notifications
+- Windows Update: Hide Icons and Notifications

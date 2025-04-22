@@ -1,0 +1,122 @@
+Configurações de Rede
+=====================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |13 - Configurações de Rede
+|=============================================
+
+Nos exercícios seguintes iremos ficar a conhecer as configurações existentes no nosso Windows para aceder a uma rede local e à _Internet_. Recomenda-se redobrada atenção na execução dos exercícios que deverão ser feitos em grupos de 2 formandos.
+
+[cols="1,4"]
+|===========
+|HTTP  |HTTP - Hypertext Transfer Protocol +
+O HTTP é um protocolo cliente/servidor. Os _browsers_ da Internet utilizam o HTTP para se ligarem aos servidores e acederem à informação que estes disponibilizam.
+|DNS   |DNS - Domain Name Service +
+Serviço da Internet que traduz nomes de computadores em endereços IP. Para o homem os nomes são mais fáceis de decorar. Os computadores são identificados por uma sequência de números, endereço IP Sempre que se escreve o nome de um servidor no _browser_ da Internet o serviço DNS é chamado e traduz esse nome em endereço IP. Por exemplo o nome *www.example.com* poderia ser traduzido para *198.105.232.4*. Uma vez que a Internet não funcionaria sem o serviço DNS é comum configurarem-se dois servidores DNS para o caso de um falhar.
+|WINS  |WINS - Windows Internet Naming Service +
+Serviço que determina o endereço IP associado a um nome de computador. O WINS utiliza uma base de dados que é actualizada sempre que um novo computador se liga à rede.
+|News  |As _news_ são um sistema de divulgação de informação interactivo que permitem que qualquer utilizador coloque uma informação ou uma questão na _Internet_ e receba respostas de outros utilizadores. A grande diferença em relação ao correio é que qualquer "notícia" é totalmente pública.
+Um exemplo de um servidor de News é o *news.telapac.pt*.
+|Proxy |O Proxy é um servidor que se situa entre uma aplicação cliente e um servidor web. +
+O Proxy tem dois grandes objectivos: *melhorar o desempenho*, isto acontece porque num grupo de utilizadores que acedem à Internet, o Proxy guarda os pedidos já efectuados durante um determinado período de tempo. Estes pedidos podem ser acedidos por outros utilizadores sem que seja necessário encaminhá-los até ao servidor real; *filtrar pedidos*, o Proxy pode ser utilizado para prevenir que acessos não permitidos sejam bloqueados.
+|DHCP |DHCP - Dynamic Host Configuration Protocol. +
+O DHCP é um protocolo utilizado para configurar dinamicamente os computadores de uma rede. As configurações efectuadas incluem o endereço IP, o endereço de _gateway_, DNS, WINS, etc.
+O DHCP exige que exista um computador na rede responsável pelo controlo do serviço.
+|SMB  |SMB - Server Message Block. +
+Formato de mensagens utilizado pelo Windows para a partilha de ficheiros, directorias e dispositivos.
+|===========
+
+.Opções disponíveis no SO
+[cols="1,4"]
+|===========
+|Endereço IP     |IP - Internet Protocol. +
+A versão actual do IP é a 4 mas o processo de conversão para a nova versão, 6, está em andamento e espera-se que esteja concluído brevemente. O IP especifica o formato dos pacotes e o esquema de endereçamento. Ao nível do endereçamento cada computador tem um endereço único constituído por uma sequência de 4 bytes separados por um ponto e escrito no formato decimal (exemplo: 198.105.232.4)
+|Máscara de Rede |A mascará de rede é um número de 4 bytes separados por um ponto e escrito no formato decimal. Uma característica importante da máscara é o facto de no formato binário ser formado por uma sequência de _1_ seguido de uma sequência de _0_. A mascará em complemento com o endereço IP permite identificar a rede a que um computador pertence e a identificação desse computador dentro da rede.
+|Gateway         |A comunicação entre computadores que pertencem a redes diferentes apenas é garantida por um componente activo (router). Este componente é configurado tal e qual como um computador e é inserido nas redes que interliga. O _gateway_ é o endereço IP do router que pertence à rede dos computadores que configuramos.
+|DNS Primário    |O endereço DNS primário é configurado com o endereço do servidor que fornece o serviço de tradução de nomes para endereços IP.
+|DNS Secundário  |Servidor com as mesmas funcionalidades do DNS primário e que garante o serviço em caso de falha ou sobre utilização do anterior.
+|WINS            |Endereço IP do servidor que garante o serviço de WINS
+|Proxy           |Endereço IP do servidor que garante o serviço de proxy a uma rede.
+|===========
+
+image::./Imagens/exemplo.rede.png[align="center",title="Exemplo de uma Rede",scaledwidth="75%"]
+
+*Grupo 1* +
+Identifique, na imagem acima, os componentes de constituição da rede exemplificada. Marque na imagem o nome dos componentes e uma breve descrição do seu objectivo.
+
+<<<<
+
+*Grupo 2* +
+Na tabela seguinte estão alguns exercícios que deverão ser feitos recorrendo às opções de rede presentes no painel de controlo ou usando a consola de MS-DOS, quando forem exercícios para execução de comandos. Quando a executar algum comando desconhecido faz uso da opção */?* para conhecer melhor o comando.
+
+[]
+|====
+2+|Encontra as seguintes informações no teu computador:
+  |Qual a designação da placa de rede                                                            |
+  |Tipo de dispositivo (Device Type)                                                             |
+  |Fabricante (Manufacturer)                                                                     |
+  |Onde está instalada (Location)                                                                |
+  |Estado da placa (Device Status)                                                               |
+  |Media Type                                                                                    |
+2+|Utiliza o comando *ipconfig* em conjunto com as suas opções e obtém as seguintes informações
+  |Endereço IP (IP address)                                                                      |
+  |Máscara de sub-rede                                                                           |
+  |Gateway predefinido                                                                           |
+  |Servidores de DNS                                                                             |
+  |Servidor WINS                                                                                 |
+  |Nome do computador                                                                            |
+  |Domínio                                                                                       |
+  |Endereço físico (MAC) da placa de rede                                                        |
+2+|Usa o comando *ping* e descobre os IPs dos seguintes endereços
+  |www.google.com                                                                                |
+  |www.silora.com                                                                                |
+  |www.sergio-lopes.org                                                                          |
+2+|Com o comando *ping* executa um pedido ao computador de um colega (pede-lhe o IP)
+  |Quantos pacotes foram enviados?                                                               |
+  |Quanto tempo demorou cada pacote a chegar ao destino?                                         |
+  |Quantos pacotes foram perdidos?                                                               |
+2+|Utiliza o comando *tracert* nos IPs descobertos dos endereços anteriores
+  |Quantos saltos foram dados para aceder ao endereço do Google?                                 |
+  |Qual é o tempo médio da comunicação                                                           |
+  |Indica 2 IPs diferentes por onde os pacotes passaram                                          |
+|====
+
+<<<<
+
+*Grupo 3* +
+Explica o que faz o comando *ipconfig*.
+
+''''
+''''
+
+Explica o que faz o comando *ping*.
+
+''''
+''''
+
+Explica o que faz o comando *tracert*.
+
+''''
+''''
+
+Explica o que faz o comando *arp*.
+
+''''
+''''
+
+Explica porque é que o teu IP começa com o valor *192.168.1*.
+
+''''
+''''
+''''
+
+Qual o tipo de comutação utilizada na rede local da SILORA? Justifique.
+
+''''
+''''
+''''

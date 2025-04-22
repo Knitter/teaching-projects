@@ -1,0 +1,74 @@
+Sistemas Operativos GNU Linux - Ubuntu
+======================================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================
+|Módulo  |
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |9 - Sistema Operativo Ubuntu
+|=============================
+
+
+1 - Primeiros Passos
+--------------------
+Como objectivo inicial devemos terminar a configuração do sistema que instalámos na sessão anterior. Siga os passos apresentados abaixo para terminar o instalação do sistema Ubuntu. Tenha em atenção que será **frequente o pedido da sua password** uma vez que estamos a executar opções de manutenção de sistema.
+
+.. Durante a instalação do sistema não foi possível instalar todos os ficheiros da língua portuguesa, para resolver esse problema podemos instalar os ficheiros que faltam ou instalar um nova língua.
+Para terminar a instalação dos ficheiros da língua portuguesa aceda à opção __Sistema > Administração > Suporte de idioma__. Na janela que é mostrada escolha a opção __Instalar/Remover Línguas...__, procure a língua na lista a opção *Português* e clique em *Aplicar Alterações*. Garanta que a primeira língua da lista, na primeira janela, é a língua portuguesa.
+. Tal como os ficheiros de língua, também as actualizações não puderam ser instaladas. Abra o gestor de actualizações acedendo a __Sistema > Administração > Gestor de Actualizações__. Pressione o botão _Verificar_ e veja que actualizações estão disponíveis. Faça a instalação das actualizações pressionando _Instalar Actualizações_.
+.. Percorra o menu *Aplicações* e verifique qual o software que se encontra instalado.
+
+2 - Instalação e Actualização
+-----------------------------
+
+.. Aceda a __Sistema > Administração > Gestor de Pacotes Synaptic__. Feche a janela de mensagem que surge no ecrã e aceda à opção __Configurações > Repositórios__. Na janela que aparece altere:
+- No separador *Outro Software* seleccione as opções *Parceiros Canonical* e *Parceiros Canonical (código fonte)*. Isto irá permitir aceder a mais software.
+- No separador *Actualizações* escolha a opção **Transferir todas as actualizações em segundo plano**. Desta forma as actualizações serão descarregas e disponibilizadas ao utilizador para instalação imediata.
+- Termine as configurações carregando no botão *Fechar*. Como fizemos alterações à origem de software, será necessário recarregar a lista. Feche a janela de aviso que surgiu e carregue no botão *Recarregar* que se encontra na barra de ferramentas. 
+
+.. O *Synaptic* é um dos programas base para a instalação e actualização de software num sistema Ubuntu. Neste programa é possível ver todos os programas que estão disponíveis nos servidores, procurar programas novos e instalar ou actualizar algum programa que seja necessário. Instale os seguintes programas, usando o campo de pesquisa:
+- Frozen Bubble
+- sun jre
+- Assaultcube
++
+Cada vez que carregar num programa da lista, se esse programa depender de outros, será apresentada uma mensagem a avisar que as dependências serão também instaladas. O *Synaptic* faz a correcta gestão das dependências.
++
+Para instalar os programas seleccionados basta clicar no botão *Aplicar*, confirmar a instalação do software e esperar que o processo termine. *Atenção:* A instalação do Sun JRE irá exigir a aceitação de uma licença.
+
+Além do *Synaptic*, uma forma de instalar software é usando o __Centro de Software Ubuntu__ disponível no menu __Aplicações__.
+
+3 - Explorador de Ficheiros
+---------------------------
+
+O sistema de ficheiros em Ubuntu não tem uma representação com letras associadas a discos. Todos os ficheiros estão dentro da raiz, designada por uma */*.
+Para aceder ao explorador de ficheiros do Ubuntu use o menu _Locais_. 
+
+.. Na sua pasta pessoal crie uma pasta com o nome *SILORA*. Dentro dessa crie as pastas *Docs* e *Utils*.
+.. Crie um ficheiro de texto chamado *Respe.txt* dentro da pasta *SILORA/Docs*. Para criar o ficheiro de texto pode clicar com o botão direito dentro da pasta e escolher a opção __Criar Documento > Ficheiro Vazio__. Ou usar o editor de texto através da opção __Aplicações > Acessórios > Editor de Texto__.
+.. Liste todos os ficheiros presentes na pasta */lib*. Quantos ficheiros existem no total?
+.. Procure, em todo o disco, ficheiros que comecem pelas letras *doc*. Quantos ficheiros existem?
+.. Procure, em todo o disco, ficheiros que comecem pelas letras *exa*. Quantos ficheiros existem?
+.. Localize todos os ficheiros que tenham um *a* como terceira letra. Quantos encontrou?
+.. Procure ficheiros com apenas 3 letras no nome com extensão *ini*.
+.. Crie um ficheiro na directoria *SILORA*, como o nome *escondido.txt* e active o atributo para esconder o ficheiro.
+.. Use o sistema de pesquisa para pesquisa todas as imagens do tipo JPG que existem no seu computador. Quantas encontrou?
+.. Crie uma pasta chama *Pessoal* dentro da pasta *SILORA*. Retire as permissões de acesso a todos os utilizadores, excepto o seu.
+.. Crie um atalho no _Ambiente de Trabalho_ para a pasta *\~/SILORA*. Neste exercício o *~* representa a sua pasta pessoal.
+
+4 - Configuração Geral e Manutenção
+-----------------------------------
+
+. Personalize o aspecto do sistema acedendo à opção __Sistema > Preferências > Aparência__. Feito isto altere:
+- _Tema_ para *Aspecto Claro*;
+- Como fundo de ecrã escolha uma das imagens da lista;
+. Na opção __Sistema > Protecção de Ecrã__ escolha a protecção com o nome *Fiberlamp*.
+. Personalize o menu principal do Ubuntu acedendo à opção __Sistema > Preferências > Menu Principal__. Nesta janela seleccione o menu *Outro*, no painel do lado esquerdo, e no lado directo o item *Instalador de Tema*.
+. Abra o monitor de sistema através da opção __Sistema > Administração > Monitor de Sistema__. Verifique quanto espaço livre existe no disco do sistema, a percentagem de utilização de memória e de CPU e os valores de carga do sistema dos últimos 1, 5 e 15 minutos.
+
+
+
+
+

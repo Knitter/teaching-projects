@@ -1,0 +1,79 @@
+Avaliação de Windows Server
+===========================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |Avaliação de Windows Server
+|Formando |
+|=============================================
+
+
+[frame="topbot"]
+|===============
+|**Leia o enunciado com atenção.** Antes de começar a responder, leia com atenção todas as questões de modo a compreender correctamente o seu objectivo. Terá tempo suficiente para resolver toda a ficha de avaliação.
+|===============
+
+A empresa de contabilidade _Contabiliz_ pretende centrar a gestão da sua rede em computadores com Windows Server 2003. Esta empresa é constituída por dois departamentos, um de marketing e um de contabilidade, que estão distribuídos por dois edifícios. O edifício de contabilidade receberá a instalação dos servidores e, de forma a facilitar a planificação da _Active Directory_ foram fornecidos os seguintes dados:
+
+.Lista de Empregados
+[options="header"]
+|=================
+|Nome                     |Cargo
+|Afonso Gonçalves Baldaia |Gestor
+|Álvaro Caminha           |Gestor
+|Álvaro Martins           |Departamento de Contabilidade
+|Alvise Cadamosto         |Departamento de Contabilidade
+|André Gonçalves          |Departamento de Contabilidade
+|Antão Gonçalves          |Departamento de Contabilidade
+|António Fernandes        |Departamento de Contabilidade
+|Bartolomeu Dias          |Departamento de Contabilidade
+|Bartolomeu Perestrelo    |Responsável do Departamento de Contabilidade
+|Dinis Dias               |Departamento de Marketing
+|Diogo Afonso             |Departamento de Marketing
+|Diogo Cão                |Departamento de Marketing
+|Diogo de Azambuja        |Departamento de Marketing
+|Diogo de Teive           |Departamento de Marketing
+|Diogo Dias               |Departamento de Marketing
+|Diogo Silves             |Departamento de Marketing
+|Duarte Pacheco Pereira   |Departamento de Marketing
+|Fernão do Pó             |Responsável do Departamento de Marketing
+|Gil Eanes                |Recepcionista
+|Gonçalo Velho            |Recepcionista
+|João Cartveli            |Técnico de Informática
+|João de Santarém         |Técnico de Informática
+|João Gonçalves Zarco     |Técnico de Informática
+|João Grego               |Responsável da secção de Informática
+|João Infante             |Responsável de Compras
+|===============
+
+.Lista de Equipamentos
+[options="header"]
+|=================
+|Equipamento                 |Quantidade |Edifício      |Sala
+|Servidor de Ficheiros       |1          |Contabilidade |Servidores
+|Servidor WEB                |1          |Contabilidade |Servidores
+|Servidor de E-mail          |1          |Marketing     |Servidores
+|Computador de Recepção      |1          |Contabilidade |Recepção
+|Computador de Recepção      |1          |Marketing     |Recepção
+|Computador de Marketing     |8          |Marketing     |4 na sala 1, 4 na sala 2
+|Computador de Contabilidade |6          |Contabilidade |2 na sala 1, 1 na sala 2 e 3 na sala 3
+|Computador de Informática   |3          |Marketing     |Departamento TIC
+|Computador de Gestão        |1          |Contabilidade |Gabinete
+|Computador de Gestão        |1          |Marketing     |Gabinete 1
+|Computador de Gestão        |1          |Marketing     |Gabinete 2
+|Computador de Marketing     |1          |Marketing     |Gabinete 2
+|Computador de Contabilidade |1          |Contabilidade |Gabinete 1
+|Impressora de Marketing     |2          |Marketing     |1 na sala 1 e 1 na sala 2
+|Impressora de Contabilidade |2          |Contabilidade |1 na sala 1 e 1 na sala 3
+|Impressora de Recepção      |1          |Contabilidade |Recepção
+|Impressora de Recepção      |1          |Marketing     |Recepção
+|Computador de Compras       |1          |Contabilidade |Sala 4
+|Impressora de Compras       |1          |Contabilidade |Sala 4
+|===============
+
+
+Tendo em conta os dados apresentados anteriormente, configura a Active Directory de modo a permitir fazer a gestão de todos os recursos. Antes de criar os elementos na Active Directory faz o planeamento da organização e define as regras de nomenclatura que serão seguidas. Guarda o planeamento num ficheiro de texto com o nome _Planeamento.txt_ e coloca esse ficheiro no _Ambiente de Trabalho_.

@@ -1,0 +1,54 @@
+Acessórios do Sistema Operativo
+===============================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================
+|Módulo  |
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |10 - Acessórios do Sistema Operativo
+|=============================
+
+Execute os seguintes exercícios usando o Ubuntu que tem instalado no computador.
+
+Sistema de Ajuda
+----------------
+. Abra o sistema de ajuda usando a tecla *F1* no _Ambiente de Trabalho_ e procure informação sobre:
+- Como alterar a sua password;
+- Como adicionar uma nova conta;
+- Como alterar a sua imagem de fundo do _Ambiente de Trabalho_;
+- Definir a língua do sistema;
+- Alterar as definições do teclado;
+- Alterar as definições de som;
+- Modificar resolução do sistema;
+
+Calculadora
+-----------
+
+. Passe para modo Programação/Programador
+- Converta para binário o valor decimal *35*;
+- Converta para hexadecimal o valor binário *0101101*;
+- Calcule a soma do valor hexadecimal *FF783* com o valor *AC3E2*;
+. Passe para modo Avançado/Científico
+- Calcule a raiz quadrada de *50*;
+- Calcule a potência de base *3* e expoente *19*;
+- Calcule a raiz cúbica de *45*;
+
+Notepad/Gedit
+-------------
+. Abra o editor de texto e copie para ele o primeiro os 5 primeiros parágrafos do *Canto I* dos Lusíadas presente em http://www.oslusiadas.com/content/view/18/41/.
+. Grave o documento com o nome *Lusíadas.txt* no _Ambiente de Trabalho_.
+
+Programa de Compatibilidade
+---------------------------
+
+O programa de compatibilidade permite executar aplicações antigas usando as novas versões do sistema operativo Windows. Nem todas as aplicações antidas poderão executar correctamente, mesmo com a ajuda do __Programa de Compatibilidade__.
+
+. Faça download e descompacte o ficheiro para o _Ambiente de Trabalho_.
+. Clique com o botão direito no ficheiro *CAPFLAG.exe* e aceda às propriedades do ficheiro. No separador *Compatibilidade* e active a opção que permite executar a aplicação em modo de compatibilidade.
+. Escolha a opção de compatibilidade para *Windows 95* e para execução em *256 cores*.
+. Execute aplicação *CAPFLAG.exe* e verifique se a mesma executa correctamente.
+
+Terminados os exercícios anteriores, repita-os no sistema Windows que tem instalado no computador.

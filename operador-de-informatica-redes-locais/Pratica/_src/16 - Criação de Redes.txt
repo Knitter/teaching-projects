@@ -1,0 +1,49 @@
+Criação de Redes
+================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |16 - Criação de Redes
+|=============================================
+
+A _Silora_, empresa de formação profissional, pretende aumentar a sua capacidade formativa através da criação de três novas salas de formação. Como estas salas irão conter vários computadores, é necessário acrescentar à rede da empresa o equipamento e as configurações que permitam criar o cenário indicado.
+
+Tomando como referência as informações seguintes, crie o *esquema de endereçamento* para a rede, *desenhe a rede usando o simulador* _Cisco Packet Tracer_ eefectue os testes que achar necessários para confirmar que a rede está bem estruturada.
+
+Além do desenho e teste em simulador, crie um *orçamento para a implementação* da rede usando como referência para os valores disponíveis no endereço _http://www.e-catalogue.legrandgroup.com/portugal_.
+
+As *3* salas devem possuir redes separadas, as salas A e B deverão ter, cada uma,  espaço para 15 computadores fixos para os formandos e 1 computador fixo para o formador, a sala C deverá suportar 10 computadores fixos para os formandos e 1 computador fixo para o formador além de 10 computadores portáteis através de ligação por wireless. 
+
+Como a _Silora_ pretende também criar um servidor _WEB_ para uma intranet será necessário criar uma pequena rede que inclua um computador para DNS e para um outro computador com o servidor _WEB_. Estes dois computadores devem estar numa rede própria, a instalar na sala C.
+
+Para criar este cenário a _Silora_ pretende usar endereços IP de classe C, na gama *192.168.x.x*.
+
+.Planta das novas salas
+image::./Imagens/exercicio.ficha.16.png[align="center",scaledwidth="90%"]
+
+Preencha a tabela seguinte com as informações iniciais sobre o cenário a implementar.
+
+[cols="1,4"]
+|============
+|Total de Computadores: |
+|Total de Salas:        |
+|Total de Redes:        |
+|Número de Routers:     |
+|Número de Switches:    |
+|Mts de Cabo:           |
+|Tipo de Cabo:          |
+|Outros equipamentos:   |
+|============
+
+<<<<
+
+Indique o esquema de endereçamento necessário para implementar o cenário descrito (IPs, máscaras, etc) e *justifique* a escolha. Indique 10 testes que tenha feito para verificar a comunicação dentro da rede e termine criando o orçamento usando o catálogo da empresa _Legrand_ (indicado na descrição) onde deve incluir o custo dos routers, dos switches, dos cabos, bastidores e outro tipo de equipamento que tenha usado.
+
+<<<<
+
+.Planta de trabalho
+image::./Imagens/exercicio.ficha.16b.png[align="center",scaledwidth="90%"]

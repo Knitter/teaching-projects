@@ -1,0 +1,159 @@
+Avaliação
+=========
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================
+|Módulo    |
+|Local     |
+|Formador  |
+|Avaliação |
+|Formando  |
+|Nota      |
+|=============================
+
+Leia *com atenção todo o enunciado*, iniciando a resolução *apenas após* uma leitura completada e cuidada dos passos a executar. Na primeira parte, composta por perguntas de escolha múltipla, assinale com um círculo a alínea correspondente à resposta que considera mais correcta. 
+
+1. Sistemas Operativos
+----------------------
+
+. Um sistema operativo é:
+.. Um conjunto de programas de computador e dados associados responsável pela gestão dos programas instalados no computador.
+.. Um conjunto de programas de computador e dados associados que permite a gestão e utilização dos recursos de hardware de um computador.
+.. Um programa de computador que existe nas _motherboards_ dos computadores e que permite o arranque dos mesmos.
+.. Um programa de computador responsável por operar um computador, permitindo aos utilizadores acesso a informação imediata.
++
+. O papel principal do sistema operativo é:
+.. Possibilitar a criação de sistemas de computação complexos.
+.. Permitir a execução de programas.
+.. Fazer a ligação entre o hardware (os circuitos físicos do computador, discos, memórias, ratos, teclados, etc), e o utilizador, permitindo a fácil utilização do computador.
+.. Conseguir trazer para o utilizador comum a capacidade computacional de um sistema informático.
++
+. Utilizando um sistema operativo o utilizador é capaz de:
+.. Rentabilizar a utilização de um computador já que o sistema operativo é responsável por gerir todo o hardware e recursos associados.
+.. Jogar computador.
+.. Utilizar o computador para desenvolver novos programas.
+.. Instalar programas que possibilitam a gestão de informação.
++
+. Na história dos sistemas operativos a evolução seguiu a ordem:
+.. Sistemas de fitas magnéticas, sistemas de controlo por operador, sistemas _multi-tarefa_.
+.. Sistemas _time-share_, sistemas _multi-tarefa_, sistemas de fitas magnéticas. 
+.. Sistemas com disquetes, sistemas de fitas magnéticas, sistemas _batch_.
+.. Sistemas geridos por operador, sistemas _batch_, sistemas _multi-tarefa_, sistemas _time-sharing_.
++
+. A introdução de sistemas de POOL (Simultaneous Peripheral Operation On-Line) permitiu:
+.. Acesso simultâneo e aleatório a zonas de armazenamento temporário de dados chamadas _buffers_.
+.. Aparecimento de impressoras porque o POOL é a base de funcionamento de uma impressora.
+.. Criar sistemas operativos mais lentos mas mais baratos.
+.. Criar programas de computador que processam uma quantidade maior de dados.
++
+. A diferença entre um sistema _multi-tarefa_ e um sistema _time-share_ pode ser descrita como:
+.. Os sistemas _time-share_ são sistemas _multi-tarefa_ com interactividade onde os programas usam todo o CPU durante um período de tempo.
+.. Os sistemas _time-share_ permitem que o utilizador partilhe o computador com outros utilizadores, criando assim um sistema multi-utilizador.
+.. Os sistemas _multi-tarefa_ executam várias tarefas ao mesmo tempo enquanto que o sistema _time-share_ executa apenas uma tarefa de cada vez.
+.. Os sistemas _time-share_ permitem partilhar programas de computador durante um período de tempo enquanto que os _multi-tarefa_ são apenas sistemas para executar vários programas sem partilha.
++
+. As vantagens associadas à existência de um sistema operativo são:
+.. Possibilidade de qualquer pessoa ter um computador porque os sistemas operativos tornam a utilização muito simples.
+.. Preço dos computadores desceu e tornou a sua compra acessível a mais pessoas.
+.. Facilidade de utilização, facilidade de manutenção, fiabilidade do hardware e rentabilização do tempo do utilizador.
+.. Facilidade de utilização, rentabilização do equipamento, fiabilidade e segurança da informação gerida.
++
+. Num sistema DOS os ficheiros que constituem o sistema operativo estão alojados em:
+.. Fitas magnéticas.
+.. Discos ópticos no interior do computador.
+.. Em memória RAM porque todos os sistemas operativos precisam de ser executados a partir da memória RAM.
+.. Discos rígidos, tipicamente no interior do computador..
++
+. A memória de endereçamento de um sistema DOS, sem extensões, está limitada a:
+.. 640KB situados no início da memória RAM.
+.. 1024KB que correspondem aos primeiros elementos da memória RAM.
+.. 640 bytes, com possibilidade de crescer até aos 384KB.
+.. 640KB para programas e restantes 384KB para drivers de sistema.
++
+. Um __kernel__ é um elemento do sistema operativo responsável por:
+.. Criar uma área de memória onde o sistema operativo guarda as informações dos programas que estão a executar.
+.. Iniciar o computador e dar o controlo ao componente seguinte do sistema operativo.
+.. Tratar de todos os erros relacionados com problemas de hardware.
+.. Fornecer o primeiro conjunto de funcionalidade mínimas que permitem a todas as outras aplicações funcionar correctamente e ter acesso ao hardware do computador.
++
+. O __kernel__ usado pelo FreeDOS e pelo MS-DOS é do tipo:
+.. Monolítico.
+.. Híbrido.
+.. Os sistemas DOS não possuem _kernel_, é um programa adicionado apenas em sistemas gráficos e _multi-tarefa_.
+.. Micro.
++
+. O standard XMS permite o acesso:
+.. À memória situada entre os primeiros 640KB e os primeiros 1024KB de memória RAM.
+.. À zona de memória denominada HMA.
+.. À zona de memória denominada UMA.
+.. A sistemas de expansão de memória através do uso de placas de expansão.
++
+. O comando que permite mudar de directoria ou drive é:
+.. MD
+.. FORMAT
+.. CD
+.. RM
++
+. O comando que permite listar directorias ou pesquisar ficheiros é:
+.. LSDIR
+.. DIR
+.. FIND
+.. XCOPY
++
+. Ao formatarmos um disco de um computador o resultado é:
+.. Um disco inutilizado uma vez que a formatação destrói toda a informação.
+.. Um disco com um novo formato definido, que pode ser usado para adicionar nova informação.
+.. Um disco com formato definido e pronto receber novas informações uma vez que toda a informação antiga é destruída.
+.. Um disco inalterado.
++
+. Para instalarmos um sistema operativo num computador precisamos de:
+.. Discos de instalação (CDs, DVDs, disquetes ou outros) com os ficheiros e um computador que cumpra os requisitos mínimos de hardware necessários para o sistema que vamos instalar.
+.. Computador com 4GB de RAM, disco rígido de 2GB, DVD de instalação do Windows 7.
+.. Uma hora livre, um computador com leitor de CDs e muito espaço não utilizado no disco rígido.
+.. Chamar um técnico com conhecimentos.
++
+. Embora diferentes, os processos de instalação podem resumir-se a um conjunto de passos comuns, são estes:
+.. Instalar o sistema seguindo o assistente e criar uma conta de utilizador no fim do processo para configurar o resto do sistema.
+.. Preparar o disco onde o sistema será instalado fazendo uma cópia de segurança de toda a informação e depois copiando, para o disco, os ficheiros do sistema operativo a instalar.
+.. Criação de uma máquina virtual e configuração dos dados iniciais de memória e espaço em disco, adição de CD de instalação do sistema operativo e execução do assistente de instalação.
+.. Preparação do disco onde o sistema é instalado através da criação de partições e formatação das mesmas, instalação do sistema através da execução do programa de instalação e configuração inicial das definições regionais a usar.
++
+. Os sistemas de ficheiros controlam a característica dos ficheiros neles guardados, uma dessas características é o nome dos ficheiros que em sistemas DOS está limitado a:
+.. 255 caracteres, excluindo barras e letra da drive.
+.. 255 caracteres, incluindo barras e letra da drive.
+.. 11 caracteres, divididos em 8 iniciais para o nome e 3 para a extensão.
+.. 64 caracteres, incluindo as barras, a letra da drive e os dois pontos usados depois da letra da drive.
++
+. Os comandos em DOS seguem a sintaxe:
+.. <COMANDO> <OPÇÕES> <PARÂMETROS OBRIGATÓRIOS>
+.. <COMANDO> - não é possível indicar qualquer parâmetro extra já que os sistemas DOS não são _multi-tarefa_.
+.. <COMANDO> <PARÂMETROS OBRIGATÓRIOS> <OPÇÕES>
+.. Em DOS, os comandos não seguem uma sintaxe comum.
++
+. Quando em sistemas DOS os comandos executados não estão correctos, o utilizador é avisado através de:
+.. Indicação luminosa no computador. A luz de arranque pisca duas vezes.
+.. Mensagem de erro devolvida pelo interpretador de comandos.
+.. Mensagem de erro através de uma janela de erros.
+.. O utilizador nunca é avisado de erros nos comandos.
+
+2. Instalação do Windows 7
+--------------------------
+Efectue a instalação do sistema operativo Windows 7 recorrendo ao VirtualBox.
+
+No seu computador de trabalho existe já um sistema de máquinas virtuais, com uma máquina virtual para Windows 7, que permitirá a instalação do sistema operativo indicado. Deverá utilizar essa máquina virtual para instalar uma versão do Windows 7, seguindo todos os passos necessários à correcta instalação e preparação inicial do sistema operativo.
+
+Após terminados todos os passos de instalação, configure o sistema para usar o _MS WordPad_ como programa por omissão para abertura de ficheiros de texto, com extensão *.txt*, e o _MS Paint_ para abrir todos os ficheiros de imagem com extensão *.jpg*.
+
+Findas as tarefas práticas, desligue a máquina virtual e chame o formador para que este possa guardar o trabalho realizado.
+
+3. Cotações
+-----------
+
+[options="header",frame="topbot",cols="1,1,3"]
+|=============================================
+|        |% do Total |Cotação de cada elemento (valores de 0 a 20)
+|Grupo 1 |50%        |Cada alínea: 0.5
+|Grupo 2 |50%        |Instalação: 8 +
+Alteração de programas: 2
+|=============================================

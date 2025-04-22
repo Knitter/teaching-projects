@@ -1,0 +1,199 @@
+Comandos DOS (FreeDOS)
+======================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================
+|Módulo  |
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |4 - Comandos DOS (FreeDOS)
+|=============================
+
+Lista de Comandos FreeDOS
+-------------------------
+
+Sendo um sistema compatível com MS-DOS, contém todos os comandos que existiam no MS-DOS e que eram comuns encontrar noutros sistemas DOS. Alguns comandos extra estão disponíveis mas iremos concentrar-nos apenas nos comandos padrão, alguns dos quais ainda presentes nas versões emuladas em Windows XP e seguintes. Os comandos da tabela seguinte constituem os comandos mais comuns, não são a lista completa de todos os comandos existentes.
+
+[cols="1,4",options="header"]
+|===============================
+|Comando       |Descrição
+|ATTRIB        |Define o atributo do ficheiro. Opções: +
+A - ficheiro de arquivo +
+H - ficheiro escondido +
+R - ficheiro de leitura +
+S - ficheiro de sistema
+|CHDIR ou CD   |Permite mudar para uma directoria ou drive.
+|CLS           |Limpa o ecrã e move o cursor para o canto esquerdo superior.
+|COPY          |Permite copiar ficheiros ou directorias. Opções: +
+/A - indica que se trata de um ficheiro de texto ASCII +
+/B - indica que se trata de um ficheiro binário +
+/V - faz a verificação da cópia +
+/Y - substitui todos os ficheiros que tenham nomes iguais no destino sem pedir confirmação +
+/-Y - pede confirmação antes de substituir ficheiros com nomes iguais
+|DATE          |Permite definir a data do sistema.
+|DEL           |Remove um ficheiro ou directoria. Opções: +
+/P - pede confirmação antes de remover +
+/V - mostra todos os ficheiros apagados
+|DELTREE       |Remove uma directoria e todo o seu conteúdo. Opções: +
+/Y - remove os elementos indicados sem pedir confirmação +
+/V - mostra um sumário com totais no final +
+/D - mostra informação de _debug_ +
+/X - testa sem remover dados +
+/Z:SERIOUSLY - remove a raiz, se esta for indicada, sem pedir confirmação
+|DIR           |Permir listar directorias ou pesquisar ficheiros. Opções: +
+/P - mostra a informação em páginas, pára após cada ecrã cheio +
+/W - mostra a lista em colunas +
+/A - mostra todos os atributos dos ficheiros +
+/O - ordena a lista usando N para nome, S para tamanho, E para extensão, D para data/hora, G para directorias em primeiro, - para ordem inversa e U para não usar ordem + 
+/S - mostra lista da directoria e das suas sub-directorias +
+/B - omite o cabeçalho e o sumário final +
+/L - usa nomes em minúsculas +
+/Y ou /4 - mostra o ano com quatro dígitos
+|EDIT          |Editor de texto. Opções: +
+/B - modo monocromático +
+/I - esquema de cores invertido +
+/H - usa 43 ou 50 linhas consoante o _driver_ gráfico seja EGA ou VGA +
+/R - abre os ficheiros em modo de leitura
+|FORMAT        |Permite formatar drives (discos rígidos ou disquetes). Opções: 
+/V:<etiqueta> - indica o nome do volume +
+/S - cria um disco de sistema +
+/D - mostra todas as informações sobre a formação, usado para _debug_ +
+/Q - formatação rápida +
+/U - formatação incondicional ou no caso de disquetes, de baixo nível +
+/F:<tamanho> - permite definir o tamanho da disquete a formatar +
+/4 - formata uma disquete de 1.2MB como se fosse uma disquete de 360KB +
+/T:<pistas> - permite definir o número de pistas de uma disquete +
+/N:<sectores> - permite definir o número de sectores de uma disquete
+|HELP          |Mostra a ajuda do sistema.
+|MEM           |Fornece informações sobre a memória. Opções:
+/A - mostra todos os detalhes da memória HMA +
+/C - classifica módulos com memória abaixo de 1MB +
+/D - mostra informação de _debug_ +
+/DEB - mesmo que /D +
+/DEV - lista os _drivers_ actualmente carregados +
+/E - mostra todos os detalhes sobre a memória EMS +
+/F - mostra a memória livre nos blocos convecional e elevada +
+/FR - mesmo que /F
+/FU - lista todos os blocos de memória +
+/M <nome> - mostra o consumo de memória de um _driver_ específico +
+/N - suprime o sumário
+/O - modo de compatibilidade com o FreeDOS MEM 1.7 beta +
+/P - pára após cada ecrã +
+/S - mostra o sumário final +
+/U - lista os programas carregados para a memória convencional e elevada +
+/X - mostra todos os detalhes da memória XMS
+|MKDIR ou MD   |Criar uma directoria nova.
+|MOVE          |Move ficheiros ou directorias para outros locais. Opções: +
+/Y - suprime a confirmação de substituição de ficheiros com nome igual +
+/-Y - mostra a mensagem de confirmação de substituição de ficheiros com nome igual +
+/V - efectua a confirmação de que todos os ficheiros foram movidos com sucesso
+|RENAME ou REN |Altera o nome de um ficheiro ou directoria.
+|TIME          |Permite definir a hora do sistema.
+|TREE          |Mostra a estrutura de directorias em forma de árvore. Opções: +
+/F - mostra o nome dos ficheiros em cada directoria +
+/A - usa apenas caracteres ASCII
+|TYPE          |Mostra o conteúdo de um ficheiro.
+|VER           |Comando que mostra a versão do sistema operativo. Opções: +
+/R - mostra versão do kernel +
+/W - informação da garantia do FreeCOM +
+/D - informação sobre redistribuição do FreeCOM +
+/C - mostra informação de todos os contribuidores para o comando FreeCOM
+|XCOPY         |Permite copiar ficheiros e árvores de directorias. Opções: +
+/A - copia apenas ficheiros com o atributo de arquivo +
+/C - continua a copiar mesmo que ocorram erros no processo +
+/D - copia apenas ficheiros que foram modificados após uma determinada data +
+/E - copia sub-directorias, mesmo que vazias +
+/F - mostra o nome completo da origem e do destino +
+/H - copia ficheiros de sistema, escondidos e ficheiros protegidos +
+/I - se o destino não existe e estamos a copiar mais que um ficheiro assume que o destino é uma directoria +
+/L - simula uma cópia, lista apenas os ficheiros sem lhes mexer +
+/M - copia apenas ficheiros com o atributo de arquivo mas remove o atributo dos ficheiros originais +
+/N - suprime a confirmação de substituição de ficheiros e ignora os ficheiros em questão +
+/P - pede confirmação antes de criar os ficheiros no destino +
+/Q - não mostra o nome dos ficheiros copiados +
+/R - substitui ficheiros com o atributo de leitura e ficheiros protegidos +
+/S - copia directorias e subdirectorias, excepto subdirectorias vazias +
+/T - cria a estrutura de directorias sem copiar ficheiros +
+/V - verifica a cópia de cada ficheiro +
+/W - espera que seja pressionada uma tecla antes de iniciar a cópia +
+/Y - suprime a confirmação de substituição de ficheiros com nomes iguais +
+/-Y - pede confirmação antes de substituir ficheiros com nomes iguais
+|UNDELETE      |Tenta recuperar um ficheiro previamente apagado. Opções: +
+/ALL - recupera todos os ficheiros possíveis sem perguntar +
+/LIST - lista os ficheiros que podem ser recuperados +
+/E - exporta (copia) os ficheiros que podem ser recuperados para um disco externo ou uma directoria 
+|RMDIR ou RM   |Remove uma directoria
+|===============================
+
+Exercícios
+----------
+
+Todos os exercícios deverão ser realizados na instalação do FreeDOS feita utilizador o VirtualBox. Nenhum dos exercícios deve ser feito directamente na consola que o Windows oferece.
+
+.. Crie a seguinte estrutura de ficheiros na raiz do disco:
++
+----
+C:\
+ |
+ |- SILORA
+  |
+  |- DISQUETE
+  |- DOCS
+   |
+   |- TXT
+   |- BAT
+   |- Misc
+   |
+  |- UTILS
+   |
+   |- DEMO1
+   |- DEMO2
+   |- DEMO3
+    |
+    |- SUBD1
+    |- SUBD2
+    |
+    |- SUBD3
+  |
+----
++
+.. Crie um ficheiro de texto chamado *RESP.TXT* dentro da pasta *C:\DOCS*. Todas as respostas que forem necessário registar devem ser escritas neste ficheiro.
+.. Adicione a disquete fornecida ao VirtualBox e mode a _prompt_ para a disquete.
+.. Liste todos os ficheiros presentes na disquetes. Quantos ficheiros existem no total?
+.. Mode novamente para a raiz do disco do sistema e copie os ficheiros presentes na diqueste para a pasta *SILORA\DISQUETE*.
+.. Mostre uma representação em árvore da directoria *SILORA*.
+.. Verifique se a data e hora do sistema se encontram correctas.
+.. Adiante o relógio do sistema em uma hora.
+.. Formate a disquete presente na drive *A:*.
+.. Copie para a disquete os ficheiros *CONFIG.SYS* e *INSTALL.LOG* presentes na directoria *C:\DOS*.
+.. Formate novamente a disquete e confirme que a disquete está vazia após a formatação.
+.. Use o comando *UNFORMAT* e verifique se conseguiu recuperar os dados da disquete.
+.. Apague os ficheiros todos da disquete, caso os tenha conseguido recuperar.
+.. Crie um ficheiro com o nome *ID.TXT* na pasta *SILORA\DOCS\TXT*. Dentro deste ficheiro escreva os seus dados pessoais: nome, morada, data e local de nascimento.
+.. Procure, em todo o disco, ficheiros que comecem pelas letras *DOC*. Quantos ficheiros existem?
+.. Procure, em todo o disco, ficheiros que comecem pelas letras *chan*. Quantos ficheiros existem?
+.. Localize todos os ficheiros que tenham um *A* como terceira letra. Quantos encontrou?
+.. Procure ficheiros com apenas 3 letras no nome com extensão *INI*. Copie esses ficheiros para uma pasta chamada *INIS* dentro da disquete.
+.. Mude para a directoria criada anteriormente, e liste todos os ficheiros que estão lá dentro em colunas. Escolha o primeiro ficheiro da primeira coluna e veja o seu conteúdo *sem* usar o *EDIT*
+.. Localize o ficheiro *LINUX.BAT* e copie-o para a pasta *A:\DOCS\BAT*.
+.. Escreva  sequência de comandos necessária para para gerar e depois visualizar a seguinte árvore de directorias:
++
+----
+C:\
+ |
+ |- DEMOS
+  |
+  |- PASTA1
+  |- PASTA2
+   |
+   |- PASTA4
+   |
+  |- PASTA3
+----
++
+.. Por esta altura a consola que está a usar deve estar cheia de texto, limpe a consola de modo a remover todo o texto que se encontra no ecrã.
+.. Liste todos os ficheiros da raiz do disco que sejam de sistema.
+.. Crie um ficheiro na directoria *C:\SILORA*, como o nome *ESCONDIDO.TXT* e active o atributo para esconder o ficheiro.
+.. Liste todos os ficheiros presentes na directoria *C:\SILORA*. Quantos ficheiros existem e que comando usou?

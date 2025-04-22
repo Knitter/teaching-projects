@@ -1,0 +1,21 @@
+Trabalho - Protocolos
+=====================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |Trabalho 2: Protocolos TCP/IP, IPX, NetBeui
+|=============================================
+
+Como já vimos, um protocolo não é mais que um conjunto de regras ou normas que permitem a comunicação entre duas entidades. Naturalmente, esta á uma definição teórica do que será um protocolo e é importante ver como a definição se aplica no dia a dia e como são criados protocolos que respeitem a definição.
+
+Com o objectivo de conhecer melhor os protocolos usados ao longo do módulo de redes, elabore um trabalho de investigação em grupo que foque um dos protocolos indicados abaixo:
+
+- TCP/IP (os dois protocolos em conjunto)
+- IPX
+- Netbeui
+
+O grupo deverá elaborar uma apresentação sobre o protocolo que lhe foi atribuído e apresentar o trabalho à turma no final.

@@ -1,0 +1,40 @@
+Segurança e Manutenção
+======================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================
+|Módulo  |
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |12 - Segurança e Manutenção
+|=============================
+
+. Instale os programas:
+- CPU-Z
+- Comodo AV
+- Process Monitor
++
+. Execute o programa CPU-Z registando as informações que este lhe mostra sobre o _CPU_, _Motherboard_ e sistema gráfico.
+. Abra o anti-víruso Comodo AV e execute as actualizações de segurança, garantindo assim que o mesmo se encontra actualizado.
+. Programe uma análise ao disco _C:\Windows_ para executar todos os dias às 12:30.
+. Efectue uma análise à pasta _c:\Programas_.
+. Abra o programa _Process Monitor_ e efecture as seguintes operações:
+- Aplique um filtro que permita ver eventos relacionados apenas com o utilizador que está a usar.
+- Remova o filtro anterior e adicione um filtro que permita mostar apenas eventos da categoria _Network_.
+- Adicione um novo filtro para mostrar eventos cujo resultado é igual a _SUCCESS_.
+- Aceda à opção _Tools > File Sumary_ e determine qual é a pasta com maior número de acessos. 
+- Aceda à opção _Tools > Process Tree_, escolha 4 processos da lista existente e procure informações sobre esses processos no site http://www.liutilities.com/products/wintaskspro/processlibrary. Encontrou a descrição dos processos? A que se referiam cada um dos 4 processos escolhidos.
++
+. Instale os programas:
+- Disk Fan
+- SmartDefrag
+- CutePDF
++
+. Usando o Disk Fan verifique quais os ficheiros que mais espaço ocupam no seu computador.
+. Abra o SmarDefrag e inicie uma análise ao disco. Qual o resultado da sua análise?
+. Aceda às _Settings_ e aumente o tempo de espera antes de uma desfragmentação para 10 minutos. Pode alterar o tempo na secção _Defrag_ no lado esquerdo das _Settings_ 
+. Aceda à gestão de impressoras e nas propriedades da impressora _Cute PDF_ seleccione a opção de partilha, use como nome o texto _PDF Printer_.
+. Peça a um colega para aceder ao seu computar e imprimir usando a sua impressora. Qual foi o resultado?
+. Aceda novamente à gestão de impressoras e nas propriedades da impressora e retire a opção de impressão no computador do cliente, a segunda caixa de seleccção na secção de partilha. Peça novamente a um colega para imprimir usando a sua impressora partilhada. Qual foi o resultado agora? Foi diferente do anterior?

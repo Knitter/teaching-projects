@@ -1,0 +1,49 @@
+Avaliação de Diagnóstico - Redes de Computadores
+================================================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |Avaliação de diagnóstico sobre redes de computadores
+|Formando |
+|=============================================
+
+
+O que é uma rede de comunicação?
+
+''''
+''''
+''''
+
+Que vantagens existem nas redes de comunicação?
+
+''''
+''''
+''''
+
+Como é feita uma rede usando computadores?
+
+''''
+''''
+''''
+
+Que tipos de redes de computadores conheces?
+
+''''
+''''
+
+Quais as vantagens na existência de redes de comunicação, especialmente nas que usam computadores?
+
+''''
+''''
+''''
+
+<<<<
+
+Qual o equipamento necessário para criar uma rede de computadores?
+
+''''
+''''

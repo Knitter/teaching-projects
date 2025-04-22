@@ -1,0 +1,56 @@
+Termos e Acrónimos
+==================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |02 - Termos e acrónimos
+|=============================================
+
+Utilizando pesquisas na _Internet_ completa o seguinte quadro com a descrição dos termos ou dos acrónimos indicados.
+
+[frame="topbot",cols="1,4",options="header"]
+|===========================================
+|Termo                                 |Descrição
+|ADSL                                  | 
+|Atenuação                             |
+|Atraso de propagação                  |Mesmo que Tempo de propagação.
+|bps                                   |
+|Carrier                               |Linha, ligação ou meio no qual a transmissão é enviada.
+|Codificação de Manchester diferencial |Técnica de codificação utilizada na Ethernet numa par de fios de cobre. A informação binária é contida no sentido de transição do sinal eléctrico.
+|Datagrama                             |
+|dB                                    |
+|dBm                                   |Unidades Decibéis em relação à uma potência em mW.
+|DTE                                   |Equipamento informático terminal (por exemplo um PC).
+|DPCH                                  |
+|Downlink DPCH                         |Canal no sentido descendente da comunicação dos dados do sistema UMTS (Downlink Dedicated Physical Channel).
+|DPDCH                                 |
+|Eficiência do canal de transmissão    |
+|E1                                    |Equivalente à Portadora T1 de 2,048 Mbps com 30 canais.
+|Full-duplex                           |Modo de comunicação em que o meio de transmissão é usado por ambos os intervenientes ao mesmo tempo, fazendo uso completo do meio.
+|Half-duplex                           |Modo de comunicação em que o meio de transmissão é partilhada por ambos os intervenientes à vez.
+|ISDN                                  |
+|IP                                    |Parte do protocolo da Internet (Internet Protocol).
+|OFDM                                  |
+|PCM                                   |Codificação pulsada (Pulse code Modulation).
+|Pacote                                |Mesmo que datagrama.
+|Protocolo                             |
+|RS232                                 |
+|Simplex                               |Modo de comunicação em que o canal é usado apenas por um interveniente e apenas num sentido.
+|Sistema POST com FDD                  |Sistema telefónico com transmissão em simultâneo nos dois sentidos utilizando uma mutiplexagem dos dados no domínio da frequência sobre um só canal.
+|Sistema POST com EC                   |
+|Spreading factor                      |Espalhamento espectral utilizado no UMTS para proteger uma comunicação das interferências dos canais pertencentes a uma célula vizinha.
+|Tempo de propagação                   |Tempo de propagação no canal de transmissão = (comprimento do canal de transmissão)/(velocidade de transmissão).
+|T1                                    |
+|TCP                                   |
+|UDP                                   |
+|UMTS                                  |
+|Volt                                  |Unidades de amplitude de um sinal eléctrico.
+|W (watt)                              |Unidades de potência em Watts.
+|WCDMA                                 |
+|WI-FI                                 |
+|===========================================
+

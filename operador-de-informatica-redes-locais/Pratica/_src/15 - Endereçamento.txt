@@ -1,0 +1,66 @@
+15 - Endereçamento
+==================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |15 - Endereçamento
+|=============================================
+
+1 - Identifica o endereço da rede, o endereço de broadcast, e o endereço de host dos seguintes endereços IP.
+
+[options="header"]
+|==================
+|Endereço IP        |Características |
+.3+|172.16.0.2      |Rede            |
+                    |Broadcast       |
+                    |Host            |
+.3+|192.168.10.1    |Rede            |
+                    |Broadcast       |
+                    |Host            |
+.3+|10.0.2.1        |Rede            |
+                    |Broadcast       |
+                    |Host            |
+.3+|108.163.211.115 |Rede            |
+                    |Broadcast       |
+                    |Host            |
+.3+|106.126.0.154   |Rede            |
+                    |Broadcast       |
+                    |Host            |
+.3+|180.15.76.0     |Rede            |
+                    |Broadcast       |
+                    |Host            |
+.3+|172.16.10.22    |Rede            |
+                    |Broadcast       |
+                    |Host            |
+.3+|10.254.255.248  |Rede            |
+                    |Broadcast       |
+                    |Host            |
+.3+|172.16.99.99    |Rede            |
+                    |Broadcast       |
+                    |Host            |
+.3+|10.10.10.10     |Rede            |
+                    |Broadcast       |
+                    |Host            |
+.3+|192.168.210.5   |Rede            |
+                    |Broadcast       |
+                    |Host            |
+|==================
+
+2 - Identifica as subredes, o primeiro host de cada rede o número de hosts que cada rede pode ter e o endereço de broadcast das subredes para cada um dos seguintes conjuntos de IP e máscara de subrede
+
+- 207.19.24.0/27
+- 209.42.21.0/29
+- 142.31.0.0/21
+- 152.3.4.0/23
+- 172.16.10.5, 255.255.255.128
+- 172.16.10.33, 255.255.255.224
+- 172.16.10.61, 155.255.255.192
+- 15.5.6.18, 255.255.255.240
+- 212.172.38.72, 255.255.255.192
+- 10.8.163.211.115, 255.255.128.0
+- 106.126.0.154, 255.255.128.0
+- 180.15.76.0, 255.192.0

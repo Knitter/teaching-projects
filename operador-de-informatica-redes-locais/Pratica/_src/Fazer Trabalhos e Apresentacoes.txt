@@ -1,0 +1,74 @@
+Fazer Trabalhos e Apresentações - Dicas
+=======================================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|=============================================
+
+Este texto apresenta algumas dicas para a criação de trabalhos no âmbito de formações profissionais. O objectivo do texto é introduzir alguns conceitos e abordar algumas características da criação de trabalhos de investigação por parte dos formandos, no entanto não pretende ser uma base exaustiva para a forma como se devem desenvolver trabalhos de investigação e apresentação dos mesmos.
+
+Etapas
+------
+A correcta realização de um trabalho, seja escrito, prático ou para apresentação em sala deve seguir um conjunto de métodos e características que permitam ao formando obter os resultados pretendidos com o trabalho e que possibilitem ao formador avaliar o trabalho desenvolvido.
+
+Quando realizam um trabalho, os formandos devem ser capazes de *obter informação* sobre o tema, *processar as informações* de modo a reduzir apenas ao que é relevante, *clarificar o tema* a partir da informação recolhida e *apresentar o tema de forma estruturada e clara*.
+
+Assim, ao realizar um trabalho o formando deve demonstrar as competências nas áreas:
+- recolha e análise de informação - Ser pró-activo na pesquisa e rigoroso na escolha das fontes;
+- processamento da informação - Criar resumos ou textos que sejam fiéis à informação original;
+- organização - Estruturar a informação processada de forma coerente;
+- apresentação - Cumprir com as regras de apresentação mas ser capaz de inovar.
+
+Plano Inicial
+~~~~~~~~~~~~~
+
+O formando deve começar por avaliar o tema e a profundidade com que o mesmo será tratado. Se estas informações não forem fornecidas pelo formador, há que ter em conta o tempo disponível e a quantidade de informação que, numa primeira abordagem, parece existir. Monido destes primeiros pontos orientadores, o formando deve criar um esboço do que pretende abordar e da forma como pretende apresentar a informação.
+
+Nesta fase pretende-se apenas criar um conjunto de linhas orientadoras, um conjunto de pontos que, tal como um esboço de um desenho, sirvam de guia para o desenvolvimento seguinte.
+
+Recolher e Analizar
+~~~~~~~~~~~~~~~~~~~
+
+A obtenção de informação é a etapa mais crítica, com a era de _Internet_ e especialmente de _Wikipedia_ é fácil encontrar informação sobre, virtualmente, qualquer tema, no entanto o formando deve ter atenção que muita da informação contém falhas, está desactualizada ou é falsa.
+
+A utilização de livros oferece maior segurança sobre a correcção da informação e dessa forma qualquer trabalho de pesquisa deve passar pela utilização de livros da área. Claro que nem sempre existe uma biblioteca perto, ou nem sempre o tema tem publicações a que seja possível ter acesso, daí a utilização da _Internet_ ser um meio bastante importante mas que deve ser seguido com precauções:
+
+- garantir que a informação está actualizada e é de confiança, quer verificando as fontes dos artigos, as datas de publicação/alteração, quer confirmando que o autor tem conhecimentos sobre a área em que escreve;
+- usar _sites_ que sejam bastante consultados de modo a garantir que algum erro que possa existir seja detectado com maior facilidade, por exemplo, usar a _Wikipedia_ em inglês, e não usar outros istemas que tentam copiar a _Wikipedia_;
+- registar as datas em que determinado _site_ foi consultado.
+
+É também importante registar todas as fontes de informação, garantido que, por um lado o trabalho não é considerado um plágio e que por outro o formador tem a possibilidade de confirmar se um erro do trabalho teve origem no material base ou se foi introduzido pelo formando.
+
+Processar
+~~~~~~~~~
+
+Na etapa de processamento de informação o formando deve resumir ou trabalhar a informação que obteve de modo a ficar com aquela informação que é importante. A recolha de informação gera sempre muita informação que não é importante ou que não se enquadra no objectivo final do trabalho, dessa forma é necessário filtrar toda a informação encontrada de forma a ficar apenas com o que é relevante para o trabalho em mãos.
+
+Ajuste do Plano
+~~~~~~~~~~~~~~~
+
+Antes de iniciar o desenvolvimento do documento final é necessário pegar no esboço que fizemos na primeira etapa e ver que alterações é necessário fazer. Dado que já fizemos todo o trabalho de pesquisa e de processamento de informação, e que estamos prontos para passar toda a informação para o nosso documento final, é importante planear com cuidado o que pretendemos fazer.
+
+Como fizemos um plano inicial, ajustar agora esse plano e criar um plano final é bastante mais simples e permite também ter a percepção do quanto nos afastámos da ideia original. Assim, será importante organizarmos a informação de modo a que se ajuste ao formato final que pretendemos.
+
+Se o documento final é um documento escrito par entrega a organização da informação deve evidênciar a separação por capítulos, a existência de uma introdução teória, um desenvolvimento e uma conclusão final e as imagens deverão ser enviadas para anexos, sendo apenas as mais importantes apresentadas ao longo dos textos. Se, por outro lado, estamos a preparar uma apresentação com recurso a diapositivos devemos organizar a informação de modo a que cada diapositivo tenha não mais de 4 tópicos, uma imagem ou uma tabela e que demore cerca de 30 segundos a apresentar.
+
+Naturalmente estas dicas são informação padrão para a criação de documentos e apresentações, o formando poderá adequar o trabalho da forma que achar mais conveniente.
+
+Criação do Documento Final
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+O documento final segue as regras que estão afectas ao tipo de documento. Já vimos algumas na etapa anterior, como a existência de introdução para documentos escritos ou diapositivos de 30 segundos para apresentações, mas deverão ser tidas em conta mais algunas regras:
+
+- definir todos os conceitos usados;
+- frases curtas e claras;
+- uma ideia por parágrafo ou por diapositivo;
+- tipo de letra fácil de ler e utilização de cores adequada;
+- ter atenção que os diapositivos aparecem com cores diferentes nos projectores;
+- usar itálicos para títulos de obras (música, filmes, livros, peças de teatro, etc.) e para nomes em estrangeiro.
+
+Não esquecer que os documentos precisam de uma capa, onde deve ser apresentado o título do trabalho, e de identificação dos autores. Além disso é muito importante que todas as fontes de informação sejam apresentadas numa secção de bibliografia.

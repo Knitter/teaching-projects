@@ -1,0 +1,21 @@
+Avaliação de Windows Server - Resolução
+=======================================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |Avaliação de Windows Server *Resolução*
+|=============================================
+
+.Regras de Nomenclatura:
+Os nomes de utilizadores devem ser compostos pelo primeiro e último nomes do funcionário, em caso de colisões deve ser usada a letra de um nome do meio. As contas terão também de ser organizadas por funções desempenhadas dentro da empresa, de acordo com a tabela indicada.
+
+Para os equipamentos físicos a será usado o esquema com base nas três primeiras letras da sala onde estão colocados, seguidas de um número de ordem. Os nomes das salas são obtidos com base no seu propósito e como indicado na tabela.
+
+.Nota:
+A organização de recursos na Active Directory é algo que depende bastante de quem está a fazer a organização. Como boas práticas devem ser referidas a organização de pessoas por cargos e de equipamentos por localização física. Tirando estes dois pontos, qualquer organização apresentada pelo formando terá lugar a nota máxima.
+
+A execução na Active Directory deverá respeitar a organização indicada pelo formando.

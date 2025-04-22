@@ -1,0 +1,44 @@
+Arquitectura de Redes - Resolução
+=================================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |05 - Arquitectura de Redes - *Resolução*
+|=============================================
+
+Quais são os componentes lógicos da arquitectura de uma rede?
+
+**Os componentes lógicos são: camada, protocolo, interface e serviço.**
+
+Explica o que é um Serviço e uma Interface.
+
+**Um _Serviço_ é uma função que uma camada fornece a outra camada e uma _Interface_ é a ponte ou ligação entre duas entidades, neste caso duas camadas.**
+
+Define o termo PDU.
+
+**Protocol Data Unit.**
+
+Quantas camadas possui o modelo OSI? Explica duas dessas camadas.
+
+**O modelo OSI é constituído por sete camadas, sendo uma delas a camada _Apresentação_, responsável por entregar ao utilizador e a outras aplicações os dados que são recebidos ou enviados durante a comunicação e fazer a ponto entre as camadas restantes e o utilizador ou uma aplicação. Outra camada também existente no modelo OSI é a camada _Física_ que faz a mediação com o meio físico sendo responsável pelas específicações de voltagens, pinos das placas/fichas a usar, etc.**
+
+Do modelo OSI, quais são as camadas que pertencem à secção de rede?
+
+**À secção de rede pertencem as camadas _Rede_, _Ligação_ e _Física_.**
+
+Indica as camadas do modelo TCP/IP?
+
+**Aplicação, Transporte, Internet e Ligação.**
+
+Um pacote TCP/IP é dividido em cinco secções, uma dessas secções é a secção correspondente aos dados a enviar, quais são as outras quatro?
+
+**As restantes secções são: Frame Header, IP Header, TCP ou UDP Header e Frame Footer.**
+
+Em que camada é adicionada a secção _IP Header_ a um pacote TCP/IP?
+
+**Na camada _Internet_.**
+

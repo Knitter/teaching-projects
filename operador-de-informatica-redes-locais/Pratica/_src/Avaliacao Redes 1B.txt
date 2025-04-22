@@ -1,0 +1,161 @@
+Avaliação de Redes 1 - B
+========================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |Avaliação de Redes 1
+|Formando |
+|=============================================
+
+
+[frame="topbot"]
+|===============
+|**Leia o enunciado com atenção.** Antes de começar a responder, leia com atenção todas as questões de modo a compreender correctamente o seu objectivo. Terá tempo suficiente para resolver toda a ficha de avaliação.
+|===============
+
+Grupo Desenvolvimento
+---------------------
+
+Quantos computadores podem ser usados numa rede com o endereço 192.168.5.0? Porquê?
+
+''''
+
+Qual a importância da utilização de sub-endereçamento?
+
+''''
+''''
+
+Explica os protocolos TCP e IP e diz para que são usados.
+
+''''
+''''
+''''
+''''
+
+Indica o objectivo de um *repetidor*, de um *hub*, de um *switch* e de um *router*.
+
+''''
+''''
+''''
+''''
+
+Indica duas tipologias de rede que conheces e explica uma delas.
+
+''''
+''''
+''''
+''''
+
+<<<<
+
+Diz, resumidamente, qual a diferença entre sinal analógico e sinal digital.
+
+''''
+''''
+
+Explica a comutação de pacotes em modo virtual.
+
+'''''
+'''''
+'''''
+
+Indica uma limitação na comutação de pacotes.
+
+''''
+''''
+
+Explica o funcionamento da comutação de circuitos.
+
+''''
+''''
+''''
+''''
+
+Indica o que é a multiplexação.
+
+''''
+''''
+
+Em que consiste uma rede de computadores?
+
+''''
+''''
+
+<<<<
+
+Preenche a legenda da figura de um cabo S/UTP
+
+image::./Imagens/sutp.png[align="center"]
+
+Indica as cores pela ordem correcta para a norma T658A
+[]
+|====
+|Pino 1 |
+|Pino 2 |
+|Pino 3 |
+|Pino 4 |
+|Pino 5 |
+|Pino 6 |
+|Pino 7 |
+|Pino 8 |
+|====
+
+<<<<
+
+Grupo Escolha Múltipla
+----------------------
+
+.Qual das seguintes características pode ser atribuído ao tráfego de dados?
+
+.. Insensível a atrasos;
+.. Sensível a variações de atraso de transmissão;
+.. Nenhuma das indicadas;
+.. Pouco exigente quanto a taxas de erros;
+
+.A rede de _Internet_ é uma rede que pode ser definida como?
+
+.. Uma rede de 100Mbs suportada por fibra óptica;
+.. Uma rede de 1Gbps, com tipologia em estrela e método de acesso CSMA/CD;
+.. Uma rede universal, constituída por redes físicas de diversas tecnologias onde participam dispositivos de vários tipos através de uma forma de comunicação comum;
+.. Nenhuma das indicadas anteriormente;
+
+.O protocolo TCP?
+
+.. Estabelece um circuito virtual antes de se iniciar a transferência de informação;
+.. Permite uma transferência rápida e fiável de informação;
+.. Permite que várias aplicações numa máquina possam comunicar através de endereços de rede diferentes;
+.. Nenhuma das indicadas anteriormente;
+
+.O protocolo IP?
+
+.. Permite a fragmentação de pacotes;
+.. Permite uma transferência fiável de informação;
+.. Nenhuma das indicadas;
+.. Pertence à camada de transporte;
+
+<<<<
+
+.Na topologia em estrela:
+
+.. As estações estão ligadas entre si de acordo com o tráfego de rede, de modo a optimizar os canais de transmissão;
+.. A informação é passada de estação em estação ao longo de um circuito fechado;
+.. As estações partilham o mesmo meio de transmissão;
+.. Nenhuma das indicadas anteriormente;
+
+Grupo Sub-endereçamento
+-----------------------
+
+Para as seguintes situações indique a [underline]#máscara# de rede, [underline]#IP base#, [underline]#todas as redes válidas#, o endereço de [underline]#broadcast# de todas as redes válidas e o [underline]#número de máquinas# para cada máscara. 
+
+[cols="1,4"]
+|===========
+|a) | Criar 14 redes válidas com o IP base 192.168.1.0
+|b) | IP 172.15.1.156, máscara 255.255.255.240
+|c) | IP 172.15.1.156/28
+|d) | Quatro redes diferentes, a primeira rede com 13 equipamentos, a segunda rede com 5 equipamentos, a terceira com 55 equipamentos e a última rede com 24 equipamentos.
+|===========
+

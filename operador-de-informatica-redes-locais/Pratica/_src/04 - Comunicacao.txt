@@ -1,0 +1,33 @@
+Comunicação em Redes de Computadores
+====================================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |04 - Comunicação em redes de computador
+|=============================================
+
+
+Descreve o funcionamento da comutação de pacotes em modo datagrama
+
+''''
+''''
+''''
+''''
+
+Indica todos os passos envolvidos numa ligação entre dois computadores usando comutação de circuitos
+
+''''
+''''
+''''
+''''
+
+Qual é a diferença entre comutação de pacotes em modo virtual e comutação de circuitos
+
+''''
+''''
+''''
+''''

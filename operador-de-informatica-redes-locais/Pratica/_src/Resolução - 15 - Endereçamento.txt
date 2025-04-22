@@ -1,0 +1,51 @@
+15 - Endereçamento
+==================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |15 - Endereçamento
+|=============================================
+
+1 - Identifica o endereço da rede, o endereço de broadcast, e o endereço de host dos seguintes endereços IP.
+
+[options="header"]
+|==================
+|Endereço IP        |Características |
+.3+|172.16.0.2      |Rede            |172.16.0.0
+                    |Broadcast       |172.16.255.255
+                    |Host            |172.16.0.2
+.3+|192.168.10.1    |Rede            |192.168.10.0
+                    |Broadcast       |192.168.10.255
+                    |Host            |192.168.10.1
+.3+|10.0.2.1        |Rede            |10.0.0.0
+                    |Broadcast       |10.255.255.255
+                    |Host            |10.0.2.1
+.3+|108.163.211.115 |Rede            |108.0.0.0
+                    |Broadcast       |108.255.255.255
+                    |Host            |108.163.211.115
+.3+|106.126.0.154   |Rede            |106.0.0.0
+                    |Broadcast       |106.255.255.255
+                    |Host            |106.126.0.154
+.3+|180.15.76.0     |Rede            |180.15.0.0
+                    |Broadcast       |180.15.255.255
+                    |Host            |180.15.76.0
+.3+|172.16.10.22    |Rede            |172.16.0.0
+                    |Broadcast       |172.16.255.255
+                    |Host            |172.16.10.22
+.3+|10.254.255.248  |Rede            |10.0.0.0
+                    |Broadcast       |10.255.255.255
+                    |Host            |10.254.255.248
+.3+|172.16.99.99    |Rede            |172.16.0.0
+                    |Broadcast       |172.16.255.255
+                    |Host            |172.16.99.99
+.3+|10.10.10.10     |Rede            |10.0.0.0
+                    |Broadcast       |10.255.255.255
+                    |Host            |10.10.10.10
+.3+|192.168.210.5   |Rede            |192.168.210.0
+                    |Broadcast       |192.168.210.255
+                    |Host            |192.168.210.5
+|==================

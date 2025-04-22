@@ -1,0 +1,35 @@
+Meios Físicos - Fibra e Eq. Passivos - Resolução
+================================================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |07 - Meios físicos: fibra e equipamentos passivo - *Resolução*
+|=============================================
+
+Indica duas classificações para um cabo de fibra óptica.
+
+**Monomodo e multimodo.**
+
+Quais as vantagens da fibra óptica em comparação com os cabos de cobre?
+
+**Não é afectada pela limitação de distância dos 100 metros, não sofre efeitos de interferência electromagnética e permite uma largura de banda virtualmente infinita que é limitada apenas pela capacidade dos equipamentos que enviam e recebem os sinais.** 
+
+E as desvantagens?
+
+**Um cabo de fibra óptica é mais limitado em relação a torções e dobras e bastante mais caro que um cabo de cobre do mesmo comprimento.**
+
+Para que serve um router?
+
+**Um _router_ é um equipamento que permite encaminhar pacotes para o seu destino, fazendo a ponte entre duas redes diferentes, possibilitanto assim que os pacotes enviados por um computador cheguem ao computador a que se destinam.**
+
+Como se pode contornar a limitação dos 100 metros de um cabo de cobre?
+
+**Através da utilização de equipamento de repetição ou reforço de sinal, por exemplo usando repetidores ou outros equipamentos que permitam reforçar o sinal enviado.**
+
+Porque é que são designados por _equipamentos activos_ os _switches_, os _hubs_ e os _routers_?
+
+**Porque estes equipamentos possuem a capacidade de afectar a transmissão de sinais, quer reforçando o sinal, encaminhando pacotes ou replicando sinais, dessa forma tomando um papel activo na transmissão da informação.**

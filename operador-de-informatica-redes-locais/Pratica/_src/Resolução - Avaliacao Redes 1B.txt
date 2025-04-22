@@ -1,0 +1,185 @@
+Avaliação de Redes 1 - B - Resolução
+====================================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |Avaliação de Redes 1 - *Resolução*
+|Formando |
+|=============================================
+
+
+[frame="topbot"]
+|===============
+|**Leia o enunciado com atenção.** Antes de começar a responder, leia com atenção todas as questões de modo a compreender correctamente o seu objectivo. Terá tempo suficiente para resolver toda a ficha de avaliação.
+|===============
+
+Grupo Desenvolvimento
+---------------------
+
+Quantos computadores podem ser usados numa rede com o endereço 192.168.5.0? Porquê?
+
+**Podem ser usados 254 computadores. A rede é uma rede de classe C e por isso apenas o último octeto pode ser usado para endereços de computadores, e como não está a ser indicado sub-endereçamento assumimos que a rede não é sub-endereçada. Logo podemos ter 256 números possíveis, menos o endereço de rede e o endereço de broadcast, o que resulta nos 254 números para computadores.**
+
+Qual a importância da utilização de sub-endereçamento?
+
+**O sub-endereçamento permite resolver o problema da limitação no número de redes que o endereçamento tradicional tem. Com sub-endereçamento é possível dividir um endereço base de modo a criar mais redes, pequenas e com menos dispositivos, mas possibilitando assim uma melhor utilização dos recursos de IP.**
+
+Explica os protocolos TCP e IP e diz para que são usados.
+
+**O protocolo TCP é um protocolo que trata da transmissão de dados entre dois computadores de forma segura, fiável e ordenada. O IP é um protocolo que permite a identificação de equipamentos ao longo de uma rede e o endereçamento de pacotes que são enviados. Juntos, estes dois protocolos formam pilar base da _Internet_ actual.**
+
+<<<<
+
+Indica o objectivo de um *repetidor*, de um *hub*, de um *switch* e de um *router*.
+
+**Um _repetidor_ permite aumentar a distância que um sinal consegue percorrer ao repetir o sinal que recebe e fornecer mais energia. +
+Um _hub_ permite a ligação de computadores em rede mas, não tendo capacidades de endereçamento, envia o sinal que recebe para todos os equipamentos ligados. +
+Um _switch_ permite também a criação de redes com a ligação de vários computadores mas como tem capacidade de endereçamento envia o sinal que recebe apenas ao equipamento a que este se destina. +
+Um _router_ permite a ligação de duas redes e o envio de informações de uma rede para outra.**
+
+Indica duas tipologias de rede que conheces e explica uma delas.
+
+**Tipologia em Estrela e Malha (outras: Malha Completa, Anel, Linha ou Árvore). +
+Na tipologoa Estrela todos os nós terminais estão ligados a um nó central. Na tipologia Malha os nós possuem ligações entre si, embora não seja completas, isto é, um nó possuí apenas ligações para alguns nós mais perto e não para todos os nós da rede onde está inserido.**
+
+Diz, resumidamente, qual a diferença entre sinal analógico e sinal digital.
+
+**O sinal analógico é composto por um conjunto contínuo de valores enquanto que o sinal digital é composto por um conjunto discreto de valores.**
+
+Explica a comutação de pacotes em modo virtual.
+
+**No modo virtual, a comutação de pacotes comporta-se como a comutação de circuitos e todos os pacotes são enviados através de um caminho previamente estabelecido.**
+
+Indica uma limitação na comutação de pacotes.
+
+**A performance da comutação de pacotes sofre com o aumento de carga na rede.**
+
+Explica o funcionamento da comutação de circuitos.
+
+**Na comutação de circutos, antes de ser enviada informação, é estabelecido um caminho dedicado, que é usado apenas pelos intervenientes na comunicação e que se mantém reservado durante toda a comunicação. É neste canal exclusivo que é enviada a informação.**
+
+Indica o que é a multiplexação.
+
+**Técnica que permite o envio de vários sinais diferente através de um único meio de comunicação.**
+
+Em que consiste uma rede de computadores?
+
+**Dois ou mais computadores ligados entre si de forma a partilharem informações, recursos de hardware ou de software.**
+
+<<<<
+
+Preenche a legenda da figura de um cabo S/UTP
+
+image::./Imagens/sutp-resolucao.png[align="center"]
+
+Indica as cores pela ordem correcta para a norma T658A
+[]
+|====
+|Pino 1 |Branco/Verde
+|Pino 2 |Verde
+|Pino 3 |Branco/Laranja
+|Pino 4 |Azul
+|Pino 5 |Branco/Azul
+|Pino 6 |Laranja
+|Pino 7 |Branco/Castanho
+|Pino 8 |Castanho
+|====
+
+<<<<
+
+Grupo Escolha Múltipla
+----------------------
+
+Qual das seguintes características pode ser atribuído ao tráfego de dados?
+
+**Insensível a atrasos;**
+
+A rede de _Internet_ é uma rede que pode ser definida como?
+
+**Uma rede universal, constituída por redes físicas de diversas tecnologias onde participam dispositivos de vários tipos através de uma forma de comunicação comum;**
+
+O protocolo TCP?
+
+**Permite uma transferência rápida e fiável de informação;**
+
+O protocolo IP?
+
+**Pertence à camada de transporte;**
+
+Na topologia em estrela:
+
+**Nenhuma das indicadas anteriormente;**
+
+<<<<
+
+Grupo Sub-endereçamento
+-----------------------
+
+[]
+|=====
+.17+|a) |Máscara      2+|255.255.255.240
+        |IP Base      2+|192.168.1.0
+        |Nr. Máquinas 2+|14
+    .14+|Redes          |192.168.1.16  |192.168.1.31
+                        |192.168.1.32  |192.168.1.47
+                        |192.168.1.48  |192.168.1.63
+                        |192.168.1.64  |192.168.1.79
+                        |192.168.1.80  |192.168.1.95
+                        |192.168.1.96  |192.168.1.111
+                        |192.168.1.112 |192.168.1.127
+                        |192.168.1.128 |192.168.1.143
+                        |192.168.1.144 |192.168.1.159
+                        |192.168.1.160 |192.168.1.175
+                        |192.168.1.176 |192.168.1.191
+                        |192.168.1.192 |192.168.1.207
+                        |192.168.1.208 |192.168.1.223
+                        |192.168.1.224 |192.168.1.239
+|=====
+
+[]
+|=====
+.8+|b) |Máscara      2+|255.255.255.240
+       |IP Base      2+|172.15.0.0
+       |Nr. Máquinas 2+|3594
+    .5+|Redes          |172.15.16.0  |172.15.31.255
+                       |172.15.32.0  |172.15.63.255
+                       |...          |...
+                       |172.15.208.0 |172.15.223.255
+                       |172.15.224.0 |172.15.239.255
+|=====
+
+[]
+|=====
+|c) | Igual ao exercício b), a diferença é que esta máscara está indicada com o número de bits.
+|=====
+
+[]
+|=====
+.23+|d) .6+|Rede 1 |Máscara     2+|255.255.255.240
+                   |IP Base     2+|192.168.1.0
+                   |Nr Máquinas 2+|14
+                .3+|Redes         |192.168.1.16  |192.168.1.31
+                                  |...           |...
+                                  |192.168.1.224 |192.168.1.239
+        .6+|Rede 2 |Máscara     2+|255.255.255.248
+                   |IP Base     2+|192.168.1.0
+                   |Nr Máquinas 2+|6
+                .3+|Redes         |192.168.1.8   |192.168.1.15
+                                  |...           |...
+                                  |192.168.1.240 |192.168.1.247
+        .5+|Rede 3 |Máscara     2+|255.255.255.192
+                   |IP Base     2+|192.168.1.0
+                   |Nr Máquinas 2+|62
+                .2+|Redes         |192.168.1.64  |192.168.1.127
+                                  |192.168.1.128 |192.168.1.191
+        .6+|Rede 4 |Máscara     2+|255.255.255.224
+                   |IP Base     2+|192.168.1.0
+                   |Nr Máquinas 2+|30
+                .3+|Redes         |192.168.1.32  |192.168.1.63
+                                  |...           |...
+                                  |192.168.1.192 |192.168.1.223
+|=====

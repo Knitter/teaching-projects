@@ -1,0 +1,66 @@
+Configuração do Computador
+==========================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================
+|Módulo  |
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |8 - Configurações Gerais do Computador
+|=============================
+
+A configuração geral do computador por parte dos utilizadores é um dos passos iniciais base. Vamos configurar o computador de acordo com as indicações seguintes.
+
+. Vamos começar por definir a língua do sistema para que apareça em Português. Para isso aceda ao _Control Panel_, escolha a secção _Region and Language_ e o separador _Keyboards and Languages_. Neste separador existe a opção "Choose a display language_ que permite escolher a língua _português (Portugal)_.
+. Grupo de Trabalho. +
+Os _grupos de trabalho_ são grupos aos quais os computadores ligados em rede podem pertencer. Quando se encontram no mesmo grupo de trabalho os computadores conseguem comunicar com maior facilidade, uma vez que é mostrado ao utilizador a lista de todos os computadores no mesmo grupo. +
++
+Como configuração inicial vamos definir o grupo de trabalho do computador. Para isso aceda ao _Painel de Controlo_, secção _Sistema_, no menu lateral esquerdo escolha a opção _Definições avançadas do sistema_, separador _Nome do computador_, botão _Alterar..._. Na caixa de texto _Nome do computador_ coloque o seu nome. Na caixa de texto _Grupo de trabalho_ coloque o nome _GRUPOVIRTUAL_. Vai ser necessário reiniciar o computador, feche as janelas e quando lhe for pedido, reinicie o computador.
++
+. Na sua pasta pessoal crie uma pasta chamada _Exercícios Silora_, adicione essa pasta à lista de bibliotecas criando uma nova biblioteca. Mude o nome dessa nova biblioteca para _Silora_.
++
+. Crie um atalho para a pasta _Exercícios Silora_ no _Ambiente de Trabalho_. Para isso clique com o botão direito no _Ambiente de Trabalho_ e escolha a opção _Novo > Atalho_. Use o botão _Procurar..._ para localizar a pasta _Exercícios Silora_ e crie o atalho.
++
+. Personalize o aspecto do Ambiente de trabalho usando o botão direito no _Ambiente de Trabalho_ e escolhendo a opção _Personalizar_. Feito isto altere:
+- o fundo do _Ambiente de Trabalho_ clicando na opção _Fundo do Ambiente de Trabalho_;
+- a protecção de ecrão escolhendo a opção _Protecção de Ecrã_;
+- os ícones que existem no _Ambiente de Trabalho escolhendo a opção _Alterar ícones do ambiente de trabalho_ e activando o ícone do _Computador_;
+- a imagem da sua conta clicando em _Alterar imagem da conta_ e escolhendo uma imagem diferente, termine clicando no botão _Alterar Imagem_;
++
+. Instalação de Software. Aceda à pasta _Software_ que se encontra no _Ambiente de Trabalho_ e instale os programas que lá se encontram pela seguinte ordem. Avast Anti-virus, Google Chrome, OpenOffice.org.
+. A barra de tarefas é uma barra presente no fundo do ecrã que nos permite aceder a programas e locais que usamos com mais frequência. Para a configurarmos basta clicar com o botão direito em cima da barra e escolher a opção _Propriedades_. No primeiro separador escolha a opção _Utilizar ícones pequenos_.
++
+Mude para o separador _Menu Iniciar_, que nos permite configurar o aspecto e os atalhos presentes no menu com o mesmo nome, e clique no botão _Personalizar_. Na lista de opções altere as seguintes:
+
+- __Ferramentas adminstrativas de sistemas__ => __Apresentar no menu Todos os Programas__
+- __Programas Predefinidos__ => Retirar visto
+- __Realçar os programas acabados de instalar__ => Retirar visto
+- __Transferências__ => __Apresentar como uma hiperligação__
++
+Experimente os seguintes atalhos e indique o que cada um deles faz, guardando as respostas num documento de OpenOffice.org dentro da pasta _Exercícios Silora_:
++
+[options="header",cols="1,2"]
+|============================
+|Atalho                                                |Acção
+|Alt + Tab                                             |
+|Ctrl + Alt + Tab                                      |
+|image:./Imagens/windows-key.png[] + Tab               |
+|Ctrl + image:./Imagens/windows-key.png[] + Tab        |
+|Alt + Esc                                             |
+|Ctrl + Esc                                            |
+|image:./Imagens/windows-key.png[]                     |
+|image:./Imagens/windows-key.png[] + Pause             |
+|image:./Imagens/windows-key.png[] + D                 |
+|image:./Imagens/windows-key.png[] + M                 |
+|image:./Imagens/windows-key.png[] + Shift+M           |
+|image:./Imagens/windows-key.png[] + E                 |
+|image:./Imagens/windows-key.png[] + F                 |
+|image:./Imagens/windows-key.png[] + L                 |
+|image:./Imagens/windows-key.png[] + T                 |
+|image:./Imagens/windows-key.png[] + Seta Cima         |
+|image:./Imagens/windows-key.png[] + Seta Baixo        |
+|image:./Imagens/windows-key.png[] + Home              |
+|image:./Imagens/windows-key.png[] + Shift + Seta Cima |
+|============================

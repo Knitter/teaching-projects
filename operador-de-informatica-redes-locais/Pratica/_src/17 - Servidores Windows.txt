@@ -1,0 +1,109 @@
+Servidores Windows
+==================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |17 - Servidores Windows
+|=============================================
+
+1 - Termos
+----------
+
+Pesquise, usando a _Internet_, os seguintes termos e explica o que cada uma faz. Cria um documento de MS Word com a explicação de cada termo.
+
+*Domain Controller (Controlador de Domínio)* +
+*Standalone Server* +
+*Member Server (Servidor Membro)* +
+*Workstation (Estação de Trabalho)* +
+*Workgroup (Grupo de Trabalho)* +
+*Active Directory* +
+*Organization Units (Unidades Organizacionais)* +
+*Forests (Florestas)* +
+*Trees (Árvores)* +
+*Microsoft Management Console (MMC)* +
+
+2 - Utilização do Servidor
+--------------------------
+
+A empresa Silora pretende adicionar à sua rede um controlador de domínio que já se encontra nas instalações com o Windows 2003 Server instalado. Para que o servidor se torne operacional é necessário acrescentar contas de utilizadores, os computadores de rede e restantes recursos a serem geridos.
+
+Na tabela seguinte estão indicados os trabalhadores e os grupos da empresa:
+
+[options="header"]
+|=================
+|Nome                     | Cargo        |Duração do contrato
+|Filipa Silva Nunes       |Formação      |2 anos
+|Frederico Silva Cardoso  |Administração |Efectivo
+|Lino Dias Nunes          |Administração |Efectivo
+|Luís Alexandre Nunes     |Formação      |3 meses
+|Marco Rodrigues Silva    |Formação      |2 anos
+|Maximino Rodrigues Silva |Formador      |2 anos
+|Miguel Silva Venceslau   |Formador      |1 mês
+|Nelson Jesus Costa       |Formador      |3 meses
+|Nelson Miguel Neves      |Formador      |2 semanas
+|Norberto José Costa      |Formador      |5 meses
+|=================
+
+[options="header"]
+|=================
+|Local                     | Número de Computadores
+|Gabinete administrativo 1 |2
+|Gabinete administrativo 2 |1
+|Gabinete de formação      |3
+|Sala de reuniões          |5
+|Sala de formação 1        |10
+|Sala de formação 2        |10
+|Sala de formação 3        |5
+|Sala de formação 4        |15
+|=================
+
+Para utilizar o servidor Windows 2003 será necessário efectuar a ligação através do sistema de _Ambiente de trabalho Remoto_.
+
+2.1 - MMC
+~~~~~~~~~
+
+Utilize a sua conta para aceder ao servidor e configure uma MMC para si seguindo os passos indicados abaixo.
+
+*Personalização de consolas e ferramentas do Windows 2003 Server:* +
+Aceder ao menu *Start*, opção *run...* e escrever _mmc_; +
+Na janela principal da consola de gestão aceder ao menu *File*, opção *Add/Remove Snap-in...*, botão *Add...*; +
+Da lista de _snap-ins_ escolher e pressionar _Add_ para adicionar cada um dos seguintes: *Active Directory Users and Computers*, *Group Policy Object Editor* para o Local Computer e *Shared Folders* para o Local Computer.
+lose
+
+No fim guarde a consola personalizada num ficheiro com o seu nome e coloque o ficheiro dentro da pasta *D:\Formacao\Formandos\<seu nome>\*
+
+2.2 - Contas de Utilizadores
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Tendo em conta a descrição feita no início deste exercício, determine quais as contas a criar, os grupos de permissões e as unidades organizacionais. Aponte essa informação num ficheiro de texto e guarde esse ficheiro com o nome *Planeamento.txt* dentro da pasta *D:\Formacao\Formandos\<seu nome>\*. Tenha o cuidado de definir uma política de nomes e siga essa política.
+
+2.3 - Pastas Partilhadas
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Dentro da pasta *D:\Partilhadas* crie uma pasta com o seu primeiro nome. Nessa pasta crie três pastas, uma para o departamento de *Formação* e outra para o departamenteo de *Administração* e uma última para chamada *Privada*. Esta pasta privada deve ser criada dentro da pasta chamada *Formação*. 
+
+<<<<
+
+2.4 - Implementar
+~~~~~~~~~~~~~~~~~
+
+Usando a informação dos dois pontos anteriores crie os elementos necessários (contas de utilizadores, grupos e OUs) para que as contas de utilizadores fiquem organizadas de acordo com as suas funções. Dentro de cada OU crie os grupos necessários para organizar os utilizadores de acordo com as suas permissões.
+
+Depois de ter criado os grupos e os utilizadores, partilhe as pastas anteriores de acordo com a seguinte tabela:
+
+[options="header"]
+|=================
+|Pasta         | Acessível a
+|Administração |Apenas a utilizadores que façam parte da administração
+|Formação      |A todos os utilizadores dos departamentos de formação e de administração e aos formadores
+|Privada       |Apenas a utilizadores dos departamentos de formação e administração
+|=================
+
+2.5 - Contas de Computadores
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Será conveniente criar computadores na _Active Directory_, dessa forma crie as OUs necessárias à organização dos computadores por localização e crie dentro de cada OU os computadores que foram alvo do planeamento na alínea 2.2.

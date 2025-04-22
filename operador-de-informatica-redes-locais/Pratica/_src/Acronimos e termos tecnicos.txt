@@ -1,0 +1,80 @@
+Acrónimos e Termos Técnicos
+===========================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|=============================================
+
+A seguinte tabela apresenta uma lista resumida de termos usados quando se trata do tema de redes. Os acrónimos e termos representam apenas um conjunto limitado dos possíveis, tendo sido escolhidos os mais comuns.
+
+[frame="topbot",cols="1,4",options="header"]
+|===========================================
+|Termo                                 |Descrição
+|5BaseT
+|10BaseT
+|100BaseTX
+|ADSL                                  |Técnica de transmissão de dados em banda larga com canais ascendentes e descendes assimétricos (Asymmetric Digital Subscriber Line).
+|ANSI
+|ARPA
+|ARPANET
+|ASCII
+|Atenuação                             |Redução da amplitude de um sinal (saída/entrada).
+|Atraso de propagação                  |Mesmo que Tempo de propagação.
+|BD
+|bps                                   |Bits por segundo, a velocidade à os dados são transferidos, pode ter várias grandezas (Kbps, Mbps, Gbps)
+|C8P8
+|Carrier                               |Linha, ligação ou meio no qual a transmissão é enviada.
+|CD
+|Chicote
+|Codificação de Manchester diferencial |Técnica de codificação utilizada na Ethernet numa par de fios de cobre. A informação binária é contida no sentido de transição do sinal eléctrico.
+|Datagrama                             |Também chamado pacote ou trama, é uma estrutura unitária  de transmissão de dados  ou uma sequência de dados  transmitida numa rede de computadores.
+|dB                                    |Decibéis (Unidades de grandeza em logaritmo base 10).
+|dBm                                   |Unidades Decibéis em relação à uma potência em mW.
+|DHCP
+|DTE                                   |Equipamento informático terminal (por exemplo um PC).
+|DPCH                                  |Canal de transporte de dados do sistema UMTS (Downlink Dedicated Physical Channel).
+|Downlink DPCH                         |Canal no sentido descendente da comunicação dos dados do sistema UMTS (Downlink Dedicated Physical Channel).
+|DPDCH                                 |Canal DPCH de dados.
+|E1                                    |Equivalente à Portadora T1 de 2,048 Mbps com 30 canais.
+|Eficiência do canal de transmissão    |Relação entre débito binário (bps) e largura de banda do espectro de frequência (Hz) requerida para a transmissão.
+|Ethernet
+|FD
+|FTP
+|Full-duplex                           |Modo de comunicação em que o meio de transmissão é usado por ambos os intervenientes ao mesmo tempo, fazendo uso completo do meio.
+|Half-duplex                           |Modo de comunicação em que o meio de transmissão é partilhada por ambos os intervenientes à vez.
+|HTTP
+|ISDN                                  |RDIS é equivalente a ISDN em inglês (Integrated Services Digital Network). Protocolo de comunicação, fornecido por companhias de telefone, que permite às redes de telefone a transmissão de dados, voz ou outro tipo de tráfego.
+|IP                                    |Parte do protocolo da Internet (Internet Protocol).
+|IPX
+|NetBIOS
+|BetBeui
+|OFDM                                  |Técnica de transmissão de dados por multiplexagem de canais ortogonais "carriers" (Orthogonal Frequency Division Multiplexing).
+|PCM                                   |Codificação pulsada (Pulse code Modulation).
+|Pacote                                |Mesmo que datagrama.
+|Protocolo                             |Conjunto de passos previamente acordados que permitem efectuar a comunicação.
+|QoS                                   |*Quality of Service*, Qualidade de Serviço. Termo que identifica o tempo de resposta, quantidade aceitável de falhas, durança dos períodos de manutenção e outras condições que afectam um serviço e a sua utilização por parte da base de utilizadores.
+|RJ45
+|RS232                                 |Standard de comunicação série (exemplo entrada COM dos PC).
+|STP
+|S/UTP
+|Simplex                               |Modo de comunicação em que o canal é usado apenas por um interveniente e apenas num sentido.
+|Sistema POST com FDD                  |Sistema telefónico com transmissão em simultâneo nos dois sentidos utilizando uma mutiplexagem dos dados no domínio da frequência sobre um só canal.
+|Sistema POST com EC                   |Sistema telefónico com transmissão em simultâneo nos dois sentidos utilizando uma mutiplexagem dos dados no domínio da frequência sobre um só canal. A estação base sabe quais são os dados que transmitiu, por isso, quando recebe os dados em sentido inverso, esta por subtrair os dados recebidos dos dados enviados. Esta técnica chama-se "Cancelamento do Eco".
+|Spreading factor                      |Espalhamento espectral utilizado no UMTS para proteger uma comunicação das interferências dos canais pertencentes a uma célula vizinha.
+|Tempo de propagação                   |Tempo de propagação no canal de transmissão = (comprimento do canal de transmissão)/(velocidade de transmissão).
+|T1                                    |Trama de dados de 193 bits utilizada no sistema telefónico americano, com 24 canais. Portadora T1 de 1,544 Mbps.
+|TCP                                   |Parte do protocolo da Internet (Transmission Control Protocol).
+|TO
+|UDP                                   |Protocolo usado para transmitir datagramas sem garantia da sua entrega (User Datagram Protocol).
+|UMTS                                  |Sistema de 3a geração de telemóveis (Universal Mobile Telecommunication system).
+|UTP
+|Volt                                  |Unidades de amplitude de um sinal eléctrico.
+|W (watt)                              |Unidades de potência em Watts.
+|WCDMA                                 |Técnica de multiplexagem de códigos para transmissão em banda larga (Wide Code Division Multiple Access).
+|WI-FI                                 |Refere-se à tecnologia wireless IEEE 802.11b.
+|WINS
+|===========================================

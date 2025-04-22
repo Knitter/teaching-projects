@@ -1,0 +1,78 @@
+Revisão de Matéria 1
+====================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |12 - Revisão de matéria 1
+|=============================================
+
+Em que consiste uma rede de computadores?
+
+''''
+''''
+
+Indica duas tipologias de rede que conheces e explica uma delas.
+
+''''
+''''
+''''
+''''
+
+Diz, resumidamente, qual a diferença entre sinal analógico e sinal digital.
+
+''''
+''''
+
+Indica o objectivo de um *repetidor*, de um *hub*, de um *switch* e de um *router*.
+
+''''
+''''
+''''
+''''
+
+Explica os protocolos TCP e IP e diz para que são usados.
+
+''''
+''''
+''''
+''''
+''''
+
+.Qual das seguintes características pode ser atribuído ao tráfego de dados?
+
+.. Insensível a atrasos;
+.. Sensível a variações de atraso de transmissão;
+.. Pouco exigente quanto a taxas de erros;
+.. Nenhuma das indicadas anteriormente;
+
+.A rede de _Internet_ é uma rede que pode ser definida como?
+
+.. Uma rede de 100Mbs suportada por fibra óptica;
+.. Uma rede universal, constituída por redes físicas de diversas tecnologias onde participam dispositivos de vários tipos através de uma forma de comunicação comum;
+.. Uma rede de 1Gbps, com tipologia em estrela e método de acesso CSMA/CD;
+.. Nenhuma das indicadas anteriormente;
+
+.O protocolo TCP?
+
+.. Permite uma transferência rápida e fiável de informação;
+.. Permite que várias aplicações numa máquina possam comunicar através de endereços de rede diferentes;
+.. Estabelece um circuito virtual antes de se iniciar a transferência de informação;
+.. Nenhuma das indicadas anteriormente;
+
+.O protocolo IP?
+
+.. Permite uma transferência fiável de informação;
+.. Permite a fragmentação de pacotes;
+.. Pertence à camada de transporte;
+.. Nenhuma das indicadas anteriormente;
+
+.Na topologia em estrela:
+
+.. As estações estão ligadas entre si de acordo com o tráfego de rede, de modo a optimizar os canais de transmissão;
+.. A informação é passada de estação em estação ao longo de um circuito fechado;
+.. As estações partilham o mesmo meio de transmissão;
+.. Nenhuma das indicadas anteriormente;

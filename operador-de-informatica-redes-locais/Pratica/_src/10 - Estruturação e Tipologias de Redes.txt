@@ -1,0 +1,59 @@
+Estruturação e Tipologias de Redes
+==================================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |10 - Estruturação e Tipologia de Redes
+|=============================================
+
+Identifique as seguintes tipologias de rede
+-------------------------------------------
+
+Este grupo apresenta um conjunto de imagens que representam tipologias de rede. Identifique cada uma das tipologias apresentadas e indique uma desvantagem de cada tipologia que identificou.
+
+.Tipologia 1
+image::./Imagens/estrela.png[align="center"]
+
+''''
+
+.Tipologia 2
+image::./Imagens/estrelaearvore.png[align="center",scaledwidth="50%"]
+
+''''
+
+.Tipologia 3
+image::./Imagens/estrelagrande.png[align="center",scaledwidth="75%"]
+
+''''
+
+.2 - Desenhe uma rede com 5 computadores nas tipologias _malha_, _malha completa_.
+
++
+
+<<<<
+
+.3 - Desenha uma rede que use as tipologias _malha_, _árvore_ e _estrela_ em simultâneo.
+
++
+
+<<<<
+
+Utilização do simulador de rede
+-------------------------------
+
+O simulador de rede _Cisco Packet Tracer_ permite simular cenários de redes que de outra forma não seria possível. Este software contém simuladores para equipamentos de rede como routers, hubs ou switches, bem como servidores, computadores, telefones e um conjunto alargado de dispositivos que permitem simular qualquer tipo de rede, desde uma licação simples a uma _Internet_.
+
+Comece por instalar o software _Cisco Packet Tracer_ nos computadores de formação.
+
+.Interface do Cisco Packet Tracer
+image::./Imagens/ciscopt2.png[align="center",scaledwidth="90%"]
+
+.a)
+Explore o programa e crie um esquema que represente a rede mostrada na primeira imagem do primeiro exercício. Configure os computadores com IPs na rede *192.168.1.x* e com máscara *255.255.255.0*. Efectue uma simulação de envio de pacotes entre dois dos computadores na rede.
+
+.b) 
+Crie um novo esquema que misture as redes apresentadas na primeira e na segunda imagem do primeiro exercício. Use hubs e computadores normais e escolha a opção de detecção automática de ligação para ligar os vários computadores. Configure cada um dos computadores com um IP único na rede *192.168.1.x*, e com uma máscara de *255.255.255.0*.

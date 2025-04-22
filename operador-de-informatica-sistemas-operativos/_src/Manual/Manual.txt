@@ -1,0 +1,1447 @@
+Sistemas Operativos
+===================
+Sérgio Lopes - knitter.is@gmail.com
+
+
+[preface]
+Sobre o Manual
+--------------
+
+Público Alvo
+~~~~~~~~~~~~
+
+O presente manual destina-se ao curso de Operador de Informática, um CEF tipo 4 e nível II, especificamente à componente de __Instalação, configuração e manutenção de sistemas operativos__.
+
+Licença
+~~~~~~~
+Esta obra é licenciada sob Creative Commons - Attribution-ShareAlike 3.0 Unported e poderá ser usada e partilhada segundo a mesma licença. Um resumo das obrigações pode ser consultada em http://creativecommons.org/licenses/by-sa/3.0/ e o texto completo da licença está disponível em http://creativecommons.org/licenses/by-sa/3.0/legalcode.
+
+Qualquer redistribuição da obra deverá manter a indicação do autor original, incluindo o endereço de e-mail.
+
+
+Introdução aos Sistemas Operativos
+----------------------------------
+
+Um sistema operativo (SO) é um *conjunto de programas de computador e dados associados, e que permite a gestão e utilização dos recursos de hardware de um computador*. Isto é, o SO composto por todo o software necessário ao funcionamento base do computador, e sem o qual não nos seria possível utilizá-lo. 
+
+É o SO que faz a ponte entre o hardware, os circuitos físicos do computador, discos, memórias, ratos, teclados, etc, e o utilizador, permitindo a utilização das máquinas a que chamamos computadores.
+
+Além de gerir e dar acesso ao hardware, o SO tem também a seu cargo a gestão de todas os programas que os utilizadores executam no computador, fornecendo a esses programas a memória que eles precisam, fornecendo formas de aceder a discos onde armazenar os dados, ou gerindo o tempo de processador a que cada programa tem direito.
+
+Sendo nada mais que um conjunto de programas e de dados desses programas, o SO desempenha mesmo assim uma função importante na utilização de um computador. É ele *que esconde do utilizador todos os pormenores de hardware e que controla toda a execução de memória e faz a gestão de todos os periféricos* que nós, como utilizadores, colocamos no computador. É assim o gestor de todos os recursos associados a um computador.
+
+Como exemplos de SOs actuais podemos considerar os sistemas Windows Vista, Windows 7, Mac OS X, as várias distribuições baseadas em GNU/Linux ou sistemas como o Android e o iOS para _smarthphones_.
+
+Seja qual for o SO a que nos referimos, as vantagens associadas são sempre as mesmas:
+
+[horizontal]
+Facilidade:: Facilidade na utilização dos equipamentos, execução e desenvolvimento de novos programas e acesso a dispositivos de armazenamento.
+Rentabilização:: Um computador executa instruções a uma velocidade que nenhum humano consegue acompanhar ou gerir. Sem um SO para gerir toda a execução o computador iria passar grande parte do tempo parado à espera do utilizador. Ao passarmos o controlo do equipamento para o SO rentabilizamos os recursos disponíveis.
+Fiabilidade:: Oferece um ponto central, coerente e constante para comunicação com equipamentos diferentes, garante que os dados são guardados correctamente e oferece mecanismos de recuperação e tratamento de erros que permitem dizer que os dados guardados e manipulados estão correctos.
+Segurança:: Através de mecanismos de validação de acesso à informação, limitação de acesso indevido e mecanismos de segurança de dados, o SO garante que a informação guardada se encontra segura footnote:[Esta características não é apenas dependente do SO, mas este representa um papel fundamental.].
+
+<<<<
+
+Evolução e Actualidade
+~~~~~~~~~~~~~~~~~~~~~~
+
+Tal como em todas as outras áreas da informática, no campo dos sistemas operativos a (r)evolução foi imensa. Passámos de equipamentos completamente controlados por pessoas a equipamentos autónomos e controlados por um SO sem a necessidade de constante monitorização de um operador dedicado. A tabela seguinte apresenta, de forma resumida, a evolução dos sistemas ao longo dos últimos anos de desenvolvimento
+
+[cols="1,4",options="header"]
+|=============================
+|Período                                     |Descrição
+|Início dos anos 50                          |Não existia SO, os computadores eram operados, completamente pelos operadores especializados. +
+A preparação dos programas a executar era complexa e demorada e o controlo da execução era feito através de painéis luminosos, sendo o resultado colocado em papel ou, em casos mais raros, em fita magnética.
+|Sistemas Operativos _batch_                 |Programas agrupados em lotes e execução sequencial, o que permitia uma rentabilização maior do computador e diminuía o tempo necessário para todo o processo. Nesta altura passou a ser usado um processador para controlo de programas.
+|Sistemas com monitor residente              |Usavam um outro programa que monitorizava a execução dos programas dos utilizadores. Os programas passaram a poder ter instruções que diziam ao monitor que operações queriam executar. +
+Este monitor era responsável por carregar os módulos dos programas quando necessário e alternar os recursos entre os vários programas.
+|Sistemas com operações de E/S               |Estes sistemas introduziram a capacidade de gerir periféricos onde podiam ser guardados outros programas ou para onde podiam ser enviadas informações, ex.: impressora. No entanto, a utilização de operações de E/S footnote:[E/S - Entrada/Saída] causa um desaproveitamento do CPU dado que estas instruções são sempre mais lentas. +
+Nestes sistemas o CPU é responsável por obter os dados dos dispositivos de armazenamento.
+|Sistemas com processamento _off-line_ de E/S|A leitura de dados é feita por um dispositivo próprio, o CPU só terá de ir buscar os dados a esse dispositivo. Esta alteração aumenta a velocidade de processamento dado que o CPU deixa de ser responsável por ler os dados do local onde estão armazenados e é livre para fazer outras operações enquanto os dados estão a ser lidos.
+|Introdução de _Spooling_                    |SPOOL - _Simultaneous Peripheral Operation On-Line_, é o processo pelo qual passa a ser possível acesso simultâneo e aleatório a uma zona de armazenamento temporário, chamada _buffer_ onde os dados são colocados por um sistema de escrita e obtidos mais tarde por um qualquer sistema de leitura. +
+Nesta altura surgem também os discos que vêm substituir as fitas magnéticas. +
+Um exemplo de Spooling é o uso de impressoras: Como a impressora é mais lenta que o CPU, o CPU escreve os dados a imprimir para uma zona de memória especial na impressora, e o dispositivo de impressão vai buscar os dados a essa zona. Isto permite que um dispositivo mais lento tenha sempre dados para usar e o CPU que é mais rápido consiga fazer o seu trabalho sem se preocupar se a impressora já conseguiu imprimir todos os dados.
+|_Batch_ multi-tarefa                        |Passa a ser possível carregar para a memória vários programas ao mesmo tempo e o SO passa a conseguir alternar entre os programas em execução tendo por base de decisão os recursos existentes. No entanto, para fazer uso destas novas técnicas, os programas têm de ser criados de forma específica para as usarem.
+|Sistemas multi-tarefa                       |Uma evolução lógica dos sistemas _batch multi-tarefa_ que aumenta a rentabilização do sistema e melhora a comunicação com o utilizador. Esta foi, talvez, uma das maiores alterações aos sistemas operativos e que mais mudanças provocou. Com estes sistemas veio a necessidade de interrupções de E/S, acesso directo à memória por parte dos programas, melhor gestão e protecção de memória e uma completa forma nova de gerir os recursos existentes no computador.
+|Sistemas de _time-sharing_                  |São sistemas multi-tarefa para suportar várias tarefas mas oferecendo também interactividade. O tempo de utilização do CPU deixou de ser exclusivo de uma aplicação passando a ser partilhado, os programas têm direito a um determinado tempo no CPU depois do qual são retirados e suspensos, só voltando ao CPU após todos os programas em espera terem também eles passado pelo CPU. +
+Permitem vários utilizadores e várias aplicações em simultâneo.
+|=============================
+
+kernel
+~~~~~~
+
+Embora um SO seja composto por muitos programas diferentes, a peça mais importante e que faz tudo o resto funcionar adequadamente é o _kernel_. Um _kernel_ não é mais que um programa de computador que liga directamente com o hardware e fornece o primeiro conjunto de funcionalidade mínimas que permitem a todas as outras aplicações funcionar correctamente.
+
+image::./Imagens/layout.kernel.png[align="center",title="Localização do kernel"]
+
+Reconhecem-se, actualmente, três tipos diferente de _kernel_: Monolítico, Híbrido e Micro-kernel. Estes tipos não diferenciam muito uns dos outros e a distinção é, muitas vezes, apenas de importância académica.
+
+Podemos dizer que num **_kernel_ monolítico** todos os serviços do SO são executados dentro do _kernel_, num **micro-kernel** apenas os serviços mínimos de gestão de hardware e memória são implementados dentro do _kernel_ sendo os restantes serviços do SO implementados por outros programas auxiliares que comunicam directamente com o _kernel_. Um sistema *híbrido* tenta misturar os dois conceitos anteriores.
+
+Sistemas DOS
+------------
+
+Um dos primeiros tipos de sistema operativo a ser usado em massa é o chamado __Disk Operating System__ ou DOS. O nome deriva do facto de que estes sistemas operativo eram inicialmente executados a partir dos discos rígidos, compostos por discos de metal, que surgiram na mesma altura, em oposição a outros sistemas que eram carregados a partir de fitas magnéticas, disquetes ou mesmo de chips de memória presentes nas __motherboards__. Actualmente a distinção faz pouco sentido, seja porque todos os sistemas de utilização doméstica são carregados a partir de um disco seja porque existe cada vez mais dispositivos de armazenamento que não usam discos de metal como por exemplos os dispositivos _flash_ ou os __solid-state__.
+
+Dos vários sistemas DOS que apareceram, aquele te teve maior utilização e impacto foi o sistema da Microsoft, o MS-DOS. O MS-DOS era um sistema que carregava todos os programas e informação que o constituía a partir do disco, funcionando com um _kernel_ monolítico e oferecendo mecanismos de E/S e abstracção de _hardware_ para os computadores da IBM e para os computadores compatíveis que surgiram mais tarde.
+
+Foi criado em 1981, a pedido da IBM, tendo a Microsoft comprado um sistema chamado QDOS que serviu de base ao desenvolvimento do MS-DOS. A primeira versão surgiu em 1982 e desde essa altura foram criadas 8 versões diferentes, tendo o desenvolvimento terminado em 1994. Actualmente uma versão emulada do MS-DOS existe nos sistemas Windows XP, Vista e 7. A Microsoft terminou completamente o suporte para o MS-DOS em 2000.
+
+Estrutura e Utilização de Memória
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Inicialmente, entre os anos 80 e os meio dos anos 90, a memória de endereçamento footnote:[Memória de endereçamento é a memória usada para referir a memória real existente. As técnicas usadas variam entre os diferentes tipos de processador.] disponível a um computador estava limitada a 640K. Este limite fazia com que a memória que podia ser usada para carregar programas fosse menor do que a que veio a revelar-se necessária. Os programas passaram a consumir cada vez mais memória, e a memória RAM começou a ser cada vez mais barata.
+
+A memória de endereçamento surgiu assim dividia em várias secções, os primeiros 640K, a que se chamava memória convencional, eram onde residiam alguns drivers e aplicações de manutenção. De seguida surgiam os restantes 384K destinados a drivers de hardware. Estes 384K raramente ficavam cheios dado que estes drivers eram em menor quantidade e utilizavam menos memória para dados.
+
+Esta memória extra, entre os 640K e os 1024K existentes era designada de Upper Memory Area (UMA).
+
+Acima de 1024K de memória (640K + 384K) surge a memória estendida, e a zona denominada High Memory Area (HMA). Esta memória corresponde aos primeiros 64K, menos 16K, da zona acima de 1024K. O acesso a esta zona segue a especificação eXtended Memory Specification (XMS).
+
+HIMEM.SYS
+^^^^^^^^^
+
+Um dos _drivers_ mais conhecidos para o sistema MS-DOS, existindo equivalentes noutros sistemas operativos, e que permite a utilização de memória estendida através de XMS. Este é um _driver_ importante uma vez que através dele passou a ser possível a versões do MS Windows aceder a mais memória e, em alguns casos, era fundamental para que o MS Windows pudesse arrancar. No FreeDOS, o ficheiro equivalente é denominado HIMEN.EXE.
+
+Sistema FreeDOS
+~~~~~~~~~~~~~~~
+
+FreeDOS, também conhecido como Free-DOS ou PD-DOS, é um sistema operativo para computadores IBM ou compatíveis footnote:[Todos os computadores que sigam a arquitectura IBM dizem-se compatíveis com computadores IBM.]. Como qualquer sistema operativo o FreeDOS é composto por uma variedade de programas que permitem o acesso a ficheiros, gestão de memória, etc.
+
+O projecto FreeDOS surgiu em 1994 após ter sido anunciado pela Microsoft que não iria mais produzir ou vender o seu sistema MS-DOS, que era usado nos computadores pessoais da altura, e que se ia concentrar nos sistemas Windows. O manifesto inicial, escrito por Jim Hall, propunha a criação de um sistema livre que substituísse o MS-DOS, sendo compatível com este.
+
+Rapidamente surgiram outros programadores que se juntaram ao projecto e criaram o _kernel_, o COMMAND.COM para interpretação dos comandos internos e algumas ferramentas base do sistema. O desenvolvimento continuou até ser lançada a versão 1.0, e o FreeDOS está agora disponível para download e utilização livre, numa versão completa e compatível tanto com computadores antigos como com computadores modernos.
+
+Utilizações comerciais do FreeDOS podem ser vistas em:
+- A empresa DELL inclui o FreeDOS nos _desktops_ da série *n*.
+- A HP permite a escolha do FreeDOS nos _desktops_ DC5750, nos netbooks Mini 5101 e nos portáteis Probook. Além disto a HP usa o FreeDOS para criar os sistemas de arranque que permitem a actualização da BIOS.
+- A ASUS usa o FreeDOS para os CDs de configuração das suas motherboards, especialmente para instalar drivers SATA.
+- As ferramentas de manutenção da Seagate, as SeaTools, usam o FreeDOS.
+- O sistema de actualização de _firmware_ dos discos _solid-state_  da Intel usam o _kernel_ do FreeDOS
+
+Processo de Instalação
+^^^^^^^^^^^^^^^^^^^^^^
+
+O processo de instalação do FreeDOS é relativamente simples, sendo feito com a ajuda de um assistente que permite, entre outras coisas, escolher os programas a instalar, fazer a gestão dos discos de instalação e oferecer o acesso às ferramentas de manutenção necessárias à instalação (como o caso de ferramentas de administração de discos).
+
+.Nota
+A instalação de qualquer sistema operativo, seja o FreeDOS ou outro sistema actual, segue sempre os mesmos passos básicos: configurar o disco onde será feita a instalação, formatar esse disco e garantir que tem uma partição de arranque.
+
+Passos de Instalação
+++++++++++++++++++++
+
+De seguida são apresentados os vários passos de instalação, acompanhados de uma descrição. Esta instalação é feita com base no CD de instalação do FreeDOS, disponível na página do projecto footnote:[www.freedos.org].
+
+Ao iniciar o computador com o CD, o FreeDOS irá apresentar um ecrã introdutório com uma lista de opções. Nesta janela vamos apenas carregar na tecla *Enter* de modo a dar início ao processo de instalação. Seria possível usar o FreeDOS sem instalar, totalmente a partir do CD, mas esse processo não nos interessa.
+
+.Passo 1
+image::./Imagens/instalacao.03-novm.png[align="center",scaledwidth="75%"]
+
+Depois de iniciado o processo de instalação é-nos perguntado, exactamente o que pretendemos fazer, se instalar o FreeDOS ou se usar alguma das opções de CD Live que este oferece. As opções de CD Live permitiam usar o FreeDOS sem instalar, mas como pretendemos mesmo instalar para o disco, vamos escolher a primeira opção, que nos permite inicar o assistente de instalação. 
+
+.Passo 2
+image::./Imagens/instalacao.04-novm.png[align="center",scaledwidth="75%"]
+
+Escolha a língua em que pretende usar o FreeDOS. Podemos escolher a opção *Portuguese* que nos dará um sistema instalado em Português.
+
+.Passo 3
+image::./Imagens/instalacao.05-novm.png[align="center",scaledwidth="75%"]
+
+Como ainda não preparámos o disco onde vamos instalar o FreeDOS, iremos fazer essa operação usando uma aplicação chamada XFdisk. Seleccione a primeira opção que inicia a aplicação de gestão de discos.
+
+.Passo 4
+image::./Imagens/instalacao.06-novm.png[align="center",scaledwidth="75%"]
+
+Na introdução do XFdisk é-nos mostrada informação sobre quais os parâmetros que o XFdisk irá escrever no ficheiro, nesta janela basta escolher a opção *OK*.
+
+.Passo 5
+image::./Imagens/instalacao.07-novm.png[align="center",scaledwidth="75%"]
+
+Neste momento o disco está completamente vazio, sem qualquer partição ou outra estrutura que permita a sua utilização. Para podermos começar a usar o disco temos criar uma partição, formatar essa partição e escrever as informações iniciais que permitem activar uma partição para uso. E no caso especial em que estamos a trabalhar, para arranque por um SO.
+
+Pressione a tecla *Enter* na linha que representa o espaço vazio.
+
+.Passo 6
+image::./Imagens/instalacao.08-novm.png[align="center",scaledwidth="75%"]
+
+O menu que lhe é apresentado permite criar e configurar partições. Escolha opção *New Partition* e pressione *Enter*.
+
+.Passo 7
+image::./Imagens/instalacao.09-novm.png[align="center",scaledwidth="75%"]
+
+No novo menu que surge escolha a opção *Primary Partition...*. A partição que pretendemos criar é uma partição primária. Estamos limitados a quatro partições primárias por cada disco mas como apenas precisamos de uma, esse limite não nos irá ser aplicado.
+
+.Passo 8
+image::./Imagens/instalacao.10-novm.png[align="center",scaledwidth="75%"]
+
+Depois de escolhermos o tipo de partição é preciso indicar o tamanho da mesma. Por omissão o XFdisk já coloca como tamanho o espaço máximo existente, neste caso o espaço disponível no disco. Assim bastará confirmar a criação de uma partição primária para o total do espaço livre pressionando a tecla *Enter*.
+
+.Passo 9
+image::./Imagens/instalacao.11-novm.png[align="center",scaledwidth="75%"]
+
+Os dois próximos passos dizem respeito à iniciação da partição, e iremos responder afirmativamente, escolhendo a opção *YES* nos dois casos. Com estas opções a nossa partição fica pronta a ser usado por um SO e só nos falta garantir que as definições que estivemos a escolher são escritas para o disco.
+
+.Passo 10
+image::./Imagens/instalacao.12-novm.png[align="center",scaledwidth="75%"]
+
+.passo 11
+image::./Imagens/instalacao.13-novm.png[align="center",scaledwidth="75%"]
+
+.Passo 12
+image::./Imagens/instalacao.14-novm.png[align="center",scaledwidth="75%"]
+
+Após dizermos que pretendemos escrever as informações para o disco, o processo de gravação e formatação tem início. Neste caso só nos resta esperar que o processo.
+
+.Passo 13
+image::./Imagens/instalacao.15-novm.png[align="center",scaledwidth="75%"]
+
+Findo o processo de configuração do disco, é necessário reiniciar o computador mantendo o CD do FreeDOS ainda dentro da _drive_ de CD-ROM.
+
+.Passo 14
+image::./Imagens/instalacao.16-novm.png[align="center",scaledwidth="75%"]
+
+Ao arrancarmos a máquina vamos ter de passar pelos passos iniciais mas já não será necessário usar o XFdisk uma vez que o nosso disco se encontra configurado. Podemos assim continuar com o processo de instalação do FreeDOS.
+
+Ao continuarmos o processo de instalação o assistente irá detectar que o nosso disco, apesar de configurado, não se encontra formatado. Portanto iremos definir o formato do disco escolhendo a opção *YES*.
+
+.Passo 15 
+image::./Imagens/instalacao.17-novm.png[align="center",scaledwidth="75%"]
+
+Antes do processo iniciar recebemos um aviso de que os dados do disco irão ser apagados, como ainda não temos lá qualquer informação, podemos continuar, escrevendo *YES* na consola.
+
+.Passo 16
+image::./Imagens/instalacao.18-novm.png[align="center",scaledwidth="75%"]
+
+Depois de formatado o disco, continuamos a instalação. E damos início ao processo de instalar os ficheiros do sistema operativo.
+
+.Passo 17
+image::./Imagens/instalacao.19-novm.png[align="center",scaledwidth="75%"]
+
+.Passso 18
+image::./Imagens/instalacao.20-novm.png[align="center",scaledwidth="75%"]
+
+.Passo 19
+image::./Imagens/instalacao.21-novm.png[align="center",scaledwidth="75%"]
+
+.Passo 20
+image::./Imagens/instalacao.22-novm.png[align="center",scaledwidth="75%"]
+
+Antes de começarmos a copiar os ficheiros precisamos indicar em que directoria vamos instalar os mesmos. Para manter compatibilidade com algumas aplicações de MS-DOS, vamos alterar a directoria de destino de instalação para _C:\DOS_, em vez de _C:\FDOS_.
+
+.Passo 21
+image::./Imagens/instalacao.23-novm.png[align="center",scaledwidth="75%"]
+
+Neste passo escolhemos as aplicações a instalar. Dos conjuntos de software existentes vamos escolher apenas: base, compress e utils. Para isso usamos a tecla de espaço para remover o *X* que se encontra ao lado de cada uma das secções. Navegamos entre as secções usando as teclas de direcção. Podemos instalar os pacotes que quisermos, mas estes três contêm todas as ferramentas base, necessárias a um sistema de trabalho.
+
+.Passo 22
+image::./Imagens/instalacao.24-novm.png[align="center",scaledwidth="75%"]
+
+A partir deste momento os ficheiros vão começar a ser, finalmente, compiados para o disco. O assistente irá fazer a cópia e mostrar-nos uma barra de progresso.
+
+.Passo 23
+image::./Imagens/instalacao.25-novm.png[align="center",scaledwidth="75%"]
+
+A cada pacote de software que terminar de ser copiado é-nos mostrada uma mensagem para trocarmos de disco, como todos os ficheiros estão num único CD, apenas precisamos carregar na tecla *Enter* e continuar a instalação.
+
+.Passo 24
+image::./Imagens/instalacao.26-novm.png[align="center",scaledwidth="75%"]
+
+Depois de copiar os ficheiros, o assistente irá iniciar um processo de configuração. Caso existem aplicações com dependências não resolvidas e nos seja perguntado se queremos instalar essas dependências, responderemos que não.
+
+Findo o processo de instalação seremos brindados com um sistema operativo instalado, acessível através da linha de comandos. Não se esqueça de remover o CD para poder usar o sistema sem limitações.
+
+<<<<
+
+Comandos e Sistema de Ficheiros
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+No sistema de ficheiros usado por omissão nos sistemas MS-DOS e FreeDOS os nomes de ficheiros estão limitados a *11 caracteres apenas* footnote:[O FreeDOS contém extensões para permitir mais caracteres.], onde *oito caracteres correspondem ao nome* e *três caracteres correspondem à extensão do ficheiros*, caso esta exista.
+
+Sendo um sistema sem componente gráfica, toda a interacção é feita através da emissão de comandos, que são interpretados pelo SO. Os comandos são colocados na consola e seguidos da tecla _enter_. Se escritos correctamente o comando é executado e o resultado é mostrado na consola, se o comando for escrito de forma errada então o resultado será uma mensagem de erro que indicará de que forma o comando foi mal escrito. Estas mensagens nem sempre são fáceis de entender, mas é importante que sejam lidas com atenção pois fornecem informações muito importantes sobre os erros cometidos.
+
+Além de ficheiros tradicionais, também chamados arquivos, existem directorias, também chamadas de pastas, ou directórios, permitem a organização de ficheiros e da informação contida. Podemos olhar para uma directoria como um dossier onde colocamos ficheiros com informação.
+
+Lista de Comandos MS-DOS/FreeDOS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+
+Alguns comandos extra estão disponíveis mas iremos concentrar-nos apenas nos comandos padrão, alguns dos quais ainda presentes nas versões emuladas em Windows XP e versões mais recentes. Os comandos da tabela seguinte constituem os comandos mais comuns, não são a lista completa de todos os comandos existentes.
+
+[cols="1,4",options="header"]
+|===============================
+|Comando       |Descrição
+|ATTRIB        |Define o atributo do ficheiro. Opções: +
+/A - ficheiro de arquivo +
+/H - ficheiro escondido +
+/R - ficheiro de leitura +
+/S - ficheiro de sistema
+|CHDIR ou CD   |Permite mudar para uma directoria ou drive.
+|CLS           |Limpa o ecrã e move o cursor para o canto esquerdo superior.
+|COPY          |Permite copiar ficheiros ou directorias. Opções: +
+/A - indica que se trata de um ficheiro de texto ASCII +
+/B - indica que se trata de um ficheiro binário +
+/V - faz a verificação da cópia +
+/Y - substitui todos os ficheiros que tenham nomes iguais no destino sem pedir confirmação +
+/-Y - pede confirmação antes de substituir ficheiros com nomes iguais
+|DATE          |Permite definir a data do sistema.
+|DEL           |Remove um ficheiro ou directoria. Opções: +
+/P - pede confirmação antes de remover +
+/V - mostra todos os ficheiros apagados
+|DELTREE       |Remove uma directoria e todo o seu conteúdo. Opções: +
+/Y - remove os elementos indicados sem pedir confirmação +
+/V - mostra um sumário com totais no final +
+/D - mostra informação de _debug_ +
+/X - testa sem remover dados +
+/Z:SERIOUSLY - remove a raiz, se esta for indicada, sem pedir confirmação
+|DIR           |Permir listar directorias ou pesquisar ficheiros. Opções: +
+/P - mostra a informação em páginas, pára após cada ecrã cheio +
+/W - mostra a lista em colunas +
+/A - mostra todos os atributos dos ficheiros +
+/O - ordena a lista usando N para nome, S para tamanho, E para extensão, D para data/hora, G para directorias em primeiro, - para ordem inversa e U para não usar ordem + 
+/S - mostra lista da directoria e das suas sub-directorias +
+/B - omite o cabeçalho e o sumário final +
+/L - usa nomes em minúsculas +
+/Y ou /4 - mostra o ano com quatro dígitos
+|EDIT          |Editor de texto. Opções: +
+/B - modo monocromático +
+/I - esquema de cores invertido +
+/H - usa 43 ou 50 linhas consoante o _driver_ gráfico seja EGA ou VGA +
+/R - abre os ficheiros em modo de leitura
+|FORMAT        |Permite formatar drives (discos rígidos ou disquetes). Opções: 
+/V:<etiqueta> - indica o nome do volume +
+/S - cria um disco de sistema +
+/D - mostra todas as informações sobre a formação, usado para _debug_ +
+/Q - formatação rápida +
+/U - formatação incondicional ou no caso de disquetes, de baixo nível +
+/F:<tamanho> - permite definir o tamanho da disquete a formatar +
+/4 - formata uma disquete de 1.2MB como se fosse uma disquete de 360KB +
+/T:<pistas> - permite definir o número de pistas de uma disquete +
+/N:<sectores> - permite definir o número de sectores de uma disquete
+|HELP          |Mostra a ajuda do sistema.
+|MEM           |Fornece informações sobre a memória. Opções:
+/A - mostra todos os detalhes da memória HMA +
+/C - classifica módulos com memória abaixo de 1MB +
+/D - mostra informação de _debug_ +
+/DEB - mesmo que /D +
+/DEV - lista os _drivers_ actualmente carregados +
+/E - mostra todos os detalhes sobre a memória EMS +
+/F - mostra a memória livre nos blocos convecional e elevada +
+/FR - mesmo que /F
+/FU - lista todos os blocos de memória +
+/M <nome> - mostra o consumo de memória de um _driver_ específico +
+/N - suprime o sumário
+/O - modo de compatibilidade com o FreeDOS MEM 1.7 beta +
+/P - pára após cada ecrã +
+/S - mostra o sumário final +
+/U - lista os programas carregados para a memória convencional e elevada +
+/X - mostra todos os detalhes da memória XMS
+|MKDIR ou MD   |Criar uma directoria nova.
+|MOVE          |Move ficheiros ou directorias para outros locais. Opções: +
+/Y - suprime a confirmação de substituição de ficheiros com nome igual +
+/-Y - mostra a mensagem de confirmação de substituição de ficheiros com nome igual +
+/V - efectua a confirmação de que todos os ficheiros foram movidos com sucesso
+|RENAME ou REN |Altera o nome de um ficheiro ou directoria.
+|RMDIR ou RD   |Remove uma directoria
+|TIME          |Permite definir a hora do sistema.
+|TREE          |Mostra a estrutura de directorias em forma de árvore. Opções: +
+/F - mostra o nome dos ficheiros em cada directoria +
+/A - usa apenas caracteres ASCII
+|TYPE          |Mostra o conteúdo de um ficheiro.
+|VER           |Comando que mostra a versão do sistema operativo. Opções: +
+/R - mostra versão do kernel +
+/W - informação da garantia do FreeCOM +
+/D - informação sobre redistribuição do FreeCOM +
+/C - mostra informação de todos os contribuidores para o comando FreeCOM
+|XCOPY         |Permite copiar ficheiros e árvores de directorias. Opções: +
+/A - copia apenas ficheiros com o atributo de arquivo +
+/C - continua a copiar mesmo que ocorram erros no processo +
+/D - copia apenas ficheiros que foram modificados após uma determinada data +
+/E - copia sub-directorias, mesmo que vazias +
+/F - mostra o nome completo da origem e do destino +
+/H - copia ficheiros de sistema, escondidos e ficheiros protegidos +
+/I - se o destino não existe e estamos a copiar mais que um ficheiro assume que o destino é uma directoria +
+/L - simula uma cópia, lista apenas os ficheiros sem lhes mexer +
+/M - copia apenas ficheiros com o atributo de arquivo mas remove o atributo dos ficheiros originais +
+/N - suprime a confirmação de substituição de ficheiros e ignora os ficheiros em questão +
+/P - pede confirmação antes de criar os ficheiros no destino +
+/Q - não mostra o nome dos ficheiros copiados +
+/R - substitui ficheiros com o atributo de leitura e ficheiros protegidos +
+/S - copia directorias e subdirectorias, excepto subdirectorias vazias +
+/T - cria a estrutura de directorias sem copiar ficheiros +
+/V - verifica a cópia de cada ficheiro +
+/W - espera que seja pressionada uma tecla antes de iniciar a cópia +
+/Y - suprime a confirmação de substituição de ficheiros com nomes iguais +
+/-Y - pede confirmação antes de substituir ficheiros com nomes iguais
+|UNDELETE      |Tenta recuperar um ficheiro previamente apagado. Opções: +
+/ALL - recupera todos os ficheiros possíveis sem perguntar +
+/LIST - lista os ficheiros que podem ser recuperados +
+/E - exporta (copia) os ficheiros que podem ser recuperados para um disco externo ou uma directoria 
+|===============================
+
+Os Comandos em Acção
+~~~~~~~~~~~~~~~~~~~~
+
+Neste capítulo são apresentados exemplos da utilização dos comandos mais comuns. Deve ser tomada atenção, principalmente, à forma como os comandos são escritos e ao facto de partilharem entre eles uma sintaxe na forma de:
+
+  <COMANDO> <DADOS OBRIGATÓRIOS> <PARÂMETROS>
+
+Nos exemplos não são usados parâmetros, que podem ser consultados na tabela anterior, de modo a tornar os exemplos mais simples. O nome dos comandos não é sensível a maiúsculas ou minúsculas, assim escrever tudo em maiúsculas é igual a escrever tudo em minúsculas ou a misturar maiúsculas com minúsculas.
+
+Nos exemplos seguintes o disco principal é sempre a unidade C: e a primeira disquete é sempre a unidade A:. A _prompt_ será sempre terminada com o símbolo *>*. O texto compreendido entre parênteses rectos, *[* e *]*, indica informação opcional e o texto entre sinais de menor e maior, *<* e *>*, indica texto a preencher pelo utilizador.
+
+Manipular Directorias e Ficheiros
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+MKDIR (MD)
+++++++++++
+
+Permite a criação de novas directorias.
+
+----
+Sintaxe
+    MKDIR <caminho>
+    MD <caminho>
+
+Descrição
+    caminho: indica o nome e a localização da nova directoria
+
+Exemplo
+    Criar directorias no disco principal:
+    
+    C:\>mkdir formacao
+    C:\>mkdir exercicios
+----
+
+CHDIR (CD)
+++++++++++
+
+Permite mudar de directoria, oferecendo assim a possibilidade de navegar pelas estruturas dos discos e disquetes disponíveis.
+
+----
+Sintaxe
+    CHDIR <caminho
+    CHDIR ..
+
+    ou
+ 
+    CD <caminho> 
+    CD ..
+
+Descrição
+    caminho: caminho completo de directorias que pretendemos usar
+    ..: o uso de dois pontos permite navegar para a directoria anterior à directoria actual
+
+Exemplo
+    Mudar do disco principal para a primeira disquete:
+    C:\>cd a:
+    
+    Mudar da raiz do disco principal para a pasta "formacao":
+    C:\>cd formacao
+
+    Mudar da primeira disquete para a pasta "formacao" que se encontra no disco principal:
+    A:\>cd c:\formacao
+----
+
+RMDIR (RD)
+++++++++++
+
+Remove directorias que se encontrem vazias.
+
+----
+Sintaxe
+    RMDIR <directoria>
+
+Descrição
+    ficheiro: Indica a directoria a remover.
+
+Exemplo
+    Remover a directoria "exercicios" presente na raiz do disco principal:
+    C:\>rmdir exercicios
+----
+
+DELTREE
++++++++
+
+Remove uma directoria e *todo* o seu conteúdo. É usado para remover hierarquias completas de directorias ou directorias que não se encontrem vazias
+
+----
+Sintaxe
+    DELTREE <directoria>
+
+Descrição
+    directoria: caminho completo ou parcial para a directoria a remover
+
+Exemplo
+   Remover a directoria "exercicios" presente no disco principal:
+   C:\>deltree exercios
+----
+
+COPY
+++++
+
+Permite a cópia de ficheiros.
+
+----
+Sintaxe
+    COPY <origem> <destino>
+
+Descrição
+    origem: ficheiro original
+    destino: localização da cópia
+
+Exemplo
+   Copiar o ficheiro "dos.txt" presente na raiz do disco para a pasta "formacao":
+   C:\>copy dos.txt formacao/
+----
+
+XCOPY
++++++
+
+Comando similar ao comando COPY mas permite a cópia de directorias e oferece um conjunto extra de opções que poderão ser usadas para situações onde o comando apenas COPY falharia.
+
+----
+Sintaxe
+    XCOPY <origem> <destino>
+
+Descrição
+    origem: ficheiro ou directoria a copiar
+    destino: localização final do ficheiro ou directoria que está a ser copiado
+
+Exemplo
+   Copiar o ficheiro "dos.txt" da raiz do disco principal para a pasta "formacao":
+   C:\>xopy dos.txt formacao/
+----
+
+DEL
++++
+
+Remove um ficheiro.
+
+----
+Sintaxe
+    DEL <ficheiro>
+
+Descrição
+    ficheiro: caminho para o ficheiro a remover
+
+Exemplo
+   Remover o ficheiro "dos.txt" presente na raiz do disco principal:
+   C:\>del dos.txt
+
+----
+
+UNDELETE
+++++++++
+
+Tenta a recuperação de um ficheiro que tenha sido removido com o comando DEL. Este comando nem sempre consegue recuperar os ficheiros removidos, sendo recomendado que o comando seja usado imediatamente após uma remoção, por exemplo, para recuperar um ficheiro que tenha sido removido por engano. Não se deve confiar no comando UNDELETE para recuperar qualquer ficheiro em qualquer altura.
+ 
+----
+Sintaxe
+    UNDELETE <ficheiro>
+
+Descrição
+    ficheiro: ficheiro a recuperar
+
+Exemplo
+   Recuperar o ficheiro "dos.txt" apagado da raiz do disco principal:
+   C:\>undelete dos.txt
+----
+
+MOVE
+++++
+
+Move ficheiros para outra localização.
+
+----
+Sintaxe
+    MOVE <origem> <destino>
+
+Descrição
+    origem: ficheiro ou directoria a mover
+    destino: nova localização para o ficheiro ou directoria
+
+Exemplo
+    Mover um ficheiro chamado "dos.txt", da raiz a pasta "formacao", dentro do disco principal:
+    C:\>move dos.txt formacao/
+----
+
+TYPE
+++++
+
+Permite ver o conteúdo de ficheiros de texto. Todo o conteúdo é mostrado na consola.
+
+----
+Sintaxe
+    TYPE <ficheiro>
+
+Descrição
+    ficheiro: nome do ficheiro a mostrar
+
+Exemplo
+   C:\>type dos.txt
+----
+
+Pesquisa de Ficheiros e Directorias
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+DIR
++++
+
+Permite listar e pesquisar ficheiros ou directorias. É possível usar vários parâmetros que alteram a forma de pesquisa e o formato no qual os resultados são apresentados.
+
+----
+Sintaxe
+    DIR [pesquisa]
+
+Descrição
+    pesquisa: texto a usar na pesquisa, pode ser o nome de um ficheiro, de uma directoria,
+              pode usar caracteres especiais, indicar unidades, etc
+Exemplo
+    Listar o conteúdo da raiz do disco principal
+    C:\>dir
+
+    Procurar todos os ficheiros com um "A" na terceira letra:
+    C:\>dir ??a*
+
+    Procurar todos os ficheiros com a extensão "bat":
+    C:\>dir *.bat
+
+    Procurar todos os ficheiros com o nome inicial "dos", e mostrar em colunas:
+    C:\>dir dos* /w
+----
+
+Alguns caracteres possuem propósito especial nas pesquisas, nomeadamente os caracteres *\**, e o *?*. O carácter *\** representa o valor **zero ou mais caracteres, quaisquer que sejam** e o carácter *?* representa o valor **exactamente um carácter qualquer**.
+
+TREE
+++++
+
+Mostra uma representação em árvore da directoria especifica, com todas as sud-directorias existentes.
+
+----
+Sintaxe
+    TREE [directoria]
+
+Descrição
+    directoria: indica a directoria a listar, se não for passada directoria
+                nenhuma, então a directoria actual será usada
+Exemplo
+    Mostrar uma representação em árvore da raiz do disco principal:
+    C:\>tree
+----
+
+<<<<
+
+Manutenção
+^^^^^^^^^^
+
+FORMAT
+++++++
+
+Permite formatar discos rígidos e disquetes. Atenção que a formatação unidades provoca a perda de qualquer informação presente nessa unidade. A formatação do disco principal onde o sistema operativo está instalado causa a perda do sistema e inutilização do computador, enquanto um novo sistema não seja instalado.
+
+----
+Sintaxe
+    FORMAT <unidade>
+
+Descrição
+    unidade: unidade a formatar
+
+Exemplo
+    Formatar a primeira disquete:
+    C:\>format a:
+----
+
+UNFORMAT
+++++++++
+
+Possibilita reverter o processo de formatação feito pelo comando FORMAT. A reversão poderá não ser possível.
+
+----
+Sintaxe
+    UNFORMAT <unidade>
+
+Descrição
+    unidade: unidade a recuperar
+
+Exemplo
+    Recuperar dados da primeira disquete após formatação:
+    C:\>unformat a:
+----
+
+DATE
+++++
+
+Mostra, e permite alterar, a data actual do sistema. Se apenas se pretender ver a data actual basta pressionar _enter_ no fim do comando sem escrever qualquer valor.
+
+----
+Sintaxe
+    DATE [mês-dia-ano]
+
+Descrição
+    dia: Dia do ano que pretendemos definir
+    mês: Mês que pretendemos definir
+    ano: Ano para a data que pretendemos definir
+
+    Nota: De notar que o mês vem antes do dia, no formato usado.
+
+Exemplo
+    Consultar a data:
+    C:\>date
+
+    Alterar a data para 24/01/2011 (24 de Janeiro de 2011):
+    C:\>date 01-24-2011
+----
+
+TIME
+++++
+
+Mostra a hora actual do sistema permitindo a sua correcção, caso necessário. Se não se pretender alterar o valor da hora basta pressionar _enter_ sem escrever qualquer texto.
+
+----
+Sintaxe
+    TIME [horas:minutos:segundos] [A|P]
+
+Descrição
+    horas: Hora no intervalo 0 a 23
+    minutos: Os minutos no intervalo 0 a 59
+    segundos: Segundos no intervalo 0 a 59
+
+    Nota: É também possível definir os centésimos de segundo, sendo estes colocados
+          depois dos segundos.
+
+Exemplo
+    Ver a hora actual:
+    C:\>time
+
+    Alterar a hora actual para 15:23:
+    C:\>time 15:23
+----
+
+Sistemas Operativos Gráficos
+----------------------------
+
+Como vimos antes, um _Sistema Operativo_ não e mais que um **conjunto de programas de computador e dados associados, e que permite a gestão e utilização dos recursos de hardware de um computador**. Assim, um sistema operativo gráfico é apenas um sistema operativo onde a interacção com o utilizador é feita através de elementos gráficos como botões, barras de tarefas, menus e outros métodos e usando dispositivos como o rato, monitores tacteeis, etc.
+
+A evolução natural dos sistemas operativos levou a que surgissem, cada vez com maior sucesso, versões de sistemas onde a componente gráfica e a interacção que o utilizador alcançava eram a componente mais forte. As interfaces gráficas tornaram-se assim, o standard nos sistemas operativos de utilização comum e são para muitos utilizadores o único tipo de sistema operativo que alguma vez conheceram. Efectivamente, para o utilizador tradicional, uma interface gráfica é mais simples de usar e de dominar que uma interface em linha de comandos, onde é necessário decorar todos os comandos possíveis de modo a tirar completo proveito do sistema.
+
+Num sistema deste tipo o utilizador recorre a elementos gráficos para controlar o computador e interagir com o sistema, sendo que na forma mais comum, estes elementos são accionados através de um rato. No entanto, a evolução destes dispositivos tem estado a par com a evolução dos sistemas que pretendem controlar surgindo assim equipamentos como luvas, canetas digitalizadoras ou até os bastante comuns monitores tacteeis.
+
+image::./Imagens/ui-product_glove_immersion_cyberglove2.jpg[align="center",title="Luva para controlar computador",scaledwidth="75%"]
+
+Uma luva permite o controlo do computador através de gestos e da manipulação, virtual, dos elementos no sistema. É possível, por exemplo, "mexer" nos ficheiros como se de facto fossem elementos físicos ou, quando combinadas com realidade aumentada, usar em ambientes 3D.
+
+image::./Imagens/ui-trackball.jpg[align="center",title="Bola, tackball, similar a um rato",scaledwidth="75%"]
+
+As _trackballs_ são dispositivos anteriores ao tradicional rato mas que apenas são usados em situações onde a precisão é muito importante já que permitem um controlo preciso do movimento, perdendo na velocidade de deslocação do ponteiro. São comuns na edição de vídeo ou de som.
+
+image::./Imagens/ui-Wacom_Pentable_Pen.jpg[align="center",title="Caneta digitalizadora",scaledwidth="50%"]
+
+Este tipo de caneta permite escrever em mesas próprias ou em monitores que suportem a escrita. Ao serem manuseados como canetas normais aproximam a interacção daquilo que é um objecto a que todos os utilizadores estão habituados. São comuns na edição de imagem e em desenho assistido.
+
+image::./Imagens/ui-touchscreen.jpg[align="center",title="Ecrã táctil",scaledwidth="75%"]
+
+Os monitores tacteeis são uma das interacções que mais cresceu, sendo visíveis em quiosques de informações, telemóveis, portáteis ou nos recentes _tablets_. Permitem o uso dos dedos para manipular os elementos gráficos.
+
+.Exemplos de Sistemas Gráficos
+
+Em sistemas operativos baseados em GNU Linux os ambientes gráficos podem ser escolhidos pelo utilizador, pelo contrário, em sistemas Windows o ambiente gráfico é único e embora se possa alterar o aspecto, as funcionalidades e o comportamento não são alteradas. Nas imagens seguintes estão dois ambientes gráficos para sistemas GNU Linux e o ambiente do Windows 7 acabado de instalar.
+
+image::./Imagens/JauntyGUI.png[align="center",title="Ambiente Gnome do Ubuntu 10.10",scaledwidth="75%"]
+
+image::./Imagens/KDE_4.png[align="center",title="Ambiente KDE 4.0",scaledwidth="75%"]
+
+image::./Imagens/win-install-16.png[align="center",title="Windows 7 sem Aero",scaledwidth="75%"]
+
+Instalação
+----------
+
+Neste capítulo trataremos dos passos necessários à instalação de um sistema operativo gráfico num computador pessoal. Para as instalações usaremos dois sistemas diferentes na filosofia mas similares na forma como a interacção e como a instalação se processa: Windows 7, criado pela Microsoft e Ubuntu 10.10, criado pela Canonical Ltd e desenvolvido de forma livre.
+
+Instalação do Windows 7
+~~~~~~~~~~~~~~~~~~~~~~~
+
+O Windows 7 é o mais recente sistema operativo criado pela Microsoft, lançado a 22 de Setembro de 2009, e vem no seguimento do Windows Vista. Além de corrigir alguns erros e tornar o sistema mais estável, o Windows 7 oferece novas funcionalidades aos utilizadores e maior cuidado com a segurança do sistema.
+
+Está disponível em seis edições com funcionalidades e objectivos distintos, das quais apenas as edições _Home Premium_, _Professional_, e _Ultimate_ se encontram disponíveis nas lojas. As restantes edições têm como alvo outros mercados como computadores de recursos limitados ou uso empresarial.
+
+Caso o computador onde se pretende instalar o Windows 7 cumpra os requisitos (apresentados na tabela seguint), podemos dar início ao processo de instalação colocando o DVD do Windows 7 na _drive_ de leitura e garantindo que o computador está preparado para iniciar através do DVD footnote:[Esta opção pode ser alterada na BIOS do computador, mas a forma exacta de alterar dependerá do computador que se está a usar uma vez que as BIOS não são iguais em todos os fabricantes.]
+
+.Requisitos Mínimos de Hardware
+[frame="topbot"]
+|===============
+|                      |32bit |64bit
+|Processador           |1 GHz |1 GHz
+|Memória RAM           |1 GB  |2 GB
+|Placa Gráfica       +2|Suporte para DirectX 9. Para funcionamento do _Aero_ footnote:[O sistema _Aero_ permite apresentar _widgets_ e oferece uma interface mais rica em efeitos mas não é fundamental para o funcionamento do Windows 7.] é necessário um processador com _driver_ WDDM
+|Espaço Livre no Disco |16 GB |20 GB
+|_Drive_ de DVDs     +2|No caso da instalação ser feita a partir de DVDs
+|===============
+
+Após inserido o DVD de instalação e de iniciado o computador, o processo de instalação inicia sendo que será carregado um assistente de instalação a partir do DVD. Este assistente guia-nos através de todo o processo de instalação, como podemos ver nas imagens seguintes.
+
+image::./Imagens/win-install-01.png[align="center",title="Ecrã inicial",scaledwidth="75%"]
+
+No primeiro ecrã podemos escolher a língua em que pretendemos ver as mensagens do assistente de instalação, bem como o formato da data e o tipo de teclado que usamos. Estas configurações permitem ao assistente saber a hora correcta para o relógio, como apresentar as datas no formato que usamos e como interpretar o formato do nosso teclado. Dado que o DVD que foi usado apenas possui a língua Inglesa é essa que foi escolhida, embora tenha sido seleccionado o formato de data para Portugal e o teclado português.
+
+Mais tarde será possível fazer a instalação de novas línguas, caso o DVD que esteja a usar não contenha a sua língua nativa.
+
+image::./Imagens/win-install-02.png[align="center",title="Opções de instalação ou reparação",scaledwidth="75%"]
+
+Depois de escolhida a língua e o formato do teclado, está disponível um ecrã que nos oferece a possibilidade de usarmos o DVD de instalação para recuperar uma instalação danificada que exista no computador footnote:[Desta forma o DVD de instalação é também um DVD de manutenção/recuperação do Windows 7] ou de acedermos ao conteúdo de ajuda com informações sobre o Windows 7 e sobre o processo de instalação.
+
+Este passo ainda não iniciou a alteração de dados no computador, pelo que podemos cancelar o processo sem que tenham sido feitas quaisquer mudanças na informação presente no disco do computador.
+
+image::./Imagens/win-install-03.png[align="center",title="Licença de utilização do Windows 7",scaledwidth="75%"]
+
+Antes de iniciarmos a instalação teremos de aceitar a licença de utilização do Windows 7. Esta licença estabelece um contrato legal entre a Microsoft e o utilizador do computador, permitindo que o mesmo possa usar o sistema operativo. Deveremos marcar a caixa de seleccção com um visto.
+
+image::./Imagens/win-install-04.png[align="center",title="Escolha entre actualizar ou instalar",scaledwidth="75%"]
+
+Ainda sem termos iniciado o processo efectivo de escrita de informações, neste ecrã é possível escolher entre uma instalação de actualização (a opção de cima) ou uma instalação completa. Uma actualização é o processo que é aplicado em computadores onde já exista uma versão anterior de um sistema Windows, por exemplo uma versão do Windows XP ou uma do Windows Vista. Neste caso a instalação irá apenas actualizar os ficheiros necessários, mantendo todos os ficheiros pessoais dos utilizadores, naturalmente, será necessário reinstalar todos os programas novamente.
+
+Uma instalação completa irá remover qualquer ficheiro presente no disco e instalar os novos ficheiros num disco limpo. Esta opção pode ser usada quando não pretendemos manter os dados de instalações anteriores ou no caso de não existir qualquer outro sistema operativo da Microsoft no computador.
+
+image::./Imagens/win-install-05.png[align="center",title="Disco onde é feita a instalação",scaledwidth="75%"]
+
+Neste passo iremos fazer alterações ao disco do computador, pelo que se pretender cancelar a instalação só o poderá fazer sem perda de dados antes de fazer alterações neste ecrã. Como é indicado, é neste passo que escolhemos onde iremos instalar o Windows 7, isto é, em que disco e partição do mesmo iremos colocar os ficheiros do sistema.
+
+Como o computador que estamos a usar contém apenas um único disco, não iremos fazer quaisquer alterações e iremos usar o espaço livre existente, footnote:[O nosso disco encontra-se completamente virgem, sem ter sequer partições criadas.]. Caso seja necessário podem ser criadas partições usando as opções que estão disponíveis após clicarmos em _Drive options_, no canto inferior direito. No entanto o assistente é capaz de criar as partições necessárias se não as quisermos especificar manualmente footnote:[Criar duas partições e separar o sistema operativo dos dados de utilizador é uma boa prática para manutenção do sistema operativo.].
+
+image::./Imagens/win-install-06.png[align="center",title="Processo de instalação",scaledwidth="75%"]
+
+E o processo de cópia de ficheiros teve início. Neste momento só nos resta esperar que o processo termine e que o assistente configure correctamente algumas das características iniciais do sistema. Durante a cópia e configuração inicial o computador deverá reiniciar algumas vezes, sempre de forma automática, pelo que poderá fazer uma pausa para café. A cópia de ficheiros do DVD para o disco poderá demorar entre 10 a 30 minutos, dependendo da velocidade de leitura da _drive_ de DVDs e da velocidade do disco rígido.
+
+image::./Imagens/win-install-07.png[align="center",title="Mensagem antes de reiniciar",scaledwidth="75%"]
+
+Nos momentos em que o sistema precisa reiniciar, será mostrada uma mensagem durante cerca de 15 segundos. Se durante essa mensagem pressionar uma tecla do computador este irá reiniciar imediatamente, senão carregar em qualquer tecla o computador reiniciará após terem sido esgotados os referidos 15 segundos.
+
+image::./Imagens/win-install-08.png[align="center",title="Continuação do processo de instalação",scaledwidth="75%"]
+
+Após terminar a cópia e ter reiniciado, assistente prossegue para a configuração da instalação recente. Novamente, só nos resta esperar que o assistente termine as suas tarefas, por enquanto não é necessário intervenção do utilizador.
+
+image::./Imagens/win-install-09.png[align="center",title="Criação da conta de administração",scaledwidth="75%"]
+
+Após todas as configurações automáticas é necessário criar a primeira conta de utilizador e introduzir os dados finais antes do sistema ser reiniciado e estar pronto a utilizar. Para criar a primeira conta de utilização do sistema, que será uma conta com privilégios de administração, deverá ser introduzido um nome de utilizador.
+
+Poderá também ser inserido um nome para o computador, de modo a que seja simples distingui-lo numa rede de computadores. Caso não seja indicado um nome, o assistente irá criar um nome automático que pode ser alterado mais tarde.
+
+image::./Imagens/win-install-10.png[align="center",title="Criação da palavra-chave",scaledwidth="75%"]
+
+Para que o acesso ao sistema seja seguro, é necessário indicar uma palavra-chave a usar. É necessário indicar a palavra-chave duas vezes, para evitar erros na introdução, e será conveniente indicar uma ajuda para o caso de se esquecer da palavra-chave. Não há forma simples de recuperar uma palavra-chave perdida, não se esqueça da palavra que usou.
+
+Pode avançar para o passo seguinte sem indicar uma palavra-chave, mas nesse caso qualquer pessoa poderá ter acesso aos dados do computador e usar a conta criada footnote:[Esta situação pode ser útil no caso de pretender criar uma conta para vários utilizadores, mas isso deverá ser feito mais tarde já com o sistema em funcionamento.].
+
+image::./Imagens/win-install-11.png[align="center",title="Activação do sistema",scaledwidth="75%"]
+
+Como em todos os anteriores sistemas da Microsoft, o Windows 7 necessita ser activado para poder ser usado. Embora neste Windows seja possível usar o sistema durante 30 dias sem activação, ao fim desses 30 dias terá de ser introduzida uma chave de activação válida.
+
+Insira a chave de activação que veio com o seu DVD o computador e, caso se encontre ligado à _Internet_, marque o visto na caixa de selecção para activar o Windows 7 automaticamente. A activação do produto irá registar a sua chave com o computador.
+
+image::./Imagens/win-install-12.png[align="center",title="Configurações de actualização",scaledwidth="75%"]
+
+Quase a terminar, será necessário indicar a configuração das actualizações. É recomendado que seleccione a primeira opção, que configurará o Windows 7 para fazer download e instalar as actualizações automaticametne. Estas configurações podem ser alteradas mais tarde.
+
+image::./Imagens/win-install-13.png[align="center",title="Configuração da data e hora do sistema",scaledwidth="75%"]
+
+Configure o relógio do sistema, indicando o fuso horário em que se encontra e a data e hora do sistema.
+
+image::./Imagens/win-install-14.png[align="center",title="Configuração da rede",scaledwidth="75%"]
+
+Escolha o tipo de rede em que o computador se encontra. Se estiver em casa escolha a primeira opção, correspondente a uma rede doméstica, se estiver no trabalho deverá escolher a segunda opção footnote[Confirme com o responsável pela sua rede se essa opção é adequada.], ou, no caso de se encontrar num local público, escolha a última opção. Estas opções irão configurar automaticamente algumas das funcionalidades do Windows 7 relativas à segurança do seu computador.
+
+Para redes domésticas a segurança é mais relaxada, e funcionalidades como partilha de ficheiros e impressoras estarão activas, enquanto que para uma rede pública as configurações restringirão as funcionalidades ao mínimo necessário para se ligar à _Internet_.
+
+image::./Imagens/win-install-15.png[align="center",title="Configurações finais automáticas",scaledwidth="75%"]
+
+Após inseridas todas as informações, o assistente efectuará algumas configurações finais.
+
+image::./Imagens/win-install-16.png[align="center",title="Primeira utilização",scaledwidth="75%"]
+
+E finalmente temos à disposição uma instalação do Windows 7, completamente nova, para podermos usar o nosso computador. A partir deste ponto será necessário configurar contas adicionais, personalizar o sistema, adicionar programas e proceder à manutenção do sistema, tudo situações que iremos ver nos capítulos seguintes.
+
+Instalação do Ubuntu 10.10
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+image::./Imagens/ubuntu-install-02.png[align="center",scaledwidth="75%"]
+
+Ao iniciarmos o computador com o CD de instalação do Ubuntu na _drive_ de leitura de CDs o primeiro ecrã corresponde ao arranque do sistema de instalação.
+
+image::./Imagens/ubuntu-install-03.png[align="center",scaledwidth="75%"]
+
+Por vezes surgem algumas mensagens que parecem erros. Estas mensagens correspondem apenas a informação do sistema de detecção de _hardware_ e que, devido à forma como a imagem que é mostrada no arranque é criada, surgem sobrepostas. Não é necessário qualquer intervenção e estas mensagens não costumam afectar a instalação do sistema.
+
+image::./Imagens/ubuntu-install-04.png[align="center",scaledwidth="75%"]
+
+Depois do processo de arranque terminar surge o primeiro ecrã onde é necessário a intervenção do utilizador: neste passo devemos escolher a acção que pretendemos executar.
+
+O CD de instalação do Ubuntu tem um segundo propósito, permitindo além da instalação a utilização do sistema operativo directamente a partir do CD sem que seja efectuada uma instalação real. Podemos assim testar se todo o hardware funciona adequadamente e se o computador pode ser usado com o sistema operativo.
+
+Como pretendemos mesmo instalar o sistema, iremos escolher a opção de instalação. Devemos também escolher a língua em que queremos usar o instalador, e que será também a língua a usar no sistema.
+
+image::./Imagens/ubuntu-install-05.png[align="center",scaledwidth="75%"]
+
+De seguinda é apresentado um resumo dos requisitos para a instalação e a indicação se o computador que estamos a usar os cumpre. É possível instalar o sistema mesmo que algum dos requisitos não seja cumprido, no entanto a utilização do sistema poderá ser afectada se o utilizador não tiver os conhecimentos necessários para configurar adequadamente a instalação.
+
+image::./Imagens/ubuntu-install-06.png[align="center",scaledwidth="75%"]
+
+No passo apresentado na imagem podemos escolher entre utilizar o disco completo, situação em que o instalador irá remover todos os dados existentes e formatar o disco de acordo com as necessidades do sistema, ou configurar manualmente o disco.
+
+Vamos escolher a opção de utilizar o disco completo para que o processo seja automático, e como o disco que estamos a usar está vazio não perdemos qualquer informação.
+
+image::./Imagens/ubuntu-install-07.png[align="center",scaledwidth="75%"]
+
+Neste ecrã vemos um resumo do disco que será usado e do espaço disponível antes de se efectuarem as alterações. Caso seja necessário podemos alterar o disco onde vamos instalar o sistema. Esta opção é útil que quisermos instalar o sistema num disco externo, numa _pen_ ou em qualquer outro dispositivo que não seja o disco principal.
+
+image::./Imagens/ubuntu-install-08.png[align="center",scaledwidth="75%"]
+
+Enquanto o sistema instala podemos ir configurando algumas das opções comuns, como a localização e o fuso horário.
+
+image::./Imagens/ubuntu-install-09.png[align="center",scaledwidth="75%"]
+
+Podemos configurar o teclado que iremos usar.
+
+image::./Imagens/ubuntu-install-10.png[align="center",scaledwidth="75%"]
+
+Além das configurações base, devemos criar a primeira conta de utilização do sistema, que corresponderá a uma conta de administração e será a conta responsável pela gestão do sistema. Podemos pedir a cifra da pasta pessoal de forma a garantir que os nosso dados estão seguros mas devemos garantir que não nos esquecemos da palavra-chave que criámos, se isso acontecer não há forma de recuperar os dados contidos na pasta.
+
+image::./Imagens/ubuntu-install-11.png[align="center",scaledwidth="75%"]
+
+Após as configurações base basta-nos esperar que a cópia dos ficheiros termine e enquanto o fazemos podemos ir conhecendo melhor o Ubuntu através dos diapositivos apresentados.
+
+image::./Imagens/ubuntu-install-12.png[align="center",scaledwidth="75%"]
+
+Quando a instalação terminar é apresentada uma mensagem a indicar que é necessário reiniciar o computador.
+
+image::./Imagens/ubuntu-install-13.png[align="center",scaledwidth="75%"]
+
+O Ubuntu irá terminar os vários serviços de usados durante a instalação e suspender todas as actividades. Quando a mensagem de remoção do CD for apresentada, basta-nos retirar o CD da _drive_ e pressionar a tecla _enter_. O computador irá reiniciar automaticamente.
+
+Partições Manuais
+^^^^^^^^^^^^^^^^^
+
+A criação de partições de forma manual em sistemas GNU Linux é um processo bastante comum devido à facilidade que estes sistemas têm em se dividir e organizar de forma eficiente para melhorar a estabilidade e a segurança global da informação. Embora não seja um processo obrigatório já que os assistentes de instalação são, frequentemente, capazes de tratar de toda a configuração do disco, é importante saber manipular as partições base, onde se incluem a partição de sistema, a partição _home_ e a partição _swap_.
+
+Embora o acesso ao particionador do disco possa ser feito após o sistema estar instalado, o processo é mais frequente durante a instalação do sistema operativo.
+
+image::./Imagens/particionar-01.png[align="center",scaledwidth="75%"]
+
+Em vez de escolhermos a utilização completa do disco, como fizemos na secção anterior, para acedermos ao particionador devemos escolher a opção de particionamento manual, em modo avançado.
+
+image::./Imagens/particionar-02.png[align="center",scaledwidth="75%"]
+
+O particionador oferece uma visão do estado do disco durante todo o processo, como o nosso disco se encontra vazio e sem partições definidas, o particionador não tem qualquer informação para nos mostrar, apenas uma barra cinzenta e uma lista com uma única entrada correspondendo ao nosso disco, neste caso o */dev/sda*.
+
+Vamos então começar a criar partições clicando no botão _Nova Tabela de Partições..._. Caso esteja a efectuar este processo num disco com dados e com partições, não precisa criar uma tabela nova uma vez que deverá já existir uma tabela criada.
+
+image::./Imagens/particionar-03.png[align="center",scaledwidth="75%"]
+
+Ao adicionarmos uma tabela de partições, o particionador avisa-nos que escolhemos particionar um disco completo e que isso implicará a perda de informação contida nesse mesmo disco. Como já foi referido, o nosso disco está vazio e podemos avançar com o processo.
+
+Se não criou uma tabela nova, esta mensagem não lhe será mostrada.
+
+image::./Imagens/particionar-04.png[align="center",scaledwidth="75%"]
+
+Após criarmos uma tabela de partições é adicionada uma nova entrada à lista de partições, correspondendo ao espaço livre existente no disco.
+
+image::./Imagens/particionar-05.png[align="center",scaledwidth="75%"]
+
+Para criar uma nova partição devemos seleccionar o item correspondente ao espaço livre e clicar no botão _Adicionar..._.
+
+image::./Imagens/particionar-06.png[align="center",scaledwidth="75%"]
+
+Vamos definir a partição como primária, esta partição será usada para a instalação dos ficheiros do sistema operativo e não conterá ficheiros de utilizadores. Como o disco que estamos a usar é pequeno, o tamanho definido é de 3.5GB. Este espaço é mais que suficiente para a maioria das instalações, mas se se pretender instalar programas que ocupem muito espaço ou jogos (que facilmente ocupam alguns _gigas_) poderá ser necessário aumentar o tamanho para valores maiores.
+
+A partição deverá ser criada no início do disco. Tirando casos excepcionais, todas as partições devem ser criadas no início do disco ou espaço livre de modo a serem introduzidas de forma sequencial e para que lhes sejam atribuídos números mais próximos da distribuição real.
+
+Como sistema de ficheiros usaremos Ext4 com Journal, o que permite segurança da informação no caso das falhas comuns dos discos.
+
+O _mount point_ corresponde à pasta footnote:[Não no verdadeiro sentido de pastas, mas todas as "pastas" que existem na raiz de um sistema GNU Linux podem ser colocadas em partições e/ou discos distintos se especificarmos o _mount point_ correspondente.]. O _mount point_ */* corresponde à raiz do sistema.
+
+image::./Imagens/particionar-07.png[align="center",scaledwidth="75%"]
+
+Após termos clicado no botão _OK_, a barra que representa o disco contém uma partição nova, representada a verde, e a lista de partições mostra uma partição adicional.
+
+image::./Imagens/particionar-08.png[align="center",scaledwidth="75%"]
+
+Criamos uma segunda partição onde serão guardados os dados das contas de utilizadores. Nesta partição serão colocados os dados pessoais dos utilizadores e por isso devemos escolher como _mount point_ o valor _/home_, que corresponde à pasta onde são criadas as pastas pessoais dos utilizadores.
+
+image::./Imagens/particionar-09.png[align="center",scaledwidth="75%"]
+
+Finalmente criamos uma partição especial, importante em sistemas GNU Linux, denominada _swap_. Esta partição é usada como memória de apoio ao sistema operativo e guarda informação dos processos e dos dados que estão disponíveis na memória RAM. É também o local onde o sistema operativo guarda uma cópia da memória RAM quando hibernamos ou suspendemos o computador. Por este motivo é recomendado que o tamanho da partição seja, pelo menos, igual à quantidade de memória existente no computador.
+
+image::./Imagens/particionar-10.png[align="center",scaledwidth="75%"]
+
+Criadas todas as partições, o particionador mostra agora uma barra com várias cores, uma para cada partição diferente, e uma lista de partições que serão formatadas e onde iremos instalar o sistema operativo.
+
+Utilização de Windows 7
+-----------------------
+
+Como em qualquer outro sistema operativo, aprender a usar o Windows 7 completamente exige que o utilizador experimente e procure, de forma autónoma, conhecer as funcionalidades e as opções que o sistema oferece. Não é possível explicar todo o funcionamento do sistema nem mostrar, através de um manual, como executar as várias tarefas típicas de utilização e manutenção do Windows 7.
+
+Assim, as seguintes secções apresentam de forma limitada as funcionalidades principais para um utilizador que pretenda obter conhecimentos mais avançados e devem servir de guia as explorações e actividades práticas que o utilizador deve desenvolver.
+
+Barras, Menus, Ícones
+~~~~~~~~~~~~~~~~~~~~~
+
+De seguida são apresentadas algumas imagens que ilustram situações comuns de menus, ícones e das barras mais usadas.
+
+image::./Imagens/icones.png[align="center",title="Ícones no Ambiente de Trabalho"]
+
+A imagem anterior mostra dois ícones presentes no _Ambiente de Trabalho_ e que dão acesso à reciclagem e ao monitor de processos. O número de ícones possíveis de apresentar no _Ambiente de Trabalho_ é ilimitado, mas o espaço disponível depende da resolução do ecrã que estamos a usar. É conveniente manter o número de ícones reduzido para garantir que são fáceis de encontrar. Como o _Ambiente de Trabalho_ permite a alteração do fundo de ecrã, é fácil perder ícones que ficam escondidos em algumas zonas das imagens usadas devido às cores ou às formas presentes.
+
+As barras com ícones são também parte importante da utilização do computador, virtualmente todas as janelas possuem botões ou menus.
+
+image::./Imagens/barraferramentas.png[align="center",title="Secção de Ferramentas",scaledwidth="75%"]
+
+1. Lista de locais ou acções relevantes à vista actual.
+2. Barra de endereço, permite a navegação directa através do endereço das pastas ou clicando nos vários nomes que correspondem a uma pasta.
+3. Barra de pesquisa rápida para pesquisar itens na vista actual.
+4. Botões com opções de visualização e ajuda.
+5. Botões de navegação.
+6. Opções de visualização e organização de ficheiros e pastas.
+
+Os botões presentes no canto superior direito variam conforme o estado da janela. Se a janela não ocupar todo o ecrã, é possível minimizá-la, escondendo a janela para a barra de tarefas, maximizá-la fazendo com que ocupe todo o ecrã ou fechá-la.
+
+image::./Imagens/botoes1.png[align="center",title="Botões Minimizar, Maximizar e Fechar"]
+
+Por outro lado, se a janela estiver maximizada, ocupando todo o ecrã, os botões mudam para permitir a operação inversa: restaurar a janela ao último tamanho antes de maximizar. Os botões de minimizar e de fechar mantém-se.
+
+image::./Imagens/botoes2.png[align="center",title="Botões Minimizar, Restaurar e Fechar"]
+
+Ambiente de Trabalho
+~~~~~~~~~~~~~~~~~~~~
+
+O _Ambiente de Trabalho_ é uma pasta especial que permite trazer para o computador o conceito de secretária ou mesa de trabalho. Esta pasta permite organizar atalhos, documentos e vários elementos gráficos que ajudam a interagir com o computador.
+
+O elemento mais importante é a _Barra de Tarefas_, normalmente localizada no fundo do ecrã, e que agrupa as aplicações abertas, oferece informações sobre o estado do sistema operativo e permite o acesso ao _Menu Iniciar_, menu que os sistemas operativos Windows têm e que dá acesso às aplicações instaladas e a outros pontos do sistema como o _Painel de Controlo_.
+
+image::./Imagens/barratarefas.png[align="center",title="Barra de Ferramentas",scaledwidth="75%"]
+
+1. Botão de acesso ao _Menu Iniciar_.
+2. _Barra de Iniciação Rápida_ onde podem ser colocados atalhos.
+3. Zona onde as aplicações abertas são colocadas. Como o Windows 7 agrupa as aplicações similares é possível ter várias aplicações abertas e ter apenas um ícone. Na imagem é visível o ícone do _Painel de Controlo_ que estava aberto na altura em que a imagem foi registada.
+4. _Barra de Língua_, mostra qual a língua activa neste momento e permite alternar entre as línguas instaladas no sistema.
+5. _Área de Notificação_ onde surgem os vários ícones que dão informações sobre o estado do computador. Podem ser vistos os ícones do centro de acção, das definições de energia, das definições de rede e do som.
+6. Zona do relógio onde é apresentada a hora e a data do sistema.
+
+Na secção de notificações são apresentados avisos ao utilizador sobre eventos que ocorrem no sistema. Um exemplo desse tipo de avisos é a indicação de que existem actualizações a aplicar ao sistema operativo.
+
+image::./Imagens/existemupdates.png[align="center",title="Avisos Interactivos",scaledwidth="75%"]
+
+Tarefas Base
+~~~~~~~~~~~~
+
+Por tarefas base consideramos aquelas acções que todos os utilizadores devem conseguir executar sem dificuldades. Quer se esteja a fazer a manutenção do sistema ou apenas a utilizar o computador, saber mover ficheiros, abrir programas ou navegar nos menus é necessário para todos os utilizadores.
+
+Copiar, Cortar, Colar
+^^^^^^^^^^^^^^^^^^^^^
+
+Copiar permite duplicar pastas, ficheiros ou texto que tenha sido seleccionado e pode ser feito usando os atalhos de teclado, o rato ou uma combinação dos dois.
+
+Tal como a operação de copiar, também para cortar é possível usar atalhos de teclado, rato e teclado em combinação com o rato, mas cortar uma pasta, um ficheiro ou um texto seleccionado implicar mover esse elemento para outra localização.
+
+Para que uma das tarefas anteriores, de copiar ou cortar, seja terminada com sucesso é necessário colar o elemento de modo a que ele seja colocado no seu novo destino. Se não efectuarmos a operação de colar antes de fazermos uma nova operação de cortar ou de copiar, então o que foi cortado ou copiado é descartado.
+
+Arrastar Elementos
+^^^^^^^^^^^^^^^^^^
+
+Arrastar pastas e ficheiros com o rato é um processo comum mas que pode ter resultados distintos consoante a situação em que estamos a aplicar o movimento. Por exemplo, arrastar uma pasta pode criar um atalho, criar uma cópia ou mover a pasta para outro local dependendo do destino e da origem escolhidos.
+
+[horizontal]
+Mover:: Se arrastarmos uma pasta ou um ficheiro dentro do mesmo disco onde a pasta ou o ficheiro está guardado, então a pasta ou ficheiro é movido para o novo destino.
+Copiar:: Se arrastarmos uma pasta ou um ficheiro um disco diferente daquele onde a pasta ou ficheiro está guardado, então é criada uma cópia dessa pasta ou ficheiro.
+Atalho:: Um atalho é criado quando arrastamos ficheiros executáveis para o _Ambitente de Trabalho_.
+
+Ao arrastarmos um elemento é apresentado um ícone junto do ponteiro do rato que nos ajuda a determinar se estamos a mover, a copiar ou a criar um atalho. É também mostrada uma mensagem que informa a acção que vai ser executada.
+
+image::./Imagens/copiar.png[align="center",title="Cópia Ficheiro"]
+
+image::./Imagens/mover.png[align="center",title="Mover Ficheiro"]
+
+image::./Imagens/naocopiar.png[align="center",title="Impossível Copiar ou Mover Ficheiro"]
+
+Abrir Programas
+^^^^^^^^^^^^^^^
+
+Abrir um programa para utilização é o processo mais executado num sistema operativo, precisamos sempre de programas para utilizar o computador e executar as nossas tarefas. Para abrirmos um programa que esteja instalado no nosso Windows 7 podemos usar o _Menu Iniciar_, usar os atalhos do _Ambiente de Trabalho_, usar a pesquisa do _Menu Iniciar_ ou procurar o programa usando o _Explorador de Ficheiros_ e localizando o seu ficheiro executável.
+
+Duplo Clique VS Clique Único
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Por omissão, qualquer clique com o rato que tenha o objectivo de abrir um programa, uma pasta ou um ficheiro deve ser um _duplo clique_. A selecção de elementos deve ser feita com _clique único_. Esta diferença é importante na medida em que nem sempre o comportamento se mantém desta forma: no caso de utilizarmos a _Internet_ , todos os cliques dentro do navegador devem ser _cliques únicos_.
+
+A falha na execução do clique correcto pode provocar frustração, quando o utilizador tenta abrir um ficheiro e este não inicia o programa correspondente, ou de problemas na execução de acções, quando o computador executa duas vezes a mesma acção porque foi dado um clique duplicado.
+
+Explorador do Windows
+~~~~~~~~~~~~~~~~~~~~~
+
+O _Explorador do Windows_ é a aplicação que permite o acesso aos discos, dispositivos de armazenamento externo ou outros dispositivos onde se possam guardar ficheiros, é a aplicação usada para aceder aos ficheiros que guardamos. A sua interface é muito similar às interfaces que já vimos antes e, dado que é parte integrante do Windows 7, não é possível remover ou substituir completamente por outra aplicação.
+
+image::./Imagens/explorador.png[align="center",title="Explorador do Windows",scaledwidth="75%"]
+
+Pesquisa de Ficheiros
+^^^^^^^^^^^^^^^^^^^^^
+
+Podemos pesquisar ficheiros e pastas usando a barra de pesquisa rápida. Esta barra pesquisa apenas na localização actual se estivermos a ver o _Painel de Controlo_ ou alguma das suas secções, o _Menu Iniciar_ ou outras localizações que não contêm pastas nem ficheiros. No caso do _Explorador de Ficheiros_ a barra de pesquisa rápida dá acesso às opções de pesquisa permitindo uma pesquisa avança em todo o sistema ou apenas em localizações indicadas pelo utilizador.
+
+A velocidade de obtenção de resultados de pesquisa é afectada pela existência de pastas indexadas. Nos locais que o Windows 7 indexou a pesquisa é mais rápida, em oposição, as pesquisas em pastas que não estão indexadas são mais lentas e, dependendo do número de ficheiros e do termo de pesquisa, podem demorar vários minutos.
+
+image::./Imagens/pesquisa.png[align="center",title="Pesquisa de Ficheiros e Pastas",scaledwidth="75%"]
+
+1. Resumo com o número de elementos encontrados.
+2. Outras localizações para repetir a pesquisa.
+3. Termo de pesquisa na barra de pesquisa rápida.
+4. Lista de pastas e ficheiros encontrados que correspondem ao termo de pesquisa.
+5. Indicação de que a pasta usada para fazer a pesquisa não se encontra indexada.
+
+Partilha de Ficheiros
+^^^^^^^^^^^^^^^^^^^^^
+
+A partilha de ficheiros com outros utilizadores pode ser feita recorrendo à pasta pública existente para o efeito ou através da definição de opções de partilha nas pastas que o utilizador entender. Não é possível partilhar o _Ambiente de Trabalho_ mas qualquer outra pasta pode ser partilhada com utilizadores do mesmo computador ou com computadores na mesma rede.
+
+Para partilhar uma pasta, basta clicar com o botão direito e escolher as opções de partilha que pretendemos usar. A partilha pode ser apenas de leitura, apenas de escrita, com ambas as opções ou de forma personalizada de individualizada para um determinado utilizador ou grupo de utilizadores.
+
+image::./Imagens/partilha.png[align="center",title="Pesquisa de Ficheiros e Pastas",scaledwidth="75%"]
+
+1. Acesso a opções de partilha através do menu.
+2. Opções de partilha presentes no menu de contexto do botão direito.
+
+Painel de Controlo
+~~~~~~~~~~~~~~~~~~
+
+O _Painel de Controlo_ é o ponto central para a gestão de qualquer sistema operativo Windows, e o Windows 7 não é excepção. O painel de controlo tem-se tornado cada vez mais importante e oferece cada vez mais opções de configuração e personalização do sistema operativo. Saber usar correctamente o painel de controlo é uma parte importe da gestão de um computador com Windows 7.
+
+image::./Imagens/painelcontrol1.png[align="center",title="Painel de Controlo",scaledwidth="75%"]
+
+No painel de controlo podemos encontrar várias opções que nos permitem gerir todos os pormenores de funcionamento do sistema operativo, são elas:
+
+[cols="1,3",frame="topbot",options="header"]
+|==========================================
+|Secção |Descrição
+|_Barra de Tarefas e Menu Iniciar_         |Configuração da barra de tarefas, dos atalhos que esta contém, do seu aspecto e localização, bem como a gestão de todos os ítems que são apresentados no menu iniciar e da aparência do mesmo.
+|_Centro de Acção_                         |O centro de acção fornece opções para personalizar os avisos que o Windows 7 usa para indicar acções a tomar pelos utilizadores. Controla avisos de actualizações, datas de cópias de segurança, problemas com hardware, etc.
+|_Centro de Facilidade de Acesso_          |Controla os programas usados para facilitar o acesso ao sistema por parte de utilizadores com deficiências físicas.
+|_Centro de Rede e Partilha_               |Permite gerir opções de partilha de ficheiros e acesso a redes e Internet. Nesta secção podemos controlar as redes _Wireless_ a que no nosso computador acede ou fornecer os dados de acesso redes de fios que o exijam.
+|_Centro de Sincronização_                 |Permite a sincronização de dados entre vários computadores.
+|_Contas de Utilizador_                    |Local de gestão de contas de utilizações com acesso ao sistema.
+|_Cópia de Segurança e Restauro_           |Permite efectuar cópias de segurança dos ficheiros importantes para o funcionamento do computador ou recuperar ficheiros a partir de cópias feitas previamente.
+|_Data e hora_                             |Configurações da hora e data do sistema, bem como de opções de sincronização de horas e horário de verão.
+|_Dispositivos e Impressoras_              |Configuração e instalação de impressoras, equipamentos de digitalização, faxes, discos, etc.
+|_Encriptação de Unidade BitLocker_        |Permite criar dispositivos encriptados, garantindo a segurança de acesso aos ficheiros. Podemos encriptar dispositivos amovíveis (discos ou _pens_), ou dispositivos fixos como discos rígidos internos.
+|_Ferramentas Administrativas_             |Dá acesso a um conjunto de ferramentas de administração avançada.
+|_Firewall do Windows_                     |Gestão da _firewall_ do Windows 7.
+|_Gestão de Cores_                         |A gestão de cores para utilizadores que precisem controlar com precisão a forma como as cores são mostradas pelo Windows 7 e pelo monitor ligado ao computador.
+|_Gestor de Credenciais_                   |Permite guardar credenciais de acesso a sites (utilizador e password), registos de programas ou outro tipo de dados de acesso.
+|_Gestor de Dispositivos_                  |Controla o acesso a todos os dispositivos de _hardware_ existentes no computador.
+|_Grupo Doméstico_                         |Acesso aos grupos domésticos para configuração ou criação deste tipo de grupos que são usados para facilitar a ligação de vários computadores que se encontram na mesma rede.
+|_Ícones da Área de Notificação_           |Controla os ícones que aparecem na área de notificação (junto ao relógio na barra de ferramentas), o aspecto desta área e a forma como ela interage com o utilizador.
+|_Informações e Ferramentas de Desempenho_ |Oferece uma classificação do desempenho do computador, permitindo conhecer as capacidades do mesmo.
+|_Introdução_                              |Apresenta a introdução do Windows 7.
+|_Ligações de Programas RemoteApplication_ |Permite criar ou editar as ligações remotas de, e para, o computador.
+|_Miniaplicações de Ambiente de Trabalho_  |Controla as opções das miniaplicações que são apresentadas quando o sistema _Aero_ está activo no computador.
+|_Opções de Internet_                      |Permite configurar as opções de acesso à _Internet_ e a forma como o Internet Explorer se comporta.
+|_Opções de Energia_                       |Configurações de utilização de energia, por exemplo, tempo de inactividade para entrar em modo de hibernação.
+|_Opções de Indexação_                     |Possibilita a configuração das opções de indexação de ficheiros, usadas para a pesquisa de ficheiros, pastas e aplicações.
+|_Programas Predefinidos_                  |Controla os programas que abrem automaticamente quando se faz duplo clique num ficheiro ou se usam os atalhos de teclado.
+|_Rato_                                    |Opções de personalização do rato.
+|_Reconhecimento de Voz_                   |Configurações para utilizar o sistema de reconhecimento de voz.
+|_Recuperação_                             |Opções de recuperação do sistema operativo em caso de falhas.
+|_Região e Idioma_                         |Oferece opções para configurar a língua do sistema e do teclado, bem como suporte para línguas por parte do Internet Explorer.
+|_Resolução de Problemas_                  |Permite obter informação e resolver alguns problemas que podem surgir com a utilização do Windows 7 como problemas de _hardware_ ou de ligações de rede. Não é mais que um conjunto de atalhos para outras áreas do painel de controlo mas permite uma edição de opções direccionada a um problema específico.
+|_Restrições de Acesso_                    |Contém opções para limitar o acesso a determinadas áreas do sistema de modo a que algumas contas de utilizador não consigam editar ou modificar o sistema operativo.
+|_Sensor de Localização e Outros Sensores_ |Opções sobre sensores de localização GPS, sensores de posição ou outros dispositivos que estejam instalados no computador.
+|_Sistema_                                 |Informações sobre o sistema. Oferece informações e opções de configuração de alguns pormenores de funcionamento interno, como por exemplo o registo e aviso de erros nos programas.
+|_Som_                                     |Configurações do sistema de som e dos sons do Windows 7.
+|_Teclado_                                 |Opções de teclado.
+|_Telefone e Modem_                        |Opções para a utilização de telefones ou de _modems_ analógicos.
+|_Tipos de letra_                          |Oferece possibilidade de instalar ou remover tipos de letra que podem depois ser usados por todos os programas instalados.
+V|_isualização_                            |Permite configurar a forma como as letras são apresentadas e como a cor é usadas (atalho para a gestão de cores) de modo a facilitar a visualização do sistema, por exemplo, aumentando as letras 200%.
+|_Windows CardSpace_                       |Permite gerir cartões de identificação virtual. Estes cartões dão acesso a determinados sites ou serviços identificando o utilizador.
+|_Windows Defender_                        |Sistema anti-spyware do Windows 7.
+|_Windows Mobility Center_                 |Opções para mobilidade.
+|_Windows Update_                          |Gestão do sistema de actualizações.
+|==========================================
+
+Usar o painel de controlo na vista por omissão do Windows 7 pode ser confuso e não dar acesso a todas as opções mas alterar a forma como o painel de controlo é apresentado é um processo simples, para o qual basta usar a opção presente no canto superior direito da janela do painel de controlo.
+
+image::./Imagens/painelcontrolo2.png[align="center",title="Painel de Controlo: Alterar Vista",scaledwidth="75%"]
+
+Após a alteração da vista podemos usar ícones grandes ou ícones pequenos para mostrar todas as opções existentes no painel de controlo. Estas opções surgem por ordem alfabética o que facilita a sua utilização.
+
+image::./Imagens/painelcontrolo3.png[align="center",title="Painel de Controlo: Vista de Ícones",scaledwidth="75%"]
+
+Centro de Acção
+^^^^^^^^^^^^^^^
+
+O _Centro de Acção_ permite o acesso ao informações sobre problemas e sobre acções que o utilizador deve executar. Tipicamente mostra informação sobre actualizações por fazer, problemas com antivírus ou outro software e permite ao utilizador resolver esses problemas através de uma interface única. Na realidade esta área contém atalhos para outros pontos do _Painel de Controlo_ onde os problemas são, efectivamente, resolvidos.
+
+É um local para ver o estado de saúde do computador e obter informação sobre a resolução de problemas típicos do sistema operativo.
+
+image::./Imagens/centroaccao.png[align="center",title="Centro de Acção com Avisos",scaledwidth="75%"]
+
+Contas de Utilizadores
+^^^^^^^^^^^^^^^^^^^^^^
+
+A gestão de contas de utilizadores possibilita que várias pessoas possam ter acesso ao mesmo computador, física ou remotamente, e garante que as informações de cada um estão protegidas e isoladas de outros utilizadores do mesmo computador.
+
+image::./Imagens/contas1.png[align="center",title="Gestão de Contas de Utilizadores",scaledwidth="75%"]
+
+Após a instalação do Windows 7 apenas uma conta está disponível, correspondendo à conta de administração criada durante o processo de instalação. Será necessário acrescentar as contas para cada um dos utilizadores do computador e configurar as devidas permissões de acesso, tipo de conta e palavra-chave de acesso caso se justifique.
+
+É importante separar as contas de administração das restantes contas já que uma conta de administração tem possibilidade de instalar software no computador, alterar definições ou ter acesso a todos os ficheiros do computador, independentemente do seu dono. Assim, caso o utilizador não precise de instalar software ou de fazer tarefas de manutenção, não deverá ter permissões para tal e a sua conta deve ser uma conta normal. Esta separação ajuda também a proteger o computador contra ameaças como _spyware_ ou _vírus_.
+
+Ao acedermos à gestão de contas apenas a conta que estamos a usar é apresentada inicialmente. Para acedermos às restantes contas temos de escolher a opção _Gerir outra conta_ e depois escolher a conta que pretendemos alterar ou outra opção caso não seja necessário alterar uma conta.
+
+image::./Imagens/gerircontas.png[align="center",scaledwidth="75%",title="Lista de Contas Existentes"]
+
+Para criar uma conta é apenas necessário indicar o nome e o tipo de conta. O nome será usado como nome de utilizador e irá afectar as pastas especiais criadas, as listas de permissões e todos os locais onde o Windows 7 faz uso da conta. É este nome que identifica, de forma única, a conta e o utilizador. O tipo de conta define as permissões iniciais, sendo uma conta normal mais limitada que uma conta de administrador.
+
+image::./Imagens/criarcontas.png[align="center",scaledwidth="75%",title="Criação de Nova Conta"]
+
+Depois de criarmos uma nova conta, a lista de contas existentes será actualizada mostrando a conta recentemente criada, bem como alguns dos dados iniciais que neste caso correspondem apenas à imagem usada na conta. Além disso, uma conta normal acabada de criar não tem palavra-chave associada.
+
+image::./Imagens/contascriadas.png[align="center",scaledwidth="75%",title="Lista de Contas Actualizada"]
+
+Para definirmos uma palavra-chave teremos de alterar a conta, bastando para isso fazer duplo clique na imagem e acedendo à lista de opções da conta. Nesta secção podemos personalizar todo o aspecto da conta do utilizador, definir permissões e alterar dados como nome ou palavra-chave.
+
+image::./Imagens/alteracaocontas.png[align="center",scaledwidth="75%",title="Alteração de uma Conta"]
+
+Ao acedermos à opção de alteração da palavra-chave podemos definir uma palavra nova ou alterar uma já existente bastando para isso introduzir a palavra-chave nos campos correspondentes. Caso seja necessário podemos escrever uma dica que será mostrada ao utilizador se este se enganar na palavra-chave ao tentar aceder ao sistema.
+
+image::./Imagens/contaalterarpassword.png[align="center",scaledwidth="75%",title="Criação da Palavra-chave"]
+
+Após adicionada uma palavra-chave, a lista de contas oferece mais informações sobre a conta, nomeadamente a indicação de que a conta está protegida por uma palavra-chave.
+
+image::./Imagens/contascompassword.png[align="center",scaledwidth="75%",title="Lista de Contas e Indicação de Palavra-chave"]
+
+Centro de Rede e Partilha
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Através do _Centro de Rede e Partilha_ é possível ligar o computador a redes de computadores, à _Internet_ ou a redes privadas ou caseiras. Esta secção mostra informação sobre o estado da ligação actual ou das redes disponíveis.
+
+image::./Imagens/centroredeepartilha.png[align="center",title="Centro de Rede e Partilha",scaledwidth="75%"]
+
+A informação permite também confirmar se, estando ligado a uma rede, essa rede oferece ligação à _Internet_ ou se a ligação está com problemas.
+
+Data e Hora
+^^^^^^^^^^^
+A configuração da hora e da data do sistema afecta a forma como os ficheiros são identificados e organizados, a forma como algumas aplicações funcionam e, regra geral, a forma como o utilizador faz uso do computador já que a hora e a data são informações úteis do dia a dia.
+
+A alteração destas definições pode ser feita na secção _Data e Hora_ do _Painel de Controlo_, podendo ser alteradas de modo manual ou através de sincronização com servidores de tempo que ajustam a hora automaticamente para a hora oficial do fuso horário indicado.
+
+image::./Imagens/hora.png[align="center",title="Definições de Data e Hora",scaledwidth="75%"]
+
+Programas e Funcionalidades
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Instalar e remover programas, em sistemas Windows, é uma tarefa feita através de ficheiros de instalação, no entanto, nem todos os programas que são instalados possuem opções para remoção ou adicionam essas opções ao _Menu Iniciar_. Além de programas extra, também programas que são instalados juntamente com o Windows 7 e que fornecem funcionalidades extra (como é o caso dos jogos) são instalados sem a opção de remoção presente no _Menu Iniciar_.
+
+Para remover estes e outros programas, a secção de _Programas e Funcionalidades_ do _Painel de Controlo_ oferece opções para a listagem, remoção/reinstalação e alteração de programas instalados.
+
+image::./Imagens/programas.png[align="center",title="Programas Instalados",scaledwidth="75%"]
+
+Programas Predefinidos
+^^^^^^^^^^^^^^^^^^^^^^
+
+Quando um utilizador aplica um duplo clique num ficheiro, o Windows 7 procura o programa associado a esse ficheiro através da extensão. Tipicamente o último programa a ser instalado que suporta o ficheiro é usado já que cada programa que é instalado informa o Windows 7 das extensões de ficheiros que consegue abrir. Caso seja necessário alterar o programa que abre por omissão, seja porque foi instalado um programa que alterou as definições ou porque algum programa que foi desinstalado não corrigiu a informação.
+
+Podes fazer a alteração por acção, isto é, alterar o programa que é usado para e-mails, para aceder à _Internet_, etc.
+
+image::./Imagens/programaspredefinidos.png[align="center",title="Programas Predefinidos",scaledwidth="75%"]
+
+Ou fazer a alteração por extensão do ficheiro e dessa forma controlar com maior precisão quais os programas usados.
+
+image::./Imagens/alterarprogramaextensao.png[align="center",title="Alteração por Extensão de Programas Predefinidos",scaledwidth="75%"]
+
+Região e Idioma
+^^^^^^^^^^^^^^^
+
+Como nem todos os utilizadores usam o computador na mesma língua, ou porque podemos estar a usar um computador com um sistema inglês e precisamos alterar a forma como os números e as moedas são escritas, é possível usar a secção de _Região e Idioma_ para definir opções relacionadas com a localização do utilizador, com a forma como as datas, horas, números, valores monetários ou teclado funcionam.
+
+image::./Imagens/regionais.png[align="center",title="Definições de Região e de Língua",scaledwidth="75%"]
+
+Sistema
+^^^^^^^
+A secção _Sistema_ é uma secção com informações avançadas sobre o sistema operativo e sobre o computador, onde podemos obter um resumo do hardware presente no computador, informações sobre as licenças do Windows 7 e aceder a opções avançadas que alteram a forma com o Windows 7 se comporta no caso de existência de erros ou falhas de programas.
+
+image::./Imagens/sistema.png[align="center",title="Informações de Sistema",scaledwidth="75%"]
+
+1. Opções de configuração (atalhos para outros pontos do painel de controlo) e opções avançadas.
+2. Informações sobre o sistema operativo.
+3. Informação sobre o _hardware_ principal: memórias, CPU e dispositivos ligados.
+4. Configurações do sistema na rede.
+
+Som
+^^^
+
+Todos os sons que o Windows 7 toca no arranque, ao desligar ou em situações de erro e outras, podem ser configurados na secção de _Som_. Nesta secção existem separadores para configurar as saídas e as entras de som, e para configurar os sons emitidos pelo Windows 7.
+
+image::./Imagens/som.png[align="center",title="Opções de Sons do Windows 7",scaledwidth="75%"]
+
+Windows Update
+^^^^^^^^^^^^^^
+
+A actualização do sistema operativo é um processo que deve ser feito frequentemente de modo a garantir que quaisquer erros que existam e que tenham sido detectados e corrigidos pela Microsoft possam ser removidos do sistema.
+
+O processo de actualizações é, comummente, feito de forma automática, mas é possível tornar o processo manual, de modo a não afectar o trabalho dos utilizadores, ou ser programado para um horário em que o computador esteja ligado mas não esteja a ser usado.
+
+image::./Imagens/winup1.png[align="center",title="Ecrã Principal das Actualizações",scaledwidth="75%"]
+
+1. Informações gerais sobre actualizações disponíveis.
+2. Opções de configuração avançada.
+
+As configurações de actualizações são simples e permitem apenas a definição da forma como as actualizações se processam, e indicação de que utilizadores podem efectuar as actualizações ou quais as actualizações a aplicar.
+
+image::./Imagens/winup2.png[align="center",title="Configurações de Actualização",scaledwidth="75%"]
+
+É também possível escolher que actualizações, das que o Windows 7 conhece e tem disponíveis, vão ser aplicadas. Desta forma podemos excluir actualizações que sabemos causar conflitos com programas instalados.
+
+image::./Imagens/winup3.png[align="center",title="Detalhes de Actualizações a Instalar",scaledwidth="75%"]
+
+Atalhos de Teclado
+~~~~~~~~~~~~~~~~~~
+
+A utilização de atalhos permite aceder aos programas e às funcionalidades do sistema operativo de forma rápida e optimizada, evitando o atraso de utilizar um rato ou possibilitando usar o computador quando o rato não está presente ou a funcionar.
+
+Embora os atalhos possam ser diferentes de programa para programa, os atalhos do sistema operativo funcionarão em quase todas as situações.
+
+[cols="1,3",frame="topbot",options="header"]
+|==========================================
+|Atalho                                                         |Descrição 
+|Alt + Tab                                                      |Alternar entre aplicações abertas da esquerda para a direita (para a frente).
+|Alt + Shift + Tab                                              |Alternar entre aplicações abertas da direita para a esquerda (para trás).
+|Ctrl + Alt + Tab                                               |Permite usar as setas para alternar entre aplicações abertas.
+|Ctrl + C                                                       |Copiar o elemento ou texto seleccionado. Só pode ser copiado um item de cada vez, se copiarmos duas vezes seguidas sem efectuarmos uma colagem, o primeiro item é perdido.
+|Ctrl + X                                                       |Cortar o elemento ou texto seleccionado. Tal como no caso da cópia, também ao cortar só é possível cortar um item de cada vez.
+|Ctrl + V                                                       |Colar um elemento ou texto que tenha sido anteriormente copiado ou que tenha sido cortado.
+|Alt + Esc                                                      |Alternar entre aplicações pela ordem na qual foram abertas.
+|Ctrl + Esc                                                     |Abrir menu iniciar.
+|Shift + Delete                                                 |Remover um ficheiro ou pasta sem mover para a reciclagem. Apaga imediatamente.
+|F1                                                             |Abrir sistema de ajuda.
+|F2                                                             |Editar o nome de um ficheiro ou pasta no Explorador do Windows.
+|F3                                                             |Pesquisar ficheiros ou pastas no Explorador do Windows.
+|Alt + F4                                                       |Fechar aplicação activa.
+|Ctrl + F4                                                      |Fechar o documento activo, apenas para aplicações que permitem abrir vários documentos na mesma janela.
+|Ctrl + T                                                       |Seleccionar tudo.
+|image:./imagens/windows-key.png[]                     |Abrir o menu iniciar.
+|image:./imagens/windows-key.png[] + Tab               |Alternar entre aplicações presentes na barra de tarefas usando efeitos 3D.
+|Ctrl + image:./imagens/windows-key.png[] + Tab        |Alternar entre aplicações presentes na barra de tarefas através das setas e usando efeitos 3D.
+|image:./imagens/windows-key.png[] + Pause             |Mostrar a janela de propriedades do sistema.
+|image:./imagens/windows-key.png[] + D                 |Mostrar o ambiente de trabalho.
+|image:./imagens/windows-key.png[] + M                 |Minimizar todas as aplicações.
+|image:./imagens/windows-key.png[] + Shift+M           |Restaurar todas as aplicações minimizadas.
+|image:./imagens/windows-key.png[] + E                 |Abrir a pasta _Computador_.
+|image:./imagens/windows-key.png[] + F                 |Pesquisar ficheiros ou pastas.
+|image:./imagens/windows-key.png[] + L                 |Bloquear o sistema.
+|image:./imagens/windows-key.png[] + T                 |Alternar entre os programas presentes na barra de ferramentas.
+|image:./imagens/windows-key.png[] + Seta Cima         |Maximizar a janela activa.
+|image:./imagens/windows-key.png[] + Seta Baixo        |Minimizar a janela activa.
+|image:./imagens/windows-key.png[] + Home              |Minimizar todas as janelas menos a activa.
+|image:./imagens/windows-key.png[] + Shift + Seta Cima |Aumentar a janela activa de modo a ocupar o espaço vertical disponível.
+|==========================================
+
+Segurança e Manutenção
+----------------------
+
+Manter um sistema operativo em funcionamento exige atenção a dois aspectos importantes: segurança do sistema e estabilidade do sistema.
+
+No que toca a estabilidade, é necessário que sejam feitas tarefas de manutenção periódicas, gerindo as aplicações instaladas, garantindo que o sistema de ficheiros se encontra organizado e sem problemas, verificando quais os processos que são executados com o computador e quais os que podem ser removidos, enfim, do mesmo modo que se faria manutenção a um carro ou a outra máquina, também um sistema operativo precisa ser mantido.
+
+Na área da segurança é importante reconhecer que a utilização de um computador, hoje em dia, acarreta vários perigos para o utilizador e para a sua informação e que é necessário erguer protecções contra esses perigos. Estes perigos surgem no papel de vírus de computador, _spyware_, ou outro tipo de software com objectivos ilegais e sem as ferramentas adequadas não é fácil o utilizador do computador se proteger.
+
+É preciso ter em conta que um computador infectado será uma fonte de infecções para computadores na mesma rede ou para computadores para os quais o computador infectado envia informações, por exemplo, a troca de _pens_ entre computadores é um veículo de propagação de vírus.
+
+Malware
+~~~~~~~
+
+É considerado _malware_ todo o _software_ que tenha como objectivo causar prejuízo ao utilizador de um computador, seja infectando ficheiros e consumindo recursos, abrindo ligações remotas para que outros posso tomar o controlo do computador, registar e enviar a terceiros informações pessoais do utilizador do computador, registar a actividade do computador, etc. Se o programa de computador foi desenvolvido com propósitos ilegais, então será certamente _malware_.
+
+Assim, quando falamos de *vírus*, *trojans*, *worms*, *spyware* e em alguns casos *adware*, estamos a falar de programas de computador que pertencem à categoria de _malware_ e que devemos evitar instalar nos nossos computadores.
+
+[horizontal]
+Vírus:: São programas de computador com a capacidade de se reproduzirem e de infectarem outros computadores de forma automática ou semi-automática. Geralmente juntam-se a ficheiros executáveis conhecidos ou documentos que o utilizador usa, tentando assim disfarçar a sua presença e usando esses ficheiros ou documentos como meio de transporte e propagação. Existem vários tipos diferentes de vírus e embora alguns possam danificar os ficheiros destruindo assim a informação, a maioria não faz mais que consumir recursos do computador e fazer pequenas acções que impedem a utilização normal do computador.
+
+Trojans/Worms:: Programas que têm como objectivo permitir o acesso ao computador por parte de terceiros. O termo _trojan_ remete para a história do cavalo de Tróia e, do mesmo modo que o cavalo de Tróia serviu para infiltrar soldados inimigos em Tróia, os programas de computador desta categoria surgem disfarçados de programas legítimos e inofensivos, programas que o utilizador executa sem saber que na verdade está a executar um programa malicioso. Ao serem executados, os _trojans_ permite que outras pessoas acedam ao computador e, em alguns casos, que o controlem sem o conhecimento do legítimo dono.
+
+Spyware:: Um dos perigos mais actuais, _spyware_ são programas de computador que têm como objectivo registar as actividades do utilizador, obtendo assim as informações pessoais que empresas de publicidade menos correctas precisam para enviar publicidade ao utilizador, ou para grupos de spam obterem também informações sobre o utilizador. Em muitos casos estes programas pretendem obter informações de acesso a contas bancárias.
+
+Adware:: Este tipo de programas nem sempre é ilegal já que _adware_ é a categoria de programas que tem como objectivo mostrar publicidade aos utilizadores. Se o utilizador instalar um programa, normalmente gratuito, para o qual aceitou ver publicidade então estamos a falar de _adware_ legal. Por outro lado, se a publicidade é mostrada por um programa que o utilizador não aceitou instalar, esse será um _adware_ ilegal. Muitas vezes estes programas vêm associados a outros programas que são oferecidos na contrapartida de poderem mostrar publicidade tornando, desta forma, o programa original gratuito ao utilizador e rentabilizando o desenvolvimento para a empresa que o criou.
+
+Antivírus
+^^^^^^^^^
+
+A instalação de um antivírus actualizado é um dos passos fundamentais para manter um sistema protegido. Existem vários antivírus diferentes, cada um com as suas vantagens e desvantagens, e cada um como modos de actuar diferentes assim, a escolha do antivírus é um processo que tem tanto de técnico como de pessoal.
+
+Os antivírus podem ser passivos ou activos. Os primeiros não oferecem protecção em tempo real dado que não procuram automaticamente e de forma constante quaisquer vírus nos ficheiros usados pelo sistema, um exemplo será o ClamAV. Por outro lados, os antivírus com um modo activo, e mais comuns, estão constantemente a monitorizar os ficheiros que são utilizados pelo sistema operativo de modo a encontrar algum vírus que se tenha instalado.
+
+Também a forma como procuram ameaças é diferente, os dois modos mais comuns são o de assinaturas e o de heurísticas. No primeiro o antivírus usa uma base de dados de vírus conhecidos para encontrar ameaças, esta forma oferece menor protecção já que é ter a assinatura do vírus antes de ser possível testar a sua existência. Na segunda forma, são usadas técnicas de detecção de comportamentos de programas para determinar se um programa está a fazer algo que é legítimo ou se estará a efectuar uma acção que faça suspeitar de um vírus.
+
+A grande maioria dos anti-vírus oferece uma protecção activa usando uma mistura das duas técnicas de detecção mencionadas, combinando o uso de uma base de dados de assinaturas com heurísticas de detecção de comportamentos. Como estas heurísticas são diferentes de antivírus para antivírus, o grau de sucesso na detecção e consequentemente a protecção oferecida varia.
+
+Resumindo: é importante escolher um antivírus que ofereça um bom compromisso entre a segurança que oferece e o quanto afecta a utilização de um computador, mantendo o mesmo actualizado e a funcionar correctamente para que exista uma real e eficaz protecção, no entanto, nenhum antivírus irá proteger um computador completamente.
+
+Monitorização de Processos
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Os processos que executam no sistema afectam directamente a estabilidade, performance e funcionamento do sistema operativo. Manter um controlo próximo sobre os processos que são necessários e que estão a executar e quais os que são supérfluos e podem ser terminados ajuda a manter o sistema operativo em boas condições.
+
+Nem todos os sistemas podem ser terminados e a forma correcta é avaliar quais as aplicações que estão em funcionamento e que dão origem aos processos e terminar essas aplicações de forma correcta e não terminar os processos directamente.
+
+As aplicações podem iniciar processos no seu funcionamento normal ou através do sistema de arranque (que veremos de seguida). No seu funcionamento normal, a maioria dos processos são necessários mas alguns processos que têm como objectivo apenas dar um _feedback_ ao utilizador podem ser fechados. Processos como os que são responsáveis por controlar ícones da área de notificação, sons de fundo ou outro tipo de acções não essenciais.
+
+Uma forma de monitorizar os processos em funcionamento é usar uma ferramenta própria para o efeito, como por exemplo o _gestor de tarefas_ do Windows 7 ou uma aplicação especializada como o o _Process Monitor_.
+
+image::./Imagens/procmon.png[align="center",title="Amostra de processos com o ProcessMonitor",scaledwidth="75%"]
+
+Programas de Arranque
+~~~~~~~~~~~~~~~~~~~~~
+
+Muitos programas, ao serem instalados, adicionam ao arranque do Windows 7 processos de actualização ou processos para ícones na área de notificação. É comum ver a lista de aplicações na lista de arranque a crescer de forma constante durante a utilização do sistema operativo e todas estas aplicações tornam o arranque do sistema muito mais lento. Para controlar esta situação podemos recorrer ao programa de configuração do Windows 7 acessível através do comando _msconfig_. Este comando pode ser escrito na área de pesquisa do menu iniciar.
+
+image::./Imagens/msconfig.png[align="center",title="Acesso ao Configurador de Sistema",scaledwidth="75%"]
+
+Para acedermos ao configurador de sistema basta escrevermos o comando _msconfig_ na caixa de pesquisa do menu iniciar. Ao pressionarmos a tecla _enter_, o programa irá iniciar e dar-nos acesso a algumas opções de configuração específicas. As mais importantes serão as presentes na secção geral e na secção iniciar já que as restantes estão disponíveis através do painel de controlo.
+
+image::./Imagens/msconfig1.png[align="center",title="Secção Geral",scaledwidth="75%"]
+
+Na secção geral podemos aceder a opções para configurar a forma como o Windows 7 irá arrancar. Estas opções oferecem as mesmas funcionalidades que o menu apresentado quando pressionados a tecla F8 durante o arranque do sistema operativo. Podemos assim preparar o Windows 7 para arrancar em modo de segurança ou de manutenção na próxima vez que o sistema for iniciado.
+
+image::./Imagens/msconfig2.png[align="center",title="Secção Arranque",scaledwidth="75%"]
+
+A secção de arranque afecta também a forma como o sistema é iniciado. Esta secção tem efeitos directos sobre o _bootloader_, a aplicação responsável por iniciar o sistema operativo.
+
+image::./Imagens/msconfig3.png[align="center",title="Secção Serviços",scaledwidth="75%"]
+
+Na secção serviços é possível configurar os serviços que executam no sistema. Esta configuração pode ser feita através das ferramentas administrativas presentes no painel de controlo.
+
+image::./Imagens/msconfig4.png[align="center",title="Secção Iniciar",scaledwidth="75%"]
+
+A secção iniciar permite configurar quais os programas que, estando registados no arranque do Windows 7, serão efectivamente iniciados. Podemos evitar que algum ou todos os elementos de arranque iniciem com o sistema operativo ou reactivar algum programa que tenha sido previamente desactivado.
+
+Dicas
+-----
+
+[horizontal]
+Desligar sem actualizar:: Pode desligar o computador sem efectuar as actualizações se terminar a sessão e depois desligar escolhendo a opção sem actualizações. image:./Imagens/desligar.png[].
+
+[bibliography]
+Bibliografia
+------------
+* Apontamentos da cadeira de Sistemas Operativos do curso de Engenharia Informática, ESTG Leiria. 2002.
+* Beça, Vítor. Castelo, João Silva. Fundamental do Windows XP. FCA - Editora de Informática LDA, 2003.
+* Getting Started With Ubuntu 10.04. The Ubuntu Manual Team. 2010.
+* Marques, José Alves. Guedes, Paulo. Fundamentos de Sistemas Operativos. Editorial Presença. 1990.
+* MS-DOS 6.22. Microcenter. 1998.
+* Wikipedia, consultado a 3 de Janeiro de 2011:
+** http://en.wikipedia.org/wiki/Windows_7
+** http://en.wikipedia.org/wiki/Graphical_user_interface
+** http://en.wikipedia.org/wiki/FreeDOS
+** http://en.wikipedia.org/wiki/MS-DOS
+** http://en.wikipedia.org/wiki/Disk_operating_system
+** http://en.wikipedia.org/wiki/Expanded_memory
+** http://en.wikipedia.org/wiki/Extended_memory
+** http://en.wikipedia.org/wiki/High_memory_area
+** http://en.wikipedia.org/wiki/Upper_memory_area
+** http://en.wikipedia.org/wiki/DOS_memory_management
+** http://en.wikipedia.org/wiki/Kernel_%28computer_science%29
+* Ubuntu Desktop Training - Instructor Book. Canonical Ltd. 2009.
+* Windows 7 Product Guide. Microsoft Corp. 2009.

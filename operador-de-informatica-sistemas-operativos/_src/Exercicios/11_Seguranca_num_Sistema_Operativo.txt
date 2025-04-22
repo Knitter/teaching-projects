@@ -1,0 +1,21 @@
+Segurança num Sistema Operativo
+===============================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================
+|Módulo  |
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |11 - Trabalho: Segurança num Sistema Operativo
+|=============================
+
+A segurança num Sistema Operativo depende de vários factores aos quais os administradores de sistemas devem prestar especial cuidado. Embora o maior causador de falhas seja o utilizador do computador, existem algumas ameaças que, com alguma diligência, um administrador de sistemas poderá facilmente repelir.
+
+Pretende-se o desenvolvimento de um trabalho de investigação sobre os _perigos existentes_ as _formas de defesa inicial_, e de _defesa continuada_. Os grupos de trabalho devem usar o tema que lhe foi fornecido para criar uma apresentação de aproximadamente 20 minutos.
+
+.Temas:
+- Vírus
+- Trojans
+- Spyware/Adware/Malware

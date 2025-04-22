@@ -1,0 +1,41 @@
+Conceitos de Redes de Computadores - Resolução
+==============================================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |03 - Revisões de sobre conceitos de redes de computadores - *Resolução*
+|=============================================
+
+Como é constituída uma rede de computadores?
+
+**Uma rede de computadores é constituída por dois ou mais computadores ligados através de um meio de comunicação (ex.: cabo de cobre, wireless, cabo de fibra óptica) que partilham informação entre si.**
+
+Indica três vantagens na utilização de uma rede de computadores.
+
+**Partilha de informação que permite a facilidade de comunicação entre pessoas, rentabilidade de recursos de hardware e software através da partilha do mesmo recurso numa rede com vários computadores e possibilidade de manter informação em segurança através de cópias de informação para sistemas de rede.**
+
+Descreve o funcionamento de uma Sneakernet.
+
+**_Sneakernet_ é o termo usado para designar uma rede em que a informação é transportada por pessoas, de forma manual, com recurso a _pens_, discos externos, disquetes ou outros meios que não sejam ligados a uma rede de computadores.**
+
+Sabendo que a comunicação pode ser feita de três modos diferentes, indica dois desses modos.
+
+**Os três modos possíveis são: simplex, half-duplex, full-duplex**
+
+Indica quais são os dois tipos de dados que existem e quais as diferenças principais entre eles.
+
+**Como tipos de dados temos dados de voz e dados tradicionais/pacotes
+
+O que é um Protocolo?
+
+**Um protocolo é um conjunto de regras pré-definidas que permitem a comunicação entre dois intervenientes. São o conjunto de regras que os dois intervenientes conhecem e que permitem que existe comunicação entre eles. Quando aplicado a computadores, um protocolo é o formato de comunicação que possibilita que dois computadores comuniquem usando um conjunto de comandos conhecido entre eles**
+
+<<<<
+
+O que significam os termos *IP*, *Atenuação*, *bps* e *RS232*?
+
+**IP - Internet Protocol; Atenuação - Perda de força de um sinal ao longo de um meio de transmissão; bps - bits por segundo; RS232 - Standard de comunicação que define as características, a sincronização e o significado dos sinais enviados e recebidos através de um meio de transmissão. Esta norma foi muito comum em periféricos como o rato.**

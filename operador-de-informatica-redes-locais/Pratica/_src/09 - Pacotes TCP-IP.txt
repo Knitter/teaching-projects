@@ -1,0 +1,59 @@
+Pacotes TCP/IP
+==============
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |09 - Pacotes TCP/IP
+|=============================================
+
+Wireshark é um software de análise de tráfego em redes de computadores. Este software possibilita a captura dos pacotes que são enviados e recebidos pelo computador onde está instalado e ajuda a detectar ou analizar o tráfego que é tratado pelo computador.
+
+Começa por instalar o software Wireshark, deixa todas as opções por omissão e aceita instalar o WinCap quando lhe for pedido autorização. Após estar instalado o Wireshark, a interface do programa será similar a:
+
+image::./Imagens/wireshark.png[align="center",scaledwidth="90%"]
+
+<<<<
+
+. Abre o Wireshark e o browser que usa para aceder à _Internet_. 
+. Acede à opção do menu _Capture_ > _Interfaces..._.
++
+image::./Imagens/acederainterfaces.png[align="center"]
++
+. Confirme que a sua placa de rede está seleccionada e inicie a captura de pacotes.
++
+image::./Imagens/iniciarcaptura.png[align="center",scaledwidth="75%"]
++
+. Enquanto o processo de captura está a decorrer use o seu browser para aceder ao endereço _www.silora.com_.
+. Volte ao Wireshark e termine a captura de pacotes, pode usar o botão para terminar capturas que existe na barra de ferramentas.
++
+image::./Imagens/pararcaptura.png[align="center"]
++
+. Grave a captura efectuada num ficheiro com o nome _WS.captura.<anomesdia>_. Altere o texto _<anomesdia>_ pelo ano, mes e dia da data actual.
+
+<<<<
+
+.Resolva as seguintes questões:
+[]
+|=============
+.2+|Identifica o primeiro pacote capturado                                           |Qual é o destino desse pacote?              |
+                                                                                     |Qual foi o protocolo usado nesse pacote?    |
+.3+|Localiza o primeiro pacote que usa o protocolo TCP                               |Qual é comprimento da frame (frame length)? |
+                                                                                     |Qual é a versão do protocolo IP usado?      |
+                                                                                     |Qual é o tamanho máximo do segmento TCP?    |
+.3+|Acede à opção _Statistics > Summary_                                             |Qual é o nr. de pacotes capturados?         |
+                                                                                     |Qual é a média de pacotes por segundo?      |
+                                                                                     |Qual é a média de Mbps?                     |
+.3+|Acede à opção _Statistics > Conversations_ e indica o total de comunicação para: |IPv4                                        |
+                                                                                     |TCP                                         |
+                                                                                     |UDP                                         |
+.3+|Identifica o primeiro pacote com protocolo HTTP de acesso ao endereço +
+    _www.silora.com_, deverá ter o campo _Info_ com o valor **GET / HTTP/1.1**       |Qual é a origem?                            |
+                                                                                     |Qual é o destino?                           |
+                                                                                     |A origem é o seu endereço IP?               |
+|Encontre o pacote com o fim do pedido HTTP de acesso ao endereço +
+ _www.silora.com_ (ACK)                                                              |Qual é o seu número?                        |
+|=============

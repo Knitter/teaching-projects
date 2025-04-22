@@ -1,0 +1,102 @@
+Avaliação de Recuperação
+========================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |Avaliação de Recuperação
+|Formando |
+|=============================================
+
+
+[frame="topbot"]
+|===============
+|**Leia o enunciado com atenção.** Antes de começar a responder, leia com atenção todas as questões de modo a compreender correctamente o seu objectivo. Terá tempo suficiente para resolver toda a ficha de avaliação.
+|===============
+
+Grupo Desenvolvimento
+---------------------
+
+Qual a importância de uma rede de computadores?
+
+''''
+''''
+''''
+
+Explica o funcionamento da comutação de pacotes.
+
+''''
+''''
+''''
+''''
+
+Indica uma limitação na comutação de circutos.
+
+''''
+''''
+
+Diz, resumidamente, qual o efeito da atenuação na propação de um sinal.
+
+''''
+''''
+<<<<
+
+Qual a importância da utilização de sub-endereçamento?
+
+''''
+''''
+
+Indica duas camadas do modelo OSI.
+
+''''
+''''
+
+Explica o funcionamento de uma rede com tipologia de estrela.
+
+''''
+''''
+
+Explica o objectivo da camada de _Ligação_ do modelo TCP/IP.
+
+''''
+''''
+''''
+
+Explica o objectivo da _Active Directory_.
+
+''''
+''''
+''''
+
+Quantos _Domain Controllers_ podem existir por domínio?
+
+'''' 
+
+Indica as cores pela ordem correcta para a norma T658B
+[]
+|====
+|Pino 1 |
+|Pino 2 |
+|Pino 3 |
+|Pino 4 |
+|Pino 5 |
+|Pino 6 |
+|Pino 7 |
+|Pino 8 |
+|====
+
+<<<<
+
+Grupo Sub-endereçamento
+-----------------------
+
+Na imagem seguinte está a plata de três salas onde se pretende instalar uma pequena LAN de computadores composta por três redes distintas. Cada ponto corresponde a uma tomada de rede *dupla*, isto é, em cada ponto existem duas ligações RJ45 fêmeas.
+
+image::./Imagens/planta-avaliacao-recuperacao.png[align="center",scaledwidth="100%"]
+
+Tendo em conta a planta apresentada, faz o endereçamento correcto para as *três* redes indicads por _S1_, _S2_ e _S3_. Considera que as redes ligam, cada uma, a um router e que por sua vez, esses routers ligam a um quarto router que está ligado à _Internet_. Assim é necessário fazer o endereçamento para *quatro* redes diferentes.
+
+Para cada rede indica: *IP base*, *máscara de rede*, *endereço do router principal*, *número de IPs possíveis* e *endereço de broadcast*.

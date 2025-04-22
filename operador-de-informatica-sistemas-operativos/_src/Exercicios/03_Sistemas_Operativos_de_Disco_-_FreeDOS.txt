@@ -1,0 +1,163 @@
+DOS - FreeDOS
+=============
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================
+|Módulo  |
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |3 - Sistemas Operativos de Disco (DOS) - FreeDOS
+|=============================
+
+FreeDOS
+-------
+
+O FreeDOS é um sistema operativo para processadores x86, tal como o MS-DOS, e pretende ser uma implementação livre (software livre sob a licença GPL) de um sistema compatível com o MS-DOS que consiga executar aplicações criadas para MS-DOS em computadores de todas as gamas, desde hardware antigo até hardware recente.
+
+Ofecere algumas funcionalidades que o MS-DOS não tinha, de modo a acompanhar a evolução existente nos computadores desde que o MS-DOS deixou de ser suportado, em 1994.
+
+Processo de Instalação
+~~~~~~~~~~~~~~~~~~~~~~
+
+O processo de instalação do FreeDOS é relativamente simples, sendo feito com a ajuda de um assistente que permite, entre outras coisas, escolher os programas a instalar, fazer a gestão dos discos de instalação e oferecer o acesso às ferramentas de manutenção necessárias à instalação (como o caso de ferramentas de administração de discos).
+
+Porque iremos efectuar o processo recorrendo a uma máquina virtual, caso algum passo resulte em erro, é fácil remover os dados e recomeçar. Por esse motivo não deverá existir qualquer reserva em executar as operações e em explorar o processo de instalação além do que se encontra explicado nesta ficha.
+
+Depois de configurada a máquina virtual, processo que foi feito na sessão anterior, é necessário aceder às opção da VM e adicionar o CD com os ficheiros de instalação. Neste processo iremos usar o ISO que obtivemos no site oficial do FreeDOS.
+
+Nas opções da VM, secção de armazenamento, escolha o ícone que representa o CD-ROM.
+
+.Passo 1
+image::./Imagens/instalacao.00.png[align="center",scaledwidth="75%"]
+
+No lado direito da janela, junto à opção *CD/DVD Drive*, clique no ícone com o símbolo de um CD-ROM e escolha a opção *Choose a virtual CD/DVD disk file...*.
+Localize o ficheiro ISO de instalação e seleccione esse ficheiro.
+
+.Passo 2
+image::./Imagens/instalacao.01.png[align="center",scaledwidth="75%"]
+
+Depois de seleccionado o ficheiro ISO, a janela de opções de armazenamento contém, na secção esquerda, o nome do CD que foi seleccionado.
+Feche a janela de opções e arranque a VM.
+
+.Passo 3
+image::./Imagens/instalacao.02.png[align="center",scaledwidth="75%"]
+
+Ao iniciar com o CD na drive virtual, o FreeDOS irá apresentar um ecrã introdutório com uma lista de opções. Nesta janela vamos apenas carregar na tecla *Enter* de modo a dar início ao processo de instalação. Seria possível usar o FreeDOS sem instalar, totalmente a partir do CD virtual, mas esse processo não nos interessa.
+
+.Passo 4
+image::./Imagens/instalacao.03.png[align="center",scaledwidth="75%"]
+
+Depois de iniciado o processo de instalação é-nos perguntado, exactamente o que pretendemos fazer, se instalar o FreeDOS ou se usar alguma das opções de CD Live que este oferece. As opções de CD Live permitiam usar o FreeDOS sem instalar, mas como pretendemos mesmo instalar para o disco, vamos escolher a primeira opção, que nos permite inicar o assistente de instalação. 
+
+.Passo 5
+image::./Imagens/instalacao.04.png[align="center",scaledwidth="75%"]
+
+Escolha a língua em que pretende usar o FreeDOS. Podemos escolher a opção *Portuguese* que nos dará um sistema instalado em Português.
+
+.Passo 6
+image::./Imagens/instalacao.05.png[align="center",scaledwidth="75%"]
+
+Como ainda não preparámos o disco onde vamos instalar o FreeDOS, iremos fazer essa operação usando uma aplicação chamada XFdisk. Seleccione a primeira opção que inicia a aplicação de gestão de discos.
+
+.Passo 7
+image::./Imagens/instalacao.06.png[align="center",scaledwidth="75%"]
+
+Na introdução do XFdisk é-nos mostrada informação sobre quais os parâmetros que o XFdisk irá escrever no ficheiro, nesta janela basta escolher a opção *OK*.
+
+.Passo 8
+image::./Imagens/instalacao.07.png[align="center",scaledwidth="75%"]
+
+Neste momento o disco está completamente vazio, sem qualquer partição ou outra estrutura que permita a sua utilização. Para podermos começar a usar o disco temos criar uma partição, formatar essa partição e escrever as informações iniciais que permitem activar uma partição para uso. E no caso especial em que estamos a trabalhar, para arranque por um SO.
+
+Pressione a tecla *Enter* na linha que representa o espaço vazio.
+
+.Passo 9
+image::./Imagens/instalacao.08.png[align="center",scaledwidth="75%"]
+
+O menu que lhe é apresentado permite criar e configurar partições. Escolha opção *New Partition* e pressione *Enter*.
+
+.Passo 10
+image::./Imagens/instalacao.09.png[align="center",scaledwidth="75%"]
+
+No novo menu que surge escolha a opção *Primary Partition...*. A partição que pretendemos criar é uma partição primária. Estamos limitados a quatro partições primárias por cada disco mas como apenas precisamos de uma, esse limite não nos irá ser aplicado.
+
+.Passo 11
+image::./Imagens/instalacao.10.png[align="center",scaledwidth="75%"]
+
+Depois de escolhermos o tipo de partição é preciso indicar o tamanho da mesma. Por omissão o XFdisk já coloca como tamanho o espaço máximo existente, neste caso os 512MB que iremos manter. Assim bastará confirmar a criação de uma partiação primária para o total do espaço livre pressionando a tecla *Enter*.
+
+.Passo 12
+image::./Imagens/instalacao.11.png[align="center",scaledwidth="75%"]
+
+Os dois próximos passos dizem respeito à iniciação da partição, e iremos responder afirmativamente, escolhendo a opção *YES* nos dois casos. Com estas opções a nossa partição fica pronta a ser usado por um SO e só nos falta garantir que as definições que estivemos a escolher são escritas para o disco.
+
+.Passo 13
+image::./Imagens/instalacao.12.png[align="center",scaledwidth="75%"]
+
+.passo 14
+image::./Imagens/instalacao.13.png[align="center",scaledwidth="75%"]
+
+.Passo 15
+image::./Imagens/instalacao.14.png[align="center",scaledwidth="75%"]
+
+Após dizermos que pretendemos escrever as informações para o disco, o processo de gravação e formatação tem início. Neste caso só nos resta esperar que o processo termine.
+
+.Passo 16
+image::./Imagens/instalacao.15.png[align="center",scaledwidth="75%"]
+
+Findo o processo de configuração do disco, é necessário reiniciar o computador. Ao escolhermos a opção *YES* o programa parece deixar de funcionar. Aqui precisamos reiniciar a VM manualmente clicando no botão para fechar a janela. Ao fazermos isso o VirtualBox irá perguntar-nos se queremos desligar a máquina (última opção).
+
+.Passo 17
+image::./Imagens/instalacao.16.png[align="center",scaledwidth="75%"]
+
+Precisamos voltar ao gestor de máquinas virtuais e iniciar novamente a VM. Vamos ter de passar pelos passos iniciais, a partir do _passo 4_, mas não precisamos de voltar ao XFdisk já que o nosso disco se encontra configurado. Podemos assim continuar com o processo de instalação do FreeDOS.
+
+Ao continuarmos o processo de instalação o assistente irá detectar que o nosso disco, apesar de configurado, não se encontra formatado. Portanto iremos definir o formato do disco escolhendo a opção *YES*.
+
+.Passo 18 
+image::./Imagens/instalacao.17.png[align="center",scaledwidth="75%"]
+
+Antes do processo iniciar recebemos um aviso de que os dados do disco irão ser apagados, como ainda não temos lá qualquer informação, podemos continuar, escrevendo *YES* na consola.
+
+.Passo 19
+image::./Imagens/instalacao.18.png[align="center",scaledwidth="75%"]
+
+Depois de formatado o disco, continuamos a instalação. E damos início ao processo de instalar os ficheiros do sistema operativo.
+
+.Passo 20
+image::./Imagens/instalacao.19.png[align="center",scaledwidth="75%"]
+
+.Passso 21
+image::./Imagens/instalacao.20.png[align="center",scaledwidth="75%"]
+
+.Passo 22
+image::./Imagens/instalacao.21.png[align="center",scaledwidth="75%"]
+
+.Passo 23
+image::./Imagens/instalacao.22.png[align="center",scaledwidth="75%"]
+
+Antes de começarmos a copiar os ficheiros precisamos indicar em que directoria vamos instalar os mesmos. Para manter compatibilidade com algumas aplicações de MS-DOS, vamos alterar a directoria de destino de instalação para _C:\DOS_, em vez de _C:\FDOS_.
+
+.Passo 24
+image::./Imagens/instalacao.23.png[align="center",scaledwidth="75%"]
+
+Neste passo escolhemos as aplicações a instalar. Dos conjuntos de software existentes vamos escolher apenas: base, compress e utils. Para isso usamos a tecla de espaço para remover o *X* que se encontra ao lado de cada uma das secções. Navegamos entre as secções usando as teclas de direcção.
+
+.Passo 25
+image::./Imagens/instalacao.24.png[align="center",scaledwidth="75%"]
+
+A partir deste momento os ficheiros vão começar a ser, finalmente, compiados para o disco. O assistente irá fazer a cópia e mostrar-nos uma barra de progresso.
+
+.Passo 26
+image::./Imagens/instalacao.25.png[align="center",scaledwidth="75%"]
+
+A cada pacote de software que terminar de ser copiado é-nos mostrada uma mensagem para trocarmos de disco, como todos os ficheiros estão num único CD, apenas precisamos carregar na tecla *Enter* e continuar a instalação.
+
+.Passo 27
+image::./Imagens/instalacao.26.png[align="center",scaledwidth="75%"]
+
+Depois de copiar os ficheiros, o assistente irá iniciar um processo de configuração. Caso existem aplicações com dependências não resolvidas e nos seja perguntado se queremos instalar essas dependências, responderemos que não.
+
+Findo o processo de instalação seremos brindados com um sistema operativo fresquinho, acessível através da linha de comandos. Não se esqueça de remover o ISO da drive de CD-ROM virtual para poder usar o sistema sem limitações.

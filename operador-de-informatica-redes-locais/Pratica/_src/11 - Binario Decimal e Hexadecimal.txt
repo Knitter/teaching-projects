@@ -1,0 +1,187 @@
+Binário, Decimal e Hexadecimal
+==============================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |11 - Sistemas numéricos binário, decimal e hexadecimal
+|=============================================
+
+Regras de Conversão
+-------------------
+As regras seguintes demonstram como fazer a conversão entre os sistemas binário, decimal e hexadecimal.
+
+Binário e Decimal
+~~~~~~~~~~~~~~~~~
+
+Converter de binário para decimal:
+  
+  10010100101
+  (1 x 2^5) + (0 x 2^4) + (0 x 2^3) + (1 x 2^2) + (0 x 2^1) + (1 x 2^0) = 
+  (1 x 32) + (0 × 16) + (0 × 8) + (1 × 4) + (0 × 2) + (1 × 1) = 37
+
+Converter de decimal para binário:
+
+image::./Imagens/dec-to-bin.png[align="center"]
+
+<<<<
+
+Octal e Decimal
+~~~~~~~~~~~~~~~
+
+Converter octal para decimal:
+
+  112
+  (1 x 8^2) + (1 x 8^1) + (2 x 8^0) = 74
+
+Converter decimal para octal:
+
+image::./Imagens/dec-to-oct.png[align="center"]
+
+Hexadecimal e Decimal
+~~~~~~~~~~~~~~~~~~~~~
+
+Converter decimal para hexadecimal:
+
+A conversão entre decimal e hexadecimal é mais fácil se for feita indirectamente, isto é, se convertermos primeiro para binário e depois para hexadecimal.
+
+Converter hexadecimal para decimal:
+
+  C0E716
+  C0E716 = (12 x 16^5) + (0 x 16^4) + (14 x 16^3) + (7 x 16^2) + (1 x 16^1) + (6 x 16^0) = 
+  (12 x 4096) + (0 x 256) + (14 x 16) + (7 x 1) = 49383
+
+Binário e Hexadecimal
+~~~~~~~~~~~~~~~~~~~~~
+
+Converter de binário para hexadecimal:
+
+Separe o número binário em conjuntos de quatro dígitos, adicione zeros à esquerda se for necessário, depois basta substituir os conjuntos binários pela sua representação.
+
+  1100101
+  1100101 = 0110 0101 = 6 5 = 65
+
+Converter de hexadecimal para binário:
+
+Basta fazer a operação inversa à anterior, separando os dígitos e substituindo pela sua representação binária.
+
+  E7
+  E7  = E 7 = 1110 0111 = 11100111
+
+Binário e Octal
+~~~~~~~~~~~~~~~
+A conversão de binário para octal segue a mesma regra da conversão para hexadecimal com a diferença de que os bits são agrupados três a três em vez de quatro a quatro.
+
+Converter binário para octal:
+
+  1100101
+  1100101 = 001 100 101 = 1 4 5 = 145
+
+Converter octal para binário:
+
+  65
+  65 = 110 101
+
+2. Converta os Seguintes Números
+--------------------------------
+
+[options="header"]
+|======================================
+|Binário| Decimal|Octal | Hexadécimal
+|001      | | |
+|011      | | |
+|111      | | |
+|00001    | | |
+|11000011 | | |
+|10010    | | |
+|111011   | | |
+|1100100  | | |
+|11001111 | | |
+|101      | | |
+|100      | | |
+|1101     | | |
+|10001    | | |
+|11110    | | |
+|1010100  | | |
+|1010     | | |
+|110011   | | |
+|101111   | | |
+|10001    | | |
+|1111     | | |
+|10000111 | | |
+| |5    | |
+| |59   | |
+| |519  | |
+| |522  | |
+| |531  | |
+| |532  | |
+| |546  | |
+| |567  | |
+| |5100 | |
+| |5255 | |
+| |5234 | |
+| |529  | |
+| |559  | |
+| |534  | |
+| |565  | |
+| |5334 | |
+| |566  | |
+| |5112 | |
+| |578  | |
+| |589  | |
+| |590  | |
+| |550  | |
+| | | |DEAD
+| | | |AF
+| | | |05
+| | | |12
+| | | |57
+| | | |0C
+| | | |9FF2
+| | | |A9
+| | | |5E
+| | | |123456789ABCDEF
+| | | |F0E1D2
+| | | |C3B4
+| | | |A596
+| | | |B0C
+| | | |1000
+| | | |AA
+| | | |123F
+| | | |FEDCBA
+| | | |D0
+| | | |BED0
+| | | |B8C
+| | | |FFFFFFFA
+| | | |10
+| | | |BABE
+| | | |BAD
+| | | |732
+| | | |801
+| | | |ECA8
+| | | |379DF
+|======================================
+
+3. Aritmética Binária 
+---------------------
+
+Resolva as seguintes operações de soma:
+
+.. __1 0 1 + 1 0__ = 
+.. __1 1 1 + 1 0__ =
+.. __1 0 1 0 + 1 1 0__ =
+.. __1 0 1 0 + 1 0 1 0__ =
+.. __1 0 1 0 + 1 1 1 1__ =
+.. __1 0 1 1 + 1 0 1__ =
+.. __1 1 1 1 0 + 1 1 1 0__ =
+.. __1 0 0 1 1 0 + 1 1 0 1__ =
+.. __1 0 1 1 1 0 + 1 0 1__ =
+.. __101 + 11__ =
+.. __111 + 111__ =
+.. __1010 + 1010__ =
+.. __11101 + 1010__ =
+.. __11111 + 11111__ =
+

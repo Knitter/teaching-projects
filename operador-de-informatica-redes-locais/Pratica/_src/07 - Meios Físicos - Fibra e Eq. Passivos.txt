@@ -1,0 +1,40 @@
+Meios Físicos - Fibra e Eq. Passivos
+====================================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |07 - Meios físicos: fibra e equipamentos passivo
+|=============================================
+
+Indica duas classificações para um cabo de fibra óptica.
+
+''''
+
+Quais as vantagens da fibra óptica em comparação com os cabos de cobre?
+
+''''
+''''
+
+E as desvantagens?
+
+''''
+''''
+
+Para que serve um router?
+
+''''
+''''
+
+Como se pode contornar a limitação dos 100 metros de um cabo de cobre?
+
+''''
+''''
+
+Porque é que são designados por _equipamentos passivos_ os _switches_, os _hubs_ e os _routers_?
+
+''''
+''''

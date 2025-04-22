@@ -1,0 +1,44 @@
+Instalação do VBox
+==================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================
+|Módulo  |
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |1 - Instalação VBox
+|=============================
+
+O VirtualBox
+------------
+
+Oracle VM VirtualBox é um sistema de virtualização para processadores x86 (processadores baseados na arquitectura desenvolvida pela IBM), desenvolvido pela Oracle Corporation, que após instalado num sistema existente, permite a adição de outros sistemas operativos designados de sistemas operativos convidados (guest operating systems).
+
+É uma aplicação que permite simular computadores da família x86, possibilitando a criação de máquinas virtuais, e a instalação de vários sistemas operativos numa única máquina física. Através de virtualização é possível executar programas em sistemas operativos que não executam nos computadores actuais, maximizar os recursos criando várias máquinas virtuais numa única máquina, etc.
+
+Durante esta unidade curricular iremos usar o VirtualBox para criarmos máquinas virtuais onde instalamos os sistemas operativos que testamos. Através deste processo garantimos que a instalação e utilização dos sistemas operativos é feita em segurança e sem comprometer o computador que usamos e os dados nele contidos.
+
+Instalação
+~~~~~~~~~~
+
+A instalação do VirtualBox segue os mesmo passos que a instalação de outro programa de computador. Será necessário o ficheiro de instalação e a conclusão dos vários passos que vão sendo apresentados pelo assistente de instalação.
+
+Comece por confirmar que tem o ficheiro de instalação no Ambiente de Trabalho e faça duplo clique sobre ele. O ficheiro estará identificado com um ícone similar ao ícone apresentado na imagem seguinte. image:./Imagens/VB.install.icon.png[]
+
+Ao fazer duplo clique sobre o ficheiro de instalação surge um assiste que o irá guiar através dos vários passos necessários à instalação do programa. Siga os passos mantendo todas as opções por omissão, excepto no último passo. As imagens siguintes contém os passos necessários e as configurações a usar, efectue a instalação do programa apoiando-se nas imagens.
+
+image::./Imagens/VB.install.01.png[title="Ecrã Inicial",align="center",scaledwidth="75%"]
+
+image::./Imagens/VB.install.02.png[title="Localização e Componentes a Instalar",align="center",scaledwidth="75%"]
+
+image::./Imagens/VB.install.03.png[title="Atalhos a Criar",align="center",scaledwidth="75%"]
+
+image::./Imagens/VB.install.04.png[title="Aviso Sobre Rede",align="center",scaledwidth="75%"]
+
+image::./Imagens/VB.install.05.png[title="Ecrã Antes da Instalação",align="center",scaledwidth="75%"]
+
+image::./Imagens/VB.install.06.png[title="Processo de Instalação",align="center",scaledwidth="75%"]
+
+image::./Imagens/VB.install.07.png[title="Ecrã Final",align="center",scaledwidth="75%"]

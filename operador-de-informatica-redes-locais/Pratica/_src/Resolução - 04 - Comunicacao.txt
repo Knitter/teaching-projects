@@ -1,0 +1,24 @@
+Comunicação em Redes de Computadores - Resolução
+================================================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |04 - Comunicação em redes de computador - *Resolução*
+|=============================================
+
+
+Descreve o funcionamento da comutação de pacotes em modo datagrama.
+
+**Em modo _datagrama_ a informação enviada através da rede é dividida em pacotes, numerados de forma sequencial, e enviados para a rede sem que seja, previamente, determinado o caminho que irão percorrer até ao destino.**
+
+Indica todos os passos envolvidos numa ligação entre dois computadores usando comutação de circuitos
+
+**O computador de origem, _A_, inicia o estabelecimento de um percurso; Assim que o pedido de estabelecimento do percurso chega ao computador de destino, _B_, este envia informação de sucesso e o percurso é reservado para a posterior comunicação destes dois computadores; O computador _A_ inicia o envio de informação e, quando este termina, o computador _B_ envia de volta indicação de sucesso da recepção; O percurso deixa então de estar reservado.**
+
+Qual é a diferença entre comutação de pacotes em modo virtual e comutação de circuitos
+
+**Os dois sistemas funcionam de forma semelhante, em que a comutação de pacotes imita a comutação de circuitos, assim a nível conceptual não existem diferenças. As diferenças centrar-se-ão ao nível de implementação do sistema (hardware e software envolvidos).**

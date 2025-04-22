@@ -1,0 +1,36 @@
+Meios Físicos - Cabos de Cobre - Resolução
+==========================================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |06 - Meios físicos: cabos de cobre - *Resolução*
+|=============================================
+
+O que é a multiplexação?
+
+**Técnica que permite o envio de vários sinais diferente através de um único meio de comunicação.**
+
+Define TDM e WDM
+
+**WDM: Wave Devision Multiplexing, é uma técnica de multiplexagem que tem por base a divisão por comprimentos de onde. TDM: Time Devision Multiplexin, é a técnica de multiplexagem que usa o factor tempo como base de divisão.**
+
+Indica um método para detecção de erros de transmissão.
+
+**Qualquer um de entre: _Somas de Controlo_, _Algoritmos de Hashing_ ou _Verificação de bit de Paridade_.**
+
+Quais os factores que podem afectar um cabo de cobre na transmissão de informação?
+
+**Atenuação de sinal, ''''
+
+Qual é a diferença entre um cabo UTP e um STP?
+
+**O cabo UTP não possui qualquer blindagem enquanto que o cabo STP possui blingadem individual de cada para de filamentos, blindagem exterior para todo o cabo e fichas blindadas nas extremidades.**
+
+Indica um factor interno de degradação de sinal.
+
+**Resistência do material metálico (outros factores internos: capacitância, indutância, NEXT ou FEXT).**
+

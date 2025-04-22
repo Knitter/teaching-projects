@@ -1,0 +1,23 @@
+Trabalho - Problemas das Redes
+==============================
+
+
+[cols=">1s,3m",frame="topbot"]
+|=============================================
+|Módulo   |4.1 - Instalação e configuração de computadores em redes locais e à Internet
+|Local    |Leiria
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |Trabalho 1: Problemas das redes de computadores
+|=============================================
+
+Trabalho de Investigação
+------------------------
+
+O objectivo desta actividade é o desenvolvimento de um trabalho a apresentar e a ser discutido sobre o tema _"Os incovenientes, problemas na utilização, e problemas na existência de redes de computadores"_. Deverá fazer a pesquisa adequada para encontrar informação sobre o tema, bem como debater com os colegas de grupo possíveis ideias associadas ao tema.
+
+No fim, deverá ser escolhido um porta-voz para apresentar as conclusões, que devem ser escritas num documento de texto. Este documento deve incluir também um mapa mental criado através da troca de ideias entre o grupo.
+
+Assim, o propósito é a apresentação de:
+
+- Documento de texto com a conclusão a que o grupo chegou.
+- Mapa mental com as principais ideias discutidas no grupo. 
