@@ -1,0 +1,17 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0785 - Programação em C/C++ - Formas Complexas
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |5 - Exercícios de Revisão
+|=================================================================================
+
+Exercícios
+----------
+
+. Escreva um programa que peça ao utilizador o nome de um ficheiro de texto que tenha sido criado num dos exercícios da ficha 3 e que leia os dados contidos nesse ficheiro.
+. Programa que permite cifrar uma frase usando uma cifra simplificada. O programa deve ler uma frase introduzida pelo utilizador, converter todas as vogais por um número e escrever a frase invertida no ficheiro de texto com um nome indicado pelo utilizador. Para as vogais use uma correspondência do tipo a = 1, e = 2, i = 3, o = 4 e u = 5.
+. Implemente os métodos que permitem gravar, num ficheiro de texto, os dados de uma agenda electrónica. Use o projecto que lhe é fornecido e guarde apenas essas informações.
+. Escreva um programa que peça ao utilizador um nome de um ficheiro de texto e que transforme todas as letras nesse ficheiro em letras maiúsculas. Para testar o programe use um ficheiro de texto com, pelo menos, dois cantos dos __Lusíadas__ que pode obter na __Internet__.
+. Crie um programa que remova, de um ficheiro de texto escolhido pelo utilizador, todas as vogais.

@@ -1,0 +1,49 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|======================================================================================
+|Módulo    |0785 - Programação em C/C++ - Formas Complexas
+|Local     |
+|Formador  |
+|Resolução |
+|======================================================================================
+
+1 - Verdadeiro ou Falso
+-----------------------
+. Falso
+. Verdadeiro
+. Verdadeiro
+. Falso
+. Falso
+. Verdadeiro
+. Falso
+. Verdadeiro
+. Falso
+. Falso
+. Verdadeiro
+. Falso
+. Falso
+. Verdadeiro
+. Falso
+. Falso
+. Verdadeiro
+. Falso
+. Verdadeiro
+. Falso
+
+2 Sistemas Numéricos
+--------------------
+
+[frame="topbot",options="header,unbreakable"]
+|============================================
+|Binário |Decimal |Octal |Hexadecimal
+|001     |1       |1     |1
+|011     |3       |3     |3
+|110     |6       |6     |6
+|101     |5       |5     |5
+|111     |7       |7     |7
+|1011    |11      |13    |B
+|1001    |9       |11    |9
+|1100    |12      |14    |C
+|1010    |10      |12    |A
+|============================================
+
+

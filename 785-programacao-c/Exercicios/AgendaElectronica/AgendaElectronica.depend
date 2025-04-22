@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1290372447 source:c:\documents and settings\virtual\desktop\agendaelectronica\estruturas.c
+	"estruturas.h"
+
+1290372456 c:\documents and settings\virtual\desktop\agendaelectronica\estruturas.h
+
+1290372710 source:c:\documents and settings\virtual\desktop\agendaelectronica\utils.c
+	<stdio.h>
+	"utils.h"
+
+1290373290 c:\documents and settings\virtual\desktop\agendaelectronica\utils.h
+
+1290373302 source:c:\documents and settings\virtual\desktop\785\agendaelectronica\estruturas.c
+	"estruturas.h"
+
+1290372456 c:\documents and settings\virtual\desktop\785\agendaelectronica\estruturas.h
+
+1290372710 source:c:\documents and settings\virtual\desktop\785\agendaelectronica\utils.c
+	<stdio.h>
+	"utils.h"
+
+1290373290 c:\documents and settings\virtual\desktop\785\agendaelectronica\utils.h
+
+1290537181 source:c:\documents and settings\virtual\desktop\785\agendaelectronica\agenda.c
+	<stdio.h>
+	"estruturas.h"
+	"utils.h"
+

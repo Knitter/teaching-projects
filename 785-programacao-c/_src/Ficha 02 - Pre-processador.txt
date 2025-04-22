@@ -1,0 +1,75 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0785 - Programação em C/C++ - Formas Complexas
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |2 - Pré-processador
+|=================================================================================
+
+Exercícios
+----------
+
+.. Indique o que imprime o seguinte programa:
++
+[source,c]
+----
+#include <stdio.h>
+#define PR(x) printf(">%d<", x)
+#define PRNL(x) PR(x);putchar('\n')
+#define h(seg) (m(seg)/60)
+#define m(seg) (seg/60)
+
+int main()
+{
+    PRNL(h(3660));
+}
+----
++
+.. Sendo que um ficheiro .h pode incluir outros ficheiros .h, que por sua vez podem incluir novamente ficheiros .h, como poderíamos impedir que o mesmo ficheiro seja incluído mais que uma vez?
+.. O que faz cada uma das seguintes instruções de pré-processador:
++
+[source,c]
+----
+#if
+#endif
+#define
+#include
+#ifndef
+#ifdef
+----
++
+.. Defina macros para registar os vários valores do IVA (6%, 16%, 21%), da retenção na fonte (21.5%), do número de meses de um ano e o máximo de caracteres que os nomes de pessoas podem guardar (251).
+.. Crie código na função __main__ para imprimir todos os valores das macros definidas na alínea anterior.
+.. Inclua os ficheiros __string.h__, __math.h__ e __time.h__.
+.. Na função __main__ escreva o código necessário para imprimir a data e a hora actual.
+.. Na função __main__ adicione o código que permita imprimir o nome do ficheiro que está a ser usado.
+.. O seguinte código imprime alguma coisa?
++
+[source,c]
+----
+#include<stdio.h>
+
+int main()
+{
+    #ifdef NOTE
+        int a;
+        a=10;
+    #else
+        int a;
+        a=20;
+    #endif
+    printf("%d\n", a);
+    return 0;
+}
+----
++
+.. Se o ficheiro incluído não existir é mostrado algum erro?
+.. Podemos usar a directiva __#undef__ em qualquer situação?
+.. As directivas são instruções para o processador ou para o pré-processador?
+.. De que forma é que as instruções de pré-processamento afectam a compilação do código?
+.. Macros e funções são iguais na forma como funcionam?
+.. Todas as macros têm de ser criadas em maiúsculas, se assim não for o código não compilará?
+.. As directivas de pré-processador são obrigatórias para que os nossos programas compilem e executem correctamente?
+.. Assim que o ficheiro de código é processado as macros são removidas?
+.. Acrescente código à função __main__ para que seja emitido um erro se a macro *ER* não estiver definida.

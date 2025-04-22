@@ -1,0 +1,61 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0785 - Programação em C/C++ - Formas Complexas
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |Avaliação
+|=================================================================================
+
+
+1 - Verdadeiro ou Falso
+-----------------------
+Indique se as seguintes afirmações são verdadeiras ou falsas.
+
+[cols="10,1",frame="topbot"]
+|===========================
+|1 - As directivas de pré-processamento são código C. |
+|2 - A directiva #define permite definir macros, também chamadas de constantes simbólicas. |
+|3 - Com directivas de pré-processamento podemos controlar que código é compilado pelo compilador. |
+|4 - As directivas de pré-processamentos são processadas pelo compilador. |
+|5 - As directivas de pré-processamento só podem ser usadas nas primeiras linhas do ficheiro de código. |
+|6 - Com as directivas #if, #elif e #else podemos testar condições. |
+|7 - A directiva #ifndef testa se uma macro está definida. |
+|8 - A directiva #ifdef testa se uma macro está definida. |
+|9 - Os ficheiros incluídos na directiva #include têm, obrigatoriamente, de ter a extensão **.h**. |
+|10 - Depois de processadas, as directivas de pré-processamento ficam no ficheiro de código mas o compilador ignora-as. |
+|11 - Os computadores usam mais facilmente numeração binária. |
+|12 - Os sistemas numéricos binário, octal e hexadecimal usam, respectivamente, dois, sete e dezasseis símbolos para representar números. |
+|13 - A escrita formatada de texto é feita com a função _fread_. |
+|14 - Usando a função _fscanf_ podemos ler os dados de um ficheiro de texto indicando o formato. |
+|15 - Os modos de abertura base são o *r*, *w*, o *a* e o *b*. |
+|16 - No modo de abertura *r*, se o ficheiro não existir é criado. |
+|17 - O modo de abertura *a+* permite acrescentar dados a um ficheiro existente e criar um ficheiro se o mesmo não existir. |
+|18 - Sendo _x_ uma variável inteira e _fi_ um ponteiro para um ficheiro, a gravação em modo binário usando a função _fwrite_ seria: +
+      fwrite(x, sizeof(int), 2, fi); |
+|19 - Para registar os dados de uma agenda electrónica de forma que fosse fácil ler a informação por outros programas devemos usar ficheiros de texto. |
+|20 - Usando ficheiros binários é fácil formatar o texto, definir quebras de linha, e alterar o aspecto do texto guardado. |
+|===========================
+
+2 Sistemas Numéricos
+--------------------
+Efectue as seguintes conversões entre sistemas numéricos:
+
+[frame="topbot",options="header"]
+|============================================
+|Binário | Decimal | Octal | Hexadecimal
+|001     |         |       |
+|011     |         |       |
+|110     |         |       |
+|101     |         |       |
+|111     |         |       |
+|        |11       |       |
+|        |9        |       |
+|        |12       |       |
+|        |         |       | A
+|============================================
+
+3 - Dados Pessoais
+------------------
+
+Crie um programa que peça ao utilizador o nome, morada, número de telefone e registe essa informação num ficheiro de texto. O nome do ficheiro de texto deve ser introduzido pelo utilizador.

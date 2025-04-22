@@ -1,0 +1,21 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0785 - Programação em C/C++ - Formas Complexas
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |4 - Ficheiros Binários
+|=================================================================================
+
+1. Programar
+------------
+
+Crie um projecto novo e implemente um menu que permita fazer cada uma das alíneas seguintes.
+Em alíneas onde o nome do ficheiro não é indicado, use o nome **teste.bin**.
+
+.. Crie um ficheiro binário e guarde nele o seu nome. Chame ao ficheiro **eu.bin**.
+.. Crie um ficheiro binário e guarde nele o nome das pessoas que formam o seu agregado familiar. Chame ao ficheiro **agregado.bin**
+.. Ler cinco palavras e guardar essas palavras num binário.
+.. Ler o nome e as notas de um aluno, calcular a média e guardar todas as informações num ficheiro binário.
+.. Ler os dados de um ficheiro e determinar a percentagem de *'a'*, *'c'*, *'d* e espaços. Os dados devem ser registados num ficheiro binário. Aceda ao endereço http://www.oslusiadas.com/content/view/18/41/, copie os primeiros 10 cantos para um ficheiro de texto e guarde esse ficheiro na pasta do projecto com o nome "luises.txt". Use este ficheiro para resolver o exercício.
+.. Crie uma função que permita pedir dois números, que calcule o produto desses dois números e que registe as operações e os resultados numficheiro de texto chamado **resultados.dat**.
