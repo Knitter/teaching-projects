@@ -1,0 +1,28 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=========================================================
+|Módulo  |0783 - Programação em C/C++ - Ciclos e Decisões
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |Avaliação
+|=========================================================
+
+1. Complete o Projecto
+----------------------
+O programa entregue faz o cálculo da área de um conjunto variado de rectângulos e calcula também a média de áreas. Dado que o objectivo é criar um programa que ofereça um auxílio no cálculo de áreas e perímetros de figuras geométricas, bem como de cálculos estatísticos, acrescente as seguintes funcionalidades ao programa:
+
+. Cálculo da área de um conjunto de 5 triângulos. O programa deve mostar a área encontrada.
+. Cálculo da área de um conjunto variado de circunferências. Deve terminar a leitura assim que for introduzido um valor menor que zero, e esse valor não deve afectar os cálculos finais.
+. Cálculo do perímetro de um conjunto de 5 circunferências.
+. Cálculo da média aritmética simples das notas de um formando.
+
+Considerando que nos pontos 1, 2 e 3 estamos a trabalhar com medidas e que estas não podem ser zero, se algum dos valores inseridos for zero, então o resultado da conta deverá ser colocado a zero e a conta não deve ser feita. Por exemplo, se durante o ciclo para calcular a área dos vários triângulos o utilizador inserir zero a área deve ser logo colocada a zero e não deve ser calculada.
+
+Fórmulas
+~~~~~~~~
+Use as seguintes fórmulas para implementar as funcionalidades descritas:
+
+.. Área do triângulo, A = (base x altura) / 2
+.. Perímetro da circunferência, P = 2 x 3.14 x raio
+.. Área da circunferência, A = raio x raio x 3.14
+.. Média aritmética simples, M = soma de notas / número de notas 

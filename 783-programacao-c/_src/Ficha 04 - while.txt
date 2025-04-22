@@ -1,0 +1,43 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0783 - Programação em C/C++ - Ciclos e Decisões
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |4 - Estrutura de Repetição WHILE e DO.. WHILE
+|=================================================================================
+
+Esquema Geral dos Ciclos
+------------------------
+
+.while
+image::images/while.png[scaledwidth="90%",alt="while",align="center"]
+
+.do... while
+image::images/do-while.png[scaledwidth="90%",alt="do-while",align="center"]
+
+Diferenças
+----------
+A diferença entre um ciclo *while* e um ciclo **do... while** está na localização da condição de controlo. No caso do primeiro a condição aparece no início, enquanto que no caso do segundo a condição está no fim do bloco. A consequência desta diferença é que o código do ciclo **while executa apenas se a condição for verdadeira** enquanto que o do ciclo **do... while executa sempre uma vez _antes_ da condição ser testada**. 
+
+Implemente os Seguintes Programas
+---------------------------------
+
+.while
+. Programa que leia, em ciclo, uma letra e mostre o texto *Vermelho* quando a letra pressionada for a *R*, mostre *Verde* quando a letra pressionada for a *G* e *Azul* quando a letra pressionada for a *B*. O programa deve termina quando for pressionada a letra *S*;
+. Programa que leia letras e que mostre essas letras de volta ao utilizador enquanto não for pressionada a letra *\'\#\'*. Dica: Use a função *getchar* dentro da condição;
+. Programa que escreva a tabuada de um número introduzido pelo utilizador;
+. Programa que leia números até que a soma dos números introduzidos seja 500;
+. Programa que peça um número e diga se esse número é maior, menor ou igual a um número escolhido por si. O utilizador deverá ter 5 tentativas para acertar no número. Declare a variável que vai ter o número secreto e inicie-a com um valor à sua escolha, se fizer vários testes, experimente mudar o valor secreto;
+. Programa que peça um número ao utilizador e calcule a soma de todos os números pares até ao número introduzido. Por exemplo, se o número introduzido for 9, o programa deve calcular **2 + 4 + 6 + 8**. Um número é para se o resto da divisão por doos for igual a zero, ex: 6 % 2 é 0 logo 6 é par, 7 % 2 é 1 logo 7 não é par;
+. Programa leia uma quantidade de números variáveis e que calcule a média desses valores. O programa deve ler primeiro um número e depois pedir ao utilizador tantos novos números quantos os indicados pelo primeiro número. Por exemplo, se o primeiro número for 5, o programa deve depois pedir 5 novos números e fazer a média com esses 5 novos números.
+. Programa que leia 10 números e some os que forem pares e multiplique os que forem impares, no fim deverá apresentar o resultado das somas e o resultados das multiplicações.
+. Programa que leia, em ciclo, uma letra no máximo 20 vezes ou até ser introduzida a letra *\'s'*, quando a letra introduzida for o *\'A'* o programa deve escrever *"Olá mundo!"*, quando a letra introduzida for um *\'p'* o programa deve escrever *"Vote PCP!"*, quando a letra introduzida for *\'v'* o programa deve escrever *"Vitória, a águia…"*. Use um *switch* para fazer a decisão;
+. Programa que receba um número maior que zero e imprimia a soma dos números pares menores que o número recebido. Ex: se o número é 15, a soma é 2+4+6+8+10+12+14=56;
+
+.do... while
+. Programa que receba o nome de uma pessoa, o estado civil (use 1 para casado e 0 para solteiro), e o salário pago. Depois aplique 10% de imposto (retire 10%) se for solteiro, e 5% (retire 5%) se for casado. O programa deve terminar quando for introduzido o carácter #;
+. Programa para calcular o dobro de um número fornecido pelo utilizador, enquanto não for introduzido o valor zero;
+. Programa para ler a idade de uma pessoa expressa em anos, meses e dias e mostrá-la expressa apenas em dias enquanto não for introduzido o valor zero;
+. Programa para ler as notas de um aluno e calcular a média aritmética simples deste aluno, termine o programa introduzindo o valor -1 para uma nota;
+. Programa que receba, em ciclo, o salário de empregados e some na variável *soma1* se o salário for inferior a 1000€ e na variável *soma2* se for superior ou igual a 1000€. O programa deve terminar quando for introduzido um salário igual a zero e no fim mostrar os somatórios presentes nas duas variáveis;

@@ -1,0 +1,183 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0783 - Programação em C/C++ - Ciclos e Decisões
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |1 - Decisão IF
+|=================================================================================
+
+Operadores
+----------
+A escrita de condições requer o uso de operadores especiais para efectuar comparações entre dois valores ou duas variáveis, para essas comparações existem os seguintes operadores:
+
+.. Operadores relacionais: *==*, *>*, *<*, *>=*, *\<=*, *!=*
+.. Operadores lógicos: *&&*, *||*, *!*
+
+[cols="1,2,1,2",options="header"]
+|================================================================
+|Operador |Significado        |Exemplo |Descrição 
+|==       |Igualdade          |x == y  |x é *igual* a y?
+|!=       |Diferente          |x != y  |x é *diferente de* y?
+|>        |Maior que          |x > y   |x é *maior que* y?
+|>=       |Maior ou Igual que |x >= y  |x é *maior ou igual* a y?
+|<        |Menor que          |x < y   |x é *menor que* y?
+|\<=      |Menor ou Igual que |x \<= y |x é *menor ou igual* a y?
+|================================================================
+
+Estrutura de Decisão if
+-----------------------
+O *if* permite efectuar uma decisão usando uma condição, isto é, com um *if* usamos uma condição que irá controlar qual o bloco de código a executar. O código dentro do bloco correspondente ao *if* é executado se a condição for verdadeira. Um *if* pode conter um *else* que permite indicar uma alternativa quando a condição é falsa. Assim, se a condição do *if* é verdadeira, o código do bloco do *if* é executado, senão, e se existir um *else*, o código do bloco do *else* é executado.
+
+if
+~~
+
+image::images/if.png[scaledwidth="90%",alt="if",align="center"]
+
+if… else
+~~~~~~~~
+
+image::images/if-else.png[scaledwidth="90%",alt="if",align="center"]
+
+A sintaxe do *if* é a seguinte:
+----
+//sem else:
+if( <condição> )         //1
+{
+    <código a executar>  //2
+}
+
+//com else:
+if( <condição> )         //1
+{
+    <código a executar>  //1
+}
+else
+{
+    <código a executar>  //2
+}
+----
+
+1. Dentro dos parênteses deve ser colocada a condição que se pretende testar.
+2. Dentro das chavetas deve ser colocada a linha, ou as linhas, de código a executar.
+
+.Exemplo de utilização sem else
+
+[source,c]
+----
+#include <stdio.h>
+
+int main()
+{
+    int z = 0;
+    
+    printf("Insira um número maior que zero: ");
+    scanf("%d", &z);
+    
+    if(z <= 0)
+    {
+        printf("O número que inseriu não é válido");
+    }
+
+    return 0;
+}
+----
+
+.Exemplo de utilização com else
+
+[source,c]
+----
+#include <stdio.h>
+
+int main()
+{
+    int z = 0;
+    
+    printf("Insira um número maior que zero: ");
+    scanf("%d", &z);
+    
+    if(z <= 0)
+    {
+        printf("O número que inseriu não é válido");
+    }
+    else
+    {
+        print("Inseriu um número maior que zero!");
+    }
+
+    return 0;
+}
+----
+
+
+Estude o Seguinte Programa
+--------------------------
+Escreva este programa no IDE e estude o que ele faz, executando o programa para testar.
+
+[source,c]
+----
+#include <stdio.h>
+
+int main()
+{
+    int x = 10, y = 2, c = 50, h = 0;
+    if (x > y)
+    {
+        printf("X maior que Y.\n");
+    }
+
+    if(x == y)
+    {
+        printf("X igual a Y.\n");
+        return 0;
+    }
+
+    if(x < y)
+    {
+        printf("X menor que Y.\n");
+        return 0;
+    }
+
+    if( x < y && c > y)
+    {
+        printf("o C e o maior de todos.\n");
+    }
+
+    if(x == 10)
+    {
+        printf("O X e 10.\n");
+    }
+
+    if(!h)
+    {
+        printf("O H e zero!?\n");
+    }
+
+    return 0;
+}
+----
+
+Desenvolva os Seguintes Programas
+---------------------------------
+
+.if
+. Programa que peça dois inteiros e mostre o resultado da aplicação de todos os operadores relacionais;
+. Programa que leia um carácter e que mostre a mensagem *"Olá mundo!"* quando for introduzido o carácter #;
+. Programa para identificar se um ano, introduzido pelo utilizador, é bissexto. Um ano bissexto é um ano cuja divisão por 4 é zero mas a divisão por 100 é diferente de zero;
+. Programa que receba um número inteiro e diga se o número é par. Um número é par se o resto da divisão por dois é igual a zero.
+. Programa que receba um salário e adicione 100€ se o salário for inferior a 1500€
+
+.if… else
+. Programa que receba dois números e diga qual dos dois é maior;
+. Programa que receba um mês (o número do mês), e escreva o número de dias que esse mês tem.
+. Programa que receba uma hora e diga quantos segundos tem. Hora não pode ser negativa.
+. Programa que diga se um mês introduzido pelo utilizador (número do mês) é um mês válido ou não;
+. Programa que leia um valor inteiro e diga se o valor é positivo, negativo ou zero;
+. Programa que receba um salário e adicione 200€, se o salário for inferior a 500€, e adicione 100€, se o salário for igual ou superior a 500€ mas inferior a 1500€;
+. Programa que receba o nome de uma pessoa, o estado civil (use 1 para casado e 0 para solteiro), e o salário pago. Depois aplique 10% de imposto (retire 10%) se for solteiro, e 5% (retire 5%) se for casado;
+. Programa que receba uma letra e se a letra for um *\'s'* deve ser apresentada a palavra *"Solteiro(a)"*, se for um *\'c'* deve ser apresentada a palavra *"Casado(a)"*, se for inserida a letra *\'d'* deve ser apresentada a palavra *"Divorciado(a)"*, se for inserida a letra *\'v'* deve ser apresentada a palavra *"Viúvo"*, se for introduzida outra letra deve aparecer a frase *"Estado Civil Indefinido"*;
+. Programa que receba uma nota de um aluno e mostre *"Insuficiente"*, se a nota for menor que 9.5, *"Suficiente"* se a nota for superior ou igual a 9.5 e inferior a 14, *"Bom"* se a nota for superior ou igual a 14 e inferior a 17, *"Muito Bom"* se a nota for maior ou igual que 17 e inferior a 19.5 e *"Excelente"* se a nota for maior ou igual a 19.5. Se a nota for menor que 0 ou maior que 20 o programa deve mostrar *"Nota inválida"* e emitir um apito (use *\a* dentro de um printf);
+. Programa que mostre um menu ao utilizador, com as opções: *"A - Data actual"*, *"B - Hora actual"* e *"S - Sair"*, e leia uma opção introduzida pelo utilizador. Se a letra inserida for um *\'a'* ou um *\'A'*, então deve ser mostrada a data do dia de hoje, se for um *\'b'* ou um *\'B'*, então deve ser mostrada a hora actual, se for inserido um *\'s'* ou um *\'S'* o programa não deve mostrar nada;
+. Programa para ler a idade de um utilizador e escrever *"Júnior"*, se a idade for menor que 13, *"Jovem"* se a idade estiver entre 13 e 18, *"Adulto"* se a idade está entre 18 e 65 e *"Sénior"* se a idade é maior ou igual a 65. Uma idade não pode ser negativa.
+. Programa que converta graus Kelvin para Celcius e, se o valor é menor que zero escreva *"Gelado"*, se o valor estiver entre 0 e 18 escreva *"Frio"*, se o valor estiver entre 18 e 25 escreva *"Ameno"*, se o valor for maior que 25 escreva *"Calor"*. Para converter graus Kelvin para Celcius basta somar 272 ao valor introduzido pelo utilizador;
+. Programa que peça um número e diga se esse número é maior, menor ou igual a um número escolhido por si. O utilizador deverá ter 3 tentativas para acertar no número. Declare a variável que vai ter o número secreto e inicie-a com um valor à sua escolha, se fizer vários testes, experimente mudar o valor secreto;

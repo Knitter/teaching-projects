@@ -1,0 +1,109 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0783 - Programação em C/C++ - Ciclos e Decisões
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |2 - Decisão SWITCH
+|=================================================================================
+
+Estrutura de decisão switch
+---------------------------
+A estrutura *switch* permite usar um valor para testar, em vez de uma condição lógica, e escolher entre várias opções disponíveis e uma opção por omissão. Isto é, com um *switch* colocamos um valor a testar e as possibilidades que nos interessam usar.
+
+Um *switch* é escrito sempre do mesmo modo:
+
+----
+switch(<variável>) 
+{
+    case <valor 1>:
+        break;
+    case <valor 2>:
+        break;
+    case <valor 3>:
+        break;
+    
+    //etc ...
+    default:
+    
+}
+----
+
+Nota: o texto que aparecer entre sinais de menor e maior, *<* e *>*, é substituído por código real. A secção *default* não é obrigatória, mas quando existe tem de ser a última, dentro das chavetas do *switch*.
+
+.Exemplo de utilização sem default
+
+[source,c]
+----
+#include <stdio.h>
+
+int main()
+{
+    int z = 0;
+    
+    printf("Insira um número: ");
+    scanf("%d", &z);
+    
+    switch(z)
+    {
+        case 0:
+            printf("O número que inseriu é o zero.");
+            break;
+        case 1:
+            printf("O número que inseriu é o um.");
+            break;
+        case 2:
+            printf("O número que inseriu é o dois.");
+            break;
+        case 3:
+            printf("O número que inseriu é o três.");
+            break;
+    }
+
+    return 0;
+}
+----
+
+.Exemplo de utilização com default
+
+[source,c]
+----
+#include <stdio.h>
+
+int main()
+{
+    int z = 0;
+    
+    printf("Insira um número: ");
+    scanf("%d", &z);
+    
+    switch(z)
+    {
+        case 0:
+            printf("O número que inseriu é o zero.");
+            break;
+        case 1:
+            printf("O número que inseriu é o um.");
+            break;
+        case 2:
+            printf("O número que inseriu é o dois.");
+            break;
+        case 3:
+            printf("O número que inseriu é o três.");
+            break;
+        default:
+           printf("O número que inseriu é menor que zero ou maior que três.");
+    }
+
+    return 0;
+}
+----
+
+
+Desenvolva os Seguintes Programas
+---------------------------------
+
+. Programa que leia um carácter e que mostre a mensagem *"Olá mundo!"* quando for introduzido o carácter *\'#'*;
+. Programa que receba um mês (o número do mês), e escreva o número de dias que esse mês tem.
+. Programa que diga se um mês introduzido pelo utilizador (número do mês) é um mês válido ou não;
+. Programa que receba uma letra e se a letra for um *\'s'* deve ser apresentada a palavra *"Solteiro(a)"*, se for um *\'c'* deve ser apresentada a palavra *"Casado(a)"*, se for inserida a letra *\'d'* deve ser apresentada a palavra *"Divorciado(a)"*, se for inserida a letra *\'v'* deve ser apresentada a palavra *"Viúvo"*, se for introduzida outra letra deve aparecer a frase *"Estado Civil Indefinido"*;

@@ -1,0 +1,38 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0783 - Programação em C/C++ - Ciclos e Decisões
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |6 - Programa Completo com Menu
+|=================================================================================
+
+1. Programar
+------------
+
+Crie um novo projecto e implemente os 2 programas seguintes:
+
+. Programa para ler o nome, morada e telefone de uma pessoa;
+. Programa para ler o valor de consumo de energia eléctrica;
+
+2. Programa de Leituras
+-----------------------
+
+Crie um programa com o menu como seguinte:
+
+----
+< Registo de Leituras >
+
+
+1 - Inserir Dados de Clientes
+2 - Inserir Leituras
+3 - Consultar Dados de Clientes
+4 - Ver Todas as Moradas
+5 - Sair
+
+:
+----
+
+E que permita efectuar na primeira opção a introdução dos dados de *5* clientes (nome, morada e telefone), na segunda opção a introdução de leituras de consumo de electricidade (valor inteiro), na terceira opção consultar todos os dados dos clientes incluindo as leituras de consumo e na quarta opção permita apresentar todas as moradas registadas. O programa deverá terminar se o utilizador escolher a quinta opção.
+
+Faça uso do código criado no exercício anterior.

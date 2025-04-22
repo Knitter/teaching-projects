@@ -1,0 +1,40 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0783 - Programação em C/C++ - Ciclos e Decisões
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |5 - Programa Completo com Menu
+|=================================================================================
+
+1. Programar
+------------
+
+Crie um novo projecto e implemente os 5 seguintes programas:
+
+. Um programa que permita calcular a área de um rectângulo. A área de um rectângulo é dada por: **A = largura x altura**;
+. Um programa para calcular a área de um triângulo, dada por: **A = (base x altura) / 2**;
+. Programa para calcular o perímetro de uma figura geométrica regular, através da soma dos lados. O programa deve ler um número de lados indeterminados e parar de ler quando o utilizador introduzir o valor *-1*. No fim deve apresentar o valor encontrado para o perímetro.
+. Um programa que permite ler, sequencialmente, letras introduzidas pelo utilizador e que termine de receber letras quando o utilizador introduzir o carácter *\'#'*. Depois de terminada a introdução de letras, o programa deve apresentar o número de **vogais inseridas** (a, e, i, o, u), o **número de espaços** e o **número de outros** caracteres.
+. Programa que permita ler, em ciclo, um palavra de cada vez e que termine a leitura quando for introduzida a palavra *"terminar"*. Depois de terminar as leituras o programa deve apresentar a média de letras por cada palavra. Faça uso da função *strlen* para obter o tamanho das palavras. Para a condição do ciclo use a seguinte expressão, considerando que *palavra* é a variável que contém a palavra inserida pelo utilizador: **strcmp("terminar", palavra) != 0**
+
+2. Programa com menu
+--------------------
+
+Depois de ter criado e testado convenientemente os 4 programas anteriores, junte num só programa as funcionalidades implementadas, permitindo o acesso através de um menu como o seguinte:
+
+----
+< Programa Completo com Menu >
+
+
+1 - Área do Rectângulo
+2 - Área do Triângulo
+3 - Perímetro
+4 - Contar letras
+5 - Média de Palavras
+6 - Sair
+
+:
+----
+
+Para isto terá de usar o ciclo correcto para a criação do menu, este terá de aparecer pelo menos uma vez, e de colocar em cada uma das opções o código correspondente que foi criado no exercício anterior. Use a estrutura **switch** para fazer a decisão da opção escolhida.

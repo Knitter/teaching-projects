@@ -1,0 +1,117 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0783 - Programação em C/C++ - Ciclos e Decisões
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |3 - Estrutura de Repetição FOR
+|=================================================================================
+
+Ciclo for
+---------
+A primeira estrutura de repetição que iremos ver é o ciclo *for*. Esta estrutura é usada, principalmente, quando sabemos quantas iterações pretendemos executar, isto é, quando temos forma de determinar à partida quantas iterações queremos executar. Embora possa ser usada em qualquer situação em que seja necessário um ciclo, é a estrutura mais natural de se usar quando o número de iterações é conhecido ou facilmente determinado.
+
+image::images/for.png[scaledwidth="90%",alt="if",align="center"]
+
+Descrição do funcionamento do ciclo *for*
+
+* A execução do programa chega ao ciclo e:
+** as instruções presentes na secção de iniciação (1) são executadas;
+** a condição é avaliada, se o resultado for falso o ciclo termina;
+** sendo o resultado verdadeiro, são executadas as instruções do bloco do *for*;
+** após a última instrução do bloco do *for* são executadas as instruções presentes na secção de pós-instruções;
+** a condição é novamente avaliada e o processo repete-se
+
+.Exemplo
+Calcular a soma e o produto dos primeiros 20 números.
+
+[source,c]
+----
+#include <stdio.h>
+
+int main()
+{
+    int somatorio, produto, execucoes = 20, i;
+    
+    for(i = 0, somatorio = 0, produto = 1; i < execucoes; i = i + 1)
+    {
+        printf("A fazer a iteração %d...\n", i);
+        
+        somatorio = somatorio + i;
+        produto = produto * i;
+    }
+    
+    printf("Para %d execuções, o valor do somatorio é");
+    printf(" %d e o valor do produto é %d\n", execucoes, somatorio, produto);
+
+    return 0;
+}
+----
+
+.Exemplo
+Imprimir 10 vezes a frase *"Olá Mundo!"*.
+
+[source,c]
+----
+#include <stdio.h>
+
+int main()
+{
+    int i;
+    
+    for(i = 0; i < 10; i = i + 1)
+    {
+        printf("Olá Mundo!\n", i);
+    }
+
+    return 0;
+}
+----
+
+.Exemplo
+Colunas de números com multiplicações entre a linha e a coluna
+
+[source,c]
+----
+#include <stdio.h>
+
+int main()
+{
+    int i, j;
+
+    for(i = 0; i < 10; i = i + 1)
+    {
+        for(j = 0; j < 5; j = j + 1)
+        {
+            printf("%d\t", i * j);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+----
+
+Exercícios
+----------
+
+. Programa que receba uma letra a representar uma de três cores possíveis, **R para vermelho**, **G para verde** e **B para azul**. O programa deve apresentar o nome da cor correspondente;
+. Programa que leia letras e que mostre essa letra de volta ao utilizador enquanto não for pressionada a letra *\'\#\'*. Dica: Use a função *getchar* dentro da condição ou inicie a variável a um *\'#'* antes do ciclo;
+. Programa que escreva a tabuada de um número introduzido pelo utilizador;
+. Programa que mostre a seguinte figura:
++
+----
+*
+**
+***
+****
+*****
+******
+----
++
+. Programa que leia números até que a soma dos números introduzidos seja 500;
+. Programa que peça um número e diga se esse número é maior, menor ou igual a um número escolhido por si. O utilizador deverá ter 5 tentativas para acertar no número. Declare a variável que vai ter o número secreto e inicie-a com um valor à sua escolha, se fizer vários testes, experimente mudar o valor secreto;
+. Programa que peça um número ao utilizador e calcule a soma de todos os números pares até ao número introduzido. Por exemplo, se o número introduzido for 9, o programa deve calcular **2 + 4 + 6 + 8**. Um número é para se o resto da divisão por dois for igual a zero, ex: 6 % 2 é 0 logo 6 é par, 7 % 2 é 1 logo 7 não é par;
+. Programa leia uma quantidade de números variáveis e que calcule a média desses valores. O programa deve ler primeiro um número e depois pedir ao utilizador tantos novos números quantos os indicados pelo primeiro número. Por exemplo, se o primeiro número for 5, o programa deve depois pedir 5 novos números e fazer a média com esses 5 novos números.
+. Programa que leia 10 números e some os que forem pares e multiplique os que forem impares, no fim deverá apresentar o resultado das somas e o resultados das multiplicações.
+. Programa que leia no máximo 20 letras, quando a letra introduzida for o *\'A'* o programa deve escrever *"Olá mundo!"*, quando a letra introduzida for um *\'p'* o programa deve escrever *"Vote PCP!"*, quando a letra introduzida for *\'v'* o programa deve escrever *"Vitória, a águia…"*. Use um *switch* para fazer a decisão.

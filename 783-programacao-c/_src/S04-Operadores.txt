@@ -1,0 +1,73 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0783 - Programação em C/C++ - Ciclos e Decisões
+|Local   |
+|Sessão  |
+|Formador|
+|Sessão  |4 - Operadores
+|=================================================================================
+
+Operadores
+----------
+Os operadores permitem efectuar operações sobre e com as nossas variáveis. Já vimos anteriormente os operadores lógicos, que nos permitiam criar condições lógicas a usar no ciclo *if*, iremos agora ver operadores que podem ser aplicados a qualquer variável para efectuarem operações de atribuição ou operações matemáticas.
+
+Atribuição
+~~~~~~~~~~
+O operador de atribuição permite atribuir um valor a uma variável, é usado o carácter *=*, e é com este operador que colocamos valores dentro das nossas variáveis, **atribuímos valores às variáveis**.
+
+Com um operador de atribuição a expressão é avaliada **da direita para a esquerda**, assim podemos dizer que o valor que está **à direita** é colocado dentro da variável que está **à esquerda**.
+
+----
+a = 5;
+b = a;
+c = 'A';
+----
+
+Aritméticos
+~~~~~~~~~~~
+Os operadores aritméticos permite fazer contas com os valores de variáveis, são usados os caracteres *+*, ***, *-* e */* para representar as operações de *somar*, *multiplicar*, *subtrair* e *dividir*.
+
+----
+a + b;
+5 + c;
+8 + 9;
+8 * a;
+f / g;
+7 - h;
+----
+
+Módulo
+~~~~~~
+O operador módulo permite obter o resto de uma divisão inteira. Para este operador usamos o carácter percentagem, *%*.
+
+image::images/resto.png[scaledwidth="90%",alt="if",align="center"]
+
+Unário
+~~~~~~
+O operador unário afecta apenas uma variável e apenas altera o sinal dessa variável, por exemplo, um valor positivo pode ser passado a negativo se o precedermos com o operador unário, neste caso o carácter *-*.
+
+----
+a = 5;
+-a; //estamos a tornar o 5 negativo.
+----
+
+Incremento e Decremento
+~~~~~~~~~~~~~~~~~~~~~~~
+Os operadores de incremento e decremento permitem incrementar uma unidade, ou decrementar uma unidade, a uma variável. Não permite incrementar ou decrementar quantidades à escolha, apenas uma unidade. Para este operador usam-se dois sinais de *+*, para incrementar, ou dois sinais de *-* para decrementar. Os dois sinais são colocados depois da variável e não podem ter espaço a separá-los.
+
+----
+a++;
+b--;
+----
+
+Compostos: Atribuição + aritméticos
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+É possível combinar os operadores aritméticos com o operador de atribuição, fazendo num só operador as duas operações: a operação de atribuir e a operação aritmética usada. Para estes operadores são usados os caracteres aritméticos e o operador módulo, *+*, ***, *-*, */* e *%*, seguidos do carácter de atribuição, *=*.
+
+----
+a += 5;
+b -= 2;
+a *= 4;
+g /= 67;
+h %= 9;
+----
