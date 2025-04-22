@@ -1,0 +1,31 @@
+Sumário:
+    Conclusão de exercícios com apresentação de solução final.
+    Ferramentas de depuração.
+    Métodos do ciclo de vida de uma aplicação Android.
+
+1: Começar com projeto novo.
+2: Criar layout completo composto por:
+    - 1 TextView para coluna de números
+    - 1 TextView para display/valores
+    - 1 Spacer
+    - 15 Button
+
+3: Definir ID e texto para todos os componentes
+4: Garantir que o todos têm alinhamento relativo aos pares:
+    - android:layout_below com o ID do componente por cima
+    - android:layout_toStartOf com ID do componente à esquerda
+
+    - Para o botão Enter:
+        # android:layout_toEndOf com ID do botão 0
+        # android:layout_alignEnd com ID do botão 9
+        # android:layout_width com valor "0dp"
+
+5: Usar projeto completo para apresentar e explicar código
+    - Chamar atenção à implementação do evento/interface View.OnClickListener
+    - Eles viram duas formas diferentes na aula passada, esta é mais uma
+
+6: Explicar como funciona um debugger
+    - Bugs a rever:
+        # Se o utilizador tentar somar com apenas um número a aplicação estoira;
+        # Não há proteção para divisão por zero;
+

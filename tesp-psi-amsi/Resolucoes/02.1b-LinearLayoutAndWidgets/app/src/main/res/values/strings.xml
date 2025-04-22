@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LinearLayoutAndWidgets B</string>
+    <string-array name="planetas">
+        <item>Mercúrio</item>
+        <item>Vénus</item>
+        <item>Terra</item>
+        <item>Marte</item>
+        <item>Júpiter</item>
+        <item>Saturno</item>
+    </string-array>
+</resources>

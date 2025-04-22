@@ -1,0 +1,9 @@
+Sumário + Objetivos
+===================
+
+Objetivos: Devem conseguir terminar a lista de livros usando os dados estáticos, correctamente implementada
+           com layout bem definido, uso de ficheiros adequados (strings.xml, dimens.xml). Se não terminarem 
+           a ListView devem terminar em casa porque na próxima aula é para avançar para a ActionBar
+
+Sumário: Continuação da resolução dos exercícios da aula anterior.
+

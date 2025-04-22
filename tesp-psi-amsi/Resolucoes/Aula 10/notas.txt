@@ -1,0 +1,10 @@
+Confirmar se implementaram a lista de items.
+Se não implementaram:
+    Demonstrar implementação do adapter e da lista (30 min)
+
+Pegar na ficha N/06, na aplicação exemplo que está no Moodle
+    Deixar resolver a ficha
+    30 min (40min?) antes do fim da aula, exemplificar a adição da toolbar (ActionBar)
+
+Sumário:
+    Continuação da resolução de exercícios da aula anterior.

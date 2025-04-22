@@ -1,0 +1,47 @@
+Notas para apresentação da Aula Prática 2
+=========================================
+
+# Objetivos
+
+- Introduzir a sintaxe da linguagem Java
+- Explicar as diferenças, quando relevante, para C# que eles já tiveram
+- Forçar o contacto com o Android Studio mas focando apenas o necessário para que executem os exercícios
+
+# Etapa 1: Criar um projeto
+
+    - Novo projecto
+        Application Name : JavaAndroid
+        Company Domain   : estg.ipleiria.pt
+        Project Location : <qualquer local sem espaços>
+
+    - Detalhes do SDK
+        Phone and Tablet
+        Minimum SDK 4.4
+
+    - Assistente de actividade
+        Tipo                   : Empty Activity
+        Activity Name          : SintaxeJava
+        Generate Layout File   : Sim
+        Layout Name            : sintaxe_java
+        Backward Compatibility : Sim
+
+# Etapa 2: 
+    Descrever o código básico, explicar que se irão ignorar parte de design da IU
+    Apresentar a sintaxe base da linguagem Java como indicado nos comentários do projeto
+    Ir introduzindo o código de exemplo (projeto vazia completado à medida que a aula avançar)
+
+# Etapa 3:
+    Fornecer o método int aleatorio(int, int), linha 195
+    Fornecer as duas linhas 204 e 205
+    Questionar sobre como iniciar o jogo e apresentar a solução que começa na linha 207 e segue até à linha 231 (contando com os comentários)
+        - Implica adicionar as variáveis de instânca inico e numeroSecreto
+        - Se a apresentada no código exemplo for melhor, substituir por essa versão
+    Deixar que testem, implementem o que conseguirem e explorem soluções, acompanhar individuamente se possível
+
+# Fim
+    Se não conseguirem implementar tudo devem levar esse trabalho para casa
+    Na próxima aula será dada continuação com o projeto atual, e será fornecida uma base completa (este exemplo)
+
+# Notas
+
+    - ODP "Aula 2 - Apoio - Sintaxe" uma apresentação de apoio caso seja necessário ocupar o projetor com para momentos em que se está a fazer apresentação. Não tem de ser usado.

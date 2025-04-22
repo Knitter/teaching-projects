@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Anagrama</string>
+    <string name="msg_sao_anagramas">São anagramas!</string>
+    <string name="msg_nao_sao_anagramas">Não são anagramas! :(</string>
+    <string name="tv_palavra_1">Palavra 1</string>
+    <string name="tv_palavra_2">Palavra 2</string>
+    <string name="tv_resultado">Resultado:</string>
+</resources>

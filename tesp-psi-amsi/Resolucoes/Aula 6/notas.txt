@@ -1,0 +1,37 @@
+Notas Aula 6
+============
+
+1# -- 15min -- Exemplificar/demonstrar a implementação do programa "Anagrama"
+    - É apenas necessário implementar com os alunos o algoritmo de validação.
+    - É importante mencionar que as strings da aplicação estão todas no ficheiro strings.xml
+      Algo que viram na aula anterior. Ficheiro/projecto "02.2-Anagrama".
+
+    - Este exercício está na ficha de exercícios n/02, apresentada na aula passada (aula 5).
+
+2# -- Criar um projecto novo, de acordo com a ficha de exercícios n/03
+    - Deixar que os alunos tentem resolver o primeiro exercício sobre ListView
+    - Demonstrar a resolução do exercícios, focando a parte do ArrayAdapter, o resto é sobre 
+      layouts/views que já devem saber,
+
+    - Exemplificar a criação de uma nova activity e a alteração, no manifest, da activity 
+      principal/main. Ainda não sabem ter várias atividades e navegar entre elas.
+
+    - Os alunos devem resolver sozinhos o exercício 2
+    - Demonstrar de forma resumida/rápida a resolução, é igual ao exercício anterior mas em 
+      vez de ListView usa GridView.
+
+3# Pegar no exercíco 2 da ficha n/02, programa "LinearLayout & Widgets", que se encontra 
+   resolvido (no Moodle e no Dropbox) e alterar o XML do layout principal para deixar de 
+   usar a propriedade "entries" e passar a definir a lista de planetas através de código.
+   Ficheiro/projecto "02.1-LinearLayoutAndWidgets".
+   
+
+: Sumário
+    Exercícios com layouts e widgets: ListView e GridView
+
+: Nota
+    Na próxima aula de terça vou usar as duas horas para explicar os básicos de Git e para ajudar 
+    os que já estão a tentar usar. Avisa no teu turno que na terça devem ter instalado um dos seguintes, ou os 3, vou instalar na aula se necessário:
+        - Github Desktop, se usarem GitHub, cliente para Windows/Mac: https://desktop.github.com/
+        - Git-scm, cliente linha de comandos para Windows, funciona para qualquer serviços (Github/Bitbucket/etc)
+        - Sourcetree se usarem Bitbucket, cliente https://www.sourcetreeapp.com

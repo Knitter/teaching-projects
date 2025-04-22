@@ -1,0 +1,19 @@
+Sumário + Objetivos
+===================
+
+Notas     : A ficha foi atualizada, devem fazer download da nova versão disponível no moodle.
+          : Dizer que devem ter atenção à data da última atualização da ficha porque o link de 
+            download no moodle é reutilizado. O link é sempre o mesmo, mas muda o PDF.
+
+Objetivos : Começam com o código que está no github (link no Moodle), devem conseguir terminar 
+            a adição da toolbar na aula prática.
+            Se conseguirem o ponto anterior, continuam a desenvolver a ficha adicionando evento 
+            para tratar o tap num item da lista (setOnItemClickListener), que deve abrir a 
+            atividade de detalhes do livros. Na atividade de detalhes devem acrescentar uma nova 
+            toolbar com um botão para abrir a atividade de edição de dados do livro.
+
+            A ficha termina com a adição de métodos estáticos à classe ExampleData para inserir 
+            livros novos.
+
+Sumário   : Início dos exercícios sobre ActionBar e Preferences.
+

@@ -1,0 +1,14 @@
+Objetivos : Alterar a aplicação para usar apenas base de dados. Remover a classe de dados exemplo (ExampleData).
+            Exemplo completo disponível aos alunos no repositório presente no minha conta de GitHub.
+                Ou pegam no exemplo base para a aula anterior (v1.0 no separador Releases)
+                Ou usam o que têm do trabalho que desenvolveram na aula passada (se escreveram alguma coisa)
+                
+                O foco é que terminem a aplicação de modo a que a listagem, acesso a detalhes e edição de dados seja 
+                feito com base de dados.
+
+
+Sumário   : Continuação dos exercícios da aula anterior.
+            Atuaização do projeto exemplo com acesso a base de dados SQLite.
+
+
+Nota      : Na aula teórica terão exemplo de acesso a imagens/câmara.

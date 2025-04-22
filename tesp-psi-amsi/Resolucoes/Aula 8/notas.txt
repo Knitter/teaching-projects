@@ -1,0 +1,12 @@
+Notas para Aula 08
+==================
+
+Objetivos:
+	Fazer revisão dos slides da teórica
+    Explicar Activity + Intent
+    Pequena aplicação com um Intent do Android + Intent personalizado
+    Passagem de dados entre atividades
+
+Sumários: 
+    Activities e Intents
+    Passagem de parâmetros entre activities
