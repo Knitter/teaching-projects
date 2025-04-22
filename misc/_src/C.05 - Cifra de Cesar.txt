@@ -1,0 +1,42 @@
+Cifra de César
+==============
+
+
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=====================================================
+|Formação |Jogo do Rato
+|Local    |Marinha Grande
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |5 - Cifra de César - Ficheiros,Strings
+|=====================================================
+
+Uma __Cifra de César__ é um sistema de cifra por substituição, onde se usa um alfabeto deslocado para a cifra de mensagens. Na sua forma atribuída originalmente a Júlio César, o alfabeto é deslocado em 3 posições, passando a letra *A* a ser representada por *D*, a letra *B* por *E* e assim sucessivamente, até dar a volta ao alfabeto.
+
+image::imagens/cifra.png[title="Cifra de César"]
+
+Para este projecto pretende-se o desenvolvimento de uma aplicação em C que consiga cifrar e decifrar texto ao qual tenha sido aplicado a __Cifra de César__. O programa deve trabalhar em dois modos: no primeiro recebe o texto na consola e devolve o resultado também na consola, no segundo recebe o texto a partir de um ficheiro de origem e guarda num ficheiro destino com o mesmo nome mas com a extensão *cifra*.
+
+Para tornar o algoritmo mais interessante, ao modo de cifra original iremos introduzir algumas alterações: deve ser possível indicar quantas letras se pretendem deslocar, em vez das comuns 3 e deve ser possível indicar a direcção do deslocamento, se para a direita ou para a esquerda. Para esta opção devemos considerar que o alfabeto está disposto em círculo, começando em *A*, indo até *Z* e sendo seguido dos números de *0* a *1*.
+
+O programa deve receber, no máximo, 6 parâmetros que irão controlar a forma como executa as várias opções.
+
+[cols="1,10",frame="topbot",options="unbreakable"]
+|==================================================
+|-m | Se passado indica que a mensagem é obtida através da consola, imediatamente a seguir ao parâmetro. Não pode existir ao mesmo tempo que a opção **-f**.
+|-f | Indica o nome do ficheiro de onde obter os dados ou para onde escrever os dados. Esta opção não pode existir ao mesmo tempo que a opção **-m**. Deve ser seguido de dois nomes de ficheiros, o primeiro correspondente à origem e o segundo ao destino.
+|-d | Indica a direcção do deslocamento. Opção obrigatória.
+|-s | Indica o tamanho do deslocamento. Opção obrigatória.
+|-o | Indica o tipo de operação, *cifrar* ou *decifrar*. Por omissão, se não for passada, assumimos que se pretende cifrar o texto original.
+|-c | Se passado, indica o ficheiro de configurações a usar para obter as informações que deviam ser passadas por parâmetro. Qualquer parâmetro passado deve ser ignorado. No ficheiro os parâmetros devem ser indicados um por linha.
+|==================================================
+
+Exemplo de utilização do programa em linha de comandos:
+
+  Cifrar texto passado por parâmetro
+  cesar -d direita -s 5 -m "Uma pequena raposa azul"
+
+  Cifrar texto dentro de um ficheiro
+  cesar -d direita -s 5 -f original.txt cifrado.txt
+
+  Cifrar texto usando ficheiro de configurações
+  cesar -c config.cfg

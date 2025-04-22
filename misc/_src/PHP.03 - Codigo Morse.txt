@@ -1,0 +1,41 @@
+Código Morse
+============
+
+
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=====================================================
+|Formação |Jogo do Rato
+|Local    |Marinha Grande
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |3 - Código Morse - Algoritmia, Strings, Ciclos
+|=====================================================
+
+Código Morse é um sistema de comunicação baseado num série de tons, luzes ou cliques que podem ser entendidos facilmente por qualquer utilizador com conhecimentos e sem recurso a equipamento especial de tradução. É o sistema de comunicação electrónico que mais tempo e utilização teve, tendo sido usado durante cerca de 160 anos, e de forma extensiva durante a Segunda Guerra Mundial.
+
+Desenvolvido por Samuel F. B. Morse, Joseph Henry e Alfred Vail em 1836, o sistema transmitia informação enviando impulsos eléctricos que se traduziam em pontos e linhas e assim codificavam as mensagens a enviar. Actualmente o código Morse é bastante diferente do que foi criado por Morse e os seus colegas, e o sistema deixou de ser usado pelas várias forças militares passando a ser usado apenas pelos radio-amadores.
+
+.Correspondência Internacional
+|=============================
+|0 |- - - - - |1 |. - - - - |2 |. . - - - |3 |. . . - - |4 |. . . . -
+|5 |. . . . . |6 |- . . . . |7 |- - . . . |8 |- - - . . |9 |- - - - .
+|A |. -       |B |- . . .   |C |- . - .   |D |- . .     |E |.
+|F |. . - .   |G |- - .     |H |. . . .   |I |. .       |J |. - - -
+|K |- . -     |L |. - . .   |M |- -       |N |- .       |O |- - -
+|P |. - - .   |Q |- - . -   |R |. - .     |S |. . .     |T |-
+|U |. . -     |V |. . . -   |W |. - -     |X |- . . -   |Y |- . - - 
+|Z |- - . .   |  |          |  |          |  |          |  |
+|=============================
+
+.Pontuação, sem standard
+|=============================
+|. |. - . - . - |: |- - - . . . |, |- - . . - - |; |- . - . - .
+|? |. . - - . . |= |- . . . -   |' |. - - - - . |+ |. - . - .
+|! |- . - . - - |- |- . . . . - |/ |- . . - .   |( |- . - - . 
+|) |- . - - . - |& |. - . . .   |@ |. - - . - . |" |. - . . - .
+|_ |. . - - . - |  |            |  |            |  |
+|=============================
+
+Projecto
+--------
+
+Com este projecto pretende-se desenvolver um sistema WEB que consiga fazer a tradução de textos de, e para, código Morse. Deverá ser possível introduzir, numa caixa de texto, o texto a converter e receber, na mesma página, o resultado da conversão.

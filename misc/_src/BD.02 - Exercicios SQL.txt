@@ -1,0 +1,40 @@
+Exercícios de SQL
+=================
+
+
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=====================================================
+|Formação |Jogo do Rato
+|Local    |Marinha Grande
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |2 - Exercícios de SQL
+|=====================================================
+
+Os exercícios seguintes devem ser executados na consola do HSQLDB. Este motor de bases de dados relacionais é extremamente simples de usar e está pronto a ser executado sem qualquer instalação ou sem ser necessário qualquer linguagem de programação especial. Sendo um sistema feito em Java irá executar correctamente em qualquer sistema operativo que suporte esta tecnologia.
+
+Em Windows a forma mais simples de executar a interface gráfica do gestor de bases de dados que o HSQLDB tem é usar o ficheiro *runManagerSwing.bat* presente na directoria *bin*. Este ficheiro irá executar DatabaseManager do HSQLDB que iremos usar na resolução de exercícios.
+
+Após a execução do gestor deverá surgir uma janela de configuração da ligação, caso esta não apareça pode aceder-lhe usando a opção _File > Connect..._. Altere os dados para ficarem iguais à imagem seguinte:
+
+image::imagens/connect.png[align="center"]
+
+Alterar:
+- *Type*: para _HSQL Database Engine Standalone_;
+- *URL*: para _jdbc:hsqldb:file:vendas_;
+- *User*: _sa_
+- *Password*: _sa_
+
+Abre o ficheiro *sampledata.sql* que se encontra na pasta *sample*, copia as primeiras oito linhas, desde o primeiro *DROP* até ao último *CREATE*, cola essa linhas na área de SQL e excuta carregando no botão *Execute SQL*. Copia as restantes linhas até ao fim do ficheiro, compostas por todas as instruções *INSERT* e executa também essas linhas colando na secção e SQL e usando o botão *Execute SQL*.
+
+Neste momento deverás ter uma base de dados exemplo, composta por quatro tabelas correspondentes a: _CUSTOMER_ com os dados de vários clientes, _INVOICE_ que regista os dados de facturas, _ITEM_ onde estão dados de produtos e quantidades vendidas (linha de venda) e _PRODUCT_ onde são registados os dados de produtos.
+
+Exercícios
+----------
+
+. Conta quantos clientes têm o primeiro nome como Laura.
+. Lista todos os clientes que moram em Paris.
+. Lista todos os clientes com o último nome igual a Miller.
+. Conta quantos clientes possuem o número 195 na morada.
+. Insere um cliente novo com os teus dados: primeiro e último nome, rua e cidade.
+. Lista o primeiro e último nome dos clientes que fizeram compras com valores acima de 3000 euros.
+. Lista o cliente que fez mais compras no valor mais alto de todos os clientes que vivem em Paris.i

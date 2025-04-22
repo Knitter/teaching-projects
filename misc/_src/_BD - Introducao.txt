@@ -1,0 +1,222 @@
+Introdução a Bases de Dados Relacionais
+=======================================
+
+Este manual pretende fazer uma breve introdução ao conceito de bases de dados, especificamente de bases de dados relacionais, e do uso de diagramas entidade-relacionamento para a correcta criação de bases de dados. Não serão abordados os temas de normalização pelos processos das 1ª, 2ª, 3ª formas normais ou pela forma normal de Boyce-Codd.
+
+Introdução
+----------
+
+Bases de dados são sistemas que permitem armazenar dados para utilização por pessoas ou sistemas informáticos. Sendo repositórios de dados é importante começar por definir o que são *dados*.
+
+Dados, naquilo que importa a bases de dados, *são conjuntos de valores que, sem um processamento adequado, não possuem qualquer valor para quem os usa*. São valores em estado bruto que precisam de ser tratados e processados convenientemente para que possam ser considerados relevantes.
+
+Do parágrafo acima se depreende que para que os dados que uma base de dados guarda possam ter algum valor é necessário efectuar o *processamento, relacionamento e análise* dos mesmos produzindo assim o que chamamos de *Informação*.
+
+Então o que são afinal bases de dados? Podemos definir uma base de dados como um *sistema onde estão armazenados dados e informação e que permitem realizar sobre esta um conjunto completo de operações simples de processamento dos dados*.
+
+Saindo das definições teóricas, bases de dados são sistemas informáticos (programas de computador) onde podemos guardar dados e nos quais podemos efectuar operações de pesquisa, de inserção, de validação e de relacionamento dos dados guardados.
+
+Um dos programas mais conhecidos do utilizador comum é, possivelmente, o MS Access. Este programa, a que normalmente chamamos base de dados é na verdade um *motor de bases de dados relacionais* footnote:[O conceito de motor de bases de dados é explicado mais à frente.] porque permite, entre outras coisas, criar bases de dados relacionais. Estas bases de dados são guardadas em ficheiros usados pelo MS Access, que contém uma estrutura própria, e é através do MS Access que conseguimos pesquisar dados, inserir mais informação, obter relatórios, etc.
+
+Naturalmente o MS Access oferece mais mecanismos do que um tradicional motor de bases de dados, como a possibilidade de criar relatórios, interfaces gráficas e com estas criar aplicações completas. Mas estas funcionalidades extra não devem ser confundidas com aquilo que é a base de dados.
+
+Outros exemplos de motores de bases de dados serão o MS SQL Server, o MySQL o PostgreSQL ou SQLite. Estes outros motores não possuem qualquer funcionalidade para criação de interfaces gráficas e para que seja feita uma aplicação com eles é necessário usar linguagens de programação.
+
+As bases de dados em que nos iremos focar são as bases de dados do tipo relacional. Estas bases de dados baseiam-se no modelo relacional de dados que permite gerir informação criando relacionamentos através de características comuns entre os dados e definindo conjuntos de regras e constrangimentos que permitem agrupar os dados.
+
+Este modelo é oposto a modelos que relacionam os dados de forma hierarquica ou através de um rede e foi inicialmente proposto por E. F. Codd em 1969. É actualmente um dos modelos mais usados em toda a indústria de bases de dados.
+ 
+Guardar Informação
+~~~~~~~~~~~~~~~~~~
+
+Se uma base de dados guarda dados e é um sistema informático, onde ficam então os dados registados?
+
+Como qualquer programa os dados necessários à base de dados têm de ficar registados no disco do computador de modo a serem guardados e reutilizados. São ficheiros normais, em alguns casos pastas completas e podem ser ficheiros de texto ou ficheiros binários. O formato específico em que os dados são guardados depende muito do motor de bases de dados usado, e tipicamente um motor não consegue abrir as bases de dados de outro motor.
+
+É por esta razão que se costuma falar de bases de dados usando o nome do motor em vez de apenas o termo genérico, por exemplo, é comum ouvir dizer _"Tenho uma base de dados Access"_ ou _"Criei um base de dados MySQL"_ ou até _"Uso a base de dados SQL Server"_.
+
+Para nós, o que é importante saber é que os dados estão organizados em tabelas, compostas por linhas e colunas, em que cada coluna corresponde a um campo ou categoria de dado e cada linha corresponde ao registo (conjunto de dados guardados). Embora esta representação não seja seguida de forma fiel dentro do ficheiro, é nela que se baseia todo o sistema de bases de dados relacionais. 
+
+Como exemplo, o MS Access guarda as bases de dados em ficheiros binários do tipo MDB, o MySQL usa pastas para representar a base de dados e ficheiros dentro dessa pasta para representar as tabelas, o MS SQL Server usa dois ficheiros, um para os dados e outro para as definições. Outros motores usam outras técnicas.
+
+Motor vs Base de Dados vs Aplicação
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Quando falamos em base de dados estamos a referir-nos ao conjunto de informação e não a uma tecnologia específica. Por exemplo, ao afirmarmos: _"a base de dados de uma oficina gere a informação de reparações"_; não estamos a dizer como guardamos os dados, em que sistema operativo está instalado o programa ou se é um programa feito em MS Access ou numa qualquer linguagem de programação, estamos apenas a referir-nos ao conceito de repositório de informação.
+
+Pelo contrário, ao falarmos de motor de bases de dados estamos a referir uma tecnologia específica, uma implementação e um conjunto de funcionalidades próprias do programa que nos dá acesso à base de dados.
+
+Para aceder a uma base de dados é necessário ter uma aplicação que comunique com o motor de bases de dados e permita ao utilizador aceder à informação sem que este necessite de muitos conhecimentos técnicos. É aqui que entram as aplicações que fazem uso de bases de dados. Estas aplicação são desenvolvidas usando linguagens de programação e permitem criar interfaces gráficas que facilitam a manipulação de informação numa base de dados. Um exemplo comum desta situação é o MS Access.
+
+Operações
+~~~~~~~~~
+
+Comummente designadas por CRUD, do inglês Create, Retreave, Update e Delete, as quatro operações base de qualquer base de dados correspondem à Inserção (Create), à Remoção (Delete), à Actualização (Update) e à Pesquisa (Retreave).
+
+Estas operações são conseguidas através de uma linguagem chamada SQL (Structured Query Language). Ao contrário das linguagens de programação, o SQL é uma linguagem de pesquisa e manipulação de informação e não permite ciclos, variáveis, funções de utilizador, manipulação de ficheiros, etc.
+
+SQL é uma linguagem específica para bases de dados e possui comandos e instruções especialmente concebidos para este propósito.
+
+Em alguns motores de bases de dados existe uma linguagem de programação associada que, em conjunto com o SQL, permite a execução de operações mais complexas mas não iremos usar nenhuma dessas linguagens nas nossas bases de dados.
+
+Motivação e Vantagens 
+~~~~~~~~~~~~~~~~~~~~~
+
+O aparecimento de bases de dados surge como uma evolução natural dos mecanismos onde se guardava informação. Inicialmente qualquer aplicação que precisasse de guardar dados usaria um ficheiro, se duas aplicações iguais existissem em computadores diferentes ou se criar um mecanismo de partilha do ficheiro ou se duplicava o ficheiro.
+
+Ao programador responsável por criar ou manter a aplicação que usava os dados era exigido que conseguisse relacionar toda a informação usando as linguagens de programação disponíveis, que garantisse que a informação se mantinha coerente e que era possível obter a informação do local onde estava guardada sem introdução de erros. Estas tarefas, quando se usam linguagens de propósito genérico e sem recorrer a software de apoio tornam-se extremamente complexas e propícias a erros.
+
+As bases de dados vieram permitir:
+- Centralizar informação. Este é o componente do sistema a que chamas base de dados.
+- Centralizar a gestão. Os motores de bases de dados oferecem os mecanismos necessários, num único local, para garantir a confidencialidade, a integridade e coerência dos dados, bem como as funcionalidades de CRUD.
+- Linguagem dedicada. O SQL é uma das linguagens criadas especialmente para manipular informação, muito mais poderosa neste ponto que qualquer linguagem de propósito geral.
+- Mecanismos de comunicação. Um motor de bases de dados permite facilmente partilhar o acesso à base de dados numa rede de computadores, na _Internet_ ou entre aplicações no mesmo computador.
+
+Esquema Exemplo
+~~~~~~~~~~~~~~~
+
+Na imagem seguinte podemos ver um exemplo típico de como é constituído um programa que usa base de dados. Este exemplo demonstra o paradigma de aplicações cliente-servidor, onde vários computadores têm instalada uma aplicação cliente ou acedem a uma aplicação cliente através de uma ligação de rede, essa aplicação cliente é então responsável por contactar um servidor que dá acesso ao motor de bases de dados e, consequentemente, à base de dados que o utilizador pretende aceder e consultar.
+
+image::imagens/sgbd-cliente-servidor.png[align="center"]
+
+Análise
+-------
+
+A análise é o processo base no desenvolvimento de uma base de dados correcta, e pretende a criação de um modelo de dados ou modelo conceptual de dados. Este modelo tem o objectivo de identificar os vários constituintes do problema a resolver e serve de apoio à criação das tabelas.
+
+Normalização
+~~~~~~~~~~~~
+
+Normalização é o processo pelo qual se organizar a informação e se removem redundâncias nos dados com o objectivo de conseguir bases de dados mais pequenas, com melhor performance, melhor organização e com relações entre os dados bem definidas.
+
+Este objectivo pretende que os dados sejam correctamente identificados e isolados de modo a que as alterações (inserção de novos dados, remoção de dados existentes, actualização de dados) e as pesquisas sejam feitas apenas nas tabelas necessárias e, quando se justificar, propagadas através das regras de relacionamentos às tabelas restantes.
+
+Existem dois métodos tradicionais para se obter uma base de dados normalizadas, o método das formas normais e o método de diagramas entidade-relacionamento. O método que iremos abordar é o método de DERs
+
+Embora o processo de normalização pretenda melhorar uma base de dados, existem situações onde a normalização resulta em perdas de performance. Nestes casos aplica-se o conceito de _desnormalização_, processo pelo qual se modificam as estruturas e as relações entre os dados de modo a favorecer a optimização da aplicação e da base de dados em detrimento da correcção e coerência dos dados.
+
+O processo de _desnormalização_ reintroduz duplicação de dados, existência de campos vazios e aumento das tabelas, que a normalização tentou remover. Este processo deve ser aplicado apenas após termos a certeza que a performance da base de dados pode ser melhorada o que implica que só devemos usar _desnormalização_ numa base de dados correctamente normalizada e implementada e que esteja em funcionamento à tempo suficiente que permita a identificação dos pontos de estrangulamento.
+
+Desta forma sabemos onde devemos _desnormalizar_ e qual a melhor forma de o fazer sem estarmos a afectar toda a base de dados.
+
+Elementos
+~~~~~~~~~
+
+[horizontal]
+*Entidade*:: Representação abstracta que pretende descrever um grupo de objectos, conceitos ou qualquer outro ser. São encontradas através da verificação de características comuns. Uma entidade _Cliente_ poderia representar um cliente num sistema de contabilidade.
+*Atributo*:: Característica presente em todos os membros de uma entidade e que define essa entidade. Por exemplo, uma entidade _Pessoa_ poderá ter os atributos _nome_, _idade_ e _data de nascimento_.
+*Atributo Composto*:: Atributo que é criado pela junção de vários outros atributos. Um atributo _morada_ pode ser constituído pelos atributos _endereço_, _localidade_ e _código postal_.
+*Chave Primária*:: Atributo ou conjunto de atributos que permite identificar sem erros determinada entidade. 
+*Chave Estrangeira*:: É um atributo que constitui a chave primária de outra entidade. É usada para relacionar entidades entre si.
+*Relacionamento*:: Identifica uma relação entre duas ou mais entidades.
+*Relacionamento Identificador*:: Relacionamento especial que identifica a relação entre uma entidade principal e a(s) sua(s) entidade(s) fraca(s).
+*Entidade Fraca*:: Entidade que depende de outra entidade para existir. Estas entidades não fazem sentido existir isoladas e são sempre identificadas através da sua entidade principal.
+*Cardinalidade*:: Número de entidades que entram numa determinada relação.
+*Obrigatoriedade*:: 
+*Valor NULL*:: Representação do valor vazio. Uma base de dados tem de conseguir representar a ausência de valor através do valor NULL.
+
+Diagramas Entidade Relacionamento
+---------------------------------
+
+A criação de uma base de dados correcta passa sempre pela análise do problema e da identificação dos dados, relações, constrangimentos e regras associados. Desta análise deverá resultar um conjunto de informação que permite criar uma base de dados normalizada que, no caso do método por DER, implica os seguintes passos:
+. Recolha de dados e identificação de atributos a guardar;
+. Análise do problema e identificação das entidades, dos seus atributos e dos relacionamentos com outras entidades. Neste passo cria-se o diagrama de entidade-relacionamento;
+. Desenho da base de dados através da aplicação de regras ao DER criado;
+. Implementação da base de dados através da criação das tabelas, das relações, restrições, vistas e índices.
+
+Desenho do Diagrama
+~~~~~~~~~~~~~~~~~~~
+
+Um DER é um diagrama, desenhado com recurso a ferramentas de desenho específicas ou numa simples folha de papel que, na sua versão mais simples, representa as entidades existentes no domínio do problema e as relações entre elas.
+
+A forma de representar um diagrama varia de autor para autor e de programa de desenho para programa de desenho, embora existam elementos gráficos que todos os autores usam, porque os diagramas entidade-relacionamento não são exclusivos das bases de dados, os símbolos usados podem ser bastante diferentes entre dois autores. É comum que há medida que o programador se torna mais conhecedor do desenho de bases de dados, a forma como representa os seus elementos sofre alterações, muitas vezes introduzindo notações próprias.
+
+A notação que iremos usar é que foi considera mais simples e directa e que representa toda a informação necessária sem dificultar o desenho ou tornar demasiado complexo um diagrama que, facilmente, se torna grande. Esta representação pode também ser vista no editor de diagramas DIA.
+
+|==
+|Elemento                     |Descrição e representação gráfica
+|Entidade                     |Quadrado com nome da entidade dentro image:
+|Atributo                     |Elipse com nome do atributo dentro image:
+|Chave Primária               |Elipse com nome da chave sublinhado a sólido image:
+|Chave Estrangeira            |Elipse com nome da chave sublinhado a tracejado image:
+|Relacionamento               |Losango com nome dentro image:
+|Relacionamento Identificador |Losango com nome dentro e duplo traço image:
+|Entidade Fraca               |Quadrado com nome da entidade e duplo traço image:
+|Cardinalidade                |Número 1 ou letras começando por M, em maiúscula.
+|Obrigatoriedade              |Duplo traço na ligação entre a entidade que precisa da obrigação e o relacionamento.
+|==
+
+Regras de DER
+~~~~~~~~~~~~~
+
+A um diagrama correctamente desenhado podem ser aplicado um conjunto de regras que permite, de uma forma simples e rápida, obter a estrutura da base de dados a criar. Estas regras são definidas em função da cardinalidade e da obrigatoriedade das relações.
+
+Assim, o quadro seguinte apresenta as regras e o resultado da aplicação das mesmas.
+
+|[options="header"]
+|==================
+|Relacionamento    |Obrigatoriedade   |Regra
+|1:1               |Nenhuma           |São criadas 3 tabelas, uma para cada entidade e uma para o relacionamento cuja chave primária é escolhida de entre as chaves primárias das duas entidades intervenientes.
+|1:1               |Um lado           |São criadas 2 tabelas, uma para cada entidade. A entidade com obrigatoriedade tem uma chave estrangeira que é a chave primária da outra entidade.
+|1:1               |Dois lados        |É criada uma tabela com todos os atributos juntos, a chave primária é escolhida de uma das duas chaves primárias das entidades.
+|1:N               |Nenhuma ou lado 1 |São criadas 3 tabelas, uma para cada entidade e uma para o relacionamento cuja chave primária é a chave primária da entidade do lado N.
+|1:N               |Lado N            |São criadas 2 tabelas, uma para cada entidade. A entidade do lado N tem uma chave estrangeira que é a chave primária da entidade do lado 1.
+|M:N               |Qualquer tipo     |São criadas 3 tabelas, uma para cada entidade e uma para o relacionamento em que a chave do relacionamento é uma chave composta pelas chaves primárias da entidades envolvidas.
+|Cardinalidade >= 3|Qualquer tipo     |Em relacionamentos com mais de 3 entidades a regra a aplicar é a regra de um relacionamento M:N, cria-se uma tabela para cada entidade e uma tabela resultante cuja chave primária é composta por todas as chaves primárias das entidades envolvidas.
+|==================
+
+Exemplo
+~~~~~~~
+
+Criação de uma agenda electrónica
+
+
+
+
+
+
+Linguagem SQL
+-------------
+
+Questões Práticas
+-----------------
+
+Diferenças de SQL
+~~~~~~~~~~~~~~~~~
+
+Embora exista um standard para a linguagem SQL, os diferentes motores de bases de dados relacionais implementam apenas parte do standard e muitas vezes acrescentam funções extra específicas e que não existem noutros motores.
+
+...
+
+Funções Específicas
+~~~~~~~~~~~~~~~~~~~
+
+Optimização
+~~~~~~~~~~~
+
+Indexação
+^^^^^^^^^
+
+Tipos de Dados
+~~~~~~~~~~~~~~
+
+Resumo de Diferentes Motores
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Existem vários motores de bases de dados no mercado, alguns pagos outros gratuitos, todos com capacidades para serem usados em aplicações reais e todos com muitas diferenças. Não é possível determinar qual o melhor deles, cada um será adequado a um problema diferente ou à realidade de um projecto específico.
+
+A tabela seguinte apresenta alguns dos motores mais comuns existentes e usados actualmente, bem como algumas características base. Não é uma explicação exaustiva nem pretende servir de meio de decisão entre qualquer um dos sistemas, apenas fornecer uma breve descrição.
+
+A lista de linguagens na secção de _Facilidade de Ligação_ representa apenas as linguagens mais comuns nas quais o motor é usado e para as quais existe mais documentação e suporte. Algumas linguagens poderão estar em falta.
+
+[options="header"]
+|============================
+|Motor         |Sistema Operativo  |Licença            |Facilidade de Ligação       |Descrição
+|Firebird      |MS Windows e Linux |IDPL               |C/C++, Delphi               |
+|HSQLDB        |Multiplataforma    |BSD                |Java                        |
+|MS Access     |Windows            |Proprietário       |C#, VB.Net                  |
+|MS SQL Server |Windows            |Proprietário       |C#, VB.Net, J#              |
+|MySQL         |Multiplataforma    |Duas licenças, GPL |PHP, Python, Perl, Java, C++|
+|PostgreSQL    |Mulitplataforma    |Licença PostgreSQL |Python, C++, PHP, Java      |
+|SQLite        |Multiplataforma    |Domínio Público    |PHP, C, C++, Python         |
+|============================

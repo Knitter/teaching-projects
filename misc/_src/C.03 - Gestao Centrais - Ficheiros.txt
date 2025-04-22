@@ -1,0 +1,130 @@
+Ficheiros
+=========
+
+
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=====================================================
+|Formação |Jogo do Rato
+|Local    |Marinha Grande
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |3 - Ficheiros
+|=====================================================
+
+
+Ficheiros
+---------
+A escrita de ficheiros divide-se em dois tipos: ficheiros binários e ficheiros de texto.
+
+Os ficheiros de texto permitem a escrita formatada de dados, tal como se fazia para o ecrã. Os ficheiros binários guardam os dados em formato binário e só podem ser lidos pela aplicação que os escreveu, ou por uma aplicação que conheça, exactamente a forma como os dados foram gravados.
+
+Para o programador, embora usando funções diferentes, o processo de escrita e leitura de um ficheiro é igual, quer no formato binário quer no formato de texto.
+
+Modos de Abertura de Ficheiros
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[horizontal]
+_r_:: Abertura para leitura. Não será possível escrever para este ficheiro nem guardar qualquer alteração. O ficheiro tem de existir, caso contrário será emitido um erro.
+_w_:: Abertura para escrita. Se o ficheiro existir, qualquer informação que contenha será destruída, caso contrário o ficheiro será criado vazio. Esta modo só permite a escrita e não a leitura dos dados no ficheiro.
+_a_:: Abertura para actualizar. Permite que seja adicionado conteúdo ao fim de um ficheiro existente. Se o ficheiro não existir será criado completamente vazio. Este modo não permite a leitura do conteúdo do ficheiro.
+_r+_:: Abre o ficheiro para leitura e escrita. Se o ficheiro não existir será emitido um erro.
+_w+_:: Abre o ficheiro para leitura e escrita. Se o ficheiro não existir será criado completamente vazio.
+_a+_:: Abertura para actualizar. Permite a leitura e escrita, se o ficheiro não existir será criado.
+_b_:: Este modo não pode ser usado isoladamente, apenas em conjunto com um dos seis modos anteriores. Ao ser aplicado a algum dos modos anteriores, altera a abertura do ficheiro de modo a que o mesmo seja aberto em formato binário, em oposição a uma abertura em modo de texto que é a opção por omissão.
+
+Tratamento de Erros
+~~~~~~~~~~~~~~~~~~~
+
+As situações onde podem ocorrer erros a abrir ficheiros são:
+- Nome de ficheiro inválido, que contenha caracteres que não são possíveis de usar ou cujo nome resulte em alguma situação ilegal.
+- Abrir um ficheiro não fechado, e consequentemente em uso por outro programa.
+- Abrir um ficheiro que não existe, esta situação é diferente do primeiro caso uma vez que o nome pode estar correcto mas o ficheiro não existir.
+
+Durante a escrita de dados é possível que, devido a condições que tenham mudado após a abertura, surja erros. Entre os erros possíveis alguns dos mais comuns serão:
+- A quota de espaço do utilizador foi esgotada.
+- Foi feita uma tentativa para escrever uma quantidade de informação superior à permitida para o processo
+- A escrita foi interrompida por um sinal do sistema operativo.
+- Ocorreu um erro de I/O durante a escrita, por exemplo, o utilizador removeu o disco onde o ficheiro estava.
+- Não há mais espaço livre no disco.
+
+O fecho de um ficheiro pode falhar, principalmente, se ocorrer algum erro na operação de escrita final.
+
+Funções de Manipulação de Ficheiros
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.Manipulação Geral
+[horizontal]
+_fopen_:: Permite abrir o ficheiro no modo especificado.
+_fclose_:: Fecha um ficheiro anteriormente aberto.
+_fflush_:: Força a gravação da informação, esvaziando o _buffer_ e gravando os dados no suporte físico do ficheiro.
+_setbuf_:: Define um _buffer_ a ser usado pelas operações de leitura e escrita.
+_sevbuf_:: Define um _buffer_ a ser usado pelas operações de leitura e escrita.
+
+.Posição de Cursor
+[horizontal]
+_fgetpos_:: Obtém a posição actual do cursor.
+_fsetpos_:: Define a posição actual do cursor.
+_fseek_:: Movimenta o cursor dentro do ficheiro. Podem ser usadas algumas constantes como __SEEK_SET__, __SEEK_CUR__ e __SEEK_END__.
+_ftell_:: Indique a posição inicial para escrita ou leitura.
+_rewind_:: Coloca o cursor no início do ficheiro.
+
+.Escrita e Litura de Dados
+[horizontal]
+_fwrite_:: Escreve um conjunto de informação no ficheiro.
+_fread_:: Lê um conjunto de informação do ficheiro.
+
+.Escrita e Leitura Formatada de Texto
+[horizontal]
+_fscanf_:: Efectua a leitura formatada de dados num ficheiro aberto em modo de texto.
+_fprintf_:: Efectua a escrita formatada de dados num ficheiro aberto em modo de texto.
+
+.Escrita e Leitura de Caracteres
+[horizontal]
+_getc_:: Permite ler um carácter. Esta função é genérica e pode ser usada com ficheiros ou com o teclado.
+_fgetc_:: Permite a leitura de um carácter a partir de um ficheiro.
+_fgets_:: Permite a leitura de uma _String_ a partir de um ficheiro.
+_putc_:: Escreve um carácter para o ficheiro. Tal como a função _getc_ é genérica e pode ser usada com mais coisas que apenas ficheiros.
+_fputc_:: Escreve um carácter para um ficheiro.
+_fputs_:: Escreve uma string para um ficheiro.
+_fgetchar_:: Obtém um carácter de um ficheiro.
+_fputchar_:: Escreve um carácter para um ficheiro.
+
+.Tratamento de Erros
+_feof_:: Verifica se atingimos o fim do ficheiro.
+_clearerr_:: Limpa a variável de controlo de erros.
+_ferror_:: Verifica se a última leitura ou escrita provocou um erro.
+
+.Exemplo
+[source,c]
+----
+#include <stdio.h>
+#include <stdlib.h>
+
+#define NOME "palavras.txt"
+
+int main()
+{
+    FILE *ficheiro;
+    char palavra[250], lixo;
+    int i = 0;
+
+    ficheiro = fopen(NOME, "w+");
+
+    while(strcmp(palavra, "terminar"))
+    {
+        i++;
+        printf("Escrever Texto: ");
+        scanf("%[^\n]", palavra);
+        while((lixo = getchar()) != '\n' && lixo != 'EOF');
+        fprintf(ficheiro, "Palavra %d: %s\n", i, palavra);
+    }
+
+    fclose(ficheiro);
+
+    return 0;
+}
+----
+
+Gestão de Centrais
+------------------
+
+Pegue no projecto entregue, e que contém já todas as funções implementadas, e adicione a gravação e a leitura de ficheiros, permitindo que o nome do ficheiro seja indicado pelo utilizador, e que seja possível escolher o formato de gravação ou leitura (binário ou texto).

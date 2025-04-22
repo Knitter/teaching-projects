@@ -1,0 +1,144 @@
+Exercícios Introdutórios de PHP
+===============================
+
+
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=====================================================
+|Formação |Jogo do Rato
+|Local    |Marinha Grande
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |1 - Exercícios introdutórios - HTML, CSS, PHP
+|=====================================================
+
+Os exercícios seguintes pretendem introduzir os vários conceitos de programação em PHP, usando PHP, HTML e CSS.
+
+HTML e CSS
+----------
+
+Crie um projecto no IDE NetBeans de modo a poder desenvolver páginas em HTML. Chame a este projecto *HTML-Introducao*. Neste projecto deve criar todas as páginas HTML que sejam indicadas de seguida.
+
+- Crie um página com o nome *index.html* que servirá de índice do projecto. Nesta página deverá existir uma lista ordenada de links que permitam ver as próximas páginas.
+- Cria uma página para apresentar a receita de bolo de chocolate presente em http://tudogostoso.uol.com.br/receita/951-bolo-de-chocolate-molhadinho.html.
+- Cria uma página que apresente os cinco primeiros parágrafos do Canto I dos Lusíadas que está em http://www.oslusiadas.com/
+- Na página anterior adiciona os seguintes links: 
+. _Barões > http://pt.wikipedia.org/wiki/Barão_;
+. _Lusitania > http://pt.wikipedia.org/wiki/Lusitanos_;
+. _Trapobana > http://pt.wikipedia.org/wiki/Taprobana_;
+. _África > http://pt.wikipedia.org/wiki/África_;
+. _Ásia > http://pt.wikipedia.org/wiki/Ásia_;
+. _Neptuno > http://pt.wikipedia.org/wiki/Neptuno_;
+. _Marte > http://pt.wikipedia.org/wiki/Marte_.
+- No endereço http://www.hidrografico.pt/previsao-mares.php é apresentada uma tabela de marés para os vários portos portugueses. Copia os dados da tabela de marés para o porto da Peniche e cria uma página com uma tabela com a mesma estrutura. Cria a mesma formatação usando um ficheiro CSS separado.
+
+PHP
+---
+
+1 - Gerais
+~~~~~~~~~~
+
+Cria um projecto PHP de nome *PHP-Introducao* e acrescenta, dentro da secção _BODY_ do ficheiro que o IDE criou automaticamente, um título com o texto _Exercícios de Introdução a PHP_ e uma lista não ordenada de links que irão permitir o acesso aos vários exercícios que serão executados de seguida.
+
+- Cria um ficheiro chamado *contas23.php* e que mostre o resultado das 4 operações básicas de soma, subtração, multiplicação e divisão, bem como o quadrado e a raiz quadrada.
+- Adiciona um novo ficheiro ao projecto com nome *vector_associativo.php*. Cria um vector associativo com os textos _Laranjas_, _Bananas_, _Maças_, _Pêras_, _Pêssegos_ e _Goiabas_, como chave use os valores _fruta1_, _fruta2_, fruta3_, _fruta4_, _fruta5_ e _fruta-estrangeira_. Imprime o conteúdo desse vector usando os 4 ciclos de PHP: *for*, *while*, *do... while* e *foreach*.
+- Cria um novo ficheiro, de nome *vector_associativo2.php* e copia para este ficheiro o código feito na alínea anterior. Altera o código para mostrar, além do conteúdo do vector, o valor das suas chaves.
+- Copia o vector associativo usado nas alíneas anteriores para um novo ficheiro de nome *ordenacao.php* e usa as funções de ordenação do PHP para order o vector: _sort_
+- Cria um ficheiro PHP chamado *tabuada9* e implementa nele o código necessário para mostrar a tabuada do 9. Podes usar a _tag_ _BR_ para mudar de linha e a _tag_ _CODE_ para formatar o texto com o aspecto de código.
+- Num ficheiro com o nome *debug.php* usa as funções _print_r_ e _var_dump_ de modo a imprimir o conteúdo de um vector igual ao criado na alínea anterior.
+- Crie um ficheiro PHP chamado *data* e mostre a data do sistema usando um bloco de texto pré-formatado, através da _tag_ _PRE_. A data deve ser formatada usando o modos curto (dd/mm/yyyy), por extenso curto (<dia> de <mês abreviado> de <ano>) e por extenso completo (<dia da semana>, <dia> de <mês completo> de <ano>). Tente apresentar o valor em português.
+- Num ficheiro chamado *get.php* imprime todos os parâmetros que sejam passadas por método _GET_.
+- Criar um ficheiro chamado *calculadora.php* e que permite calcular uma das operações de somar, subtrair, multiplicar, dividir e potência e raiz de ordem n. O ficheiro deve ser invocado através da passagem de parâmetros por _GET_.
+
+<<<<
+
+2 - Formulários
+~~~~~~~~~~~~~~~
+
+O envio de dados para os vários scripts PHP presentes no servidor pode ser feito de dois modos: _GET_ e _POST_. Como vimos nos exercícios anteriores, o método _GET_ usa o _URL_ para enviar informação e está limitado a um número inferior de dados que podem ser enviados. Em alternativa, o método _POST_ envia os dados sem os mostrar no _URL_ e consegue enviar uma quantidade de dados maior. 
+
+Os exercícios seguintes devem ser feitos recorrendo ao envio de dados por _POST_.
+
+Calculadora
+^^^^^^^^^^^
+
+Crie um projecto com o nome *Calculadora* e implemente neste projecto uma calculadora que permita somar, subtrair, multiplicar, dividir e potência e raiz de ordem n. A calculadora deverá ser implementada recorrendo a um formulário que envie os dados por _POST_ para o scritp de nome *calcular.php*.
+
+Site Pessoal
+^^^^^^^^^^^^
+
+Cria um projecto PHP usando o NetBeans IDE e desenvolva um pequeno site pessoal, não mais de 4 páginas. Siga os próximos passos para alterar esse site:
+
+- Adicione uma página de contactos com um formulário de contacto. Este formulário não precisa de estar ligado a qualquer script ou funcionar.
+- Melhore o aspecto do formulário aplicando um estilo aos elementos através de CSS escrito no ficheiro PHP.
+- Defina o restante aspecto do site usando CSS num ficheiro externo chamado _estilos.css_.
+- Altere o formulário para enviar os dados através de POST para o script *enviar.php*.
+- No ficheiro *enviar.php* adicione o código necessário para imprimir os valores recebidos por _POST_, abrindo uma página nova.
+- Altere o ficheiro anterior para enviar um e-mail usando a função _mail_.
+
+Inquérito
+^^^^^^^^^
+
+- Acrescente ao site pessoal um inquérito de satisfação com 4 páginas: página de introdução/descrição, página de inquérito 1 com 10 perguntas, página de inquérito 2 com 5 perguntas e página final de sucesso. Os dados devem ser enviados para o servidor *apenas* na terceira página. O inquérito deve ser implementado recorrendo a 4 scripts diferentes.
+- Acrescente um novo script ao projecto do site pessoal de modo a criar o inquérito da alínea anterior recorrendo apenas e unicamente a este script, fazendo uso de sessões.
+
+<<<<
+
+Referência Base
+---------------
+
+.HTML
+[cols="1,4",options="header"]
+|============================
+|Descrição               |Sintaxe
+|Link                    |<a href="destino">texto</a>
+|Títulos                 |<h1>texto</h1>, <h2>texto</h2>... <h6></h6>
+|Listas ordenadas        |<ol> +
+    <li>item 1</li> +
+    <li>item 2</li> +
+    <li>item 3</li> +
+    ... +
+<ol>
+|Lista sem ordem         |<ul> +
+    <li>item 1</li> +
+    <li>item 2</li> +
+    <li>item 3</li> +
+    ... +
+<ul>
+|Parágrafo               |<p>texto</p>
+|Quebra de linha         |<br />
+|Tabelas                 |<table> +
+    <tr> +
+        <th></th> +
+        <th></th> +
+        <th></th> +
+    </tr> +
+    <tr> +
+        <td>célula 1</td> +
+        <td>célula 2</td> +
+        <td>célula 3</td> +
+    </tr> +
+    <tr> +
+        <td colspan="2">célula 4</td> +
+        <td>célula 5</td> +
+    </tr> +
+</table>
+|Adição de CSS           |<link rel="stylesheet" href="ficheiro" type="text/css" />
+|Adição de JS            |<script type="text/javascript" src="ficheiro"></script>
+|Negrito                 |<strong>texto</strong>
+|Itálico                 |<em>texto</em>
+|Riscado                 |<strike>texto</strike>
+|Código e pré-formatação |<code>texto</code>, <pre>texto</pre>
+|Título da página        |<title>texto</title>
+|Linha horizontal        |<hr />
+|Imagem                  |<img src="ficheiro" />
+|Combobox                |<select> +
+    <option value=""></option> +
+    <option value=""></option> +
+</select>
+|Campo de texto/botões   |<input type="text" /> +
+<input type="button" /> +
+<input type="submit" /> +
+<input type="password" /> +
+<input type="reset" /> +
+<input type="hidden" /> +
+|Área de texto           |<textarea cols="colunas" rows="linhas"></textarea>
+|============================

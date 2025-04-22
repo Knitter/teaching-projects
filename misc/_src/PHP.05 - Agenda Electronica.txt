@@ -1,0 +1,17 @@
+Agenda Electrónica
+===================
+
+
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=====================================================
+|Formação |Jogo do Rato
+|Local    |Marinha Grande
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |5 - Agenda Electrónica - Algoritmia, Bases de Dados
+|=====================================================
+
+Desenvolve uma aplicação que permita oferecer as funcionalidades de uma agenda electrónica possibilitando guardar os dados de uma pessoa ou de uma empresa registando o *nome*, o *telefone*, o *telemóvel*, a *morada*, a *data de nascimento* se for uma pessoa, o *e-mail* e o *endereço do site* caso se trate de uma empresa.
+
+Além das funcionalidades de adicionar, editar e remover contactos, o sistema deve permitir pesquisar e listar todos os contactos existentes, bem como imprimir os dados de um contacto específico.
+
+A nível de interface deverão existir as páginas necessárias para oferecer as funcionalidades descritas bem como uma página de apresentação do sistema.

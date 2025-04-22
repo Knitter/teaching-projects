@@ -1,0 +1,32 @@
+Portefólio
+==========
+
+
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=====================================================
+|Formação |Jogo do Rato
+|Local    |Marinha Grande
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |7 - Portefólio
+|=====================================================
+
+Todos os programadores devem guardar os trabalhos que desenvolvem de modo a construir um portefólio completo e que demonstre a evolução e as capacidades adquiridas. Um portefólio deverá mostrar a quem o visualiza quais os trabalhos feitos pelo programador mas, além de mostrar, será importante que o portefólio apresente interactividade e permita experimentar alguns dos trabalhos desenvolvidos.
+
+Com o objectivo de criar uma montra do que é desenvolvido, pretende-se o desenvolvimento de um portefólio Web, com alguma interatividade e que contenha, pelo menos, uma listagem de todos os projectos PHP, JavaScript ou HTML que vão sendo desenvolvidos.
+
+O portefólio deverá ser contituído por *três* páginas de texto: a página inicial com um _slideshow_ de _screenshots_ dos projectos, uma página de contactos com um formulário funcional e uma página com a descrição do portefólio.
+
+Além destas páginas, deverá existir uma página por cada projeto com o nome do projeto, a descrição e o projeto ou uma imagem do mesmo se não for possível incluir o projeto na página que lhe está destina. Neste último caso deverá existir uma hiper-ligação para o local onde o projeto possa ser experimentado.
+
+image::./imagens/portefolio.01.png[title="Sugestão: Página Inicial",align="center",scaledwidth="90%"]
+
+image::./imagens/portefolio.02.png[title="Sugestão: Páginas de Projetos",align="center",scaledwidth="90%"]
+
+Recursos
+--------
+
+Podem ser utilizados os seguintes recursos para melhorar o portefolio:
+
+. jQuery, http://jquery.com
+. jQueryUI, http://jqueryui.com
+. jQuery Easy Slider, http://cssglobe.com/post/5780/easy-slider-17-numeric-navigation-jquery-slider

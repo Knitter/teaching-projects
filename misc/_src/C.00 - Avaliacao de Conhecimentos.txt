@@ -1,0 +1,40 @@
+Avaliação de Conhecimentos em C
+===============================
+
+
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=====================================================
+|Formação |Jogo do Rato
+|Local    |Marinha Grande
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |0 - Avaliação de conhecimentos
+|=====================================================
+
+1. Implemente o programa descrito abaixo
+----------------------------------------
+
+Programa que permita guardar a produção de energia eléctrica mensal (em KW) para todo um ano e para cada central existente, no máximo 100 centrais diferentes e todas pertencem ao mesmo ano. É assim necessário guardar as seguintes informações:
+
+.. Código da Central (Alfanumérico)
+.. Nome da Central
+.. Coordenadas GPS (Latitude e Longitude, alfanumérico)
+.. Tipo de Central (Eólica ou Fotovoltaica)
+.. Custo do parque
+.. Valores de energia produzidos para cada um dos 12 meses
+
+O programa deverá apresentar o seguinte menu de opções:
+
+. Gestão de Centrais
+. Leituras
+. Estatísticas
+. Gravar informação
+. Ler informação de ficheiro
+. Sair
+
+Para cada uma das opções anteriores deve ser criada um menu que permita efectuar a correcta gestão da informação tendo em conta que o programa deve oferecer as seguintes funcionalidades:
+
+.. Gestão de centrais (inserir, consultar por nome, consultar por tipo, ver registos de energia para o ano, ver localização de todas as centrais, apagar centrais);
+.. Gestão e leituras (inserir leituras de energia para uma central e para um mês, inserir todas as leituras do ano para determinada central, substituir uma leitura;
+.. Estatísticas sobre central mais produtiva, central menos produtiva, tipo de energia mais produtivo, tipo de energia menos produtivo, média anual de uma central, mês mais produtivo;
+.. Gravar dados em ficheiro binário com caminho a indicar pelo utilizador;
+.. Ler dados de um ficheiro previamente gravado, com caminho a indicar pelo utilizador;

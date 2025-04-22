@@ -1,0 +1,65 @@
+Jogo do Galo
+============
+
+
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=====================================================
+|Formação |Jogo do Rato
+|Local    |Marinha Grande
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |4 - Jogo do Rato - Ficheiros e Lógica/Algoritmia
+|=====================================================
+
+Descrição do Jogo
+-----------------
+
+Desenvolve um programa em C que permita implementar o Jogo do Galo com uma interface simples e intuitiva, registando as vitorias em ficheiros binários. O jogo do galo é um jogo extremamente simples onde dois jogadores usam um tabuleiro de 3 linhas por 3 colunas e tentam cria uma linha vertical, horizontal ou diagonal com um de dois símbolos, o *X* ou o *O*.
+
+Regras
+~~~~~~
+O tabuleiro é uma matriz de três linhas por três colunas onde dois jogadores escolhem uma marcação cada um, geralmente um círculo (O) e um xis (X). Os jogadores jogam alternadamente, uma marcação por vez, numa célula que esteja vazia. O objectivo é conseguir três círculos ou três xis em linha, quer horizontal, vertical ou diagonal , e ao mesmo tempo, quando possível, impedir o adversário de ganhar na próxima jogada.
+
+Objectivo do Programa
+~~~~~~~~~~~~~~~~~~~~~
+
+Pretende-se que o programa a desenvolver inclua uma interface simples de usar, apresentando um menu inicial com 3 opções: *Jogar*, *Pontuações* e *Sair*. Na opção de _jogar_ deve ser dado acesso ao jogo sendo que o programa deve pedir o número de jogos a executar e o nome dos dois jogadores. Monido da informação inicial o jogo deve iniciar, alternando entre o jogador 1 e o jogador 2, sendo que o jogador 1 é sempre o primeiro a jogar e corresponde ao símbolo *O*. O programa deve apresentar uma interface similar à indicada nas imagens seguintes, conseguida com o uso de caracteres.
+
+.Área do Menu
+image::imagens/jogo.galo.menu.png[]
+
+.Área de Jogo
+image::imagens/jogo.galo.jogo.png[]
+
+.Tabela de Pontuações
+image::imagens/jogo.galo.pontuacoes.png[]
+
+Informação a Guardar
+~~~~~~~~~~~~~~~~~~~~
+
+O programa deve guardar as informações dos últimos 20 vencedores, e deve permitir registar, para cada vencedor: a data do torneio (sequência de jogos), a data em que o torneio ocorreu, o nome do jogador vencido e o número de vitórias e derrotas. Assim, o programa deve acumular o registo de todos os torneios que um jogador efectuou.
+
+Para obter a data do sistema podem ser usadas as funções definidas no header *time.h*.
+
+[source,c]
+----
+time_t segundos;
+struct tm *info;
+
+segundos = time(NULL);
+info = localtime(&segundos);
+----
+
+.Descrição da Estrutura tm
+[cols="1,4,1",options="header"]
+|==============================
+|Membro  |Descrição |Intervalo
+|tm_sec  |segundos após o minuto, o valor extra é para contabilizar o segundo de acerto|0-61
+|tm_min  |minutos após a hora|0-59
+|tm_hour |horas desde a meia-noite|0-23
+|tm_mday |dia do mês|1-31
+|tm_mon  |meses desde Janeiro|0-11
+|tm_year |anos desde 1900|	
+|tm_wday |dias desde Domingo|0-6
+|tm_yday |dias desde 1 de Janeiro|0-365
+|tm_isdst|_flag_ para hora de Verão|	
+|==============================

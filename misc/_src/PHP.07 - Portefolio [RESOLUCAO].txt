@@ -1,0 +1,12 @@
+Portefólio
+==========
+
+
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=====================================================
+|Formação |Jogo do Rato
+|Local    |Marinha Grande
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |[RESOLUÇÃO] 7 - Portefólio
+|=====================================================
+

@@ -1,0 +1,47 @@
+Sokoban
+=======
+
+
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=====================================================
+|Formação |Jogo do Rato
+|Local    |Marinha Grande
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |7 - Sokoban - Ficheiros, Algoritmia, Listas
+|=====================================================
+
+Descrição do Jogo
+-----------------
+
+*Sokoban* é um jogo de computador onde o objectivo consiste em colocar no destino os vários caixotes espalhados pelo nível. Para conseguir terminar o jogo com sucesso, o jogador controla uma personagem que consegue apenas empurrar os caixotes, não os consegue puxar. Cabe assim ao jogador a resolução do puzzle que leve todos os caixotes para os destinos assinalados, sem que um caixote fique preso ou a personagem fique bloqueada.
+
+Implementação do Jogo
+~~~~~~~~~~~~~~~~~~~~~
+
+O programa a implementar deve apresentar ao utilizar um jogo completo do Sokoban, segundo a descrição indicada acima. O jogador deverá ter 5 opções para saltar para o nível seguinte. A cada salto que for dado o número de saltos diminui e o jogador precisa voltar ao nível que saltou para recuperar as opções de salto. O jogador poderá reiniciar os níveis as vezes que entender ou escolher saltar para o nível seguinte se tiver opções livres.
+
+Deve existir um menu que permita ao jogador iniciar o jogo a partir do primeiro nível, continuar um jogo anteriormente iniciado, escolher um conjunto de níveis próprio, aceder ao editor de níveis ou sair do jogo.
+
+.Opções de Menu
+[horizontal
+Novo Jogo:: Permite iniciar o jogo a partir do nível 1 da sequência de níveis padrão.
+Continuar Jogo:: Permite continuar a partir do nível em que o jogador ficou antes de fechar o programa.
+Níveis personalizados:: Através desta opção o jogador deve conseguir escolher um conjunto de níveis que tenham sido criados pelos utilizadores. O jogador deve poder escolher um nível individual ou uma sequência de níveis.
+Editor de Níveis:: Acesso à ferramenta de edição de níveis, descrita mais abaixo.
+Sair:: Permite fechar o programa, registando todas as informações que estiverem pendentes.
+
+.Ficheiros
+[horizontal]
+Níveis/Mapas:: Os níveis, ou mapas, deverão ser guardados em ficheiros binários de forma a serem facilmente lidos e carregados para o programa. Os níveis devem ser guardados numa pasta chamada *levels*. Se forem níveis padrão devem estar dentro de uma outra pasta *base*, se forem níveis criados pelos utilizadores devem estar dentro de uma pasta *custom*. Assim, os ficheiros de níveis devem ser guardados em *levels/base* e *levels/custom* conforme são níveis base do jogo ou níveis criados pelos utilizadores.
+Informações Extra:: Caso exista a necessidade de guardar informações extra, as mesmas devem ser registadas em ficheiros binários na raiz do programa.
+
+Implementação do Editor de Mapas
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Além de oferecer o jogo, o programa deve conter um editor de mapas simples. Neste editor deverá ser possível colocar as paredes do nível, as várias caixas nas suas posições iniciais, a localização dos destinos e a posição inicial da personagem controlada pelo jogador. Os níveis devem poder ser agrupados em sequências de forma a poderem ser jogados todos seguidos. Todos os níveis devem ter um tamanho máximo que ocupe parte do ecrã, não mais de 20 linhas e não mais de 50 colunas.
+
+Regras de Implementação
+~~~~~~~~~~~~~~~~~~~~~~~
+
+O programa deve seguir as indicações anteriores e fazer uso de listas ligadas e memória dinâmica sempre que necessário. Devem ser evitados vectores de tamanhos fixos. Caso algum ponto não esteja explicado pode ser tomada liberdade na implementação.
+

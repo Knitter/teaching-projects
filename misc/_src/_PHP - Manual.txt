@@ -1,0 +1,39 @@
+Linguagem de Programação PHP
+============================
+
+
+Ferramentas Necessárias
+-----------------------
+
+Apache
+------
+
+Apache HTTP Server é um dos servidores de páginas WEB mais usado em todo o mundo, sendo um dos sistemas fundamentais para que seja possível ter sites ou páginas WEB, é importante que qualquer programador que trabalhe com tecnologias WEB tenha conhecimento básico do que este sistema permite fazer.
+
+O Apache permite a criação de servidores WEB onde podemos alojar os nossos ficheiros HTML, os _scripts_ PHP, PERL, Python ou alojar aplicações WEB feitas noutras linguagens. Na sua forma mais simples, o servidor Apache permite apenas a disponibilização de ficheiros HTML footnote:[Ficheiros de imagens, sons, JavaScript, CSS ou outros ficheiros que sejam usados através dos ficheiros HTML também podem ser disponibilizados] mas o servidor Apache pode ser expandido e configurado para utilizar módulos que lhe oferecem mais funcionalidades. O PHP é um desses casos, onde é necessário ter activo um módulo de PHP para que os _scripts_ de PHP possam ser executados correctamente.
+
+Ao instalarmos o servidor Apache num computador passamos a poder usar esse servidor imediatamente, sendo esta uma boa forma de ter instaladas aplicações que existem, tipicamente, na Internet. Se ligarmos o computador com o servidor Apache numa rede local podemos servir os nossos sites dentro dessa rede e quando ligamos o computador à Internet criamos aquilo que damos o nome de site e a que qualquer pessoa pode aceder footnote:[A criação de seridores WEB acessíveis na Internet implica o uso de vários outros serviços como IP fixo, servidores de NameSpaces, registos de domínio, etc.].
+
+Assim, o servidor Apache é o software que nos permitirá executar os nossos _scripts_ PHP e desenvolver, testar e utilizar o software que desenvolvermos.
+
+MySQL
+-----
+
+MySQL é um servidor de bases de dados relacionais que inclui vários motores de bases de dados relacionais diferentes e que permite a criação de utilização de bases de dados em conjunto com PHP. Não é o único sistema de bases de dados relacionais que pode ser usado com PHP mas é um dos mais comuns e mais simples de usar, embora também tenha algumas limitações associadas.
+
+Ao contrário de outros servidores, o MySQL possui vários motores de bases de dados relacionais diferentes. Os dois mais usados na vertente WEB são o motor MyISAM e o motor InnoDB. As diferenças entre os dois são enormes, e actualmente o motor que se torna mais comum ver é o InnoDB, no entanto não é objectivo desta ficha explicar todas as diferenças pelo que no nosso caso iremos sempre usar o InnoDB como motor de bases de dados e ignoramos o MyISAM, mesmo em trabalhos futuros.
+
+Pacote (X)AMP
+------
+
+Instalar e configurar todas as ferramentas necessárias a desenvolver em PHP, embora um processo relativamente simples, implica algum tempo em assistentes de instalação, ficheiros de configuração e configurações de máquinas que não nos é conveniente só para termos um ambiente de desenvolvimento. Por esse motivo iremos usar um dos vários pacotes de software que já traz todas as ferramentas necessárias.
+
+Estes pacotes, normalmente designados de LAMP, MAMP ou WAMP, consoante se referem a GNU Linux, Mac OS X ou Windows, incluem o Apache, o MySQL e o PHP. Daí o nome de LAMP no caso de GNU Linux: Linux Apache MySQL PHP; ou WAMP no caso de Windows: Windows Apache MySQL PHP.
+
+O pacote que iremos usar designa-se XAMP, dado que funciona para os três sistemas operativos principais, e pode ser obtido gratuitamente a partir da Internet em http://www.apachefriends.org/en/xampp.html
+
+
+Editor de Código
+----------------
+
+Uma vez que os ficheiros de código PHP são simples ficheiros de texto, e que PHP não é uma linguagem compilada mas sim interpretada, qualquer editor, desde o simples Bloco de Notas do Windows, pode ser usado para o desenvolvimento. Para as sessões de formação iremos usar o IDE NetBeans que pode ser obtido gratuitamente em http://www.netbeans.org.

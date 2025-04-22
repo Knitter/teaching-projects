@@ -1,0 +1,19 @@
+Porta Moedas
+============
+
+
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=====================================================
+|Formação |Jogo do Rato
+|Local    |Marinha Grande
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |4 - Porta Moedas - Algoritmia, Bases de Dados, jQuery
+|=====================================================
+
+Um porta moedas é um objecto do dia-a-dia onde colocamos o dinheiro que usamos para as despesas correntes, é um objecto simples onde colocamos e retiramos dinheiro, e é um objecto que não precisa de ter mais funcionalidades que a de guardar as moedas que precisamos para as despesas de um ou dois dias.
+
+Pegando no conceito de um porta moedas real, iremos desenvolver uma aplicação WEB que permita registar as despesas e receitas que vamos tendo ao longo de um dia. A aplicação precisará guardar apenas os movimentos financeiros constituídos por: descrição simples, valor e data do movimento.
+
+Além de registar a informação de cada movimento, a aplicação deve permitir obter estatísticas de todos os movimentos efectuados e garantir a segurança da informação através de um _username_ e _password_.
+
+A nível de interface a aplicação precisará apresentar uma página inicial para efectuar o login, uma página onde são inseridos os movimentos e onde se podem ver os últimos movimentos efectuados, até um máximo de 25, uma página para editar a password e uma página para mostrar as estatísticas. Todas estas páginas podem ser feitas apenas com HTML mas recomenda-se o uso de jQuery de forma a oferecer uma experiência mais agradável. 

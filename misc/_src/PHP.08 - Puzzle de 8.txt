@@ -1,0 +1,41 @@
+Puzzle de 8
+===========
+
+
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=====================================================
+|Formação |Jogo do Rato
+|Local    |Marinha Grande
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |Jogo: Puzzle de 8
+|=====================================================
+
+Puzzle de 8 é um jogo onde o utilizador deve reconstruir uma imagem que se encontra dividida em 8 blocos dispostos de forma aleatória num tabuleiro de 9 posições. O jogo começa os 8 blocos que formam a imagem dispostos pela ordem correcta e casa vazia no canto inferior esquerdo. Os blocos são baralhados e o jogador deve mover as peças de forma a repor a ordem correcta.
+
+Para completar o jogo apenas é possível mover uma peça de cada vez, sempre para a zona vazia, e apenas na horizontal ou na vertical. Como se pode ver pelas imagens seguintes, as regras são bastante simples.
+
+image::./imagens/puzzle8.inicio.png[title="Posição Inicial",align="center",scaledwidth="50%"]
+
+image::./imagens/puzzle8.jogadas.png[title="Jogadas Possíveis",align="center",scaledwidth="50%"]
+
+Na imagem anterior são apresentadas as 3 jogadas possíveis para a disposição das peças:
+
+1. A peça na posição *1:1* pode ser movida para baixo;
+2. A peça na posição *3:1* pode ser movida para cima;
+3. A peça na posição *2:2* pode ser movida para a esquerda;
+
+image::./imagens/puzzle8.jogar.png[title="Área de Jogo",align="center",scaledwidth="50%"]
+
+Funcionalidades
+---------------
+
+O projeto deve fornecer ao utilizador todas as funcionalidades que permitam jogar o jogo com sucesso. Além disso é necessário que seja criada uma opção para baralhar as peças, escolher entre, pelo menos, três imagens. Devem ser apresentadas, ao utilizador, o número de jogadas já feitas e se o jogo se encontra concluído com sucesso.
+
+Como extra pode ser implementada a funcionalidade de upload de novas imagens.
+
+Recursos
+--------
+
+. jQuery, http://jquery.com
+. jQueryUI, http://jqueryui.com
+. Imagens de utilização livre, http://opengameart.org

@@ -1,0 +1,23 @@
+Cifra de César
+==============
+
+
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=====================================================
+|Formação |Jogo do Rato
+|Local    |Marinha Grande
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |6 - Cifra de César - Ficheiros, Strings
+|=====================================================
+
+A já conhecida __Cifra de César__ é um sistema de cifra por substituição, onde se usa um alfabeto deslocado para a cifra de mensagens, como se pode ver na imagem seguinte.
+
+image::imagens/cifra.png[title="Cifra de César"]
+
+Desenvolve uma aplicação WEB em PHP, que permita cifrar e decifrar um texto fornecido pelo utilizador. O programa deve permitir que o texto seja colocado numa caixa de texto na página ou que seja enviado através de um ficheiro presente no disco do utilizador.
+
+Deve existir uma opção que permita fazer download do resultado. Caso não seja indicada a opção de download, o resultado da conversão deve ser apresentado na página.
+
+Além das opções indicadas acima deve ser também possível indicar quantas letras se pretendem deslocar, em vez das comuns 3 e deve ser possível indicar a direcção do deslocamento, se para a direita ou para a esquerda. Para esta opção devemos considerar que o alfabeto está disposto em círculo, começando em *A*, indo até *Z* e sendo seguido dos números de *0* a *1*.
+
+Não pode ser usada qualquer biblioteca ou função de PHP que faça a cifra automaticamente.

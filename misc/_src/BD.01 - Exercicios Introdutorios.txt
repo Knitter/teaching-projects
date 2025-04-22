@@ -1,0 +1,50 @@
+Exercícios Introdutórios de Bases de Dados
+==========================================
+
+
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=====================================================
+|Formação |Jogo do Rato
+|Local    |Marinha Grande
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |1 - Exercícios introdutórios - obtenção de dados e normalização
+|=====================================================
+
+Dos problemas abaixo descritos obtenha todos os dados que considere relevantes e esquematize a resolução da base de dados através da criação de um DER que mostre todas as relações existentes entre as várias entidades.
+
+Escreva o código SQL necessário para criar cada uma das bases de dados relacionais indicadas.
+
+Gestão de Contactos
+-------------------
+
+A fim de melhorar a gestão de contactos na empresa de formação, alguns funcionários começaram a criar uma base de dados de formandos, de formadores e de empresas de formação. Pretendem colocar nessa base de dados os dados de contacto de cada um dos elementos.
+
+Controlo de Chamadas
+-------------------- 
+
+Numa empresa de formação pretende-se melhorar a gestão das chamadas efectuadas pelos funcionários de modo a isolar as que são de carácter pessoal das de carácter profissional. Para esse efeito será desenvolvida uma base de dados onde devem ser registados os dados das chamadas que cada empregado realiza.
+
+No final do mês, a empresa pretende consultar as chamadas telefónicas e de FAX que tenham sido efectuadas e cobrar o custo das chamadas pessoais aos respectivos empregados.
+
+Controlo de Custos
+------------------
+
+Numa escola secundária de Leiria é necessário criar um sistema que permita gerir as senhas de almoço entregues aos alunos. Como é natural, todos os alunos estão agrupados em turmas com o respectivo ano e a descrição do curso, bem como um código de referência.
+
+A escola pretende que as senhas de almoço possam ser associadas ao escalão de cada aluno e que, no fim do mês, sejam impressos relatórios com os valores das senhas (quantidade de senhas, valor por escalão, valores totais, entre outros) vendidas. Desta forma a escola pretende saber quanto gasta com senhas em subsídios de refeição para cada escalão e quanto recebe pela venda das senhas.
+
+Os escalões possuem sempre uma descrição, um valor monetário que corresponde ao valor que é pago pela escola e um ano lectivo a que estão associados.
+
+Bibliotecas
+-----------
+
+A biblioteca de Leiria pretende criar um catálogo de livros para consulta pública. Assim é necessário criar uma base de dados que permita registar os dados dos livros e o seu estado de requisição. De modo a ser possível identificar o leitor que requisitou determinado livro deve existir, na base de dados, a capacidade para um utilizador funcionário consultar a lista de leitores e ver que leitor tem determinado livro em determinada data.
+
+É assim necessário guardar as informações pessoais que permitam a gestão de leitores e das suas requisições.
+
+Tenha em atenção que, por cada requisição, um leitor pode requisitar vários livros.
+
+Gestão de Táxis
+---------------
+
+Uma das empresas de táxis de Leiria pretende uma base de dados que lhe indique qual o taxista que está, em determinado momento, a conduzir um carro. Nesta empresa cada taxista pode conduzir apenas um único carro, mas porque existem turnos diferentes, o mesmo carro pode ter vários taxistas como condutores associados. Além de saber quem conduz cada carro é importante que a base de dados contenha as informações dos veículos para que o operador que está a consultar a base de dados tenha acesso imediato a todas as características do veículo em questão.

@@ -1,0 +1,17 @@
+Jogo do Galo
+============
+
+
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=====================================================
+|Formação |Jogo do Rato
+|Local    |Marinha Grande
+|Formador |Sérgio Lopes, knitter.is@gmail.com
+|Ficha    |2 - Jogo do Galo - Algoritmia, Ciclos, _GET, sessões
+|=====================================================
+
+Desenvolve um programa em PHP, com interface WEB, que permita implementar o Jogo do Galo. O jogo do galo é um jogo extremamente simples onde dois jogadores usam um tabuleiro de 3 linhas por 3 colunas e tentam cria uma linha vertical, horizontal ou diagonal com um de dois símbolos, o *X* ou o *O*.
+
+O tabuleiro é uma matriz de três linhas por três colunas onde dois jogadores escolhem uma marcação cada um, geralmente um círculo (O) e um xis (X). Os jogadores jogam alternadamente, uma marcação por vez, numa célula que esteja vazia. O objectivo é conseguir três círculos ou três xis em linha, quer horizontal, vertical ou diagonal , e ao mesmo tempo, quando possível, impedir o adversário de ganhar na próxima jogada.
+
+Para criar a interface gráfica usa tabelas HTML com margens definidas. Para ler os valores use dois campos de _input_, um para a linha e outro para a coluna.
