@@ -1,0 +1,72 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0789 - Fundamentos da Linguagem Java
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |
+|=================================================================================
+
+Rato Saltitão
+-------------
+
+Os gnomos maus do Natal conseguiram fugir da prisão que os guardava no Polo Norte!
+
+O projecto actual pretende desenvolver um pequeno jogo onde o jogador tomará controlo de um ratinho e terá de saltar para fugir aos gnomos que irão aparecer para o tentar apanhar. Iremos usar alguns ficheiros já criados e será necessário configurar o projecto de acordo com as instruções apresentadas de seguida.
+
+Comece por fazer download do ficheiro http://www.sergio-lopes.org/_storage/789/libs.zip. Depois de ter feito download do ficheiro descompacte o mesmo para o seu ambiente de trabalho: garanta que o ficheiro está no ambiente de trabalho e clique com o botão direito, escolha a opção **Extrair Todos...**.
+
+Abra o NetBeans IDE e crie um projecto novo com o nome *Plataformer* e preencha os dados de acordo com a imagem seguinte.
+
+image::imagens/criarprojecto.png[scaledwidth="90%"]
+
+Navegue até à pasta onde criou o seu projecto, usando o explorador do windows, e copie para lá a pasta *libs* que extraiu anteriormente.
+
+image::imagens/pastalibs.png[scaledwidth="90%"]
+
+De novo no IDE, é necessário adicionar os ficheiros que estão dentro da pasta libs, para isso basta clicar com o botão direito em cima da secção *Bibliotecas* e escolher a opção **Adicionar JAR/pasta...**.
+
+image::imagens/adicionarjars.png[]
+
+Na janela que surje é necessário navegar até à pasta do projecto, e dentro dela, até à pasta *libs* e escolher os três ficheiros que lá se encontram.
+
+image::imagens/escolherjars.png[scaledwidth="90%"]
+
+Depois de adicionadas as bibliotecas base, é necessário efectuar uma última configuração. Clicando com o botão direito em cima do nome do projecto, aceda à última opção, a opção *Propriedades*.
+
+image::imagens/propriedades.png[]
+
+Na janela que aparece existe uma categoria chamada *Executar*, nessa categoria preencha a caixa de texto de **Opções de VM** com o valor __-Djava.library.path=./libs__. 
+
+image::imagens/definiropcaod.png[scaledwidth="90%"]
+
+Finalizada a criação do projecto e a sua correcta configuração, vamos iniciar a criação do nosso pequeno jogo.
+
+Agenda Electrónica
+------------------
+
+Pegando no projecto fornecido, vamos criar uma agenda electrónica com uma interface gráfica. Faça download do projecto em http://www.sergio-lopes.org/_storage/789/Agenda%20Electronica%20Grafica.zip.
+
+Descompacte o ficheiro e copie a pasta para o local onde guarda os vários projectos que tem desenvolvido. Abra o projecto no IDE e verifique se o mesmo compila correctamente. O projecto não tem qualquer método __main__ pelo que não irá executar, mas deverá compilar.
+
+Clicando com o botão direito em cima do pacote de código onde as classes se encontram crie um novo *Formulário JFrame* com o nome *AgendaApp*.
+
+A partir da paleta de componentes, adicione os seguintes componentes
+
+Da categoria Menus Swing:
+  Barra de Menu
+
+Da categoria Controlos Swing:
+  Campo de texto, adicione um controlo de texto para cada atributo existente (nome, telefone, etc).
+  Button, adicione quatro botões.
+
+Complete, em conjunto com os restante formandos, a aplicação de modo a que fique funcional e permita usar as opções definidas pela classe __Gestor__
+
+Cifra de César
+--------------
+
+A __Cifra de César__ é um sistema que permite cifrar mensagens usando a deslocação de texto. Para conseguirmos facilmente cifrar e decifrar texto usando este método iremos criar uma aplicação gráfica que consiga cifrar texto fornecido por nós, e decrifrar texto que tenha sido cifrado anteriormente.
+
+Crie um novo projecto no IDE e dê-lhe o nome *Cesar*. Crie um novo *Formulário JFrame* e, usando os componentes disponíveis na paleta, replique a imagem seguinte.
+
+image::imagens/cifra.png[]

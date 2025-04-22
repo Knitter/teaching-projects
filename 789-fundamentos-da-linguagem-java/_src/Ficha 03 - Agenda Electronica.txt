@@ -1,0 +1,29 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0789 - Fundamentos da Linguagem Java
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |3 - Agenda Electrónica
+|=================================================================================
+
+Agenda Electrónica
+------------------
+
+As agendas electrónicas são dos programas mais simples e mais comuns do dia a dia, servem para guardar contactos, notas e pedaços de pequenas informações sobre os compromissos que temos.
+
+O objectivo do programa a desenvolver é o de registar informações sobre contactos, quer pessoais quer empresariais, e de permitir algumas funcionalidades de pesquisa. Assim, pretende-se que o programa guarde informações sobre contactos pessoais e contactos empresariais cujos dados devem incluir o nome, telefone, telemóvel, morada completa (endereço, localidade e código postal) e uma nota genérica (com título e com corpo). Para os contactos empresariais deve ainda existir o nome do responsável, o website da empresa e o número de faz. Os contactos pessoais devem conter como extra o endereço de e-mail e o endereço usado para o MSN.
+
+Deve criar as classes:
+
+- Contacto: classe que representa um contacto genérico e guarda os dados comuns a todos os contactos.
+- Empresa: classe que representa um contacto empresarial.
+- Pessoa: classe que representa um contacto pessoal.
+- Morada: regista uma morada completa.
+- Nota: representa uma nota que pode ser associada a um contacto.
+- Gestor: classe principal que deve oferecer todas as funcionalidades da agenda.
+- App: classe de apoio que apenas conterá o método __main__.
+
+A classe de apoio deverá contar apenas o método __main__ e algumas linhas de código que permitam testar a inserção de elementos ou a pesquisa de elementos existentes. Não será necessário qualquer cuidado especial para esta classe.
+
+Dado que só as classes que registam informação não conseguem fornecer as funcionalidades de uma agenda, a classe principal deve conter os métodos necessários para inserir, remover, pesquisar por nome e listar os contactos empresariais e pessoais.

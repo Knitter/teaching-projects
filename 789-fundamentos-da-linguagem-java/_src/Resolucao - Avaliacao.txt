@@ -1,0 +1,34 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0789 - Fundamentos da Linguagem Java
+|Local   |
+|Formador|
+|Ficha   |Resolução da Avaliação
+|=================================================================================
+
+1. Verdadeiro ou Falso
+----------------------
+
+[cols="10,1",frame="topbot",options="unbreakable"]
+|=================================================
+|Construtores são métodos que não posseum um tipo de retorno declarado, devolvendo sempre uma referência.                                        |Verdadeiro
+|Para escrever mensagens para a consola usamos o método System.out.println().                                                                    |Verdadeiro
+|Uma applet java executa dentro do browser enquanto que uma aplicação java não precisa do browser para executar.                                 |Verdadeiro
+|As applets possuem limitações que permitem manter a segurança dos computadores onde executam.                                                   |Verdadeiro
+|As Strings permitem a criação de texto de forma optimizada já que são bastante mutáveis e facilmente alteradas.                                 |Falso
+|Em Java, os vectores são objectos, mesmo que sejam vectores de tipos primitivos.                                                                |Verdadeiro
+|A plataforma Java é composta pela JVM e por uma API com várias bibliotecas de classes.                                                          |Verdadeiro
+|A tecnologia Java é independente do hardware, e uma aplicação Java irá funcionar do mesmo modo em qualquer computador ou dispositivo móvel.     |Verdadeiro
+|A linguagem de programação Java é uma linguagem orientada a aspectos.                                                                           |Falso
+|O JRE é o ambiente necessário à execução das aplicações Java e o JDK necessário à criação de aplicações Java.                                   |Verdadeiro
+|Em linguagem de programação Java existe herança múltipla.                                                                                       |Falso
+|As interfaces podem agir como marcadores de classes.                                                                                            |Verdadeiro
+|Destrutores servem para manter os objectos em memória.                                                                                          |Falso
+|Packages são pastas nas quais podemos organizar as classes que construimos.                                                                     |Verdadeiro
+|O nome completo de uma classe contém o package onde esta se encontra.                                                                           |Verdadeiro
+|Os modificadores de acesso public, private e protected correspondem, respectivamente, a um acesso público, protegido e privado.                 |Falso
+|Se um recurso for marcado como private, nenhuma classe tem acesso a ele, nem mesmo a classe onde o recurso está definido.                       |Falso
+|Na programação orientada a objectos os problemas são dividos em objectos que permitem uma aproximação ao mundo real.                            |Verdadeiro
+|Através da herança de classes é possível criar relações entre objectos que partilham atributos ou comportamentos comuns.                        |Verdadeiro
+|O processo de encapsulamento permite definir a relação entre os vários objectos, indicando quais são descendentes, quais são apenas usados, etc.|Falso
+|=================================================

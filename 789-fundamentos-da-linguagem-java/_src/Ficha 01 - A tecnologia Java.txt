@@ -1,0 +1,186 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0789 - Fundamentos da Linguagem Java
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |1 - A Tecnologia Java
+|=================================================================================
+
+1. Verdadeiro ou Falso
+----------------------
+
+[cols="10,1",frame="topbot"]
+|=======================
+|Para executar aplicações Java é necessário um JRE. |
+|O IDE NetBeans é a única ferramenta de desenvolvimento existente. |
+|As aplicações Java são independentes da arquitectura onde executam. |
+|O código gerado pelo compilador de Java é chamado _bytecode_. |
+|Os comentários em Java seguem as mesmas regras dos comentários em C. |
+|Uma aplicação Java precisa de um método com a assinatura: +
+__public static void main(String[] args)__ |
+|=======================
+
+2. IDE
+------
+
+A intalação do IDE segue os mesmos procedimentos que para outras aplicações em Windows: iniciar o instalador e seguir os passos indicados nele.
+
+Ao abrirmos o instalador somos presenteados com uma janela de boas vindas, onde podemos iniciar o processo de instalação.
+
+image::imagens/installer-01.png[scaledwidth="90%",align="center"]
+
+A janela seguinte apresenta a licença do software, e que teremos de aceitar para que a instalação continue e para que possamos usar o IDE. Clique na caixa que indica a aceitação da licença e no botão que permite avançar.
+
+image::imagens/installer-02.png[scaledwidth="90%",align="center"]
+
+Podemos depois iniciar a aplicação usando o atalho presente no __Ambiente de Trabalho__ ou o atalho presente no __Menu Iniciar__
+
+image::imagens/desktop-icon.png[align="center"]
+
+image::imagens/desktop-menu.png[scaledwidth="90%",align="center"]
+
+A primeira abertura do NetBeans IDE mostra uma página com notícias e informação geral que podemos remover alterando a caixa de selecção no fundo da página.
+
+image::imagens/ide-01.png[scaledwidth="90%",align="center"]
+
+Depois de fechar a página inicial o IDE mostra-nos várias secções que podemos explorar.
+
+image::imagens/ide-02.png[scaledwidth="90%",align="center"]
+
+3. Criação de Projectos
+-----------------------
+Para criar novos projectos neste IDE basta acedermos ao menu __Arquivo__ e à opção __Novo Projecto__.
+
+image::imagens/projecto-01.png[scaledwidth="90%",align="center"]
+
+Devemos escolher a primeira opção nas duas secções, nas _Categorias_ escolher a opção _Java_ e nos _Projectos_ escolher a opção _Aplicativo Java_. Todas as aplicações que iremos desenvolver serão deste tipo.
+
+image::imagens/projecto-02.png[scaledwidth="90%",align="center"]
+
+Na janela de dados que surge podemos configurar os dados do nosso projecto como o _Nome_, a _Localização_ e alguma classe que quisermos criar. Tipicamente criaremos sempre uma classe principal a que chamaremos apenas _Main_.
+
+image::imagens/projecto-03.png[scaledwidth="90%",align="center"]
+
+Caso o caminho para a localização do projecto não esteja de acordo com as regras que usamos para organizar os nossos projectos de programação, podemos alterar a localização e definir correctamente a pasta onde queremos guardar os nossos ficheiros.
+
+image::imagens/projecto-04.png[scaledwidth="90%",align="center"]
+
+No fim de todos os dados configurados basta finalizar a criação do projecto e iniciar a programação do nosso sistema.
+
+image::imagens/projecto-05.png[scaledwidth="90%",align="center"]
+
+O IDE coloca já algum código e alguns comentários por nós. Os comentários podem ser removidos mas o restante código criado é importante que fique no ficheiro.
+
+image::imagens/projecto-06.png[scaledwidth="90%",align="center"]
+
+4. Programas Exemplo
+--------------------
+
+Copie os quatro programas exemplo para o seu computador, cada um deverá ser copiado para um projecto diferente.
+
+[source,java]
+----
+public class OlaMundo() {
+
+    public static void main(String[] args) {
+        
+        System.out.println("Olá Mundo!");
+    }
+}
+
+----
+
+[source,java]
+----
+public class OlaMundo {
+
+    public static void main(String[] args) {
+        System.out.println("As armas e os barões assinalados,");
+        System.out.println("Que da ocidental praia Lusitana,");
+        System.out.println("Por mares nunca de antes navegados,");
+        System.out.println("Passaram ainda além da Taprobana,");
+        System.out.println("Em perigos e guerras esforçados,");
+        System.out.println("Mais do que prometia a força humana,");
+        System.out.println("E entre gente remota edificaram");
+        System.out.println("Novo Reino, que tanto sublimaram;");
+    }
+}
+----
+
+[source,java]
+----
+import java.awt.BorderLayout;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class OlaMundo extends JFrame {
+
+    public OlaMundo() {
+        super("Olá Mundo!");
+    }
+
+    private void init() {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new BorderLayout());
+        
+        JLabel etiqueta = new JLabel("Olá Mundo!");
+        etiqueta.setHorizontalAlignment(JLabel.CENTER);
+        getContentPane().add(etiqueta, BorderLayout.CENTER);
+
+        setSize(420, 360);
+    }
+
+    public static void main(String[] args) {
+        OlaMundo om = new OlaMundo();
+        om.init();
+        om.setVisible(true);
+    }
+}
+
+----
+
+
+[source,java]
+----
+
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
+public class OlaMundo extends JFrame implements ActionListener {
+
+    public OlaMundo3() {
+        super("Olá Mundo!");
+    }
+
+    private void init() {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new BorderLayout());
+
+        JLabel etiqueta = new JLabel("Olá Mundo!");
+        etiqueta.setHorizontalAlignment(JLabel.CENTER);
+        getContentPane().add(etiqueta, BorderLayout.CENTER);
+
+        JButton botao = new JButton("Clica-me!");
+        botao.addActionListener(this);
+        getContentPane().add(botao, BorderLayout.SOUTH);
+
+        setSize(420, 360);
+    }
+
+    public static void main(String[] args) {
+        OlaMundo3 om = new OlaMundo3();
+        om.init();
+        om.setVisible(true);
+    }
+
+    public void actionPerformed(ActionEvent ae) {
+        JOptionPane.showMessageDialog(this, "Ei!!", "", JOptionPane.INFORMATION_MESSAGE);
+    }
+}
+----

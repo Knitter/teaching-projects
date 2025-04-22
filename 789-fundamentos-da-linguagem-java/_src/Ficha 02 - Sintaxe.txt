@@ -1,0 +1,75 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0789 - Fundamentos da Linguagem Java
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |2 - Sintaxe, condições e ciclos
+|=================================================================================
+
+Leitura e Escrita
+-----------------
+Para efectuar a escrita de informação para a consola está disponível um conjunto de métodos similares à função _prinft_ usada em C. Podemos usar o método __System.out.println()__ ou o método __System.out.print()__. O primeiro imprime a informação e muda de linha, o segundo apenas imprime a informação sem fazer alteração à linha onde está a escrever.
+
+Não existem os especificadores de formato.
+
+A leitura de dados a partir do teclado não está tão facilitada como com a função _scanf_ e obriga ao uso de vários métodos diferentes conforme o tipo de dados que se pretende ler. Para usar os métodos de leitura vamos precisar de uma instância da classe _Scanner_, para já precisamos apenas colocar a seguinte linha no início do nosso método _main_:
+
+  Scanner leituras = new Scanner(System.in);
+
+Com esta linha é preciso também adicionar uma importação da classe usada mas para isso vamos recorrer às funcionalidades do IDE para o fazer automaticamente.
+
+Texto e Vectores
+----------------
+Em C uma _String_ era um vector de caracteres que tinham o terminar especial *\0*, no entanto, em Java as _Strings_ são um tipo de dados, usado através de uma classe com o nome _String_. Não é um vector de caracteres, não tem qualquer terminar e não pode ser usada como um vector embora seja possível aceder a cada um dos caracteres, se for necessário.
+
+Os vectores possuem características diferentes, que tal como as _Strings_ serão vistas mais adiante. Para já deixamos a sintaxe diferente dos vectores:
+
+  int[] x; //declarar
+  x = new int[5]; //criar espaço para 5 inteiros
+
+Exercícios
+----------
+
+.. Indique o que está errado com o seguinte programa:
++
+[source,java]
+----
+class HelloWorldApp {
+    public static void main(String[] args) {
+        System.out.println("Hello World!); // Mostrar texto...
+    }
+}
+----
++
+.. Crie uma aplicação Java que permita calcular o produto entre 6 e 45.
+.. Crie uma aplicação Java que mostre a mensagem "Formação em Java".
+.. Crie uma aplicação Java que calcule a soma dos cinco primeiros números, 1, 2, 3, 4 e 5, sem usar ciclos.
+.. Crie uma aplicação igual à da alínea anterior mas usando o ciclo _for_.
+.. Crie uma aplicação igual à da alínea anterior mas usando o ciclo _while_.
+.. Desenvolva uma aplicação Java que mostre a tabuada do cinco sem recorrer a um ciclo.
+.. Crie uma nova aplicação igual à alínea anterior mas usando um ciclo _for_.
+.. Crie um programa que peça um número inteiro ao utilizador e o mostre depois.
+.. Crie um programa que peça um número de vírgula flutuante e que mostre esse valor depois de lido.
+.. Desenvolva um programa que permite calcular a tabuada de um número introduzido pelo utilizador.
+.. Crie um programa que calcule a área de um triângulo.
+.. Crie um programa que calcule a área de um rectângulo.
+.. Crie um programa que calcule a média de notas de uma aluno.
+.. Crie um programa que leia o nome de uma pessoa.
+.. Crie um programa que registe num vector as 20 notas de um formando e calcule e mostre a média das notas.
+.. Desenvolva um programa para conversão entre escudos e euros. 1 euro são 200.482 escudos.
+.. Indicar o menor de dois valores.
+.. Indicar o menor de três valores.
+. Calcular o factorial de um número. Factorial de 5 é 5 * 4 * 3 * 2 * 1 = 120.
+.. Programa que leia um carácter e que mostre a mensagem *"Olá mundo!"* quando for introduzido o carácter #.
+.. Programa que receba um salário e adicione 100€ se o salário for inferior a 1500€.
+.. Programa que diga se um mês introduzido pelo utilizador (número do mês) é um mês válido ou não.
+.. Programa que leia um valor inteiro e diga se o valor é positivo, negativo ou zero.
+.. Programa que receba um salário e adicione 200€, se o salário for inferior a 500€, e adicione 100€, se o salário for igual ou superior a 500€ mas inferior a 1500€.
+.. Programa que receba o nome de uma pessoa, o estado civil (use 1 para casado e 0 para solteiro), e o salário pago. Depois aplique 10% de imposto (retire 10%) se for solteiro, e 5% (retire 5%) se for casado.
+.. Programa que receba uma letra e se a letra for um *\'s'* deve ser apresentada a palavra *"Solteiro(a)"*, se for um *\'c'* deve ser apresentada a palavra *"Casado(a)"*, se for inserida a letra *\'d'* deve ser apresentada a palavra *"Divorciado(a)"*, se for inserida a letra *\'v'* deve ser apresentada a palavra *"Viúvo"*, se for introduzida outra letra deve aparecer a frase *"Estado Civil Indefinido"*.
+.. Programa que receba uma nota de um aluno e mostre *"Insuficiente"*, se a nota for menor que 9.5, *"Suficiente"* se a nota for superior ou igual a 9.5 e inferior a 14, *"Bom"* se a nota for superior ou igual a 14 e inferior a 17, *"Muito Bom"* se a nota for maior ou igual que 17 e inferior a 19.5 e *"Excelente"* se a nota for maior ou igual a 19.5. Se a nota for menor que 0 ou maior que 20 o programa deve mostrar *"Nota inválida"*.
+.. Programa que peça um número e diga se esse número é maior, menor ou igual a um número escolhido por si. O utilizador devrár ter três tentativas.
+.. Crie um programa para ler um conjunto de 10 números e no fim mostre a soma de todos os números.
+.. Crie um programa que leia um conjunto de 10 números e os imprima por ordem inversa.
+.. Desenvolva um programa que dado um vector de inteiros, pesquise no vector um número introduzido pelo utilizador e indique quantas vezes esse número aparece.
