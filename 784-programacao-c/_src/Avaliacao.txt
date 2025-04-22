@@ -1,0 +1,49 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0784 - Programação em C/C++ - Funções e Estruturas
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |Avaliação
+|=================================================================================
+
+1. Verdadeiro ou Falso
+----------------------
+Indique se as afirmações seguintes são verdadeiras ou falsas. Responda às questões na folha do enunciado.
+
+[cols="10,1",frame="topbot"]
+|===========================================================================================================================================
+|Em C, uma função pode devolver dois valores simultâneamente                                                     | 
+|Uma função que não receba parâmetros tem a palavra *void*, escrita dentro dos parêntesis, na declaração         |
+|Todas as funções devolvem valores                                                                               |
+|Os parâmetros das funções podem ser do tipo *void*                                                              |
+|Para terminar uma função podemos usar a instrução _return_                                                      |
+|Podem existir duas funções com o mesmo nome dentro de um programa feito em C                                    |
+|A instrução _return_ termina uma função apenas se for a última instrução da função                              |
+|Os membros de uma estrutura têm de ter todos o mesmo tipo de dados                                              |
+|Os parâmetros de uma função são opcionais                                                                       |
+|O nome de um função segue as mesmas regras que o nome de uma variável                                           |
+|Uma função tem um número de linhas de código máximo                                                             |
+|O nome de uma função pode ser igual ao de uma palavra reservada da linguagem C                                  |
+|A declaração de uma variável de tipo de dados do programador precisa ser sempre acompanhada da palavra *struct* |
+|As estruturas só podem ter membros do tipo *char*                                                               |
+|Não é possível criar ponteiros para estruturas                                                                  |
+|Numa união é possível preencher todos os membros em simultâneo                                                  |
+|A declaração de uma estrutura chamada *exemplo* seria a seguinte: **struct exemplo { int x, y; float z;};**     |
+|===========================================================================================================================================
+
+2. Programar
+------------
+Desenvolva um programa de computador que ofereça as funcionalidades de uma agenda electrónica, permindo adicionar, remover e listar dados de contactos pessoais, dados de livros interessantes e que contenha uma secção de ferramentas úteis como cálculo de potências, inversão de texto, obtenção de estatísticas, etc.
+
+O projecto que lhe foi entregue tem já várias partes implementadas, terá apenas de implementar o código correspondente às alíneas seguintes. Tenha em atenção que as variáveis necessárias na função _main_ já estão declaradas, apenas as terá de usar.
+
+.. Adicione as estruturas de dados necessárias para guardar informações de contactos pessoais e de livros. A estrutura que guarda informações de contactos deve chamar-se *pessoa* e permitir guardar o *nome*, com um máximo de 251 caracteres, a *morada*, máximo de 201 caracteres, o *telefone*, máximo de 10, e o **e-mail**, com um máximo de 201 caracteres. A estrutura para a informação dos livros deve charmar-se *livro* e registar o *titulo*, máximo de 151 caracteres, o *autor*, máximo de 251 caracteres, o *isbn*, máximo de 14 caracteres, e o número de páginas que se deverá chamar *paginas*.
+.. Escreva o código necessário para completar a função **lerContacto**.
+.. Escreva o código do *case* que permita imprimir todos os contactos registados até ao momento. Para imprimir um contacto já existe uma função que recebe o endereço de memória da estrutura a mostrar. Deverá usar esta função no ciclo adequado para mostrar todos os contactos já registados.
+.. Escreva o código necessário para completar a função **lerLivro**.
+.. Escreva o código do *case* que permita imprimir todos os livros registados até ao momento. Para imprimir um livro já existe uma função que recebe o endereço de memória da estrutura a mostrar. Deverá usar esta função no ciclo adequado para mostrar todos os livros já registados.
+.. Complete a função *estatisticasTexto* de modo a determinar correctamente as quantidades de vogais, de consoantes e de digitos introduzidas. Use as funções *digito*, *consoante* e *vogal* que já se encontram implementadas para determinar se um carácter é, respectivamente, um digito, uma consoante ou uma vogal. Estas funções devolvem 1 em caso verdadeiro e 0 em caso falso.
+.. Escreva a função *potencia* que receba um inteiro correspondente à _base_, e um inteiro correspondente ao _n_ e que devolva a potência de ordem _n_ da base indicada. Por exemplo, a potência de ordem 5 e base 10 é: 10 * 10 * 10 * 10 * 10 = 100000;
+.. Implemente o *case* para que a função *inversor* possa ser usada correctamente.
+

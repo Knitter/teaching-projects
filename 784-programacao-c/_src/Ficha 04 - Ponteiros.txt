@@ -1,0 +1,21 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0784 - Programação em C/C++ - Funções e Estruturas
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |4 - Ponteiros
+|=================================================================================
+
+Exercícios com Ponteiros
+------------------------
+
+. Implemente uma função que receba uma variável por referência (usando ponteiros) e que altere o seu valor para um valor definido pelo utilizador.
+. Implemente uma função para trocar o valor de duas variáveis.
+. Implemente uma função que receba uma estrutura de dados por referência e a preencha com a informação indicada pelo utilizador, a estrutuda deve guardar o nome, a idade e o telefone de uma pessoa.
+
+Agenda Electrónica
+------------------
+Desenvolva um programa que permita simular uma agenda electrónica, com funcionalidades simples para adicionar um contacto e listar todos os contactos existentes em memória. O programa deve apresentar um menu simples, com as duas opções indicadas e uma opção para terminar e deve ainda fazer uso de estruturas adequadas e ponteiros. A agenda precisará guardar até 100 contactos em que cada contacto deverá ser composto por um nome, um número de telefone, o dia, mês e ano de nascimento, um e-mail.
+
+Desenvolva as funções de apoio que sejam necessárias.

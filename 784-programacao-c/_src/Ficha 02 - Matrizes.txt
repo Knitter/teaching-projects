@@ -1,0 +1,23 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0784 - Programação em C/C++ - Funções e Estruturas
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |2 - Vectores
+|=================================================================================
+
+Exercícios com Vectores
+-----------------------
+Crie um programa que permita fazer, numa função para cada um, os exercícios indicados abaixo. O programa deve apresentar um menu com as várias opções e usar um *switch** para decidir que função invocar. As funções devem implementar **toda a funcionalidade** indicada.
+
+. Ler um conjunto de, no máximo, 50 números e no fim mostre a soma de todos os números.
+. Ler um conjunto de, no máximo, 50 números e os imprima por ordem inversa.
+. Registar as notas de um formando, entre 0 e 20, e que calcule a média das notas.
+. Registar as notas, de A a E, de um aluno a cada uma das 30 perguntas de um teste de avaliação.
+. Dados dois vectores de inteiros determine o produto escalar dos vectores. O produto escalar é calculado multiplicando cada uma das posições homónimas entre os dois vectores e somando os vários resultados.
+. Dado um vector de inteiros, pesquise no vector um número introduzido pelo utilizador e indique quantas vezes esse número aparece.
+. Função que permita copiar um vector para outro vector, colocando os valores por ordem inversa.
+. Função permita ordenar um vector de inteiros.
+. Função igual à anterior mas que organize por ordem alfabética um vector de caracteres.
+. Crie uma função que receba um número inteiro e um vector e devolva a posição onde esse elemento existe dentro do vector ou -1 se o elemento não existir.

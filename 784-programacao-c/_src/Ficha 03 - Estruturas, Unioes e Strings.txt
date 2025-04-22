@@ -1,0 +1,32 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0784 - Programação em C/C++ - Funções e Estruturas
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |3 - Estruturas, Unioes e Revisão de Strings
+|=================================================================================
+
+1. Exercícios com Strings
+-------------------------
+
+Crie um projecto novo, poderá dar-lhe nome *Ficha-3E1* e implemente nele, em funções próprias, cada uma das alíneas seguintes:
+
+.. Função que adicione espaços a uma __String__ para que ela fique com 25 caracteres, se a __String__ já tiver os 25 caracteres então a função não deve alterar a __String__.
+.. Função que devolva 1 se uma __String__ é um palíndromo.
+.. Função que substitua todas as vogais de uma __String__ por pontos.
+.. Função que remova todos os caracteres de uma __String__ e os substitua por pontos excepto o primeiro e último carácter.
+.. Função que corte uma __String__ a *n* caracteres. Se a __String__ já é igual ou menor que o número pedido a função não deve provocar qualquer alteração na __String__.
+
+2. Exercícios com Estruturas
+----------------------------
+
+Crie um projecto novo, poderá dar-lhe nome *Ficha-3E1* e implemente nele, em funções próprias, cada uma das alíneas seguintes:
+
+.. Função que permita ler os dados de uma pessoa, onde se devem incluir o nome (máximo 200 caracteres) o número de telefone e de telemóvel e a data de nascimento em 3 campos separados (dia, mês e ano). 
+.. Função que permita ler uma coordenada de um gráfico 2D. É necessário registar a componente x e a componente y da coordenada.
+.. Implemente uma função que permita ler os dados de 10 pessoas, faça uso do código da primeira alínea.
+.. Implemente uma função que permita ler um conjunto de dois pontos de um gráfico 2D e calcular a distância entre os dois.
+.. Função que registe os dados de, no máximo, 5 alunos. Para os dados do aluno é necessário guardar o nome e as notas de 3 testes, sendo que as notas são valores entre 0 e 20.
+.. Crie uma nova função que implemente o mesmo exercício da alínea anterior, mas acrescente um dado extra: a média das notas obtidas.
+.. Função que permita ler os dados de 3 livros. Os dados a registar deverão ser o ISBN, o autor, o preço, o número de páginas e o título. Use os tipos de dados que achar necessário para cada uma das informações a registar.

@@ -1,0 +1,31 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=============================================================
+|Módulo    |0784 - Programação em C/C++ - Funções e Estruturas
+|Local     |
+|Formador  |
+|Resolução |Avaliação
+|=============================================================
+
+Exercício 1
+-----------
+
+[cols="10,1",frame="topbot"]
+|===========================================================================================================================================
+|Em C, uma função pode devolver dois valores simultâneamente                                                     | Falso
+|Uma função que não receba parâmetros tem a palavra *void*, escrita dentro dos parêntesis, na declaração         | Verdadeiro
+|Todas as funções devolvem valores                                                                               | Falso
+|Os parâmetros das funções podem ser do tipo *void*                                                              | Verdadeiro
+|Para terminar uma função podemos usar a instrução _return_                                                      | Verdadeiro
+|Podem existir duas funções com o mesmo nome dentro de um programa feito em C                                    | Falso
+|A instrução _return_ termina uma função apenas se for a última instrução da função                              | Falso
+|Os membros de uma estrutura têm de ter todos o mesmo tipo de dados                                              | Falso
+|Os parâmetros de uma função são opcionais                                                                       | Verdadeiro
+|O nome de um função segue as mesmas regras que o nome de uma variável                                           | Verdadeiro
+|Uma função tem um número de linhas de código máximo                                                             | Falso
+|O nome de uma função pode ser igual ao de uma palavra reservada da linguagem C                                  | Falso
+|A declaração de uma variável de tipo de dados do programador precisa ser sempre acompanhada da palavra *struct* | Verdadeiro
+|As estruturas só podem ter membros do tipo *char*                                                               | Falso
+|Não é possível criar ponteiros para estruturas                                                                  | Falso
+|Numa união é possível preencher todos os membros em simultâneo                                                  | Falso
+|A declaração de uma estrutura chamada *exemplo* seria a seguinte: **struct exemplo { int x, y; float z;};**     | Verdadeiro
+|===========================================================================================================================================

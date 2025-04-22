@@ -1,0 +1,18 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=================================================================================
+|Módulo  |0784 - Programação em C/C++ - Funções e Estruturas
+|Local   |
+|Sessão  |
+|Formador|
+|Ficha   |Avaliação - Componente Prática
+|=================================================================================
+
+Desenvolva um programa de computador que ofereça as funcionalidades de uma agenda electrónica, permindo adicionar, remover e listar dados de contactos pessoais, dados de livros interessantes e que contenha uma secção de ferramentas úteis como cálculo de potências, inversão de texto, obtenção de estatísticas, etc.
+
+O projecto que lhe foi entregue tem já várias partes implementadas, terá apenas de implementar o código correspondente às alíneas seguintes. Tenha em atenção que as variáveis necessárias na função _main_ já estão declaradas, apenas as terá de usar.
+
+.. Adicione as estruturas de dados necessárias para guardar informações de contactos pessoais e de livros. A estrutura que guarda informações de contactos deve chamar-se *pessoa* e permitir guardar o *nome*, com um máximo de 251 caracteres, a *morada*, máximo de 201 caracteres, o *telefone*, máximo de 10, e o **e-mail**, com um máximo de 201 caracteres. A estrutura para a informação dos livros deve charmar-se *livro* e registar o *titulo*, máximo de 151 caracteres, o *autor*, máximo de 251 caracteres, o *isbn*, máximo de 14 caracteres, e o número de páginas que se deverá chamar *paginas*.
+.. Adicione uma estrutura que permita guardar notas pessoais, compostas por uma data, escrita em texto com um máximo de 10 caracteres, um título com 150 caracteres e um corpo da nota composta por texto com 2500 caracteres.
+.. Escreva o código necessário para completar a função **lerLivro**.
+.. Complete a função lerNota, que permite introduzir os dados de uma nota.
+.. Implemente o *case* para que a função *inversor* possa ser usada correctamente.
