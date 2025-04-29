@@ -1,0 +1,25 @@
+[cols=">1s,3m",frame="topbot",options="header,footer"]
+|=============================================================
+|Módulo    |0784 - Programação em C/C++ - Funções e Estruturas
+|Local     |
+|Formador  |
+|Resolução |1 - Funções
+|=============================================================
+
+Exercício 1
+-----------
+
+.. Falso, uma função só pode devolver um único valor. Dado que o retorno de valores é conseguido através da palavra reservada _return_ e uma vez que esta palavra termina a função, só é possível devolver um valor antes da função terminar;
+.. Verdadeiro;
+.. Falso, o tipo de dados de retorno não está limitado a números inteiros;
+.. Verdadeiro;
+.. Verdadeiro;
+.. Falso, ambas possuem âmbito igual e não podem existir duas variáveis com o mesmo nome no mesmo âmbito;
+.. Falso, a instrução _return_ termina a função na linha em que é invocada;
+.. Falso, o programa só termina quando a função _main_ terminar; 
+.. Verdadeiro;
+.. Falso, todas as funções precisam de um nome;
+.. Verdadeiro;
+.. Verdadeiro;
+.. Falso, o número de linhas de uma função não tem limite fixo;
+.. Falso;
